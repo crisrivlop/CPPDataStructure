@@ -15,12 +15,12 @@ public:
         this->data = data;
         this->next = next;
     }
-    void setData(E);
-    E getData();
-    void setNext(Node<E>*);
-    Node<E>* getNext();
-    void print();
-    virtual ~Node();
+    void setData(E data){this->data = data;}
+    E getData(){return data;}
+    void setNext(Node *next){this->next = next;}
+    Node<E>* getNext(){return this->next;}
+    void print(){std::cout << data;}
+    virtual ~Node(){std::cout << "node deleted \n";}
 };
 
 #endif // NODE_H
