@@ -8,24 +8,32 @@
 template <class E>
 class CircularList : IList<E>{
     Node<E> *head,*tail;
-
-
-
-    Node<E>* getNode(int index){
-        Node<E> *actualNode = head;
-        for (int from = 0; from <index; from++){
-            actualNode = actualNode->getNext();
-        }
-        return actualNode;
-    }
+    Node<E>* getNode(int);
 
 public:
-    CircularList() {
-        tail = Null;
-        head = Null;
-    }
+    CircularList();
+    void addi(E);
+    void add(E);
+    bool add(E,int);
+    bool remove(int);
+    void set(int,E);
+    E get(int);
+    //virtual Iterator getIterator() = 0;
+    //virtual setComparator(IComparator) = 0;
+    //virtual IComparator getComparator() = 0;
+    void print() const;
+    virtual ~CircularList();
+};
 
-    void addi(E data){
+template <class E> Node<E>* CircularList<E>::getNode(int index){
+    Node<E> *actualNode = head;
+    for (int from = 0; from <index; from++){
+        actualNode = actualNode->getNext();
+    }
+    return actualNode;
+}
+
+template <class E> void CircularList<E>::addi(E data){
         if(head == Null){
             head = new Node<E>(data);
             tail = head;
@@ -37,9 +45,9 @@ public:
             tail->setNext(head);
         }
         this->lenght++;
-    }
+}
 
-    void add(E data){
+template <class E> void CircularList<E>::add(E data){
         if (head == Null){
             head = new Node<E>(data);
             tail = head;
@@ -51,32 +59,33 @@ public:
             tail->setNext(head);
         }
         this->lenght++;
+}
 
-    }
-    bool add(E data,int index){
-        if (0 <= index && index <= this->lenght){
-            if (index == 0){
-                addi(data);
-            }
-            else if (this->lenght == index){
-                add(data);
-            }
-            else{
-                Node<E> *previousNode = getNode(index-1);
-                Node<E> *insertionNode = new Node<E>(data,previousNode->getNext());
-                previousNode->setNext(insertionNode);
-                this->lenght++;
-            }
-            return true;
+template <class E> bool CircularList<E>::add(E data,int index){
+    if (0 <= index && index <= this->lenght){
+        if (index == 0){
+            addi(data);
+        }
+        else if (this->lenght == index){
+            add(data);
         }
         else{
-            std::cerr << "index out bounds";
-            throw index;
-            return false;
+            Node<E> *previousNode = getNode(index-1);
+            Node<E> *insertionNode = new Node<E>(data,previousNode->getNext());
+            previousNode->setNext(insertionNode);
+            this->lenght++;
         }
-
+        return true;
     }
-    bool remove(int index){
+    else{
+        std::cerr << "index out bounds";
+        throw index;
+        return false;
+    }
+
+}
+
+template <class E> bool CircularList<E>::remove(int index){
         if (0 <= index && index < this->lenght){
             if(this->lenght == 1){
                 delete head;
@@ -109,8 +118,9 @@ public:
             throw index;
             return false;
         }
-    }
-    void set(int index,E data){
+}
+
+template <class E> void CircularList<E>::set(int index,E data){
         if (0 <= index && index < this->lenght){
             getNode(index)->setData(data);
         }
@@ -119,10 +129,9 @@ public:
             throw index;
 
         }
-    }
+}
 
-
-    E get(int index){
+template <class E> E CircularList<E>::get(int index){
         if (0 <= index && index < this->lenght){
             return getNode(index)->getData();
         }
@@ -130,37 +139,39 @@ public:
             std::cerr << "index out bounds";
             throw index;
         }
-    }
-    //virtual Iterator getIterator() = 0;
-    //virtual setComparator(IComparator) = 0;
-    //virtual IComparator getComparator() = 0;
-    void print() const{
-        if (this->lenght > 0){
-            Node<E> *actualNode = head;
-            std::cout << "[ ";
-            for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
-                actualNode->print();
-                std::cout << ", ";
-                actualNode = actualNode->getNext();
-            }
-            actualNode->print();
-            std::cout << "]" << std::endl;
-        }
-        else{
-            std::cout << "[]" << std::endl;
-        }
-    }
-    virtual ~CircularList(){
+}
+
+template <class E> void CircularList<E>::print() const{
+    if (this->lenght > 0){
         Node<E> *actualNode = head;
-        std::cout << "Deleting CircularList...\n";
-        while(this->lenght != 0){
-            actualNode = head;
-            head = head->getNext();
-            delete actualNode;
-            this->lenght--;
+        std::cout << "[ ";
+        for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
+            actualNode->print();
+            std::cout << ", ";
+            actualNode = actualNode->getNext();
         }
-        std::cout << "CircularList deleted!\n";
+        actualNode->print();
+        std::cout << "]" << std::endl;
     }
-};
+    else{
+        std::cout << "[]" << std::endl;
+    }
+}
+template <class E> CircularList<E>::~CircularList(){
+    Node<E> *actualNode = head;
+    std::cout << "Deleting CircularList...\n";
+    while(this->lenght != 0){
+        actualNode = head;
+        head = head->getNext();
+        delete actualNode;
+        this->lenght--;
+    }
+    std::cout << "CircularList deleted!\n";
+}
+template <class E> CircularList<E>::CircularList() {
+    tail = Null;
+    head = Null;
+    this->lenght = 0;
+}
 
 #endif // CIRCULARLIST_H
