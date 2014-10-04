@@ -1,0 +1,210 @@
+\hypertarget{classList}{\section{List$<$ E $>$ Class Template Reference}
+\label{classList}\index{List$<$ E $>$@{List$<$ E $>$}}
+}
+Inheritance diagram for List$<$ E $>$\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classList}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classList_a40dfa61150de7310d69001c697598b04}{addi} (E)
+\item 
+void \hyperlink{classList_a2a130b7bc38cd968136f1f847e42d0cc}{add} (E)
+\item 
+bool \hyperlink{classList_a530267346ebec244900c162de6f467e1}{add} (E, int)
+\item 
+bool \hyperlink{classList_a46cec78299d3e23469276adf46adf9c1}{remove} (int)
+\item 
+void \hyperlink{classList_ac8b31be96806bd56f655436629ac2e7a}{set} (int, E)
+\item 
+E \hyperlink{classList_ab081a52d7a62aa6c5550ff9762f9427f}{get} (int)
+\item 
+\hyperlink{classSimpleIterator}{Simple\-Iterator}$<$ E $>$ $\ast$ \hyperlink{classList_accb5fe71cb60ba7bf0ccab362b1f87cb}{get\-Iterator} ()
+\item 
+\hypertarget{classList_ad2201bc77b15291f215523ecc96705dc}{void {\bfseries print} () const }\label{classList_ad2201bc77b15291f215523ecc96705dc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classNode}{Node}$<$ E $>$ $\ast$ \hyperlink{classList_ae3829eca87a5040cca1ae9e0dc40b768}{head}
+\item 
+\hyperlink{classNode}{Node}$<$ E $>$ $\ast$ \hyperlink{classList_a6008ce8286d474397d0ce5847f819783}{tail}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classList_a2a130b7bc38cd968136f1f847e42d0cc}{\index{List@{List}!add@{add}}
+\index{add@{add}!List@{List}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf List}$<$ E $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a2a130b7bc38cd968136f1f847e42d0cc}
+
+\begin{DoxyParams}{Parameters}
+{\em E} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIList_a27500caa3d9da05aa6437d5ff56b09e2}{I\-List$<$ E $>$}.
+
+\hypertarget{classList_a530267346ebec244900c162de6f467e1}{\index{List@{List}!add@{add}}
+\index{add@{add}!List@{List}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf List}$<$ E $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{E}]{data, }
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a530267346ebec244900c162de6f467e1}
+
+\begin{DoxyParams}{Parameters}
+{\em E} & \\
+\hline
+{\em int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool List$<$\-E$>$ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E $>$}.
+
+\hypertarget{classList_a40dfa61150de7310d69001c697598b04}{\index{List@{List}!addi@{addi}}
+\index{addi@{addi}!List@{List}}
+\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf List}$<$ E $>$\-::addi (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a40dfa61150de7310d69001c697598b04}
+
+\begin{DoxyParams}{Parameters}
+{\em E} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E $>$}.
+
+\hypertarget{classList_ab081a52d7a62aa6c5550ff9762f9427f}{\index{List@{List}!get@{get}}
+\index{get@{get}!List@{List}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ E {\bf List}$<$ E $>$\-::get (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_ab081a52d7a62aa6c5550ff9762f9427f}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E List$<$\-E$>$ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E $>$}.
+
+\hypertarget{classList_accb5fe71cb60ba7bf0ccab362b1f87cb}{\index{List@{List}!get\-Iterator@{get\-Iterator}}
+\index{get\-Iterator@{get\-Iterator}!List@{List}}
+\subsubsection[{get\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Simple\-Iterator}$<$ E $>$ $\ast$ {\bf List}$<$ E $>$\-::get\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classList_accb5fe71cb60ba7bf0ccab362b1f87cb}
+\begin{DoxyReturn}{Returns}
+Simple\-Iterator$<$\-E$>$
+
+Simple\-Iterator$<$\-E$>$ $\ast$\-List$<$\-E$>$ 
+\end{DoxyReturn}
+\hypertarget{classList_a46cec78299d3e23469276adf46adf9c1}{\index{List@{List}!remove@{remove}}
+\index{remove@{remove}!List@{List}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf List}$<$ E $>$\-::remove (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a46cec78299d3e23469276adf46adf9c1}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool List$<$\-E$>$ 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classIList_a9bf7d737252dfbd4c9a5d7be36ea4231}{I\-List$<$ E $>$}.
+
+\hypertarget{classList_ac8b31be96806bd56f655436629ac2e7a}{\index{List@{List}!set@{set}}
+\index{set@{set}!List@{List}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf List}$<$ E $>$\-::set (
+\begin{DoxyParamCaption}
+\item[{int}]{index, }
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_ac8b31be96806bd56f655436629ac2e7a}
+
+\begin{DoxyParams}{Parameters}
+{\em int} & \\
+\hline
+{\em E} & \\
+\hline
+{\em index} & \\
+\hline
+{\em data} & \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{classIList_a119ed658d2804aec0b9fef9325c03073}{I\-List$<$ E $>$}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classList_ae3829eca87a5040cca1ae9e0dc40b768}{\index{List@{List}!head@{head}}
+\index{head@{head}!List@{List}}
+\subsubsection[{head}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Node}$<$E$>$$\ast$ {\bf List}$<$ E $>$\-::head\hspace{0.3cm}{\ttfamily [protected]}}}\label{classList_ae3829eca87a5040cca1ae9e0dc40b768}
+T\-O\-D\-O \hypertarget{classList_a6008ce8286d474397d0ce5847f819783}{\index{List@{List}!tail@{tail}}
+\index{tail@{tail}!List@{List}}
+\subsubsection[{tail}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Node}$<$E$>$$\ast$ {\bf List}$<$ E $>$\-::tail\hspace{0.3cm}{\ttfamily [protected]}}}\label{classList_a6008ce8286d474397d0ce5847f819783}
+T\-O\-D\-O 
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+list/List.\-hpp\end{DoxyCompactItemize}
