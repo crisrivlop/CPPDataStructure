@@ -1,6 +1,5 @@
 #include "list/Node.h"
 #include "ostream"
-#include "list/Queue.h"
 #define Null 0
 
 
@@ -8,18 +7,47 @@
 #define QUEUE_H
 
 template <class E>
+/**
+ * @brief
+ *
+ */
 class Queue {
 private:
-    Node<E> *tail,*head;
+    Node<E> *tail,*head; /**< TODO */
 public:
+    /**
+     * @brief
+     *
+     */
     Queue();
+    /**
+     * @brief
+     *
+     * @param data
+     */
     void enqueue(E data);
+    /**
+     * @brief
+     *
+     * @return E
+     */
     E dequeue();
+    /**
+     * @brief
+     *
+     * @return bool
+     */
     bool isEmpty();
+    /**
+     * @brief
+     *
+     */
     virtual ~Queue();
 };
 
 template <class E> Queue<E>::Queue(){head = Null; tail = Null;}
+
+
 template <class E> void Queue<E>::enqueue(E data){
     Node<E> *insertionNode = new Node<E> (data);
     if (head != Null){
@@ -30,6 +58,7 @@ template <class E> void Queue<E>::enqueue(E data){
     head = insertionNode;
     tail = head;
 }
+
 template <class E> E Queue<E>::dequeue(){
     if(head != Null){
         std::cerr << "Empty Queue!\n";
@@ -40,9 +69,11 @@ template <class E> E Queue<E>::dequeue(){
     delete outNode;
     return out;
 }
+
 template <class E> Queue<E>::isEmpty(){
     return !head;
 }
+
 
 template <class E> Queue<E>::~Queue(){
     Node<E> *actual = head;

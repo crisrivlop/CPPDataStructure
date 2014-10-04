@@ -1,5 +1,5 @@
 #include "list/IList.h"
-#include "DoubleNode.h"
+#include "list/DoubleNode.h"
 #include "iostream"
 #define Null 0
 
@@ -7,28 +7,91 @@
 #define DoubleCircularList_H
 
 template <class E>
+/**
+ * @brief
+ *
+ */
 class DoubleCircularList : public IList<E>
 {
-    DoubleNode<E> *head;
-    DoubleNode<E> *tail;
+    DoubleNode<E> *head; /**< TODO */
+    DoubleNode<E> *tail; /**< TODO */
+    /**
+     * @brief
+     *
+     * @param int
+     * @return DoubleNode<E>
+     */
     DoubleNode<E>* getNode(int);
 public:
+    /**
+     * @brief
+     *
+     */
     DoubleCircularList();
+    /**
+     * @brief
+     *
+     * @param E
+     */
     void addi(E);
+    /**
+     * @brief
+     *
+     * @param E
+     */
     void add(E);
+    /**
+     * @brief
+     *
+     * @param E
+     * @param int
+     * @return bool
+     */
     bool add(E,int);
+    /**
+     * @brief
+     *
+     * @param int
+     * @return bool
+     */
     bool remove(int);
+    /**
+     * @brief
+     *
+     * @param int
+     * @param E
+     */
     void set(int,E);
+    /**
+     * @brief
+     *
+     * @param int
+     * @return E
+     */
     E get(int);
     //virtual Iterator getIterator() = 0;
     //virtual setComparator(IComparator) = 0;
     //virtual IComparator getComparator() = 0;
+    /**
+     * @brief
+     *
+     */
     void print() const;
     //bool isEmpty() const;
     //int getLenght() const;
+    /**
+     * @brief
+     *
+     */
     virtual ~DoubleCircularList();
 };
 
+/**
+ * @brief
+ *
+ * @param index
+ * @return DoubleNode<E> *DoubleCircularList<E>
+ */
 template <class E> DoubleNode<E>* DoubleCircularList<E>::getNode(int index){
         DoubleNode<E> *actualNode = head;
         int from = this->lenght/2 -index;
@@ -47,12 +110,21 @@ template <class E> DoubleNode<E>* DoubleCircularList<E>::getNode(int index){
         return actualNode;
 }
 
+/**
+ * @brief
+ *
+ */
 template <class E> DoubleCircularList<E>::DoubleCircularList(){
     tail = Null;
     head = Null;
     this->lenght = 0;
 }
 
+/**
+ * @brief
+ *
+ * @param data
+ */
 template <class E> void DoubleCircularList<E>::addi(E data){
     if(head == Null){
         head = new DoubleNode<E>(data);
@@ -69,6 +141,11 @@ template <class E> void DoubleCircularList<E>::addi(E data){
     this->lenght++;
 }
 
+/**
+ * @brief
+ *
+ * @param data
+ */
 template <class E> void DoubleCircularList<E>::add(E data){
     if (tail == Null){
         head = new DoubleNode<E>(data);
@@ -86,6 +163,13 @@ template <class E> void DoubleCircularList<E>::add(E data){
 
 }
 
+/**
+ * @brief
+ *
+ * @param data
+ * @param index
+ * @return bool DoubleCircularList<E>
+ */
 template <class E> bool DoubleCircularList<E>::add(E data,int index){
     if (0 <= index && index <= this->lenght){
         if (index == 0){
@@ -110,6 +194,12 @@ template <class E> bool DoubleCircularList<E>::add(E data,int index){
     }
 
 }
+/**
+ * @brief
+ *
+ * @param index
+ * @return bool DoubleCircularList<E>
+ */
 template <class E> bool DoubleCircularList<E>::remove(int index){
     if (0 <= index && index < this->lenght){
         if(this->lenght == 1){
@@ -150,6 +240,12 @@ template <class E> bool DoubleCircularList<E>::remove(int index){
         return false;
     }
 }
+/**
+ * @brief
+ *
+ * @param index
+ * @param data
+ */
 template <class E> void DoubleCircularList<E>::set(int index,E data){
     if (0 <= index && index < this->lenght){
         getNode(index)->setData(data);
@@ -160,6 +256,12 @@ template <class E> void DoubleCircularList<E>::set(int index,E data){
     }
 }
 
+/**
+ * @brief
+ *
+ * @param index
+ * @return E DoubleCircularList<E>
+ */
 template <class E> E DoubleCircularList<E>::get(int index){
     if (0 <= index && index < this->lenght){
         return getNode(index)->getData();
@@ -171,6 +273,10 @@ template <class E> E DoubleCircularList<E>::get(int index){
     }
 }
 
+/**
+ * @brief
+ *
+ */
 template <class E> void DoubleCircularList<E>::print() const{
     if (head){
         DoubleNode<E> *actualNode = head;
@@ -189,6 +295,10 @@ template <class E> void DoubleCircularList<E>::print() const{
     }
 
 }
+/**
+ * @brief
+ *
+ */
 template <class E> DoubleCircularList<E>::~DoubleCircularList(){
     DoubleNode<E> *actualNode = head;
     std::cout << "Deleting DoubleCircularList...\n";
