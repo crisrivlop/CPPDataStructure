@@ -4,14 +4,20 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\hypertarget{classStack_a561be1726ac9649a9ee3f80a4ca8e4b5}{\hyperlink{classStack_a561be1726ac9649a9ee3f80a4ca8e4b5}{Stack} ()}\label{classStack_a561be1726ac9649a9ee3f80a4ca8e4b5}
+
+\begin{DoxyCompactList}\small\item\em Metodo constructor. \end{DoxyCompactList}\item 
 void \hyperlink{classStack_af71e3e142fba5bb861b66b4882289b31}{push} (E)
-\item 
+\begin{DoxyCompactList}\small\item\em Agrega el dato a la cima de la pila. \end{DoxyCompactList}\item 
 E \hyperlink{classStack_a5ba7a4c8eec39757e28f95da49f06d52}{pop} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Elimina de la pila y retorna el dato de la cima de la pila. En caso de que la pila este vacia se produce un error. \end{DoxyCompactList}\item 
 E \hyperlink{classStack_a19a17240bf7045cf6a3a9497e1091433}{peek} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Revisa el dato en la cima de la pila. En caso de que la pila este vacia se produce un error. \end{DoxyCompactList}\item 
 bool \hyperlink{classStack_a0ce2804f35c0c8cfb999535f35fa438b}{is\-Empty} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Retorna verdadero si la pila esta vacia de lo contrario retorna falso. \end{DoxyCompactList}\item 
+\hypertarget{classStack_ad08e4c32f07b8d967913f8b1a45f8620}{virtual \hyperlink{classStack_ad08e4c32f07b8d967913f8b1a45f8620}{$\sim$\-Stack} ()}\label{classStack_ad08e4c32f07b8d967913f8b1a45f8620}
+
+\begin{DoxyCompactList}\small\item\em Metodo destructor, borra todos los elementos de la pila. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Member Function Documentation}
@@ -22,10 +28,12 @@ bool \hyperlink{classStack_a0ce2804f35c0c8cfb999535f35fa438b}{is\-Empty} ()
 {}
 \end{DoxyParamCaption}
 )}}\label{classStack_a0ce2804f35c0c8cfb999535f35fa438b}
-\begin{DoxyReturn}{Returns}
-bool
 
-bool Stack$<$\-E$>$ 
+
+Retorna verdadero si la pila esta vacia de lo contrario retorna falso. 
+
+\begin{DoxyReturn}{Returns}
+bool el valor de verdad de la frase ¿esta vacia la pila? 
 \end{DoxyReturn}
 \hypertarget{classStack_a19a17240bf7045cf6a3a9497e1091433}{\index{Stack@{Stack}!peek@{peek}}
 \index{peek@{peek}!Stack@{Stack}}
@@ -34,10 +42,12 @@ bool Stack$<$\-E$>$
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classStack_a19a17240bf7045cf6a3a9497e1091433}
-\begin{DoxyReturn}{Returns}
-E
 
-E Stack$<$\-E$>$ 
+
+Revisa el dato en la cima de la pila. En caso de que la pila este vacia se produce un error. 
+
+\begin{DoxyReturn}{Returns}
+E el dato de la cima 
 \end{DoxyReturn}
 \hypertarget{classStack_a5ba7a4c8eec39757e28f95da49f06d52}{\index{Stack@{Stack}!pop@{pop}}
 \index{pop@{pop}!Stack@{Stack}}
@@ -46,10 +56,12 @@ E Stack$<$\-E$>$
 {}
 \end{DoxyParamCaption}
 )}}\label{classStack_a5ba7a4c8eec39757e28f95da49f06d52}
-\begin{DoxyReturn}{Returns}
-E
 
-E Stack$<$\-E$>$ 
+
+Elimina de la pila y retorna el dato de la cima de la pila. En caso de que la pila este vacia se produce un error. 
+
+\begin{DoxyReturn}{Returns}
+E el dato en la cima. 
 \end{DoxyReturn}
 \hypertarget{classStack_af71e3e142fba5bb861b66b4882289b31}{\index{Stack@{Stack}!push@{push}}
 \index{push@{push}!Stack@{Stack}}
@@ -59,10 +71,12 @@ E Stack$<$\-E$>$
 \end{DoxyParamCaption}
 )}}\label{classStack_af71e3e142fba5bb861b66b4882289b31}
 
+
+Agrega el dato a la cima de la pila. 
+
+
 \begin{DoxyParams}{Parameters}
-{\em E} & \\
-\hline
-{\em data} & \\
+{\em E} & el dato a agregar. \\
 \hline
 \end{DoxyParams}
 

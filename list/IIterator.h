@@ -2,48 +2,36 @@
 #ifndef IITERATOR_H
 #define IITERATOR_H
 template <class E>
-/**
- * @brief
- *
- */
+
 /**
  * @brief
  *
  */
 class IIterator{
 public:
+
     /**
      * @brief
      *
      * @return E
      */
+    virtual E getNext()=0;
+
     /**
      * @brief
      *
      * @return E
      */
-    virtual E getNext() =0;
-    /**
-     * @brief
-     *
-     * @return E
-     */
-    /**
-     * @brief
-     *
-     * @return E
-     */
-    virtual E getCurrent()=0;
+    virtual E getCurrent() const =0;
+
     /**
      * @brief
      *
      * @return bool
      */
-    /**
-     * @brief
-     *
-     * @return bool
-     */
-    virtual bool hasNext()=0;
+    virtual bool hasNext() const =0;
+
+    virtual ~IIterator(){}
+
 };
 #endif // IITERATOR_H

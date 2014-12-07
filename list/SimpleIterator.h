@@ -1,6 +1,7 @@
-#include "list/IIterator.h"
-#include "list/Node.h"
+#include "IIterator.h"
+#include "Node.h"
 #include <list>
+#include <ostream>
 #ifndef SIMPLEITERATOR_H
 #define SIMPLEITERATOR_H
 
@@ -11,6 +12,10 @@ template <class E>
  *
  */
 class SimpleIterator : public IIterator<E>{
+    template <class T>
+    friend class List;
+    template <class M>
+    friend class CircularList;
     /**
      * @brief
      *
@@ -18,11 +23,10 @@ class SimpleIterator : public IIterator<E>{
      * @param
      */
     SimpleIterator(Node<E>*,Node<E>*);
-    template <class T>
-    friend class List;
 protected:
     Node<E> *head, *tail, *current; /**< TODO */
 public:
+
     /**
      * @brief
      *
@@ -34,13 +38,13 @@ public:
      *
      * @return E
      */
-    E getCurrent();
+    E getCurrent() const;
     /**
      * @brief
      *
      * @return bool
      */
-    bool hasNext();
+    bool hasNext() const;
     /**
      * @brief
      *
@@ -58,6 +62,7 @@ template <class E> SimpleIterator<E>::SimpleIterator(Node<E> *phead, Node<E> *pt
     this->tail = ptail;
     this->current = this->head;
 }
+
 /**
  * @brief
  *
@@ -66,7 +71,7 @@ template <class E> SimpleIterator<E>::SimpleIterator(Node<E> *phead, Node<E> *pt
 template <class E> E SimpleIterator<E>::getNext(){
     if (!this->current){
         throw this->current;
-        cerr << "End of List!"<< endl;
+        std::cerr << "End of List!"<< std::endl;
     }
     E data = this->current->getData();
     this->current = this->current->getNext();
@@ -78,10 +83,10 @@ template <class E> E SimpleIterator<E>::getNext(){
  *
  * @return E SimpleIterator<E>
  */
-template <class E> E SimpleIterator<E>::getCurrent(){
+template <class E> E SimpleIterator<E>::getCurrent() const{
     if (!this->current){
         throw this->current;
-        cerr << "End of List!"<< endl;
+        std::cerr << "End of List!"<< std::endl;
     }
     return this->current->getData();
 }
@@ -91,7 +96,7 @@ template <class E> E SimpleIterator<E>::getCurrent(){
  *
  * @return bool SimpleIterator<E>
  */
-template <class E> bool SimpleIterator<E>::hasNext(){
+template <class E> bool SimpleIterator<E>::hasNext()const{
     if (!this->current){
         return false;
     }

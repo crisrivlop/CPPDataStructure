@@ -114,14 +114,26 @@ $(document).ready(function(){initNavTree('classStack.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a561be1726ac9649a9ee3f80a4ca8e4b5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a561be1726ac9649a9ee3f80a4ca8e4b5"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5">Stack</a> ()</td></tr>
+<tr class="memdesc:a561be1726ac9649a9ee3f80a4ca8e4b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metodo constructor. <br/></td></tr>
+<tr class="separator:a561be1726ac9649a9ee3f80a4ca8e4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af71e3e142fba5bb861b66b4882289b31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#af71e3e142fba5bb861b66b4882289b31">push</a> (E)</td></tr>
+<tr class="memdesc:af71e3e142fba5bb861b66b4882289b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega el dato a la cima de la pila.  <a href="#af71e3e142fba5bb861b66b4882289b31">More...</a><br/></td></tr>
 <tr class="separator:af71e3e142fba5bb861b66b4882289b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ba7a4c8eec39757e28f95da49f06d52"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">pop</a> ()</td></tr>
+<tr class="memdesc:a5ba7a4c8eec39757e28f95da49f06d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Elimina de la pila y retorna el dato de la cima de la pila. En caso de que la pila este vacia se produce un error.  <a href="#a5ba7a4c8eec39757e28f95da49f06d52">More...</a><br/></td></tr>
 <tr class="separator:a5ba7a4c8eec39757e28f95da49f06d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19a17240bf7045cf6a3a9497e1091433"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">peek</a> () const </td></tr>
+<tr class="memdesc:a19a17240bf7045cf6a3a9497e1091433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Revisa el dato en la cima de la pila. En caso de que la pila este vacia se produce un error.  <a href="#a19a17240bf7045cf6a3a9497e1091433">More...</a><br/></td></tr>
 <tr class="separator:a19a17240bf7045cf6a3a9497e1091433"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ce2804f35c0c8cfb999535f35fa438b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">isEmpty</a> ()</td></tr>
+<tr class="memdesc:a0ce2804f35c0c8cfb999535f35fa438b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna verdadero si la pila esta vacia de lo contrario retorna falso.  <a href="#a0ce2804f35c0c8cfb999535f35fa438b">More...</a><br/></td></tr>
 <tr class="separator:a0ce2804f35c0c8cfb999535f35fa438b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08e4c32f07b8d967913f8b1a45f8620"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad08e4c32f07b8d967913f8b1a45f8620"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStack.html#ad08e4c32f07b8d967913f8b1a45f8620">~Stack</a> ()</td></tr>
+<tr class="memdesc:ad08e4c32f07b8d967913f8b1a45f8620"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metodo destructor, borra todos los elementos de la pila. <br/></td></tr>
+<tr class="separator:ad08e4c32f07b8d967913f8b1a45f8620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a0ce2804f35c0c8cfb999535f35fa438b"></a>
@@ -138,9 +150,9 @@ template&lt;class E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>bool</dd>
-<dd>
-bool Stack&lt;E&gt; </dd></dl>
+
+<p>Retorna verdadero si la pila esta vacia de lo contrario retorna falso. </p>
+<dl class="section return"><dt>Returns</dt><dd>bool el valor de verdad de la frase ¿esta vacia la pila? </dd></dl>
 
 </div>
 </div>
@@ -158,9 +170,9 @@ template&lt;class E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>E</dd>
-<dd>
-E Stack&lt;E&gt; </dd></dl>
+
+<p>Revisa el dato en la cima de la pila. En caso de que la pila este vacia se produce un error. </p>
+<dl class="section return"><dt>Returns</dt><dd>E el dato de la cima </dd></dl>
 
 </div>
 </div>
@@ -178,9 +190,9 @@ template&lt;class E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>E</dd>
-<dd>
-E Stack&lt;E&gt; </dd></dl>
+
+<p>Elimina de la pila y retorna el dato de la cima de la pila. En caso de que la pila este vacia se produce un error. </p>
+<dl class="section return"><dt>Returns</dt><dd>E el dato en la cima. </dd></dl>
 
 </div>
 </div>
@@ -199,10 +211,11 @@ template&lt;class E &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Agrega el dato a la cima de la pila. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">E</td><td></td></tr>
-    <tr><td class="paramname">data</td><td></td></tr>
+    <tr><td class="paramname">E</td><td>el dato a agregar. </td></tr>
   </table>
   </dd>
 </dl>
@@ -218,7 +231,7 @@ template&lt;class E &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classStack.html">Stack</a></li>
-    <li class="footer">Generated on Fri Oct 3 2014 23:13:26 for CPPDataStructure by
+    <li class="footer">Generated on Fri Oct 3 2014 23:46:17 for CPPDataStructure by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

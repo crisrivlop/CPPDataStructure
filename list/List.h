@@ -18,10 +18,8 @@ class List : public IList<E>{
      * @return Node<E>
      */
     Node<E>* getNode(int);
-protected:
     Node<E> *head; /**< TODO */
     Node<E> *tail; /**< TODO */
-    //private methods
 
 public:
     /**
@@ -83,8 +81,6 @@ public:
      *
      */
     void print() const;
-    //bool isEmpty() const;
-    //int getLenght() const;
     /**
      * @brief
      *
@@ -272,10 +268,10 @@ template <class E> SimpleIterator<E>* List<E>:: getIterator(){
 template <class E> void List<E>::print() const{
     if (this->lenght > 0){
         Node<E> *actualNode = head;
-        std::cout << "[ ";
+        std::cout << "[";
         for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
             actualNode->print();
-            std::cout << ", ";
+            std::cout << ",";
             actualNode = actualNode->getNext();
         }
         actualNode->print();

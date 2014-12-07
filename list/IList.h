@@ -1,11 +1,8 @@
+#include "IIterator.h"
 #ifndef ILIST_H
 #define ILIST_H
 
 template <class E>
-/**
- * @brief
- *
- */
 /**
  * @brief
  *
@@ -15,138 +12,83 @@ class IList
 protected:
     int lenght; /**< TODO */ /**< TODO */
 public:
+
     /**
-     * @brief
-     *
-     * @param E
-     */
-    /**
-     * @brief
+     * @brief addi
      *
      * @param E
      */
     virtual void addi(E) = 0;
+
     /**
-     * @brief
-     *
-     * @param E
-     */
-    /**
-     * @brief
+     * @brief add
      *
      * @param E
      */
     virtual void add(E) = 0;
+
     /**
-     * @brief
-     *
-     * @param E
-     * @param int
-     * @return bool
-     */
-    /**
-     * @brief
+     * @brief add
      *
      * @param E
      * @param int
      * @return bool
      */
     virtual bool add(E,int) = 0;
+
     /**
-     * @brief
-     *
-     * @param int
-     * @return bool
-     */
-    /**
-     * @brief
+     * @brief remove
      *
      * @param int
      * @return bool
      */
     virtual bool remove(int) = 0;
+
     /**
-     * @brief
-     *
-     * @param int
-     * @param E
-     */
-    /**
-     * @brief
+     * @brief set
      *
      * @param int
      * @param E
      */
     virtual void set(int,E) = 0;
+
     /**
-     * @brief
-     *
+     * @brief get
      * @param int
-     * @return E
-     */
-    /**
-     * @brief
-     *
-     * @param int
-     * @return E
+     * @return
      */
     virtual E get(int) = 0;
+
     /**
-     * @brief
-     *
-     * @return int
-     */
-    /**
-     * @brief
-     *
-     * @return int
+     * @brief getLenght
+     * @return
      */
     int getLenght() const;
-    //virtual Iterator getIterator() = 0;
-    //virtual setComparator(IComparator) = 0;
-    //virtual IComparator getComparator() = 0;
     /**
-     * @brief
-     *
-     * @return bool
+     * @brief getIterator
+     * @return
      */
+    virtual IIterator<E>* getIterator() = 0;
+
     /**
      * @brief
      *
      * @return bool
      */
     bool isEmpty() const;
+
     /**
-     * @brief
-     *
-     */
-    /**
-     * @brief
-     *
+     * @brief print
      */
     virtual void print() const = 0;
+    /**
+     * @brief ~IList
+     */
+    virtual ~IList(){}
 };
 
-/**
- * @brief
- *
- * @return int IList<E>
- */
-/**
- * @brief
- *
- * @return int IList<E>
- */
+
 template <class E> int IList<E>:: getLenght() const{return lenght;}
-/**
- * @brief
- *
- * @return bool IList<E>
- */
-/**
- * @brief
- *
- * @return bool IList<E>
- */
+
 template <class E> bool IList<E>:: isEmpty() const {return lenght == 0;}
 #endif // ILIST_H

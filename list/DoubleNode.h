@@ -51,6 +51,8 @@ public:
      * @return DoubleNode<E>
      */
     DoubleNode<E>* getNext()const;
+
+
     /**
      * @brief
      *
@@ -63,6 +65,8 @@ public:
      * @return DoubleNode<E>
      */
     DoubleNode<E>* getPrevious()const;
+
+
     /**
      * @brief
      *

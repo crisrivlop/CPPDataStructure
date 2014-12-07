@@ -1,5 +1,7 @@
-#include "list/IList.h"
-#include "list/DoubleNode.h"
+#include "IList.h"
+#include "DoubleNode.h"
+#include "DoubleIterator.h"
+#include "InverseIterator.h"
 #include "iostream"
 #define Null 0
 #ifndef DOUBLELIST_H
@@ -12,8 +14,10 @@ template <class E>
  */
 class DoubleList : public IList<E>
 {
+
     DoubleNode<E> *head; /**< TODO */
     DoubleNode<E> *tail; /**< TODO */
+    bool inverseIterate;
     /**
      * @brief
      *
@@ -69,16 +73,19 @@ public:
      * @return E
      */
     E get(int);
-    //virtual Iterator getIterator() = 0;
+    /**
+     * @brief getIterator
+     * @return DoubleListIterator
+     */
+    IIterator<E>* getIterator();
     //virtual setComparator(IComparator) = 0;
+    void inverseIteration(bool);
     //virtual IComparator getComparator() = 0;
     /**
      * @brief
      *
      */
     void print() const;
-    //bool isEmpty() const;
-    //int getLenght() const;
     /**
      * @brief
      *
@@ -90,7 +97,7 @@ public:
  * @brief
  *
  * @param index
- * @return DoubleNode<E> *DoubleList<E>
+ * @return DoubleNode<E>*
  */
 template <class E> DoubleNode<E>* DoubleList<E>::getNode(int index){
         DoubleNode<E> *actualNode = head;
@@ -118,6 +125,7 @@ template <class E> DoubleList<E>::DoubleList(){
     tail = Null;
     head = Null;
     this->lenght = 0;
+    inverseIterate = false;
 }
 
 /**
@@ -264,9 +272,27 @@ template <class E> E DoubleList<E>::get(int index){
     else{
         std::cerr << "index out bounds\n";
         throw index;
-
     }
 }
+
+template <class E> IIterator<E>* DoubleList<E>::getIterator()
+{
+    IIterator<E> *iterator = 0;
+    if (inverseIterate){
+        InverseIterator<E> *inverseIterator = new InverseIterator<E>(head,tail);
+        iterator = inverseIterator;
+    }
+    else{
+        DoubleIterator<E> *doubleIterator = new DoubleIterator<E>(head,tail);
+        iterator = doubleIterator;
+    }
+
+    return iterator;
+}
+template <class E> void DoubleList<E>::inverseIteration(bool inverse){
+    inverseIterate = inverse;
+}
+
 /**
  * @brief
  *
@@ -274,11 +300,11 @@ template <class E> E DoubleList<E>::get(int index){
 template <class E> void DoubleList<E>::print() const{
     if (head){
         DoubleNode<E> *actualNode = head;
-        std::cout << "[ ";
+        std::cout << "[";
 
         for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
             actualNode->print();
-            std::cout << ", ";
+            std::cout << ",";
             actualNode = actualNode->getNext();
         }
         actualNode->print();

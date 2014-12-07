@@ -1,4 +1,4 @@
-#include "list/Node.h"
+#include "../list/Node.h"
 
 #ifndef STACK_H
 #define STACK_H
@@ -19,61 +19,54 @@ private:
 public:
     /**
      * @brief
-     *
+     * Metodo constructor
      */
     Stack();
     /**
      * @brief
-     *
-     * @param E
+     * Agrega el dato a la cima de la pila.
+     * @param E el dato a agregar.
      */
     void push(E);
     /**
      * @brief
-     *
-     * @return E
+     * Elimina de la pila y retorna el dato de la cima de la pila. En caso de que la pila
+     * este vacia se produce un error.
+     * @return E el dato en la cima.
      */
     E pop();
     /**
      * @brief
-     *
-     * @return E
+     * Revisa el dato en la cima de la pila. En caso de que la pila
+     * este vacia se produce un error.
+     * @return E el dato de la cima
      */
     E peek()const;
     /**
      * @brief
-     *
-     * @return bool
+     * Retorna verdadero si la pila esta vacia de lo contrario retorna falso.
+     * @return bool el valor de verdad de la frase ¿esta vacia la pila?
      */
     bool isEmpty();
     /**
      * @brief
-     *
+     * Metodo destructor, borra todos los elementos de la pila.
      */
     virtual ~Stack();
 };
 
-/**
- * @brief
- *
- */
+
 template <class E> Stack<E>::Stack(){_top = Null;}
 
-/**
- * @brief
- *
- * @param data
- */
+
+
 template <class E> void Stack<E>::push(E data){
         Node<E> *tmp = new Node<E>(data,_top);
         _top = tmp;
 }
 
-/**
- * @brief
- *
- * @return E Stack<E>
- */
+
+
 template <class E> E Stack<E>::pop(){
     if (!_top){
         cerr<< "Empty Stack!"<< endl;
@@ -86,11 +79,8 @@ template <class E> E Stack<E>::pop(){
     return data;
 }
 
-/**
- * @brief
- *
- * @return E Stack<E>
- */
+
+
 template <class E> E Stack<E>::peek()const{
     if (_top != Null){
         return _top->getData();
@@ -99,19 +89,16 @@ template <class E> E Stack<E>::peek()const{
     throw _top;
 }
 
-/**
- * @brief
- *
- * @return bool Stack<E>
- */
+
+
+
 template <class E> bool Stack<E>::isEmpty(){
     return !_top;
 }
 
-/**
- * @brief
- *
- */
+
+
+
 template <class E> Stack<E>::~Stack() {
     // TODO Auto-generated destructor stub
     Node<E> *actual = _top;

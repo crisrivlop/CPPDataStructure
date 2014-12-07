@@ -9,7 +9,5 @@ var classList =
     [ "getIterator", "classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb", null ],
     [ "print", "classList.html#ad2201bc77b15291f215523ecc96705dc", null ],
     [ "remove", "classList.html#a46cec78299d3e23469276adf46adf9c1", null ],
-    [ "set", "classList.html#ac8b31be96806bd56f655436629ac2e7a", null ],
-    [ "head", "classList.html#ae3829eca87a5040cca1ae9e0dc40b768", null ],
-    [ "tail", "classList.html#a6008ce8286d474397d0ce5847f819783", null ]
+    [ "set", "classList.html#ac8b31be96806bd56f655436629ac2e7a", null ]
 ];

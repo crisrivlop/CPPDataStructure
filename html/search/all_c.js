@@ -5,5 +5,5 @@ var searchData=
   ['setnext',['setNext',['../classDoubleNode.html#aba52422e27040e524ba629445e9d8b93',1,'DoubleNode::setNext()'],['../classNode.html#a2ce12b4f2605972720e1c56fe80014a0',1,'Node::setNext()']]],
   ['setprevious',['setPrevious',['../classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d',1,'DoubleNode']]],
   ['simpleiterator',['SimpleIterator',['../classSimpleIterator.html',1,'']]],
-  ['stack',['Stack',['../classStack.html',1,'']]]
+  ['stack',['Stack',['../classStack.html',1,'Stack&lt; E &gt;'],['../classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5',1,'Stack::Stack()']]]
 ];

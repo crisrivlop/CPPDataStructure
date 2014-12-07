@@ -1,5 +1,6 @@
 #include "list/IList.h"
 #include "list/Node.h"
+#include "SimpleIterator.h"
 
 #ifndef CIRCULARLIST_H
 #define CIRCULARLIST_H
@@ -13,7 +14,7 @@ template <class E>
  * @brief
  *
  */
-class CircularList : IList<E>{
+class CircularList :public IList<E>{
     Node<E> *head,*tail; /**< TODO */
     /**
      * @brief
@@ -70,7 +71,7 @@ public:
      * @return E
      */
     E get(int);
-    //virtual Iterator getIterator() = 0;
+    IIterator<E>* getIterator();
     //virtual setComparator(IComparator) = 0;
     //virtual IComparator getComparator() = 0;
     /**
@@ -303,6 +304,13 @@ template <class E> E CircularList<E>::get(int index){
             std::cerr << "index out bounds";
             throw index;
         }
+}
+
+template <class E> IIterator<E>* CircularList<E>::getIterator(){
+    IIterator<E> *it = 0;
+    SimpleIterator<E> *iterador = new SimpleIterator<E>(this->head, this->tail);
+    it = iterador;
+    return it;
 }
 
 /**

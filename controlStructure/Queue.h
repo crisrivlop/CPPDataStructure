@@ -17,24 +17,24 @@ private:
 public:
     /**
      * @brief
-     *
+     * Metodo constructor
      */
     Queue();
     /**
      * @brief
-     *
-     * @param data
+     * Agrega de ultimo el dato a encolar.
+     * @param data el dato a encolar
      */
     void enqueue(E data);
     /**
      * @brief
-     *
-     * @return E
+     * Elimina el primer nodo encolado.
+     * @return E el dato desencolado
      */
     E dequeue();
     /**
      * @brief
-     *
+     * Retorna verdadero si la pila esta vacia, de lo contrario retorna falso.
      * @return bool
      */
     bool isEmpty();

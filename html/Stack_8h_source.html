@@ -122,70 +122,85 @@ $(document).ready(function(){initNavTree('Stack_8h_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classStack.html">Stack</a>();</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> push(E);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    E pop();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    E peek()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> isEmpty();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classStack.html">Stack</a>();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <a class="code" href="classStack.html">Stack&lt;E&gt;::Stack</a>(){_top = Null;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    E pop();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    E peek()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">bool</span> isEmpty();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classStack.html">Stack</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5">   59</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <a class="code" href="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5">Stack&lt;E&gt;::Stack</a>(){_top = Null;}</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classStack.html#af71e3e142fba5bb861b66b4882289b31">   67</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">void</span> <a class="code" href="classStack.html#af71e3e142fba5bb861b66b4882289b31">Stack&lt;E&gt;::push</a>(E data){</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tmp = <span class="keyword">new</span> <a class="code" href="classNode.html">Node&lt;E&gt;</a>(data,_top);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        _top = tmp;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">   77</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; E <a class="code" href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">Stack&lt;E&gt;::pop</a>(){</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (!_top){</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        cerr&lt;&lt; <span class="stringliteral">&quot;Empty Stack!&quot;</span>&lt;&lt; endl;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keywordflow">throw</span> _top;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tmp = _top;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    _top = _top-&gt;<a class="code" href="classNode.html#aeb063e5172867e988550ab7d6c280db7">getNext</a>();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    E data = tmp-&gt;<a class="code" href="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce">getData</a>();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">delete</span> tmp;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> data;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">   94</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; E <a class="code" href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">Stack&lt;E&gt;::peek</a>()<span class="keyword">const</span>{</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (_top != Null){</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">return</span> _top-&gt;getData();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    cerr&lt;&lt; <span class="stringliteral">&quot;Empty Stack!&quot;</span>&lt;&lt; endl;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">throw</span> _top;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classStack.html#af71e3e142fba5bb861b66b4882289b31">   63</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">void</span> <a class="code" href="classStack.html#af71e3e142fba5bb861b66b4882289b31">Stack&lt;E&gt;::push</a>(E data){</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tmp = <span class="keyword">new</span> <a class="code" href="classNode.html">Node&lt;E&gt;</a>(data,_top);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        _top = tmp;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">   70</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; E <a class="code" href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">Stack&lt;E&gt;::pop</a>(){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">if</span> (!_top){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        cerr&lt;&lt; <span class="stringliteral">&quot;Empty Stack!&quot;</span>&lt;&lt; endl;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">throw</span> _top;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tmp = _top;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    _top = _top-&gt;<a class="code" href="classNode.html#aeb063e5172867e988550ab7d6c280db7">getNext</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    E data = tmp-&gt;<a class="code" href="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce">getData</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keyword">delete</span> tmp;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> data;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">   84</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; E <a class="code" href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">Stack&lt;E&gt;::peek</a>()<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (_top != Null){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> _top-&gt;getData();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    cerr&lt;&lt; <span class="stringliteral">&quot;Empty Stack!&quot;</span>&lt;&lt; endl;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">throw</span> _top;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">   95</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">bool</span> <a class="code" href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">Stack&lt;E&gt;::isEmpty</a>(){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> !_top;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">  107</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">bool</span> <a class="code" href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">Stack&lt;E&gt;::isEmpty</a>(){</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> !_top;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <a class="code" href="classStack.html">Stack&lt;E&gt;::~Stack</a>() {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *actual = _top;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tmp;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">while</span>(actual){</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        tmp = actual-&gt;<a class="code" href="classNode.html#aeb063e5172867e988550ab7d6c280db7">getNext</a>();</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">delete</span> actual;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        actual = tmp;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    }</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif // STACK_H</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classStack.html#ad08e4c32f07b8d967913f8b1a45f8620">  102</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <a class="code" href="classStack.html#ad08e4c32f07b8d967913f8b1a45f8620">Stack&lt;E&gt;::~Stack</a>() {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="comment">// TODO Auto-generated destructor stub</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *actual = _top;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tmp;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">while</span>(actual){</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        tmp = actual-&gt;<a class="code" href="classNode.html#aeb063e5172867e988550ab7d6c280db7">getNext</a>();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keyword">delete</span> actual;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        actual = tmp;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif // STACK_H</span></div>
+<div class="ttc" id="classStack_html_a561be1726ac9649a9ee3f80a4ca8e4b5"><div class="ttname"><a href="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5">Stack::Stack</a></div><div class="ttdeci">Stack()</div><div class="ttdoc">Metodo constructor. </div><div class="ttdef"><b>Definition:</b> Stack.h:59</div></div>
+<div class="ttc" id="classStack_html_ad08e4c32f07b8d967913f8b1a45f8620"><div class="ttname"><a href="classStack.html#ad08e4c32f07b8d967913f8b1a45f8620">Stack::~Stack</a></div><div class="ttdeci">virtual ~Stack()</div><div class="ttdoc">Metodo destructor, borra todos los elementos de la pila. </div><div class="ttdef"><b>Definition:</b> Stack.h:102</div></div>
 <div class="ttc" id="classNode_html_aeb063e5172867e988550ab7d6c280db7"><div class="ttname"><a href="classNode.html#aeb063e5172867e988550ab7d6c280db7">Node::getNext</a></div><div class="ttdeci">Node&lt; E &gt; * getNext() const </div><div class="ttdef"><b>Definition:</b> Node.h:105</div></div>
-<div class="ttc" id="classStack_html_af71e3e142fba5bb861b66b4882289b31"><div class="ttname"><a href="classStack.html#af71e3e142fba5bb861b66b4882289b31">Stack::push</a></div><div class="ttdeci">void push(E)</div><div class="ttdef"><b>Definition:</b> Stack.h:67</div></div>
+<div class="ttc" id="classStack_html_af71e3e142fba5bb861b66b4882289b31"><div class="ttname"><a href="classStack.html#af71e3e142fba5bb861b66b4882289b31">Stack::push</a></div><div class="ttdeci">void push(E)</div><div class="ttdoc">Agrega el dato a la cima de la pila. </div><div class="ttdef"><b>Definition:</b> Stack.h:63</div></div>
 <div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdef"><b>Definition:</b> Node.h:9</div></div>
-<div class="ttc" id="classStack_html_a5ba7a4c8eec39757e28f95da49f06d52"><div class="ttname"><a href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">Stack::pop</a></div><div class="ttdeci">E pop()</div><div class="ttdef"><b>Definition:</b> Stack.h:77</div></div>
-<div class="ttc" id="classStack_html_a19a17240bf7045cf6a3a9497e1091433"><div class="ttname"><a href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">Stack::peek</a></div><div class="ttdeci">E peek() const </div><div class="ttdef"><b>Definition:</b> Stack.h:94</div></div>
+<div class="ttc" id="classStack_html_a5ba7a4c8eec39757e28f95da49f06d52"><div class="ttname"><a href="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52">Stack::pop</a></div><div class="ttdeci">E pop()</div><div class="ttdoc">Elimina de la pila y retorna el dato de la cima de la pila. En caso de que la pila este vacia se prod...</div><div class="ttdef"><b>Definition:</b> Stack.h:70</div></div>
+<div class="ttc" id="classStack_html_a19a17240bf7045cf6a3a9497e1091433"><div class="ttname"><a href="classStack.html#a19a17240bf7045cf6a3a9497e1091433">Stack::peek</a></div><div class="ttdeci">E peek() const </div><div class="ttdoc">Revisa el dato en la cima de la pila. En caso de que la pila este vacia se produce un error...</div><div class="ttdef"><b>Definition:</b> Stack.h:84</div></div>
 <div class="ttc" id="classStack_html"><div class="ttname"><a href="classStack.html">Stack</a></div><div class="ttdef"><b>Definition:</b> Stack.h:16</div></div>
 <div class="ttc" id="classNode_html_a02a4e5126542aaa1a2150932cfa2b8ce"><div class="ttname"><a href="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce">Node::getData</a></div><div class="ttdeci">E getData() const </div><div class="ttdef"><b>Definition:</b> Node.h:93</div></div>
-<div class="ttc" id="classStack_html_a0ce2804f35c0c8cfb999535f35fa438b"><div class="ttname"><a href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">Stack::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdef"><b>Definition:</b> Stack.h:107</div></div>
+<div class="ttc" id="classStack_html_a0ce2804f35c0c8cfb999535f35fa438b"><div class="ttname"><a href="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b">Stack::isEmpty</a></div><div class="ttdeci">bool isEmpty()</div><div class="ttdoc">Retorna verdadero si la pila esta vacia de lo contrario retorna falso. </div><div class="ttdef"><b>Definition:</b> Stack.h:95</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_4841d09be2dbef066dd403feeca5ac76.html">controlStructure</a></li><li class="navelem"><b>Stack.h</b></li>
-    <li class="footer">Generated on Fri Oct 3 2014 23:13:26 for CPPDataStructure by
+    <li class="footer">Generated on Fri Oct 3 2014 23:46:16 for CPPDataStructure by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

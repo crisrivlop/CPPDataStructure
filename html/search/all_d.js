@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['tail',['tail',['../classList.html#a6008ce8286d474397d0ce5847f819783',1,'List']]]
+  ['_7estack',['~Stack',['../classStack.html#ad08e4c32f07b8d967913f8b1a45f8620',1,'Stack']]]
 ];

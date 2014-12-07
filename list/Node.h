@@ -48,6 +48,7 @@ public:
      * @return Node<E>
      */
     Node<E>* getNext()const;
+
     /**
      * @brief
      *
@@ -108,6 +109,7 @@ template <class E> Node<E>* Node<E>::getNext()const {return this->next;}
  *
  */
 template <class E> void Node<E>::print() const{std::cout << data;}
+
 /**
  * @brief
  *
