@@ -2,29 +2,29 @@ var NAVTREE =
 [
   [ "CPPDataStructure", "index.html", [
     [ "Project CPPDataStructure", "md_README.html", null ],
-    [ "Classes", null, [
-      [ "Class List", "annotated.html", "annotated" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ],
+    [ "Clases", null, [
+      [ "Lista de clases", "annotated.html", "annotated" ],
+      [ "Índice de clases", "classes.html", null ],
+      [ "Jerarquía de la clase", "hierarchy.html", "hierarchy" ],
+      [ "Miembros de las clases", "functions.html", [
+        [ "Todo", "functions.html", null ],
+        [ "Funciones", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
-    [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+    [ "Archivos", null, [
+      [ "Lista de archivos", "files.html", "files" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"CircularList_8h_source.html"
+"BNode_8h_source.html"
 ];
 
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var SYNCONMSG = 'click en deshabilitar sincronización';
+var SYNCOFFMSG = 'click en habilitar sincronización';
 var SYNCONMSG = 'click to disable panel synchronisation';
 var SYNCOFFMSG = 'click to enable panel synchronisation';
 var navTreeSubIndices = new Array();

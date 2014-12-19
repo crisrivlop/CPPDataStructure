@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['peek',['peek',['../classStack.html#a19a17240bf7045cf6a3a9497e1091433',1,'Stack']]],
-  ['pop',['pop',['../classStack.html#a5ba7a4c8eec39757e28f95da49f06d52',1,'Stack']]],
-  ['push',['push',['../classStack.html#af71e3e142fba5bb861b66b4882289b31',1,'Stack']]]
+  ['inverseiteration',['inverseIteration',['../classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b',1,'DoubleCircularList']]],
+  ['isempty',['isEmpty',['../classQueue.html#ab652261bbb405ecc84a80ff5d7139de7',1,'Queue::isEmpty()'],['../classStack.html#a0ce2804f35c0c8cfb999535f35fa438b',1,'Stack::isEmpty()'],['../classIList.html#ad21f4969c574c87a4715d45496d81d5c',1,'IList::isEmpty()']]],
+  ['isexploding',['isExploding',['../classBNode.html#ac10d387a2400fcc956719b2c1816b54c',1,'BNode']]]
 ];

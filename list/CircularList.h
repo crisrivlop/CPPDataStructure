@@ -8,80 +8,105 @@
 //===========================================================================
 //==================== Declaration of Circular List =========================
 //===========================================================================
+
 template <class E>
 
 /**
  * @brief
+ * Esta clase es una estructura de datos especificamente
+ * una lista enlazada circular simple que puede contener cualquier tipo de dato
+ * solamente definiciendolo mediante el template de esta clase. se puede agregar y borrar
+ * el dato.
  *
  */
 class CircularList :public IList<E>{
     Node<E> *head,*tail; /**< TODO */
     /**
      * @brief
-     *
-     * @param int
-     * @return Node<E>
+     * Es un metodo interno de esta clase que permite obtener un nodo mediante su indice.
+     * @param index el indice indicado que permite buscar el nodo, tiene que ser un numero
+     * entero mayor o igual que cero y menor al largo de la lista.
+     * @return Node<E> un puntero del nodo buscado, en caso de que el indice exista.
      */
     Node<E>* getNode(int);
 
 public:
     /**
      * @brief
-     *
+     * Es el constructor de la lista circular simple.
      */
     CircularList();
     /**
      * @brief
+     * Agrega un elemento al principio de la lista.
      *
-     * @param E
+     * @param data el elemento a agregar
      */
     void addi(E);
     /**
      * @brief
-     *
-     * @param E
+     * Agregar un elemento al final de la lista.
+     * @param data el elemento a agregar
      */
     void add(E);
     /**
      * @brief
+     * Agrega el elemento en el indice indicado. Si el indice es incorrecto no se agrega el
+     * elemento.
      *
-     * @param E
-     * @param int
-     * @return bool
+     * @param dato el elemento a agregar
+     * @param index el indice que indica el lugar donde se agregara
+     * @return si el elemento se agrega retorna true, en caso contrario retorna false
      */
     bool add(E,int);
     /**
      * @brief
+     * Remueve el dato en la posicion indicada por el parametro, en caso que el indice
+     * indicado sea incorrecto, osea que sea menor que cero o mayor o igual que
+     * el largo de la lista no alterara la lista.
      *
-     * @param int
-     * @return bool
+     * @param index la posicion indicada del objeto a borrar
+     * @return true si borra algo, false si el indice indicado es incorrecto
      */
     bool remove(int);
     /**
      * @brief
-     *
-     * @param int
-     * @param E
+     * Setea el valor del dato que se encuentre en el indice citado con un nuevo valor.
+     * @param int el indice en el que se encuetra el dato
+     * @param E el dato por el que se cambiara
      */
     void set(int,E);
     /**
      * @brief
+     * Obtiene un dato el la posicion indicada.
+     * En caso que el indice indicado sea incorrecto, osea que sea menor que cero o
+     * mayor o igual que el largo de la lista arrojara un error pues el dato esta fuera
+     * de los limites de la lista.
      *
-     * @param int
-     * @return E
+     * @param index el indice indicado
+     * @return E el dato buscado por el indice indicado
+     * @throw indexoutbounds fuera de rango
      */
     E get(int);
+    /**
+     * @brief
+     * Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse
+     * cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante
+     * la palabra reservada delete.
+     * @return IIterator<E> un puntero de0l iterador indicado
+     */
     IIterator<E>* getIterator();
     //virtual setComparator(IComparator) = 0;
     //virtual IComparator getComparator() = 0;
     /**
      * @brief
+     * Imprime la lista en consola, es recomendable no imprimirla si la lista es muy grande.
      *
      */
     void print() const;
     /**
      * @brief
-     *
+     * Es el destructor de la lista.
      */
     virtual ~CircularList();
 };
@@ -104,22 +129,7 @@ public:
 //===========================================================================
 
 
-/*
- * @brief CircularList::getNode()
- * @param index
- */
-/**
- * @brief
- *
- * @param index
- * @return Node<E> *CircularList<E>
- */
-/**
- * @brief
- *
- * @param index
- * @return Node<E> *CircularList<E>
- */
+
 template <class E> Node<E>* CircularList<E>::getNode(int index){
     Node<E> *actualNode = head;
     for (int from = 0; from <index; from++){
@@ -128,16 +138,6 @@ template <class E> Node<E>* CircularList<E>::getNode(int index){
     return actualNode;
 }
 
-/**
- * @brief
- *
- * @param data
- */
-/**
- * @brief
- *
- * @param data
- */
 template <class E> void CircularList<E>::addi(E data){
         if(head == Null){
             head = new Node<E>(data);
@@ -152,16 +152,6 @@ template <class E> void CircularList<E>::addi(E data){
         this->lenght++;
 }
 
-/**
- * @brief
- *
- * @param data
- */
-/**
- * @brief
- *
- * @param data
- */
 template <class E> void CircularList<E>::add(E data){
         if (head == Null){
             head = new Node<E>(data);
@@ -176,20 +166,6 @@ template <class E> void CircularList<E>::add(E data){
         this->lenght++;
 }
 
-/**
- * @brief
- *
- * @param data
- * @param index
- * @return bool CircularList<E>
- */
-/**
- * @brief
- *
- * @param data
- * @param index
- * @return bool CircularList<E>
- */
 template <class E> bool CircularList<E>::add(E data,int index){
     if (0 <= index && index <= this->lenght){
         if (index == 0){
@@ -214,18 +190,6 @@ template <class E> bool CircularList<E>::add(E data,int index){
 
 }
 
-/**
- * @brief
- *
- * @param index
- * @return bool CircularList<E>
- */
-/**
- * @brief
- *
- * @param index
- * @return bool CircularList<E>
- */
 template <class E> bool CircularList<E>::remove(int index){
         if (0 <= index && index < this->lenght){
             if(this->lenght == 1){
@@ -261,18 +225,6 @@ template <class E> bool CircularList<E>::remove(int index){
         }
 }
 
-/**
- * @brief
- *
- * @param index
- * @param data
- */
-/**
- * @brief
- *
- * @param index
- * @param data
- */
 template <class E> void CircularList<E>::set(int index,E data){
         if (0 <= index && index < this->lenght){
             getNode(index)->setData(data);
@@ -284,18 +236,6 @@ template <class E> void CircularList<E>::set(int index,E data){
         }
 }
 
-/**
- * @brief
- *
- * @param index
- * @return E CircularList<E>
- */
-/**
- * @brief
- *
- * @param index
- * @return E CircularList<E>
- */
 template <class E> E CircularList<E>::get(int index){
         if (0 <= index && index < this->lenght){
             return getNode(index)->getData();
@@ -313,14 +253,6 @@ template <class E> IIterator<E>* CircularList<E>::getIterator(){
     return it;
 }
 
-/**
- * @brief
- *
- */
-/**
- * @brief
- *
- */
 template <class E> void CircularList<E>::print() const{
     if (this->lenght > 0){
         Node<E> *actualNode = head;
@@ -337,14 +269,7 @@ template <class E> void CircularList<E>::print() const{
         std::cout << "[]" << std::endl;
     }
 }
-/**
- * @brief
- *
- */
-/**
- * @brief
- *
- */
+
 template <class E> CircularList<E>::~CircularList(){
     Node<E> *actualNode = head;
     std::cout << "Deleting CircularList...\n";
@@ -356,18 +281,15 @@ template <class E> CircularList<E>::~CircularList(){
     }
     std::cout << "CircularList deleted!\n";
 }
-/**
- * @brief
- *
- */
-/**
- * @brief
- *
- */
+
 template <class E> CircularList<E>::CircularList() {
     tail = Null;
     head = Null;
     this->lenght = 0;
 }
+
+//===========================================================================
+//========================= END OF IMPLEMENTATION ===========================
+//===========================================================================
 
 #endif // CIRCULARLIST_H

@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>com.crisferlop.cppdatastructure</namespace>
+  <virtualFolder>ogre3d-1.9</virtualFolder>
+  <filterSection>
+    <filterAttribute>doxygen</filterAttribute>
+    <toc>
+      <section title="CPPDataStructure" ref="index.html">
+        <section title="Project CPPDataStructure" ref="md_README.html" />
+        <section title="Clases">
+          <section title="Lista de clases" ref="annotated.html">
+            <section title="BNode" ref="classBNode.html">
+              <section title="BNode" ref="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9" />
+              <section title="BNode" ref="classBNode.html#a75ca826e991a8e57cb67748ab03aea77" />
+              <section title="~BNode" ref="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4" />
+              <section title="addValue" ref="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae" />
+              <section title="getChilds" ref="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d" />
+              <section title="getCurrentLenghtData" ref="classBNode.html#a8af2d0b3078416d0cd7459addf63876f" />
+              <section title="getLenghtOfChilds" ref="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1" />
+              <section title="getLenghtToExplode" ref="classBNode.html#a03d3802d7b1d173e051378692a6b8687" />
+              <section title="getMaximumValue" ref="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca" />
+              <section title="getMinimumValue" ref="classBNode.html#ab81e066860a4d57a419dc594e8fc3914" />
+              <section title="getValues" ref="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380" />
+              <section title="isExploding" ref="classBNode.html#ac10d387a2400fcc956719b2c1816b54c" />
+              <section title="isLeaf" ref="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e" />
+              <section title="print" ref="classBNode.html#a4cfbe2867e900577efc3836fd207b008" />
+              <section title="setLeftChild" ref="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601" />
+              <section title="setRightChild" ref="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3" />
+            </section>
+            <section title="BTree" ref="classBTree.html">
+              <section title="BTree" ref="classBTree.html#a7b77da63d8a36748b641ec7d7eb1ca7d" />
+              <section title="~BTree" ref="classBTree.html#a36dace749e13380c0271dd0ef9899a06" />
+              <section title="insert" ref="classBTree.html#aa23d18780a9491c5734bf2cb40330905" />
+              <section title="print" ref="classBTree.html#a98a7b173fd34c602682989ac31ca08e2" />
+              <section title="remove" ref="classBTree.html#a7b0b5e717616c2f2349587eae5fe3e13" />
+              <section title="search" ref="classBTree.html#a45bcd8774b4bc322479bbd7d4a7ecbc4" />
+              <section title="ostream" ref="classBTree.html#a900712b11e08ae40dad9e80a6d380142" />
+            </section>
+            <section title="CircularList" ref="classCircularList.html">
+              <section title="CircularList" ref="classCircularList.html#aad23571a808ede6fc0432dca645ab2ca" />
+              <section title="~CircularList" ref="classCircularList.html#aa65c9665b7d36a5e609752cad0a35dbb" />
+              <section title="add" ref="classCircularList.html#a892b493309f36fb083fdd257388cfa36" />
+              <section title="add" ref="classCircularList.html#af184d3ac2e3bba683a44a6cc19392b12" />
+              <section title="addi" ref="classCircularList.html#a6de0a0af406c738b95b0a6d898b69f8e" />
+              <section title="get" ref="classCircularList.html#ad6783339c7ff05841fc62f74f809644d" />
+              <section title="getIterator" ref="classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e" />
+              <section title="print" ref="classCircularList.html#ad49a3216e39d960d995fb93b87f18856" />
+              <section title="remove" ref="classCircularList.html#a4a6acfd818a0ae9055957ec80258c60a" />
+              <section title="set" ref="classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3" />
+            </section>
+            <section title="DoubleCircularList" ref="classDoubleCircularList.html">
+              <section title="DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
+              <section title="~DoubleCircularList" ref="classDoubleCircularList.html#a26dba8b85983742cfbf38886245fe2a4" />
+              <section title="add" ref="classDoubleCircularList.html#a7691d38e77ea44d222c465f27e7d05b6" />
+              <section title="add" ref="classDoubleCircularList.html#a6d76f7045dd9997f55c6c2feb80678da" />
+              <section title="addi" ref="classDoubleCircularList.html#aec3cb982a2b9def7eb254ef206101e28" />
+              <section title="get" ref="classDoubleCircularList.html#aa00bc8fd524af1ba208f85d8816dec52" />
+              <section title="getIterator" ref="classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad" />
+              <section title="inverseIteration" ref="classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b" />
+              <section title="print" ref="classDoubleCircularList.html#a56330353baf42afa3c49e2ade77c9e07" />
+              <section title="remove" ref="classDoubleCircularList.html#ae7ed8b6714720cb7daafa639f232ecc3" />
+              <section title="set" ref="classDoubleCircularList.html#a95e0f27bda1158233015ee3ff27b3ade" />
+            </section>
+            <section title="DoubleIterator" ref="classDoubleIterator.html">
+              <section title="DoubleIterator" ref="classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc" />
+              <section title="getCurrent" ref="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be" />
+              <section title="getNext" ref="classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198" />
+              <section title="hasNext" ref="classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed" />
+              <section title="DoubleList" ref="classDoubleIterator.html#ad435a9844a002995926acf522128f7a8" />
+            </section>
+            <section title="DoubleList" ref="classDoubleList.html">
+              <section title="DoubleList" ref="classDoubleList.html#ab54db9c718c7188f9413ef2b9982dd43" />
+              <section title="~DoubleList" ref="classDoubleList.html#a11ce233388fea7a5722a7d57cea400a3" />
+              <section title="add" ref="classDoubleList.html#adb96e6908d3d564722225b848350aa82" />
+              <section title="add" ref="classDoubleList.html#a84e3bb8be7d67b43dd3b63d5a47f80ed" />
+              <section title="addi" ref="classDoubleList.html#a9924458cf1416df8243b4f857b027da7" />
+              <section title="get" ref="classDoubleList.html#a230a8c9c574abe9c72f8daae35127d9c" />
+              <section title="getIterator" ref="classDoubleList.html#aa14e383a97e054016a6c5178165b20df" />
+              <section title="inverseIteration" ref="classDoubleList.html#a94d1ad5299452ea46839ba350ca501d1" />
+              <section title="print" ref="classDoubleList.html#ad3bf004a9bb2110da93fed1f1224d60e" />
+              <section title="remove" ref="classDoubleList.html#a844c2c4c3b8260bd58ab94307359fb62" />
+              <section title="set" ref="classDoubleList.html#a3c95ac3c3190b347c4a343776264bf67" />
+            </section>
+            <section title="DoubleNode" ref="classDoubleNode.html">
+              <section title="DoubleNode" ref="classDoubleNode.html#a915ac8a626f09ec53db64b7c5b294b2d" />
+              <section title="DoubleNode" ref="classDoubleNode.html#a53d29dbf397d39b420f64ab943b62cee" />
+              <section title="~DoubleNode" ref="classDoubleNode.html#abd78f421a570cd0fb0cecfedb979d799" />
+              <section title="getData" ref="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699" />
+              <section title="getNext" ref="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f" />
+              <section title="getPrevious" ref="classDoubleNode.html#a86c75b7ed7e944f9748363fe23b2518e" />
+              <section title="print" ref="classDoubleNode.html#adec48b22d9e59955ac35bf0be8bd9fc5" />
+              <section title="setData" ref="classDoubleNode.html#a21f86a81b7d4e4db966e07ce06da4f3a" />
+              <section title="setNext" ref="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93" />
+              <section title="setPrevious" ref="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d" />
+            </section>
+            <section title="IIterator" ref="classIIterator.html">
+              <section title="~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
+              <section title="getCurrent" ref="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822" />
+              <section title="getNext" ref="classIIterator.html#ab1b13434e4fac20c74262dee51d1e870" />
+              <section title="hasNext" ref="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196" />
+            </section>
+            <section title="IList" ref="classIList.html">
+              <section title="~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+              <section title="add" ref="classIList.html#a27500caa3d9da05aa6437d5ff56b09e2" />
+              <section title="add" ref="classIList.html#a70140dbc9de2b9f6e5ffd2212d5ea8b0" />
+              <section title="addi" ref="classIList.html#af202dc9e748ee32238d80e57dfbcae20" />
+              <section title="get" ref="classIList.html#a60570f7ee0e7474d01b2f364bad996a0" />
+              <section title="getIterator" ref="classIList.html#a997815664cc6b20eb5dfa9968251d2cd" />
+              <section title="getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
+              <section title="isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
+              <section title="print" ref="classIList.html#a866f15c0f36c1792acc3d09a7f9ebcc2" />
+              <section title="remove" ref="classIList.html#a9bf7d737252dfbd4c9a5d7be36ea4231" />
+              <section title="set" ref="classIList.html#a119ed658d2804aec0b9fef9325c03073" />
+              <section title="lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+            </section>
+            <section title="InverseIterator" ref="classInverseIterator.html">
+              <section title="InverseIterator" ref="classInverseIterator.html#a31703976cbdca73a1035f47509e8229d" />
+              <section title="~InverseIterator" ref="classInverseIterator.html#ae3b6736187c1dbc82ead0277d31e5898" />
+              <section title="getCurrent" ref="classInverseIterator.html#afdbb5c310621c773da10dfb5bc3b1a4c" />
+              <section title="getNext" ref="classInverseIterator.html#a4c1d8ceb8264f7f8186b6244a0a62940" />
+              <section title="hasNext" ref="classInverseIterator.html#a86973781dfa84df67be2843fc4545692" />
+              <section title="DoubleList" ref="classInverseIterator.html#ad435a9844a002995926acf522128f7a8" />
+            </section>
+            <section title="List" ref="classList.html">
+              <section title="List" ref="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5" />
+              <section title="~List" ref="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d" />
+              <section title="add" ref="classList.html#a2a130b7bc38cd968136f1f847e42d0cc" />
+              <section title="add" ref="classList.html#a530267346ebec244900c162de6f467e1" />
+              <section title="addi" ref="classList.html#a40dfa61150de7310d69001c697598b04" />
+              <section title="get" ref="classList.html#ab081a52d7a62aa6c5550ff9762f9427f" />
+              <section title="getIterator" ref="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb" />
+              <section title="print" ref="classList.html#ad2201bc77b15291f215523ecc96705dc" />
+              <section title="remove" ref="classList.html#a46cec78299d3e23469276adf46adf9c1" />
+              <section title="set" ref="classList.html#ac8b31be96806bd56f655436629ac2e7a" />
+            </section>
+            <section title="Node" ref="classNode.html">
+              <section title="Node" ref="classNode.html#a74d41f93c30d8c3036d24894f0e4314e" />
+              <section title="Node" ref="classNode.html#adc1b4c81c3fb6d0580f138650629a41e" />
+              <section title="~Node" ref="classNode.html#af907944256d9fca41c6a1c783a3a6536" />
+              <section title="getData" ref="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce" />
+              <section title="getNext" ref="classNode.html#aeb063e5172867e988550ab7d6c280db7" />
+              <section title="print" ref="classNode.html#ad4b6df1a3a5deeff634936cd82d22c59" />
+              <section title="setData" ref="classNode.html#ae13418a552fa36eddbaa5dfb767aa664" />
+              <section title="setNext" ref="classNode.html#a2ce12b4f2605972720e1c56fe80014a0" />
+            </section>
+            <section title="Queue" ref="classQueue.html">
+              <section title="Queue" ref="classQueue.html#ab09891e54b51dc677ee6efb350687ae4" />
+              <section title="~Queue" ref="classQueue.html#a49fe82adb8dc2fb62ab53876a6933d0f" />
+              <section title="dequeue" ref="classQueue.html#ac2b0f94e80e6df3002d284e38bdc117b" />
+              <section title="enqueue" ref="classQueue.html#ad751a5ab9f313291a85455542b12a184" />
+              <section title="isEmpty" ref="classQueue.html#ab652261bbb405ecc84a80ff5d7139de7" />
+            </section>
+            <section title="SimpleIterator" ref="classSimpleIterator.html">
+              <section title="~SimpleIterator" ref="classSimpleIterator.html#a02203109d263581340152408ebb120a2" />
+              <section title="getCurrent" ref="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2" />
+              <section title="getNext" ref="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5" />
+              <section title="hasNext" ref="classSimpleIterator.html#ab946b3d707e32d4d53f15af201ea2113" />
+              <section title="CircularList" ref="classSimpleIterator.html#ade98163865dd2cf1343ae0a4dbba6b29" />
+              <section title="List" ref="classSimpleIterator.html#a8740adf5dfdafdc64940ab42ed663bd2" />
+              <section title="current" ref="classSimpleIterator.html#a7777fefe265a5067ec9319d8c1a3e278" />
+              <section title="head" ref="classSimpleIterator.html#a0403100ab86dba958115cea4147508a7" />
+              <section title="tail" ref="classSimpleIterator.html#a9bfb7d6c12bc1e8031b5c0869026415a" />
+            </section>
+            <section title="Stack" ref="classStack.html">
+              <section title="Stack" ref="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5" />
+              <section title="~Stack" ref="classStack.html#ad08e4c32f07b8d967913f8b1a45f8620" />
+              <section title="isEmpty" ref="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b" />
+              <section title="peek" ref="classStack.html#a19a17240bf7045cf6a3a9497e1091433" />
+              <section title="pop" ref="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52" />
+              <section title="push" ref="classStack.html#af71e3e142fba5bb861b66b4882289b31" />
+            </section>
+          </section>
+          <section title="Índice de clases" ref="classes.html" />
+          <section title="Jerarquía de la clase" ref="hierarchy.html">
+            <section title="BNode&lt; VALUE &gt;" ref="classBNode.html" />
+            <section title="BNode&lt; K &gt;" ref="classBNode.html" />
+            <section title="BTree&lt; K &gt;" ref="classBTree.html" />
+            <section title="DoubleNode&lt; E &gt;" ref="classDoubleNode.html" />
+            <section title="IIterator&lt; E &gt;" ref="classIIterator.html">
+              <section title="DoubleIterator&lt; E &gt;" ref="classDoubleIterator.html" />
+              <section title="InverseIterator&lt; E &gt;" ref="classInverseIterator.html" />
+              <section title="SimpleIterator&lt; E &gt;" ref="classSimpleIterator.html" />
+            </section>
+            <section title="IList&lt; E &gt;" ref="classIList.html">
+              <section title="CircularList&lt; E &gt;" ref="classCircularList.html" />
+              <section title="DoubleCircularList&lt; E &gt;" ref="classDoubleCircularList.html" />
+              <section title="DoubleList&lt; E &gt;" ref="classDoubleList.html" />
+              <section title="List&lt; E &gt;" ref="classList.html" />
+            </section>
+            <section title="Node&lt; E &gt;" ref="classNode.html" />
+            <section title="Queue&lt; E &gt;" ref="classQueue.html" />
+            <section title="Stack&lt; E &gt;" ref="classStack.html" />
+          </section>
+          <section title="Miembros de las clases" ref="functions.html">
+            <section title="Todo" ref="functions.html" />
+            <section title="Funciones" ref="functions_func.html" />
+            <section title="Variables" ref="functions_vars.html" />
+          </section>
+        </section>
+        <section title="Archivos">
+          <section title="Lista de archivos" ref="files.html">
+            <section title="controlStructure" ref="dir_4841d09be2dbef066dd403feeca5ac76.html">
+              <section title="Queue.h" ref="Queue_8h_source.html" />
+              <section title="Stack.h" ref="Stack_8h_source.html" />
+            </section>
+            <section title="list" ref="dir_48c61abad44e2f181b0a6a33afb59c17.html">
+              <section title="CircularList.h" ref="CircularList_8h_source.html" />
+              <section title="DoubleCircularList.h" ref="DoubleCircularList_8h_source.html" />
+              <section title="DoubleIterator.h" ref="DoubleIterator_8h_source.html" />
+              <section title="DoubleList.h" ref="DoubleList_8h_source.html" />
+              <section title="DoubleNode.h" ref="DoubleNode_8h_source.html" />
+              <section title="IIterator.h" ref="IIterator_8h_source.html" />
+              <section title="IList.h" ref="IList_8h_source.html" />
+              <section title="InverseIterator.h" ref="InverseIterator_8h_source.html" />
+              <section title="List.h" ref="List_8h_source.html" />
+              <section title="Node.h" ref="Node_8h_source.html" />
+              <section title="SimpleIterator.h" ref="SimpleIterator_8h_source.html" />
+            </section>
+            <section title="tree" ref="dir_70093cb3a9d1f8840af4e997fde867c3.html">
+              <section title="BNode.h" ref="BNode_8h_source.html" />
+              <section title="BTree.h" ref="BTree_8h_source.html" />
+            </section>
+          </section>
+        </section>
+      </section>
+    </toc>
+    <keywords>
+      <keyword name="Project CPPDataStructure" id="Project CPPDataStructure" ref="md_README.html" />
+      <keyword name="BNode" id="BNode" ref="classBNode.html" />
+      <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9" />
+      <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#a75ca826e991a8e57cb67748ab03aea77" />
+      <keyword name="getValues" id="BNode::getValues" ref="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380" />
+      <keyword name="getChilds" id="BNode::getChilds" ref="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d" />
+      <keyword name="addValue" id="BNode::addValue" ref="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae" />
+      <keyword name="setLeftChild" id="BNode::setLeftChild" ref="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601" />
+      <keyword name="setRightChild" id="BNode::setRightChild" ref="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3" />
+      <keyword name="isExploding" id="BNode::isExploding" ref="classBNode.html#ac10d387a2400fcc956719b2c1816b54c" />
+      <keyword name="isLeaf" id="BNode::isLeaf" ref="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e" />
+      <keyword name="print" id="BNode::print" ref="classBNode.html#a4cfbe2867e900577efc3836fd207b008" />
+      <keyword name="getLenghtToExplode" id="BNode::getLenghtToExplode" ref="classBNode.html#a03d3802d7b1d173e051378692a6b8687" />
+      <keyword name="getLenghtOfChilds" id="BNode::getLenghtOfChilds" ref="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1" />
+      <keyword name="getCurrentLenghtData" id="BNode::getCurrentLenghtData" ref="classBNode.html#a8af2d0b3078416d0cd7459addf63876f" />
+      <keyword name="getMaximumValue" id="BNode::getMaximumValue" ref="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca" />
+      <keyword name="getMinimumValue" id="BNode::getMinimumValue" ref="classBNode.html#ab81e066860a4d57a419dc594e8fc3914" />
+      <keyword name="~BNode" id="BNode::~BNode" ref="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4" />
+      <keyword name="BTree" id="BTree" ref="classBTree.html" />
+      <keyword name="BTree" id="BTree::BTree" ref="classBTree.html#a7b77da63d8a36748b641ec7d7eb1ca7d" />
+      <keyword name="insert" id="BTree::insert" ref="classBTree.html#aa23d18780a9491c5734bf2cb40330905" />
+      <keyword name="remove" id="BTree::remove" ref="classBTree.html#a7b0b5e717616c2f2349587eae5fe3e13" />
+      <keyword name="print" id="BTree::print" ref="classBTree.html#a98a7b173fd34c602682989ac31ca08e2" />
+      <keyword name="search" id="BTree::search" ref="classBTree.html#a45bcd8774b4bc322479bbd7d4a7ecbc4" />
+      <keyword name="ostream" id="BTree::ostream" ref="classBTree.html#a900712b11e08ae40dad9e80a6d380142" />
+      <keyword name="CircularList" id="CircularList" ref="classCircularList.html" />
+      <keyword name="CircularList" id="CircularList::CircularList" ref="classCircularList.html#aad23571a808ede6fc0432dca645ab2ca" />
+      <keyword name="addi" id="CircularList::addi" ref="classCircularList.html#a6de0a0af406c738b95b0a6d898b69f8e" />
+      <keyword name="add" id="CircularList::add" ref="classCircularList.html#a892b493309f36fb083fdd257388cfa36" />
+      <keyword name="add" id="CircularList::add" ref="classCircularList.html#af184d3ac2e3bba683a44a6cc19392b12" />
+      <keyword name="remove" id="CircularList::remove" ref="classCircularList.html#a4a6acfd818a0ae9055957ec80258c60a" />
+      <keyword name="set" id="CircularList::set" ref="classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3" />
+      <keyword name="get" id="CircularList::get" ref="classCircularList.html#ad6783339c7ff05841fc62f74f809644d" />
+      <keyword name="getIterator" id="CircularList::getIterator" ref="classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e" />
+      <keyword name="print" id="CircularList::print" ref="classCircularList.html#ad49a3216e39d960d995fb93b87f18856" />
+      <keyword name="~CircularList" id="CircularList::~CircularList" ref="classCircularList.html#aa65c9665b7d36a5e609752cad0a35dbb" />
+      <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
+      <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
+      <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="DoubleCircularList" id="DoubleCircularList" ref="classDoubleCircularList.html" />
+      <keyword name="DoubleCircularList" id="DoubleCircularList::DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
+      <keyword name="addi" id="DoubleCircularList::addi" ref="classDoubleCircularList.html#aec3cb982a2b9def7eb254ef206101e28" />
+      <keyword name="add" id="DoubleCircularList::add" ref="classDoubleCircularList.html#a7691d38e77ea44d222c465f27e7d05b6" />
+      <keyword name="add" id="DoubleCircularList::add" ref="classDoubleCircularList.html#a6d76f7045dd9997f55c6c2feb80678da" />
+      <keyword name="remove" id="DoubleCircularList::remove" ref="classDoubleCircularList.html#ae7ed8b6714720cb7daafa639f232ecc3" />
+      <keyword name="set" id="DoubleCircularList::set" ref="classDoubleCircularList.html#a95e0f27bda1158233015ee3ff27b3ade" />
+      <keyword name="get" id="DoubleCircularList::get" ref="classDoubleCircularList.html#aa00bc8fd524af1ba208f85d8816dec52" />
+      <keyword name="getIterator" id="DoubleCircularList::getIterator" ref="classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad" />
+      <keyword name="inverseIteration" id="DoubleCircularList::inverseIteration" ref="classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b" />
+      <keyword name="print" id="DoubleCircularList::print" ref="classDoubleCircularList.html#a56330353baf42afa3c49e2ade77c9e07" />
+      <keyword name="~DoubleCircularList" id="DoubleCircularList::~DoubleCircularList" ref="classDoubleCircularList.html#a26dba8b85983742cfbf38886245fe2a4" />
+      <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
+      <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
+      <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="DoubleIterator" id="DoubleIterator" ref="classDoubleIterator.html" />
+      <keyword name="getNext" id="DoubleIterator::getNext" ref="classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198" />
+      <keyword name="getCurrent" id="DoubleIterator::getCurrent" ref="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be" />
+      <keyword name="hasNext" id="DoubleIterator::hasNext" ref="classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed" />
+      <keyword name="DoubleIterator" id="DoubleIterator::DoubleIterator" ref="classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc" />
+      <keyword name="DoubleList" id="DoubleIterator::DoubleList" ref="classDoubleIterator.html#ad435a9844a002995926acf522128f7a8" />
+      <keyword name="DoubleList" id="DoubleList" ref="classDoubleList.html" />
+      <keyword name="addi" id="DoubleList::addi" ref="classDoubleList.html#a9924458cf1416df8243b4f857b027da7" />
+      <keyword name="add" id="DoubleList::add" ref="classDoubleList.html#adb96e6908d3d564722225b848350aa82" />
+      <keyword name="add" id="DoubleList::add" ref="classDoubleList.html#a84e3bb8be7d67b43dd3b63d5a47f80ed" />
+      <keyword name="remove" id="DoubleList::remove" ref="classDoubleList.html#a844c2c4c3b8260bd58ab94307359fb62" />
+      <keyword name="set" id="DoubleList::set" ref="classDoubleList.html#a3c95ac3c3190b347c4a343776264bf67" />
+      <keyword name="get" id="DoubleList::get" ref="classDoubleList.html#a230a8c9c574abe9c72f8daae35127d9c" />
+      <keyword name="getIterator" id="DoubleList::getIterator" ref="classDoubleList.html#aa14e383a97e054016a6c5178165b20df" />
+      <keyword name="inverseIteration" id="DoubleList::inverseIteration" ref="classDoubleList.html#a94d1ad5299452ea46839ba350ca501d1" />
+      <keyword name="print" id="DoubleList::print" ref="classDoubleList.html#ad3bf004a9bb2110da93fed1f1224d60e" />
+      <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
+      <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
+      <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="DoubleNode" id="DoubleNode" ref="classDoubleNode.html" />
+      <keyword name="DoubleNode" id="DoubleNode::DoubleNode" ref="classDoubleNode.html#a915ac8a626f09ec53db64b7c5b294b2d" />
+      <keyword name="DoubleNode" id="DoubleNode::DoubleNode" ref="classDoubleNode.html#a53d29dbf397d39b420f64ab943b62cee" />
+      <keyword name="setData" id="DoubleNode::setData" ref="classDoubleNode.html#a21f86a81b7d4e4db966e07ce06da4f3a" />
+      <keyword name="getData" id="DoubleNode::getData" ref="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699" />
+      <keyword name="setNext" id="DoubleNode::setNext" ref="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93" />
+      <keyword name="getNext" id="DoubleNode::getNext" ref="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f" />
+      <keyword name="setPrevious" id="DoubleNode::setPrevious" ref="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d" />
+      <keyword name="getPrevious" id="DoubleNode::getPrevious" ref="classDoubleNode.html#a86c75b7ed7e944f9748363fe23b2518e" />
+      <keyword name="print" id="DoubleNode::print" ref="classDoubleNode.html#adec48b22d9e59955ac35bf0be8bd9fc5" />
+      <keyword name="IIterator" id="IIterator" ref="classIIterator.html" />
+      <keyword name="getNext" id="IIterator::getNext" ref="classIIterator.html#ab1b13434e4fac20c74262dee51d1e870" />
+      <keyword name="getCurrent" id="IIterator::getCurrent" ref="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822" />
+      <keyword name="hasNext" id="IIterator::hasNext" ref="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196" />
+      <keyword name="IList" id="IList" ref="classIList.html" />
+      <keyword name="addi" id="IList::addi" ref="classIList.html#af202dc9e748ee32238d80e57dfbcae20" />
+      <keyword name="add" id="IList::add" ref="classIList.html#a27500caa3d9da05aa6437d5ff56b09e2" />
+      <keyword name="add" id="IList::add" ref="classIList.html#a70140dbc9de2b9f6e5ffd2212d5ea8b0" />
+      <keyword name="remove" id="IList::remove" ref="classIList.html#a9bf7d737252dfbd4c9a5d7be36ea4231" />
+      <keyword name="set" id="IList::set" ref="classIList.html#a119ed658d2804aec0b9fef9325c03073" />
+      <keyword name="get" id="IList::get" ref="classIList.html#a60570f7ee0e7474d01b2f364bad996a0" />
+      <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
+      <keyword name="getIterator" id="IList::getIterator" ref="classIList.html#a997815664cc6b20eb5dfa9968251d2cd" />
+      <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
+      <keyword name="print" id="IList::print" ref="classIList.html#a866f15c0f36c1792acc3d09a7f9ebcc2" />
+      <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="InverseIterator" id="InverseIterator" ref="classInverseIterator.html" />
+      <keyword name="getNext" id="InverseIterator::getNext" ref="classInverseIterator.html#a4c1d8ceb8264f7f8186b6244a0a62940" />
+      <keyword name="hasNext" id="InverseIterator::hasNext" ref="classInverseIterator.html#a86973781dfa84df67be2843fc4545692" />
+      <keyword name="getCurrent" id="InverseIterator::getCurrent" ref="classInverseIterator.html#afdbb5c310621c773da10dfb5bc3b1a4c" />
+      <keyword name="InverseIterator" id="InverseIterator::InverseIterator" ref="classInverseIterator.html#a31703976cbdca73a1035f47509e8229d" />
+      <keyword name="DoubleList" id="InverseIterator::DoubleList" ref="classInverseIterator.html#ad435a9844a002995926acf522128f7a8" />
+      <keyword name="List" id="List" ref="classList.html" />
+      <keyword name="addi" id="List::addi" ref="classList.html#a40dfa61150de7310d69001c697598b04" />
+      <keyword name="add" id="List::add" ref="classList.html#a2a130b7bc38cd968136f1f847e42d0cc" />
+      <keyword name="add" id="List::add" ref="classList.html#a530267346ebec244900c162de6f467e1" />
+      <keyword name="remove" id="List::remove" ref="classList.html#a46cec78299d3e23469276adf46adf9c1" />
+      <keyword name="set" id="List::set" ref="classList.html#ac8b31be96806bd56f655436629ac2e7a" />
+      <keyword name="get" id="List::get" ref="classList.html#ab081a52d7a62aa6c5550ff9762f9427f" />
+      <keyword name="getIterator" id="List::getIterator" ref="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb" />
+      <keyword name="print" id="List::print" ref="classList.html#ad2201bc77b15291f215523ecc96705dc" />
+      <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
+      <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
+      <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="Node" id="Node" ref="classNode.html" />
+      <keyword name="Node" id="Node::Node" ref="classNode.html#a74d41f93c30d8c3036d24894f0e4314e" />
+      <keyword name="Node" id="Node::Node" ref="classNode.html#adc1b4c81c3fb6d0580f138650629a41e" />
+      <keyword name="setData" id="Node::setData" ref="classNode.html#ae13418a552fa36eddbaa5dfb767aa664" />
+      <keyword name="getData" id="Node::getData" ref="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce" />
+      <keyword name="setNext" id="Node::setNext" ref="classNode.html#a2ce12b4f2605972720e1c56fe80014a0" />
+      <keyword name="getNext" id="Node::getNext" ref="classNode.html#aeb063e5172867e988550ab7d6c280db7" />
+      <keyword name="print" id="Node::print" ref="classNode.html#ad4b6df1a3a5deeff634936cd82d22c59" />
+      <keyword name="Queue" id="Queue" ref="classQueue.html" />
+      <keyword name="Queue" id="Queue::Queue" ref="classQueue.html#ab09891e54b51dc677ee6efb350687ae4" />
+      <keyword name="enqueue" id="Queue::enqueue" ref="classQueue.html#ad751a5ab9f313291a85455542b12a184" />
+      <keyword name="dequeue" id="Queue::dequeue" ref="classQueue.html#ac2b0f94e80e6df3002d284e38bdc117b" />
+      <keyword name="isEmpty" id="Queue::isEmpty" ref="classQueue.html#ab652261bbb405ecc84a80ff5d7139de7" />
+      <keyword name="SimpleIterator" id="SimpleIterator" ref="classSimpleIterator.html" />
+      <keyword name="getNext" id="SimpleIterator::getNext" ref="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5" />
+      <keyword name="getCurrent" id="SimpleIterator::getCurrent" ref="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2" />
+      <keyword name="hasNext" id="SimpleIterator::hasNext" ref="classSimpleIterator.html#ab946b3d707e32d4d53f15af201ea2113" />
+      <keyword name="head" id="SimpleIterator::head" ref="classSimpleIterator.html#a0403100ab86dba958115cea4147508a7" />
+      <keyword name="tail" id="SimpleIterator::tail" ref="classSimpleIterator.html#a9bfb7d6c12bc1e8031b5c0869026415a" />
+      <keyword name="current" id="SimpleIterator::current" ref="classSimpleIterator.html#a7777fefe265a5067ec9319d8c1a3e278" />
+      <keyword name="List" id="SimpleIterator::List" ref="classSimpleIterator.html#a8740adf5dfdafdc64940ab42ed663bd2" />
+      <keyword name="CircularList" id="SimpleIterator::CircularList" ref="classSimpleIterator.html#ade98163865dd2cf1343ae0a4dbba6b29" />
+      <keyword name="Stack" id="Stack" ref="classStack.html" />
+      <keyword name="Stack" id="Stack::Stack" ref="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5" />
+      <keyword name="push" id="Stack::push" ref="classStack.html#af71e3e142fba5bb861b66b4882289b31" />
+      <keyword name="pop" id="Stack::pop" ref="classStack.html#a5ba7a4c8eec39757e28f95da49f06d52" />
+      <keyword name="peek" id="Stack::peek" ref="classStack.html#a19a17240bf7045cf6a3a9497e1091433" />
+      <keyword name="isEmpty" id="Stack::isEmpty" ref="classStack.html#a0ce2804f35c0c8cfb999535f35fa438b" />
+      <keyword name="~Stack" id="Stack::~Stack" ref="classStack.html#ad08e4c32f07b8d967913f8b1a45f8620" />
+    </keywords>
+    <files>
+      <file>tabs.css</file>
+      <file>tab_a.png</file>
+      <file>tab_b.png</file>
+      <file>tab_h.png</file>
+      <file>tab_s.png</file>
+      <file>nav_h.png</file>
+      <file>nav_f.png</file>
+      <file>bc_s.png</file>
+      <file>doxygen.png</file>
+      <file>closed.png</file>
+      <file>open.png</file>
+      <file>bdwn.png</file>
+      <file>sync_on.png</file>
+      <file>sync_off.png</file>
+      <file>logo.png</file>
+      <file>ftv2blank.png</file>
+      <file>ftv2doc.png</file>
+      <file>ftv2folderclosed.png</file>
+      <file>ftv2folderopen.png</file>
+      <file>ftv2ns.png</file>
+      <file>ftv2mo.png</file>
+      <file>ftv2cl.png</file>
+      <file>ftv2lastnode.png</file>
+      <file>ftv2link.png</file>
+      <file>ftv2mlastnode.png</file>
+      <file>ftv2mnode.png</file>
+      <file>ftv2node.png</file>
+      <file>ftv2plastnode.png</file>
+      <file>ftv2pnode.png</file>
+      <file>ftv2vertline.png</file>
+      <file>ftv2splitbar.png</file>
+      <file>doxygen.css</file>
+      <file>/search/mag_sel.png</file>
+      <file>/search/search_l.png</file>
+      <file>/search/search_m.png</file>
+      <file>/search/search_r.png</file>
+      <file>/search/close.png</file>
+      <file>search/search.css</file>
+      <file>search/search.js</file>
+      <file>Queue_8h_source.html</file>
+      <file>Stack_8h_source.html</file>
+      <file>CircularList_8h_source.html</file>
+      <file>DoubleCircularList_8h_source.html</file>
+      <file>DoubleIterator_8h_source.html</file>
+      <file>DoubleList_8h_source.html</file>
+      <file>DoubleNode_8h_source.html</file>
+      <file>IIterator_8h_source.html</file>
+      <file>IList_8h_source.html</file>
+      <file>InverseIterator_8h_source.html</file>
+      <file>List_8h_source.html</file>
+      <file>Node_8h_source.html</file>
+      <file>SimpleIterator_8h_source.html</file>
+      <file>BNode_8h_source.html</file>
+      <file>BTree_8h_source.html</file>
+      <file>md_README.html</file>
+      <file>classBNode.html</file>
+      <file>classBNode-members.html</file>
+      <file>classBTree.html</file>
+      <file>classBTree-members.html</file>
+      <file>classCircularList.html</file>
+      <file>classCircularList-members.html</file>
+      <file>classDoubleCircularList.html</file>
+      <file>classDoubleCircularList-members.html</file>
+      <file>classDoubleIterator.html</file>
+      <file>classDoubleIterator-members.html</file>
+      <file>classDoubleList.html</file>
+      <file>classDoubleList-members.html</file>
+      <file>classDoubleNode.html</file>
+      <file>classDoubleNode-members.html</file>
+      <file>classIIterator.html</file>
+      <file>classIIterator-members.html</file>
+      <file>classIList.html</file>
+      <file>classIList-members.html</file>
+      <file>classInverseIterator.html</file>
+      <file>classInverseIterator-members.html</file>
+      <file>classList.html</file>
+      <file>classList-members.html</file>
+      <file>classNode.html</file>
+      <file>classNode-members.html</file>
+      <file>classQueue.html</file>
+      <file>classQueue-members.html</file>
+      <file>classSimpleIterator.html</file>
+      <file>classSimpleIterator-members.html</file>
+      <file>classStack.html</file>
+      <file>classStack-members.html</file>
+      <file>dir_4841d09be2dbef066dd403feeca5ac76.html</file>
+      <file>dir_48c61abad44e2f181b0a6a33afb59c17.html</file>
+      <file>dir_70093cb3a9d1f8840af4e997fde867c3.html</file>
+      <file>index.html</file>
+      <file>pages.html</file>
+      <file>annotated.html</file>
+      <file>classes.html</file>
+      <file>hierarchy.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_func.html</file>
+      <file>functions_vars.html</file>
+      <file>functions_vars.html</file>
+      <file>files.html</file>
+    </files>
+  </filterSection>
+</QtHelpProject>

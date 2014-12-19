@@ -4,6 +4,7 @@
 #define NODE_H
 /**
  * @brief
+ * Es la parte elemental de una lista simple.
  *
  */
 template <class E> class Node
@@ -12,108 +13,77 @@ template <class E> class Node
     Node<E> *next; /**< TODO */
 public:
     /**
-     * @brief
+     * @brief Constructor del Nodo, el next se setea como un puntero
+     * nulo para evitar punteros colgados.
      *
-     * @param E
+     * @param data el dato que contrendra el nodo
      */
     Node(E);
     /**
-     * @brief
+     * @brief Constructor del Nodo
      *
-     * @param data
-     * @param next
+     * @param data el dato que contendra el dato
+     * @param next el puntero al nodo siguiente
      */
     Node(E data,Node<E> *next);
     /**
      * @brief
-     *
-     * @param E
+     * Setea el dato contenido en el nodo
+     * @param data el dato nuevo
      */
     void setData(E);
     /**
-     * @brief
+     * @brief Obtiene el dato contenido en el nodo
      *
-     * @return E
+     * @return E el dato contenido
      */
     E getData() const;
     /**
-     * @brief
+     * @brief Setea el puntero del nodo siguiente
      *
-     * @param
+     * @param next el nuevo nodo que representa el nodo siguiente
      */
     void setNext(Node<E>*);
     /**
-     * @brief
+     * @brief Obtiene el nodo siguiente
      *
-     * @return Node<E>
+     * @return DoubleNode<E> el nodo siguiente
      */
     Node<E>* getNext()const;
 
     /**
-     * @brief
+     * @brief Imprime en consola el dato del nodo
      *
      */
     void print() const;
     /**
      * @brief
-     *
+     * Liberador de memoria.
      */
     virtual ~Node();
 };
 
-/**
- * @brief
- *
- * @param data
- */
+
 template <class E> Node<E>::Node(E data){
     this->data = data;
     this->next = 0;
 }
-/**
- * @brief
- *
- * @param data
- * @param next
- */
+
 template <class E> Node<E>::Node(E data,Node<E> *next){
     this->data = data;
     this->next = next;
 }
-/**
- * @brief
- *
- * @param data
- */
+
 template <class E> void Node<E>::setData(E data){this->data = data;}
-/**
- * @brief
- *
- * @return E Node<E>
- */
+
 template <class E> E Node<E>::getData()const {return data;}
-/**
- * @brief
- *
- * @param next
- */
+
 template <class E> void Node<E>::setNext(Node<E> *next){this->next = next;}
-/**
- * @brief
- *
- * @return Node<E> *Node<E>
- */
+
 template <class E> Node<E>* Node<E>::getNext()const {return this->next;}
-/**
- * @brief
- *
- */
+
 template <class E> void Node<E>::print() const{std::cout << data;}
 
-/**
- * @brief
- *
- */
 template <class E> Node<E>::~Node(){}
 
 #endif // NODE_H

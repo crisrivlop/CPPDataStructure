@@ -1,22 +1,20 @@
-\hypertarget{classSimpleIterator}{\section{Simple\-Iterator$<$ E $>$ Class Template Reference}
+\hypertarget{classSimpleIterator}{\section{Referencia de la plantilla de la Clase Simple\-Iterator$<$ E $>$}
 \label{classSimpleIterator}\index{Simple\-Iterator$<$ E $>$@{Simple\-Iterator$<$ E $>$}}
 }
-Inheritance diagram for Simple\-Iterator$<$ E $>$\-:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classSimpleIterator}
-\end{center}
-\end{figure}
-\subsection*{Public Member Functions}
+
+
+Herencias \hyperlink{classIIterator}{I\-Iterator$<$ E $>$}.
+
+\subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 E \hyperlink{classSimpleIterator_ab01032dba9ff4f1a1c47af3082b717d5}{get\-Next} ()
 \item 
-E \hyperlink{classSimpleIterator_ada16d38e21da7f42c32aa9680be81a75}{get\-Current} ()
+E \hyperlink{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}{get\-Current} () const 
 \item 
-bool \hyperlink{classSimpleIterator_a3d25dee31165c800b80d53a09596fb29}{has\-Next} ()
+bool \hyperlink{classSimpleIterator_ab946b3d707e32d4d53f15af201ea2113}{has\-Next} () const 
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\subsection*{Atributos protegidos}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classSimpleIterator_a0403100ab86dba958115cea4147508a7}{\hyperlink{classNode}{Node}$<$ E $>$ $\ast$ {\bfseries head}}\label{classSimpleIterator_a0403100ab86dba958115cea4147508a7}
@@ -27,30 +25,33 @@ bool \hyperlink{classSimpleIterator_a3d25dee31165c800b80d53a09596fb29}{has\-Next
 \item 
 \hyperlink{classNode}{Node}$<$ E $>$ $\ast$ \hyperlink{classSimpleIterator_a7777fefe265a5067ec9319d8c1a3e278}{current}
 \end{DoxyCompactItemize}
-\subsection*{Friends}
+\subsection*{Amigas}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classSimpleIterator_a8740adf5dfdafdc64940ab42ed663bd2}{{\footnotesize template$<$class T $>$ }\\class {\bfseries List}}\label{classSimpleIterator_a8740adf5dfdafdc64940ab42ed663bd2}
 
+\item 
+\hypertarget{classSimpleIterator_ade98163865dd2cf1343ae0a4dbba6b29}{{\footnotesize template$<$class M $>$ }\\class {\bfseries Circular\-List}}\label{classSimpleIterator_ade98163865dd2cf1343ae0a4dbba6b29}
+
 \end{DoxyCompactItemize}
 
 
-\subsection{Member Function Documentation}
-\hypertarget{classSimpleIterator_ada16d38e21da7f42c32aa9680be81a75}{\index{Simple\-Iterator@{Simple\-Iterator}!get\-Current@{get\-Current}}
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}{\index{Simple\-Iterator@{Simple\-Iterator}!get\-Current@{get\-Current}}
 \index{get\-Current@{get\-Current}!SimpleIterator@{Simple\-Iterator}}
 \subsubsection[{get\-Current}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ E {\bf Simple\-Iterator}$<$ E $>$\-::get\-Current (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimpleIterator_ada16d38e21da7f42c32aa9680be81a75}
-\begin{DoxyReturn}{Returns}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}
+\begin{DoxyReturn}{Devuelve}
 E
 
 E Simple\-Iterator$<$\-E$>$ 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classIIterator_a6e9e27034f661744e345c3eaca88b9d1}{I\-Iterator$<$ E $>$}.
+Implementa \hyperlink{classIIterator_a50f55ce1381378aad2c93f16c9b60822}{I\-Iterator$<$ E $>$}.
 
 \hypertarget{classSimpleIterator_ab01032dba9ff4f1a1c47af3082b717d5}{\index{Simple\-Iterator@{Simple\-Iterator}!get\-Next@{get\-Next}}
 \index{get\-Next@{get\-Next}!SimpleIterator@{Simple\-Iterator}}
@@ -59,39 +60,39 @@ Implements \hyperlink{classIIterator_a6e9e27034f661744e345c3eaca88b9d1}{I\-Itera
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimpleIterator_ab01032dba9ff4f1a1c47af3082b717d5}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 E
 
 E Simple\-Iterator$<$\-E$>$ 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{I\-Iterator$<$ E $>$}.
+Implementa \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{I\-Iterator$<$ E $>$}.
 
-\hypertarget{classSimpleIterator_a3d25dee31165c800b80d53a09596fb29}{\index{Simple\-Iterator@{Simple\-Iterator}!has\-Next@{has\-Next}}
+\hypertarget{classSimpleIterator_ab946b3d707e32d4d53f15af201ea2113}{\index{Simple\-Iterator@{Simple\-Iterator}!has\-Next@{has\-Next}}
 \index{has\-Next@{has\-Next}!SimpleIterator@{Simple\-Iterator}}
 \subsubsection[{has\-Next}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Simple\-Iterator}$<$ E $>$\-::has\-Next (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimpleIterator_a3d25dee31165c800b80d53a09596fb29}
-\begin{DoxyReturn}{Returns}
+) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classSimpleIterator_ab946b3d707e32d4d53f15af201ea2113}
+\begin{DoxyReturn}{Devuelve}
 bool
 
 bool Simple\-Iterator$<$\-E$>$ 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classIIterator_af1b73d822a3da54baba4a05ecc1302fc}{I\-Iterator$<$ E $>$}.
+Implementa \hyperlink{classIIterator_a8a73f0fb41a66fe98e5e636378759196}{I\-Iterator$<$ E $>$}.
 
 
 
-\subsection{Member Data Documentation}
+\subsection{Documentación de los datos miembro}
 \hypertarget{classSimpleIterator_a7777fefe265a5067ec9319d8c1a3e278}{\index{Simple\-Iterator@{Simple\-Iterator}!current@{current}}
 \index{current@{current}!SimpleIterator@{Simple\-Iterator}}
 \subsubsection[{current}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E$>$ {\bf Node}$<$E$>$ $\ast$ {\bf Simple\-Iterator}$<$ E $>$\-::current\hspace{0.3cm}{\ttfamily [protected]}}}\label{classSimpleIterator_a7777fefe265a5067ec9319d8c1a3e278}
 T\-O\-D\-O 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
 \item 
 list/Simple\-Iterator.\-h\end{DoxyCompactItemize}

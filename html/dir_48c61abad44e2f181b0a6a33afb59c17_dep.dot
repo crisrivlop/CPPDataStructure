@@ -1,0 +1,6 @@
+digraph "list" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  dir_48c61abad44e2f181b0a6a33afb59c17 [shape=box, label="list", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_48c61abad44e2f181b0a6a33afb59c17.html"];
+}

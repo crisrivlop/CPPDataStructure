@@ -5,6 +5,7 @@
 template <class E>
 /**
  * @brief
+ * Es la parte elemental de una lista que sea doublemente enlazada.
  *
  */
 class DoubleNode
@@ -14,77 +15,76 @@ class DoubleNode
     DoubleNode<E> *previous; /**< TODO */
 public:
     /**
-     * @brief
+     * @brief Constructor del Nodo Doble, el dato previous y next se setean como punteros
+     * nulos para evitar punteros colgados.
      *
-     * @param E
+     * @param data el dato que contrendra el nodo
      */
     DoubleNode(E);
     /**
-     * @brief
+     * @brief Constructor del Nodo Doble
      *
-     * @param E
-     * @param
-     * @param
+     * @param data el dato que contendra el dato
+     * @param previous el puntero al nodo anterior
+     * @param next el puntero al nodo siguiente
      */
     DoubleNode(E, DoubleNode<E>*, DoubleNode<E>*);
     /**
      * @brief
-     *
-     * @param E
+     * Setea el dato contenido en el nodo
+     * @param data el dato nuevo
      */
     void setData(E);
     /**
-     * @brief
+     * @brief Obtiene el dato contenido en el nodo
      *
-     * @return E
+     * @return E el dato contenido
      */
     E getData() const;
     /**
-     * @brief
+     * @brief Setea el puntero del nodo siguiente
      *
-     * @param
+     * @param next el nuevo nodo que representa el nodo siguiente
      */
     void setNext(DoubleNode<E>*);
     /**
-     * @brief
+     * @brief Obtiene el nodo siguiente
      *
-     * @return DoubleNode<E>
+     * @return DoubleNode<E> el nodo siguiente
      */
     DoubleNode<E>* getNext()const;
 
 
     /**
-     * @brief
+     * @brief Setea el puntero del nodo anterior
      *
-     * @param
+     * @param previous el nuevo nodo que reprenta el nodo anterior
      */
     void setPrevious(DoubleNode<E>*);
     /**
-     * @brief
+     * @brief Obtiene el nodo anterior
      *
-     * @return DoubleNode<E>
+     * @return DoubleNode<E> el nodo anterior
      */
     DoubleNode<E>* getPrevious()const;
 
 
     /**
-     * @brief
+     * @brief Imprime en consola el dato del nodo
      *
      */
     void print() const;
     /**
-     * @brief
+     * @brief el destructor de este nodo
      *
      */
-    ~DoubleNode();
+    virtual ~DoubleNode();
 
 };
 
-/**
- * @brief
- *
- * @param data
- */
+
+
+
 template <class E> DoubleNode<E>::DoubleNode(E data){
     this->data = data;
     next = 0;
@@ -92,71 +92,35 @@ template <class E> DoubleNode<E>::DoubleNode(E data){
 }
 
 
-/**
- * @brief
- *
- * @param data
- * @param previous
- * @param next
- */
+
 template <class E> DoubleNode<E>::DoubleNode(E data, DoubleNode<E> *previous, DoubleNode<E> *next){
     this->data = data;
     this->next = next;
     this->previous = previous;
 }
 
-/**
- * @brief
- *
- * @param data
- */
+
 template <class E> void DoubleNode<E>::setData(E data){this->data = data;}
 
-/**
- * @brief
- *
- * @return E DoubleNode<E>
- */
+
 template <class E> E DoubleNode<E>::getData()const{return data;}
 
-/**
- * @brief
- *
- * @param next
- */
+
 template <class E> void DoubleNode<E>::setNext(DoubleNode *next){this->next = next;}
 
-/**
- * @brief
- *
- * @return DoubleNode<E> *DoubleNode<E>
- */
+
 template <class E> DoubleNode<E>* DoubleNode<E>::getNext()const{return next;}
 
-/**
- * @brief
- *
- * @param previous
- */
+
 template <class E> void DoubleNode<E>::setPrevious(DoubleNode *previous){this->previous = previous;}
 
-/**
- * @brief
- *
- * @return DoubleNode<E> *DoubleNode<E>
- */
+
 template <class E> DoubleNode<E>* DoubleNode<E>::getPrevious()const{return previous;}
 
-/**
- * @brief
- *
- */
+
 template <class E> void DoubleNode<E>::print() const {std::cout << data;}
 
-/**
- * @brief
- *
- */
+
 template <class E> DoubleNode<E>::~DoubleNode(){}
 
 #endif // DOUBLENODE_H

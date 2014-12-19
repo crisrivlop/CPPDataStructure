@@ -1,13 +1,11 @@
-\hypertarget{classDoubleList}{\section{Double\-List$<$ E $>$ Class Template Reference}
+\hypertarget{classDoubleList}{\section{Referencia de la plantilla de la Clase Double\-List$<$ E $>$}
 \label{classDoubleList}\index{Double\-List$<$ E $>$@{Double\-List$<$ E $>$}}
 }
-Inheritance diagram for Double\-List$<$ E $>$\-:\begin{figure}[H]
-\begin{center}
-\leavevmode
-\includegraphics[height=2.000000cm]{classDoubleList}
-\end{center}
-\end{figure}
-\subsection*{Public Member Functions}
+
+
+Herencias \hyperlink{classIList}{I\-List$<$ E $>$}.
+
+\subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 void \hyperlink{classDoubleList_a9924458cf1416df8243b4f857b027da7}{addi} (E)
@@ -22,13 +20,18 @@ void \hyperlink{classDoubleList_a3c95ac3c3190b347c4a343776264bf67}{set} (int, E)
 \item 
 E \hyperlink{classDoubleList_a230a8c9c574abe9c72f8daae35127d9c}{get} (int)
 \item 
-\hypertarget{classDoubleList_ad3bf004a9bb2110da93fed1f1224d60e}{void {\bfseries print} () const }\label{classDoubleList_ad3bf004a9bb2110da93fed1f1224d60e}
+\hyperlink{classIIterator}{I\-Iterator}$<$ E $>$ $\ast$ \hyperlink{classDoubleList_aa14e383a97e054016a6c5178165b20df}{get\-Iterator} ()
+\begin{DoxyCompactList}\small\item\em get\-Iterator \end{DoxyCompactList}\item 
+\hypertarget{classDoubleList_a94d1ad5299452ea46839ba350ca501d1}{void {\bfseries inverse\-Iteration} (bool)}\label{classDoubleList_a94d1ad5299452ea46839ba350ca501d1}
 
-\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\item 
+\hypertarget{classDoubleList_ad3bf004a9bb2110da93fed1f1224d60e}{void \hyperlink{classDoubleList_ad3bf004a9bb2110da93fed1f1224d60e}{print} () const }\label{classDoubleList_ad3bf004a9bb2110da93fed1f1224d60e}
+
+\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Otros miembros heredados}
 
 
-\subsection{Member Function Documentation}
+\subsection{Documentación de las funciones miembro}
 \hypertarget{classDoubleList_adb96e6908d3d564722225b848350aa82}{\index{Double\-List@{Double\-List}!add@{add}}
 \index{add@{add}!DoubleList@{Double\-List}}
 \subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Double\-List}$<$ E $>$\-::add (
@@ -37,7 +40,7 @@ E \hyperlink{classDoubleList_a230a8c9c574abe9c72f8daae35127d9c}{get} (int)
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_adb96e6908d3d564722225b848350aa82}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em E} & \\
 \hline
 {\em data} & \\
@@ -45,7 +48,7 @@ E \hyperlink{classDoubleList_a230a8c9c574abe9c72f8daae35127d9c}{get} (int)
 \end{DoxyParams}
 
 
-Implements \hyperlink{classIList_a27500caa3d9da05aa6437d5ff56b09e2}{I\-List$<$ E $>$}.
+Implementa \hyperlink{classIList_a27500caa3d9da05aa6437d5ff56b09e2}{I\-List$<$ E $>$}.
 
 \hypertarget{classDoubleList_a84e3bb8be7d67b43dd3b63d5a47f80ed}{\index{Double\-List@{Double\-List}!add@{add}}
 \index{add@{add}!DoubleList@{Double\-List}}
@@ -56,28 +59,28 @@ Implements \hyperlink{classIList_a27500caa3d9da05aa6437d5ff56b09e2}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a84e3bb8be7d67b43dd3b63d5a47f80ed}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em E} & \\
 \hline
 {\em int} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 bool
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em data} & \\
 \hline
 {\em index} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 bool Double\-List$<$\-E$>$ 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E $>$}.
+Implementa \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E $>$}.
 
 \hypertarget{classDoubleList_a9924458cf1416df8243b4f857b027da7}{\index{Double\-List@{Double\-List}!addi@{addi}}
 \index{addi@{addi}!DoubleList@{Double\-List}}
@@ -87,7 +90,7 @@ Implements \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a9924458cf1416df8243b4f857b027da7}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em E} & \\
 \hline
 {\em data} & \\
@@ -95,7 +98,7 @@ Implements \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E
 \end{DoxyParams}
 
 
-Implements \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E $>$}.
+Implementa \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E $>$}.
 
 \hypertarget{classDoubleList_a230a8c9c574abe9c72f8daae35127d9c}{\index{Double\-List@{Double\-List}!get@{get}}
 \index{get@{get}!DoubleList@{Double\-List}}
@@ -105,24 +108,42 @@ Implements \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a230a8c9c574abe9c72f8daae35127d9c}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em int} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 E
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em index} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 E Double\-List$<$\-E$>$ 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E $>$}.
+Implementa \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E $>$}.
+
+\hypertarget{classDoubleList_aa14e383a97e054016a6c5178165b20df}{\index{Double\-List@{Double\-List}!get\-Iterator@{get\-Iterator}}
+\index{get\-Iterator@{get\-Iterator}!DoubleList@{Double\-List}}
+\subsubsection[{get\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf I\-Iterator}$<$ E $>$ $\ast$ {\bf Double\-List}$<$ E $>$\-::get\-Iterator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_aa14e383a97e054016a6c5178165b20df}
+
+
+get\-Iterator 
+
+\begin{DoxyReturn}{Devuelve}
+Double\-List\-Iterator 
+\end{DoxyReturn}
+
+
+Implementa \hyperlink{classIList_a997815664cc6b20eb5dfa9968251d2cd}{I\-List$<$ E $>$}.
 
 \hypertarget{classDoubleList_a844c2c4c3b8260bd58ab94307359fb62}{\index{Double\-List@{Double\-List}!remove@{remove}}
 \index{remove@{remove}!DoubleList@{Double\-List}}
@@ -132,24 +153,24 @@ Implements \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a844c2c4c3b8260bd58ab94307359fb62}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em int} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 bool
 \end{DoxyReturn}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em index} & \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
+\begin{DoxyReturn}{Devuelve}
 bool Double\-List$<$\-E$>$ 
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classIList_a9bf7d737252dfbd4c9a5d7be36ea4231}{I\-List$<$ E $>$}.
+Implementa \hyperlink{classIList_a9bf7d737252dfbd4c9a5d7be36ea4231}{I\-List$<$ E $>$}.
 
 \hypertarget{classDoubleList_a3c95ac3c3190b347c4a343776264bf67}{\index{Double\-List@{Double\-List}!set@{set}}
 \index{set@{set}!DoubleList@{Double\-List}}
@@ -160,7 +181,7 @@ Implements \hyperlink{classIList_a9bf7d737252dfbd4c9a5d7be36ea4231}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a3c95ac3c3190b347c4a343776264bf67}
 
-\begin{DoxyParams}{Parameters}
+\begin{DoxyParams}{Parámetros}
 {\em int} & \\
 \hline
 {\em E} & \\
@@ -172,10 +193,10 @@ Implements \hyperlink{classIList_a9bf7d737252dfbd4c9a5d7be36ea4231}{I\-List$<$ E
 \end{DoxyParams}
 
 
-Implements \hyperlink{classIList_a119ed658d2804aec0b9fef9325c03073}{I\-List$<$ E $>$}.
+Implementa \hyperlink{classIList_a119ed658d2804aec0b9fef9325c03073}{I\-List$<$ E $>$}.
 
 
 
-The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
 \item 
 list/Double\-List.\-h\end{DoxyCompactItemize}

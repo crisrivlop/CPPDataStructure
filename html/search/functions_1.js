@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['dequeue',['dequeue',['../classQueue.html#ac2b0f94e80e6df3002d284e38bdc117b',1,'Queue']]],
-  ['doublenode',['DoubleNode',['../classDoubleNode.html#a915ac8a626f09ec53db64b7c5b294b2d',1,'DoubleNode::DoubleNode(E)'],['../classDoubleNode.html#a53d29dbf397d39b420f64ab943b62cee',1,'DoubleNode::DoubleNode(E, DoubleNode&lt; E &gt; *, DoubleNode&lt; E &gt; *)']]]
+  ['bnode',['BNode',['../classBNode.html#af01747c25c2d2fd3d13e48856b488bc9',1,'BNode::BNode(int pSize, VALUE pInitialValue)'],['../classBNode.html#a75ca826e991a8e57cb67748ab03aea77',1,'BNode::BNode(int pSize)']]]
 ];

@@ -40,7 +40,7 @@ public:
     bool isEmpty();
     /**
      * @brief
-     *
+     * Liberador de memoria
      */
     virtual ~Queue();
 };

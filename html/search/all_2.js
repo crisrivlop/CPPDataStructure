@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['dequeue',['dequeue',['../classQueue.html#ac2b0f94e80e6df3002d284e38bdc117b',1,'Queue']]],
-  ['doublecircularlist',['DoubleCircularList',['../classDoubleCircularList.html',1,'']]],
-  ['doublelist',['DoubleList',['../classDoubleList.html',1,'']]],
-  ['doublenode',['DoubleNode',['../classDoubleNode.html',1,'DoubleNode&lt; E &gt;'],['../classDoubleNode.html#a915ac8a626f09ec53db64b7c5b294b2d',1,'DoubleNode::DoubleNode(E)'],['../classDoubleNode.html#a53d29dbf397d39b420f64ab943b62cee',1,'DoubleNode::DoubleNode(E, DoubleNode&lt; E &gt; *, DoubleNode&lt; E &gt; *)']]]
+  ['circularlist',['CircularList',['../classCircularList.html',1,'CircularList&lt; E &gt;'],['../classCircularList.html#aad23571a808ede6fc0432dca645ab2ca',1,'CircularList::CircularList()']]],
+  ['current',['current',['../classSimpleIterator.html#a7777fefe265a5067ec9319d8c1a3e278',1,'SimpleIterator']]]
 ];

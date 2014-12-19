@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['iiterator',['IIterator',['../classIIterator.html',1,'']]],
-  ['ilist',['IList',['../classIList.html',1,'']]],
-  ['isempty',['isEmpty',['../classQueue.html#ab652261bbb405ecc84a80ff5d7139de7',1,'Queue::isEmpty()'],['../classStack.html#a0ce2804f35c0c8cfb999535f35fa438b',1,'Stack::isEmpty()'],['../classIList.html#ad21f4969c574c87a4715d45496d81d5c',1,'IList::isEmpty()']]]
+  ['hasnext',['hasNext',['../classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed',1,'DoubleIterator::hasNext()'],['../classIIterator.html#a8a73f0fb41a66fe98e5e636378759196',1,'IIterator::hasNext()'],['../classInverseIterator.html#a86973781dfa84df67be2843fc4545692',1,'InverseIterator::hasNext()'],['../classSimpleIterator.html#ab946b3d707e32d4d53f15af201ea2113',1,'SimpleIterator::hasNext()']]]
 ];
