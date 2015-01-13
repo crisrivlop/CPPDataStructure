@@ -1,6 +1,6 @@
+#define Null 0
 #ifndef BINARYNODE_H
 #define BINARYNODE_H
-#define Null 0
 
 
 template <class E>
@@ -68,16 +68,19 @@ public:
      */
     BinaryNode<E> *getRight();
     /**
-     * @brief Liberador de memoria.
+     * @brief Liberador de memoria, libera la memoria que ocupa y la memoria que ocupan sus hijos.
+     * si se desea borrar solo este nodo se debe setear los punteros de los hijos a Null o sea que
+     * apunten a 0 en memoria.
      *
      */
-    virtual ~BinaryNode(){}
+    virtual ~BinaryNode();
 };
 
 template <class E>
 BinaryNode<E>::BinaryNode(E data){
     this->data = data;
-    this->left = this->right = 0;
+    this->left = Null;
+    this->right = Null;
 }
 
 template <class E>
@@ -116,6 +119,13 @@ BinaryNode<E> *BinaryNode<E>::getLeft(){
 template <class E>
 BinaryNode<E> *BinaryNode<E>::getRight(){
     return right;
+}
+template <class E>
+BinaryNode<E>::~BinaryNode(){
+    delete left;
+    delete right;
+    left = Null;
+    right=Null;
 }
 
 

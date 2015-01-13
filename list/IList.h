@@ -1,4 +1,5 @@
 #include "IIterator.h"
+#include <iostream>
 #ifndef ILIST_H
 #define ILIST_H
 
@@ -105,7 +106,7 @@ public:
     /**
      * @brief Liberador de memoria
      */
-    virtual ~IList(){}
+    virtual ~IList(){std::cout << "hello" << std::endl;}
 };
 
 

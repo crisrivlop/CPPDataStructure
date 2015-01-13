@@ -103,7 +103,7 @@ template <typename K> void BTree<K>::print(BNode<K>* pRoot,bool nextLevel){
 		}
 	}
 	else{
-		cout << "ha fallado" << endl;
+        cout << "--" << endl;
 	}
 }
 
