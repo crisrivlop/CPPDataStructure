@@ -8,7 +8,6 @@ var classIList =
     [ "getIterator", "classIList.html#a997815664cc6b20eb5dfa9968251d2cd", null ],
     [ "getLenght", "classIList.html#a6d43df225c304c3a0abdb4c7d81274b5", null ],
     [ "isEmpty", "classIList.html#ad21f4969c574c87a4715d45496d81d5c", null ],
-    [ "print", "classIList.html#a866f15c0f36c1792acc3d09a7f9ebcc2", null ],
     [ "remove", "classIList.html#a9bf7d737252dfbd4c9a5d7be36ea4231", null ],
     [ "set", "classIList.html#a119ed658d2804aec0b9fef9325c03073", null ],
     [ "lenght", "classIList.html#a64ce981ba1104bbb482068983cb5a3bc", null ]

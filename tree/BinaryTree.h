@@ -44,13 +44,6 @@ class BinaryTree{
     BinaryNode<E> *extractLowestOfGreatest(BinaryNode<E> *pRoot);
 
     /**
-     * @brief Imprime el arbol utilizando la recursividad. Mientras el nivel del nodo se inferior
-     * la tabulacion en su impresion es mayor.
-     * @param pNode el nodo con el que se esta tratando.
-     * @param tab es una tabulacion que ayuda a identificar la gerarquia de nodos.
-     */
-    void print(BinaryNode<E> *pNode,string tab) const;
-    /**
      * @brief Remueve un dato, utilizando la recursividad como fuerte.
      * @param data el dato a remover
      * @param pRoot el nodo a explorar.
@@ -87,10 +80,6 @@ public:
      * @return true si el dato se borro(si existia), false si no existia.
      */
     bool remove(E data);
-    /**
-     * @brief imprime el arbol.
-     */
-    void print()const;
 
     /**
      * @brief
@@ -126,10 +115,9 @@ BinaryNode<E> *BinaryTree<E>::extractGreatestOfLowest(BinaryNode<E> *pRoot)
         while (current->getRight());
         pRoot->setRight(current->getLeft());
     }
-    else {
-        pRoot->setLeft(current->getLeft());
-    }
+    else pRoot->setLeft(current->getLeft());
     pRoot = current;
+    pRoot->resetChilds();
     return pRoot;
 }
 
@@ -143,12 +131,10 @@ BinaryNode<E> *BinaryTree<E>::extractLowestOfGreatest(BinaryNode<E> *pRoot)
         while (current->getLeft());
         pRoot->setLeft(current->getRight());
     }
-    else {
-        pRoot->setRight(current->getRight());
-    }
+    else pRoot->setRight(current->getRight());
+
     pRoot = current;
-    pRoot->setLeft(Null);
-    pRoot->setRight(Null);
+    pRoot->resetChilds();
     return pRoot;
 }
 
@@ -173,9 +159,7 @@ E BinaryTree<E>::search(E data)const{
     while (current){
         if (data < current->getData())current = current->getLeft();
         else if(data > current->getData())current = current->getRight();
-        else{
-            return current->getData();
-        }
+        else return current->getData();
     }
     throw this;
 }
@@ -186,36 +170,6 @@ bool BinaryTree<E>::remove(E data)
     deletedNode = false;
     root = remove(data,root);
     return deletedNode;
-}
-
-template <class E>
-void BinaryTree<E>::print() const{
-    if (root){
-        cout << "root-data:{"<<root->getData()<< "}"<< endl;
-        cout << " right-";
-        print(this->root->getRight(),"  ");
-        cout << " left-";
-        print(this->root->getLeft(),"  ");
-        cout << endl;
-    }
-    else{
-        cout << "the tree is empty!"<< endl;
-    }
-}
-
-
-template <class E>
-void BinaryTree<E>::print(BinaryNode<E> *pNode,string tab) const{
-    if (pNode){
-        E print = pNode->getData();
-        cout <<"data:{" << print << "}" << endl;
-        cout << tab <<"  right-";
-        this->print(pNode->getRight(),tab + "  ");
-        cout << tab <<"  left-";
-        this->print(pNode->getLeft(), tab + "  ");
-    }
-    else cout << "data: null" << endl;
-
 }
 
 template <class E>
@@ -234,12 +188,8 @@ BinaryNode<E> *BinaryTree<E>::remove(E data, BinaryNode<E> *pRoot)
     BinaryNode<E> *current = Null;
     if (pRoot->getLeft())current = this->extractGreatestOfLowest(pRoot);
     else if (pRoot->getRight())current = this->extractLowestOfGreatest(pRoot);
-    if (current){
-        current->setLeft(pRoot->getLeft());
-        current->setRight(pRoot->getRight());
-    }
-    pRoot->setLeft(Null);
-    pRoot->setRight(Null);
+    if (current)current->setChilds(pRoot->getRight(),pRoot->getLeft());
+    pRoot->resetChilds();
     delete pRoot;
     return current;
 }

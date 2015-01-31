@@ -7,7 +7,6 @@ var classCircularList =
     [ "addi", "classCircularList.html#a6de0a0af406c738b95b0a6d898b69f8e", null ],
     [ "get", "classCircularList.html#ad6783339c7ff05841fc62f74f809644d", null ],
     [ "getIterator", "classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e", null ],
-    [ "print", "classCircularList.html#ad49a3216e39d960d995fb93b87f18856", null ],
     [ "remove", "classCircularList.html#a4a6acfd818a0ae9055957ec80258c60a", null ],
     [ "set", "classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3", null ]
 ];

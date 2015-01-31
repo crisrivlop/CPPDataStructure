@@ -3,29 +3,67 @@
 }
 
 
+Esta clase es un iterador de las listas doblemente enlazadas, ademas la actualizacion de la lista N\-O actualiza el iterador, por lo que el iterador es momentaneo. Es similar a una fotografia de una lista que no ha sido alterada si la lista se altera usando un iterador puede que el iterador falle. Por lo que es recomendable que la lista no se actualice mientras se usa un iterador. Ademas de que este iterador recorre la lista desde el dato final hasta el dato inicial.  
+
+
+
+
+{\ttfamily \#include $<$Inverse\-Iterator.\-h$>$}
+
+
+
 Herencias \hyperlink{classIIterator}{I\-Iterator$<$ E $>$}.
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 E \hyperlink{classInverseIterator_a4c1d8ceb8264f7f8186b6244a0a62940}{get\-Next} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el dato actual y actualiza al nodo siguiente. \end{DoxyCompactList}\item 
 bool \hyperlink{classInverseIterator_a86973781dfa84df67be2843fc4545692}{has\-Next} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el dato actual. \end{DoxyCompactList}\item 
 E \hyperlink{classInverseIterator_afdbb5c310621c773da10dfb5bc3b1a4c}{get\-Current} () const 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verifica si tiene siguiente. \end{DoxyCompactList}\item 
+\hypertarget{classInverseIterator_ae3b6736187c1dbc82ead0277d31e5898}{virtual \hyperlink{classInverseIterator_ae3b6736187c1dbc82ead0277d31e5898}{$\sim$\-Inverse\-Iterator} ()}\label{classInverseIterator_ae3b6736187c1dbc82ead0277d31e5898}
+
+\begin{DoxyCompactList}\small\item\em liberador de memoria \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Métodos protegidos}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classInverseIterator_a31703976cbdca73a1035f47509e8229d}{{\bfseries Inverse\-Iterator} (\hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$, \hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$)}\label{classInverseIterator_a31703976cbdca73a1035f47509e8229d}
-
-\end{DoxyCompactItemize}
+\hyperlink{classInverseIterator_a31703976cbdca73a1035f47509e8229d}{Inverse\-Iterator} (\hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$, \hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$)
+\begin{DoxyCompactList}\small\item\em Metodo constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Amigas}
 \begin{DoxyCompactItemize}
 \item 
 \hypertarget{classInverseIterator_ad435a9844a002995926acf522128f7a8}{{\footnotesize template$<$class T $>$ }\\class {\bfseries Double\-List}}\label{classInverseIterator_ad435a9844a002995926acf522128f7a8}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class E$>$class Inverse\-Iterator$<$ E $>$}
+
+Esta clase es un iterador de las listas doblemente enlazadas, ademas la actualizacion de la lista N\-O actualiza el iterador, por lo que el iterador es momentaneo. Es similar a una fotografia de una lista que no ha sido alterada si la lista se altera usando un iterador puede que el iterador falle. Por lo que es recomendable que la lista no se actualice mientras se usa un iterador. Ademas de que este iterador recorre la lista desde el dato final hasta el dato inicial. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classInverseIterator_a31703976cbdca73a1035f47509e8229d}{\index{Inverse\-Iterator@{Inverse\-Iterator}!Inverse\-Iterator@{Inverse\-Iterator}}
+\index{Inverse\-Iterator@{Inverse\-Iterator}!InverseIterator@{Inverse\-Iterator}}
+\subsubsection[{Inverse\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Inverse\-Iterator}$<$ E $>$\-::{\bf Inverse\-Iterator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Double\-Node}$<$ E $>$ $\ast$}]{head, }
+\item[{{\bf Double\-Node}$<$ E $>$ $\ast$}]{tail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classInverseIterator_a31703976cbdca73a1035f47509e8229d}
+
+
+Metodo constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em head} & es la cabeza el ultimo elemento de la iteracion \\
+\hline
+{\em tail} & es la cola por donde se iniciara la iteracion \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Documentación de las funciones miembro}
@@ -36,9 +74,18 @@ E \hyperlink{classInverseIterator_afdbb5c310621c773da10dfb5bc3b1a4c}{get\-Curren
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classInverseIterator_afdbb5c310621c773da10dfb5bc3b1a4c}
+
+
+Verifica si tiene siguiente. 
+
 \begin{DoxyReturn}{Devuelve}
-E 
+true si tiene siguiente, false si no lo tiene 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementa \hyperlink{classIIterator_a50f55ce1381378aad2c93f16c9b60822}{I\-Iterator$<$ E $>$}.
@@ -50,9 +97,18 @@ Implementa \hyperlink{classIIterator_a50f55ce1381378aad2c93f16c9b60822}{I\-Itera
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classInverseIterator_a4c1d8ceb8264f7f8186b6244a0a62940}
+
+
+Obtiene el dato actual y actualiza al nodo siguiente. 
+
 \begin{DoxyReturn}{Devuelve}
-E 
+E el dato actual 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementa \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{I\-Iterator$<$ E $>$}.
@@ -64,9 +120,18 @@ Implementa \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{I\-Itera
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classInverseIterator_a86973781dfa84df67be2843fc4545692}
+
+
+Obtiene el dato actual. 
+
 \begin{DoxyReturn}{Devuelve}
-bool 
+E el dato actual 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementa \hyperlink{classIIterator_a8a73f0fb41a66fe98e5e636378759196}{I\-Iterator$<$ E $>$}.

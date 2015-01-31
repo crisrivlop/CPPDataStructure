@@ -1,0 +1,102 @@
+\hypertarget{classBinaryTree}{\section{Referencia de la plantilla de la Clase Binary\-Tree$<$ E $>$}
+\label{classBinaryTree}\index{Binary\-Tree$<$ E $>$@{Binary\-Tree$<$ E $>$}}
+}
+
+
+Clase Arbol Binario. Esta clase representa a la estructura de datos arbol binario, valga la rendondancia. Esta estructura de datos puede insertar, eliminar y buscar los datos relacionados con esta la misma. Usa platillas para almacenar diversos datos. Usa los operadores de comparacion como $<$, $>$, ==, $>$=, $<$= y !=.  
+
+
+
+
+{\ttfamily \#include $<$Binary\-Tree.\-h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBinaryTree_ae3d78b752a8a3c48ba2f6d3e51eefc6f}{\hyperlink{classBinaryTree_ae3d78b752a8a3c48ba2f6d3e51eefc6f}{Binary\-Tree} ()}\label{classBinaryTree_ae3d78b752a8a3c48ba2f6d3e51eefc6f}
+
+\begin{DoxyCompactList}\small\item\em Inicializa un arbol binario. \end{DoxyCompactList}\item 
+bool \hyperlink{classBinaryTree_a68affc88c790c15456f29e5d33f29198}{add} (E data)
+\begin{DoxyCompactList}\small\item\em Agrega un dato al arbol binario, si el dato ya existe no lo inserta. \end{DoxyCompactList}\item 
+E \hyperlink{classBinaryTree_acfd3b1f3d4944c900c35ce53bfd0d428}{search} (E data) const 
+\begin{DoxyCompactList}\small\item\em Busca un dato en el arbol. Si el dato no se encuentra en el arbol arroja un error, en este caso el mismo arbol. \end{DoxyCompactList}\item 
+bool \hyperlink{classBinaryTree_aa4093a8ea3e85b9064e6264a0b40c342}{remove} (E data)
+\begin{DoxyCompactList}\small\item\em Remueve un dato en el arbol, en caso de no existir no pasa nada. \end{DoxyCompactList}\item 
+\hypertarget{classBinaryTree_a484cf26b3a984cef9978de0c0d638874}{virtual \hyperlink{classBinaryTree_a484cf26b3a984cef9978de0c0d638874}{$\sim$\-Binary\-Tree} ()}\label{classBinaryTree_a484cf26b3a984cef9978de0c0d638874}
+
+\begin{DoxyCompactList}\small\item\em Libera la memoria ocupada por el arbol borrando la raiz del arbol. La raiz libera la memoria de los nodos hijos y estos sus nodos hijos, y asi consecutivamente, de esta manera se usa la recursividad para liberar memoria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class E$>$class Binary\-Tree$<$ E $>$}
+
+Clase Arbol Binario. Esta clase representa a la estructura de datos arbol binario, valga la rendondancia. Esta estructura de datos puede insertar, eliminar y buscar los datos relacionados con esta la misma. Usa platillas para almacenar diversos datos. Usa los operadores de comparacion como $<$, $>$, ==, $>$=, $<$= y !=. 
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classBinaryTree_a68affc88c790c15456f29e5d33f29198}{\index{Binary\-Tree@{Binary\-Tree}!add@{add}}
+\index{add@{add}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Binary\-Tree}$<$ E $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryTree_a68affc88c790c15456f29e5d33f29198}
+
+
+Agrega un dato al arbol binario, si el dato ya existe no lo inserta. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el dato a insertar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true, si el dato ha sido insertado, false en caso constrario. 
+\end{DoxyReturn}
+\hypertarget{classBinaryTree_aa4093a8ea3e85b9064e6264a0b40c342}{\index{Binary\-Tree@{Binary\-Tree}!remove@{remove}}
+\index{remove@{remove}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Binary\-Tree}$<$ E $>$\-::remove (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryTree_aa4093a8ea3e85b9064e6264a0b40c342}
+
+
+Remueve un dato en el arbol, en caso de no existir no pasa nada. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el dato a borrar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el dato se borro(si existia), false si no existia. 
+\end{DoxyReturn}
+\hypertarget{classBinaryTree_acfd3b1f3d4944c900c35ce53bfd0d428}{\index{Binary\-Tree@{Binary\-Tree}!search@{search}}
+\index{search@{search}!BinaryTree@{Binary\-Tree}}
+\subsubsection[{search}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ E {\bf Binary\-Tree}$<$ E $>$\-::search (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+) const}}\label{classBinaryTree_acfd3b1f3d4944c900c35ce53bfd0d428}
+
+
+Busca un dato en el arbol. Si el dato no se encuentra en el arbol arroja un error, en este caso el mismo arbol. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el dato a buscar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el dato buscado. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em const} & Binary\-Tree$<$\-E$>$$\ast$ \\
+\hline
+\end{DoxyExceptions}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+tree/Binary\-Tree.\-h\end{DoxyCompactItemize}

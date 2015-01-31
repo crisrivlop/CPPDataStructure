@@ -8,7 +8,6 @@ var classDoubleCircularList =
     [ "get", "classDoubleCircularList.html#aa00bc8fd524af1ba208f85d8816dec52", null ],
     [ "getIterator", "classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad", null ],
     [ "inverseIteration", "classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b", null ],
-    [ "print", "classDoubleCircularList.html#a56330353baf42afa3c49e2ade77c9e07", null ],
     [ "remove", "classDoubleCircularList.html#ae7ed8b6714720cb7daafa639f232ecc3", null ],
     [ "set", "classDoubleCircularList.html#a95e0f27bda1158233015ee3ff27b3ade", null ]
 ];

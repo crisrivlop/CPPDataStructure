@@ -1,0 +1,202 @@
+\hypertarget{classBinaryNode}{\section{Referencia de la plantilla de la Clase Binary\-Node$<$ E $>$}
+\label{classBinaryNode}\index{Binary\-Node$<$ E $>$@{Binary\-Node$<$ E $>$}}
+}
+
+
+Esta clase es el elemento sustancial para los arboles binarios, contiene datos y punteros a la derecha e izquierda para generar esa estructura de los arboles binarios.  
+
+
+
+
+{\ttfamily \#include $<$Binary\-Node.\-h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBinaryNode_a770d00114c87b6e4b8ebb50c9bd24272}{Binary\-Node} (E data)
+\begin{DoxyCompactList}\small\item\em Constructor, setea el dato que contiene el nodo y los punteros son punteros nulos para evitar punteros colgados. \end{DoxyCompactList}\item 
+\hyperlink{classBinaryNode_a5b208d4006198d37d5ec0824af740e9f}{Binary\-Node} (E data, \hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$left, \hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$right)
+\begin{DoxyCompactList}\small\item\em onstructor, setea el dato que contiene el nodo y los punteros son punteros a la derecha e izquierda, se puede omiter el de la derecha y este se seteara como nulo. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryNode_ad4d399a6fe4841baabfeef875e2c5bd3}{set\-Data} (E data)
+\begin{DoxyCompactList}\small\item\em Setea el dato que contiene el nodo. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryNode_a0ac78ba2fb207003c18951977b7345c5}{set\-Left} (\hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$left)
+\begin{DoxyCompactList}\small\item\em Setea el nodo de la izquierda. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryNode_a59e5b3d0213b13e4e35ded03bbda7da2}{set\-Right} (\hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$right)
+\begin{DoxyCompactList}\small\item\em Setea el nodo de la derecha. \end{DoxyCompactList}\item 
+void \hyperlink{classBinaryNode_a2f042cb3740f988f889ec140658c448e}{set\-Childs} (\hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$right, \hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$left)
+\begin{DoxyCompactList}\small\item\em set\-Childs, setea los hijos del nodo en cuestion, este metodo simplemente sobrescribe los punteros no los elimina. \end{DoxyCompactList}\item 
+E \hyperlink{classBinaryNode_af2163a11c5541f985f44012a7b9e639a}{get\-Data} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el dato que contiene el nodo. \end{DoxyCompactList}\item 
+\hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$ \hyperlink{classBinaryNode_ab9b188aa3673f1b7c05e64664f00d766}{get\-Left} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el nodo de la izquierda. \end{DoxyCompactList}\item 
+\hyperlink{classBinaryNode}{Binary\-Node}$<$ E $>$ $\ast$ \hyperlink{classBinaryNode_a4278dd3984a688ad0f72fdd3567aad5d}{get\-Right} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el nodo de la derecha. \end{DoxyCompactList}\item 
+\hypertarget{classBinaryNode_aa9c499024d66d462aa9f7d9df0fb7c60}{void \hyperlink{classBinaryNode_aa9c499024d66d462aa9f7d9df0fb7c60}{reset\-Childs} ()}\label{classBinaryNode_aa9c499024d66d462aa9f7d9df0fb7c60}
+
+\begin{DoxyCompactList}\small\item\em reset\-Childs los punteros a los hijos del nodo que llame este metodo seran nulos \end{DoxyCompactList}\item 
+\hypertarget{classBinaryNode_a5f14ccd899c22516a360cf84cd75d6fa}{virtual \hyperlink{classBinaryNode_a5f14ccd899c22516a360cf84cd75d6fa}{$\sim$\-Binary\-Node} ()}\label{classBinaryNode_a5f14ccd899c22516a360cf84cd75d6fa}
+
+\begin{DoxyCompactList}\small\item\em Liberador de memoria, libera la memoria que ocupa y la memoria que ocupan sus hijos. si se desea borrar solo este nodo se debe setear los punteros de los hijos a Null o sea que apunten a 0 en memoria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class E$>$class Binary\-Node$<$ E $>$}
+
+Esta clase es el elemento sustancial para los arboles binarios, contiene datos y punteros a la derecha e izquierda para generar esa estructura de los arboles binarios. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classBinaryNode_a770d00114c87b6e4b8ebb50c9bd24272}{\index{Binary\-Node@{Binary\-Node}!Binary\-Node@{Binary\-Node}}
+\index{Binary\-Node@{Binary\-Node}!BinaryNode@{Binary\-Node}}
+\subsubsection[{Binary\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Binary\-Node}$<$ E $>$\-::{\bf Binary\-Node} (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_a770d00114c87b6e4b8ebb50c9bd24272}
+
+
+Constructor, setea el dato que contiene el nodo y los punteros son punteros nulos para evitar punteros colgados. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el dato que contendra el nodo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryNode_a5b208d4006198d37d5ec0824af740e9f}{\index{Binary\-Node@{Binary\-Node}!Binary\-Node@{Binary\-Node}}
+\index{Binary\-Node@{Binary\-Node}!BinaryNode@{Binary\-Node}}
+\subsubsection[{Binary\-Node}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Binary\-Node}$<$ E $>$\-::{\bf Binary\-Node} (
+\begin{DoxyParamCaption}
+\item[{E}]{data, }
+\item[{{\bf Binary\-Node}$<$ E $>$ $\ast$}]{left, }
+\item[{{\bf Binary\-Node}$<$ E $>$ $\ast$}]{right}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_a5b208d4006198d37d5ec0824af740e9f}
+
+
+onstructor, setea el dato que contiene el nodo y los punteros son punteros a la derecha e izquierda, se puede omiter el de la derecha y este se seteara como nulo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el dato que contendra el nodo \\
+\hline
+{\em left} & el nodo de la izquierda \\
+\hline
+{\em right} & el nodo de la derecha \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\hypertarget{classBinaryNode_af2163a11c5541f985f44012a7b9e639a}{\index{Binary\-Node@{Binary\-Node}!get\-Data@{get\-Data}}
+\index{get\-Data@{get\-Data}!BinaryNode@{Binary\-Node}}
+\subsubsection[{get\-Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ E {\bf Binary\-Node}$<$ E $>$\-::get\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_af2163a11c5541f985f44012a7b9e639a}
+
+
+Obtiene el dato que contiene el nodo. 
+
+\begin{DoxyReturn}{Devuelve}
+E el dato contenido en el nodo. 
+\end{DoxyReturn}
+\hypertarget{classBinaryNode_ab9b188aa3673f1b7c05e64664f00d766}{\index{Binary\-Node@{Binary\-Node}!get\-Left@{get\-Left}}
+\index{get\-Left@{get\-Left}!BinaryNode@{Binary\-Node}}
+\subsubsection[{get\-Left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Binary\-Node}$<$ E $>$ $\ast$ {\bf Binary\-Node}$<$ E $>$\-::get\-Left (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_ab9b188aa3673f1b7c05e64664f00d766}
+
+
+Obtiene el nodo de la izquierda. 
+
+\begin{DoxyReturn}{Devuelve}
+Binary\-Node$<$\-E$>$ el nodo de la izquierda 
+\end{DoxyReturn}
+\hypertarget{classBinaryNode_a4278dd3984a688ad0f72fdd3567aad5d}{\index{Binary\-Node@{Binary\-Node}!get\-Right@{get\-Right}}
+\index{get\-Right@{get\-Right}!BinaryNode@{Binary\-Node}}
+\subsubsection[{get\-Right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Binary\-Node}$<$ E $>$ $\ast$ {\bf Binary\-Node}$<$ E $>$\-::get\-Right (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_a4278dd3984a688ad0f72fdd3567aad5d}
+
+
+Obtiene el nodo de la derecha. 
+
+\begin{DoxyReturn}{Devuelve}
+Binary\-Node$<$\-E$>$ el nodo de la derecha 
+\end{DoxyReturn}
+\hypertarget{classBinaryNode_a2f042cb3740f988f889ec140658c448e}{\index{Binary\-Node@{Binary\-Node}!set\-Childs@{set\-Childs}}
+\index{set\-Childs@{set\-Childs}!BinaryNode@{Binary\-Node}}
+\subsubsection[{set\-Childs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Binary\-Node}$<$ E $>$\-::set\-Childs (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\-Node}$<$ E $>$ $\ast$}]{right, }
+\item[{{\bf Binary\-Node}$<$ E $>$ $\ast$}]{left}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_a2f042cb3740f988f889ec140658c448e}
+
+
+set\-Childs, setea los hijos del nodo en cuestion, este metodo simplemente sobrescribe los punteros no los elimina. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em right} & el nodo que representa la derecha del nodo en cuestion \\
+\hline
+{\em left} & el nodo que representa la izquierda del nodo en cuestion \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryNode_ad4d399a6fe4841baabfeef875e2c5bd3}{\index{Binary\-Node@{Binary\-Node}!set\-Data@{set\-Data}}
+\index{set\-Data@{set\-Data}!BinaryNode@{Binary\-Node}}
+\subsubsection[{set\-Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Binary\-Node}$<$ E $>$\-::set\-Data (
+\begin{DoxyParamCaption}
+\item[{E}]{data}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_ad4d399a6fe4841baabfeef875e2c5bd3}
+
+
+Setea el dato que contiene el nodo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el nuevo dato que contendra el nodo \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryNode_a0ac78ba2fb207003c18951977b7345c5}{\index{Binary\-Node@{Binary\-Node}!set\-Left@{set\-Left}}
+\index{set\-Left@{set\-Left}!BinaryNode@{Binary\-Node}}
+\subsubsection[{set\-Left}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Binary\-Node}$<$ E $>$\-::set\-Left (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\-Node}$<$ E $>$ $\ast$}]{left}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_a0ac78ba2fb207003c18951977b7345c5}
+
+
+Setea el nodo de la izquierda. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em left} & el nuevo nodo de la izquierda \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBinaryNode_a59e5b3d0213b13e4e35ded03bbda7da2}{\index{Binary\-Node@{Binary\-Node}!set\-Right@{set\-Right}}
+\index{set\-Right@{set\-Right}!BinaryNode@{Binary\-Node}}
+\subsubsection[{set\-Right}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Binary\-Node}$<$ E $>$\-::set\-Right (
+\begin{DoxyParamCaption}
+\item[{{\bf Binary\-Node}$<$ E $>$ $\ast$}]{right}
+\end{DoxyParamCaption}
+)}}\label{classBinaryNode_a59e5b3d0213b13e4e35ded03bbda7da2}
+
+
+Setea el nodo de la derecha. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em right} & el nuevo nodo de la derecha. \\
+\hline
+\end{DoxyParams}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
+\item 
+tree/Binary\-Node.\-h\end{DoxyCompactItemize}

@@ -3,7 +3,7 @@
 }
 
 
-Esta clase.  
+Esta clase es un iterador de las listas doblemente enlazadas, ademas la actualizacion de la lista N\-O actualiza el iterador, por lo que el iterador es momentaneo. Es similar a una fotografia de una lista que no ha sido alterada si la lista se altera usando un iterador puede que el iterador falle. Por lo que es recomendable que la lista no se actualice mientras se usa un iterador.  
 
 
 
@@ -26,9 +26,8 @@ bool \hyperlink{classDoubleIterator_adb5ef4c66649e0a4ce18e38cd85904ed}{has\-Next
 \subsection*{Métodos protegidos}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classDoubleIterator_a5b45a91dc363462fddcb4965e226e2fc}{\hyperlink{classDoubleIterator_a5b45a91dc363462fddcb4965e226e2fc}{Double\-Iterator} (\hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$, \hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$)}\label{classDoubleIterator_a5b45a91dc363462fddcb4965e226e2fc}
-
-\begin{DoxyCompactList}\small\item\em \hyperlink{classDoubleIterator}{Double\-Iterator}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classDoubleIterator_a5b45a91dc363462fddcb4965e226e2fc}{Double\-Iterator} (\hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$, \hyperlink{classDoubleNode}{Double\-Node}$<$ E $>$ $\ast$)
+\begin{DoxyCompactList}\small\item\em Metodo constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Amigas}
 \begin{DoxyCompactItemize}
 \item 
@@ -40,7 +39,29 @@ bool \hyperlink{classDoubleIterator_adb5ef4c66649e0a4ce18e38cd85904ed}{has\-Next
 \subsection{Descripción detallada}
 \subsubsection*{template$<$class E$>$class Double\-Iterator$<$ E $>$}
 
-Esta clase. 
+Esta clase es un iterador de las listas doblemente enlazadas, ademas la actualizacion de la lista N\-O actualiza el iterador, por lo que el iterador es momentaneo. Es similar a una fotografia de una lista que no ha sido alterada si la lista se altera usando un iterador puede que el iterador falle. Por lo que es recomendable que la lista no se actualice mientras se usa un iterador. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classDoubleIterator_a5b45a91dc363462fddcb4965e226e2fc}{\index{Double\-Iterator@{Double\-Iterator}!Double\-Iterator@{Double\-Iterator}}
+\index{Double\-Iterator@{Double\-Iterator}!DoubleIterator@{Double\-Iterator}}
+\subsubsection[{Double\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Double\-Iterator}$<$ E $>$\-::{\bf Double\-Iterator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Double\-Node}$<$ E $>$ $\ast$}]{head, }
+\item[{{\bf Double\-Node}$<$ E $>$ $\ast$}]{tail}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classDoubleIterator_a5b45a91dc363462fddcb4965e226e2fc}
+
+
+Metodo constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em head} & es la cabeza por donde se iniciara la iteracion \\
+\hline
+{\em tail} & es la cola el ultimo elemento de la iteracion \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Documentación de las funciones miembro}
 \hypertarget{classDoubleIterator_a756bb08f5352e270e08b72339c32e2be}{\index{Double\-Iterator@{Double\-Iterator}!get\-Current@{get\-Current}}
@@ -57,6 +78,11 @@ Obtiene el dato actual.
 \begin{DoxyReturn}{Devuelve}
 E el dato actual 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementa \hyperlink{classIIterator_a50f55ce1381378aad2c93f16c9b60822}{I\-Iterator$<$ E $>$}.
@@ -76,6 +102,11 @@ Obtiene el dato actual y actualiza al nodo siguiente.
 E el dato actual 
 \end{DoxyReturn}
 
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
+
 
 Implementa \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{I\-Iterator$<$ E $>$}.
 
@@ -91,8 +122,13 @@ Implementa \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{I\-Itera
 Verifica si tiene siguiente. 
 
 \begin{DoxyReturn}{Devuelve}
-bool 
+true si tiene siguiente, false si no lo tiene 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementa \hyperlink{classIIterator_a8a73f0fb41a66fe98e5e636378759196}{I\-Iterator$<$ E $>$}.

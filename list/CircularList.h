@@ -4,7 +4,7 @@
 
 #ifndef CIRCULARLIST_H
 #define CIRCULARLIST_H
-#define Null 0
+
 //===========================================================================
 //==================== Declaration of Circular List =========================
 //===========================================================================
@@ -98,12 +98,7 @@ public:
     IIterator<E>* getIterator();
     //virtual setComparator(IComparator) = 0;
     //virtual IComparator getComparator() = 0;
-    /**
-     * @brief
-     * Imprime la lista en consola, es recomendable no imprimirla si la lista es muy grande.
-     *
-     */
-    void print() const;
+
     /**
      * @brief
      * Es el destructor de la lista.
@@ -139,7 +134,7 @@ template <class E> Node<E>* CircularList<E>::getNode(int index){
 }
 
 template <class E> void CircularList<E>::addi(E data){
-        if(head == Null){
+        if(head == null){
             head = new Node<E>(data);
             tail = head;
         }
@@ -153,7 +148,7 @@ template <class E> void CircularList<E>::addi(E data){
 }
 
 template <class E> void CircularList<E>::add(E data){
-        if (head == Null){
+        if (head == null){
             head = new Node<E>(data);
             tail = head;
         }
@@ -253,22 +248,6 @@ template <class E> IIterator<E>* CircularList<E>::getIterator(){
     return it;
 }
 
-template <class E> void CircularList<E>::print() const{
-    if (this->lenght > 0){
-        Node<E> *actualNode = head;
-        std::cout << "[ ";
-        for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
-            actualNode->print();
-            std::cout << ", ";
-            actualNode = actualNode->getNext();
-        }
-        actualNode->print();
-        std::cout << "]" << std::endl;
-    }
-    else{
-        std::cout << "[]" << std::endl;
-    }
-}
 
 template <class E> CircularList<E>::~CircularList(){
     Node<E> *actualNode = head;
@@ -283,8 +262,8 @@ template <class E> CircularList<E>::~CircularList(){
 }
 
 template <class E> CircularList<E>::CircularList() {
-    tail = Null;
-    head = Null;
+    tail = null;
+    head = null;
     this->lenght = 0;
 }
 

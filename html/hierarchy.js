@@ -1,8 +1,12 @@
 var hierarchy =
 [
+    [ "BArray< E >", "classBArray.html", null ],
+    [ "BinaryNode< E >", "classBinaryNode.html", null ],
+    [ "BinaryTree< E >", "classBinaryTree.html", null ],
     [ "BNode< VALUE >", "classBNode.html", null ],
     [ "BNode< K >", "classBNode.html", null ],
     [ "BTree< K >", "classBTree.html", null ],
+    [ "CPPDataStructure", "classCPPDataStructure.html", null ],
     [ "DoubleNode< E >", "classDoubleNode.html", null ],
     [ "IIterator< E >", "classIIterator.html", [
       [ "DoubleIterator< E >", "classDoubleIterator.html", null ],

@@ -7,7 +7,6 @@ var classList =
     [ "addi", "classList.html#a40dfa61150de7310d69001c697598b04", null ],
     [ "get", "classList.html#ab081a52d7a62aa6c5550ff9762f9427f", null ],
     [ "getIterator", "classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb", null ],
-    [ "print", "classList.html#ad2201bc77b15291f215523ecc96705dc", null ],
     [ "remove", "classList.html#a46cec78299d3e23469276adf46adf9c1", null ],
     [ "set", "classList.html#ac8b31be96806bd56f655436629ac2e7a", null ]
 ];

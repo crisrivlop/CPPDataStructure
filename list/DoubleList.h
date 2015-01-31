@@ -3,7 +3,6 @@
 #include "DoubleIterator.h"
 #include "InverseIterator.h"
 #include "iostream"
-#define Null 0
 #ifndef DOUBLELIST_H
 #define DOUBLELIST_H
 
@@ -110,12 +109,6 @@ public:
      * @param si es true el iterador sera inverso, false es un iterador normal
      */
     void inverseIteration(bool);
-    /**
-     * @brief
-     * Imprime la lista en consola, es recomendable no imprimirla si la lista es muy grande.
-     *
-     */
-    void print() const;
 
     /**
      * @brief
@@ -144,15 +137,15 @@ template <class E> DoubleNode<E>* DoubleList<E>::getNode(int index){
 
 
 template <class E> DoubleList<E>::DoubleList(){
-    tail = Null;
-    head = Null;
+    tail = null;
+    head = null;
     this->lenght = 0;
     inverseIterate = false;
 }
 
 
 template <class E> void DoubleList<E>::addi(E data){
-    if(head == Null){
+    if(head == null){
         head = new DoubleNode<E>(data);
         tail = head;
     }
@@ -167,7 +160,7 @@ template <class E> void DoubleList<E>::addi(E data){
 
 
 template <class E> void DoubleList<E>::add(E data){
-    if (tail == Null){
+    if (tail == null){
         head = new DoubleNode<E>(data);
         tail = head;
     }
@@ -217,14 +210,14 @@ template <class E> bool DoubleList<E>::remove(int index){
         else if (index == 0){
             DoubleNode<E> *deleteNode = head;
             head = head->getNext();
-            head->setPrevious(Null);
+            head->setPrevious(null);
             delete deleteNode;
         }
         else if (this->lenght-1 == index){
             DoubleNode<E> *deleteNode = tail;
             tail = tail->getPrevious();
-            tail->setNext(Null);
-            deleteNode->setPrevious(Null);
+            tail->setNext(null);
+            deleteNode->setPrevious(null);
             delete deleteNode;
         }
         else{
@@ -232,8 +225,8 @@ template <class E> bool DoubleList<E>::remove(int index){
             DoubleNode<E> *deleteNode = previousNode->getNext();
             previousNode->setNext(deleteNode->getNext());
             deleteNode->getNext()->setPrevious(previousNode);
-            deleteNode->setNext(Null);
-            deleteNode->setPrevious(Null);
+            deleteNode->setNext(null);
+            deleteNode->setPrevious(null);
             delete deleteNode;
         }
         this->lenght--;
@@ -285,26 +278,6 @@ template <class E> IIterator<E>* DoubleList<E>::getIterator()
 }
 template <class E> void DoubleList<E>::inverseIteration(bool inverse){
     inverseIterate = inverse;
-}
-
-
-template <class E> void DoubleList<E>::print() const{
-    if (head){
-        DoubleNode<E> *actualNode = head;
-        std::cout << "[";
-
-        for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
-            actualNode->print();
-            std::cout << ",";
-            actualNode = actualNode->getNext();
-        }
-        actualNode->print();
-        std::cout << "]" << std::endl;
-    }
-    else{
-        std::cout << "[ ]"<< std::endl;
-    }
-
 }
 
 

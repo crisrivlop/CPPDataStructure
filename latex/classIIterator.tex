@@ -3,18 +3,35 @@
 }
 
 
+Es una interfaz para los iteradores hijos de este.  
+
+
+
+
+{\ttfamily \#include $<$I\-Iterator.\-h$>$}
+
+
+
 Heredado por \hyperlink{classDoubleIterator}{Double\-Iterator$<$ E $>$}, \hyperlink{classInverseIterator}{Inverse\-Iterator$<$ E $>$} y \hyperlink{classSimpleIterator}{Simple\-Iterator$<$ E $>$}.
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 virtual E \hyperlink{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{get\-Next} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el dato actual y actualiza al nodo siguiente. \end{DoxyCompactList}\item 
 virtual E \hyperlink{classIIterator_a50f55ce1381378aad2c93f16c9b60822}{get\-Current} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el dato actual. \end{DoxyCompactList}\item 
 virtual bool \hyperlink{classIIterator_a8a73f0fb41a66fe98e5e636378759196}{has\-Next} () const =0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Verifica si tiene siguiente. \end{DoxyCompactList}\item 
+\hypertarget{classIIterator_a46e00fa31d4f8d29232f4b1dfc27026b}{virtual \hyperlink{classIIterator_a46e00fa31d4f8d29232f4b1dfc27026b}{$\sim$\-I\-Iterator} ()}\label{classIIterator_a46e00fa31d4f8d29232f4b1dfc27026b}
 
+\begin{DoxyCompactList}\small\item\em Liberador de memoria. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class E$>$class I\-Iterator$<$ E $>$}
+
+Es una interfaz para los iteradores hijos de este. 
 
 \subsection{Documentación de las funciones miembro}
 \hypertarget{classIIterator_a50f55ce1381378aad2c93f16c9b60822}{\index{I\-Iterator@{I\-Iterator}!get\-Current@{get\-Current}}
@@ -24,12 +41,21 @@ virtual bool \hyperlink{classIIterator_a8a73f0fb41a66fe98e5e636378759196}{has\-N
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIIterator_a50f55ce1381378aad2c93f16c9b60822}
+
+
+Obtiene el dato actual. 
+
 \begin{DoxyReturn}{Devuelve}
-E 
+E el dato actual 
 \end{DoxyReturn}
 
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
-Implementado en \hyperlink{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}{Simple\-Iterator$<$ E $>$}, \hyperlink{classDoubleIterator_a756bb08f5352e270e08b72339c32e2be}{Double\-Iterator$<$ E $>$} y \hyperlink{classInverseIterator_afdbb5c310621c773da10dfb5bc3b1a4c}{Inverse\-Iterator$<$ E $>$}.
+
+Implementado en \hyperlink{classInverseIterator_afdbb5c310621c773da10dfb5bc3b1a4c}{Inverse\-Iterator$<$ E $>$}, \hyperlink{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}{Simple\-Iterator$<$ E $>$} y \hyperlink{classDoubleIterator_a756bb08f5352e270e08b72339c32e2be}{Double\-Iterator$<$ E $>$}.
 
 \hypertarget{classIIterator_ab1b13434e4fac20c74262dee51d1e870}{\index{I\-Iterator@{I\-Iterator}!get\-Next@{get\-Next}}
 \index{get\-Next@{get\-Next}!IIterator@{I\-Iterator}}
@@ -38,9 +64,18 @@ Implementado en \hyperlink{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIIterator_ab1b13434e4fac20c74262dee51d1e870}
+
+
+Obtiene el dato actual y actualiza al nodo siguiente. 
+
 \begin{DoxyReturn}{Devuelve}
-E 
+E el dato actual 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementado en \hyperlink{classSimpleIterator_ab01032dba9ff4f1a1c47af3082b717d5}{Simple\-Iterator$<$ E $>$}, \hyperlink{classDoubleIterator_aaaa1b361a61339bfee3bf86f3f67b198}{Double\-Iterator$<$ E $>$} y \hyperlink{classInverseIterator_a4c1d8ceb8264f7f8186b6244a0a62940}{Inverse\-Iterator$<$ E $>$}.
@@ -52,9 +87,18 @@ Implementado en \hyperlink{classSimpleIterator_ab01032dba9ff4f1a1c47af3082b717d5
 {}
 \end{DoxyParamCaption}
 ) const\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classIIterator_a8a73f0fb41a66fe98e5e636378759196}
+
+
+Verifica si tiene siguiente. 
+
 \begin{DoxyReturn}{Devuelve}
-bool 
+true si tiene siguiente, false si no lo tiene 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em donthavenext} & si el dato actual es nulo \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementado en \hyperlink{classSimpleIterator_ab946b3d707e32d4d53f15af201ea2113}{Simple\-Iterator$<$ E $>$}, \hyperlink{classDoubleIterator_adb5ef4c66649e0a4ce18e38cd85904ed}{Double\-Iterator$<$ E $>$} y \hyperlink{classInverseIterator_a86973781dfa84df67be2843fc4545692}{Inverse\-Iterator$<$ E $>$}.

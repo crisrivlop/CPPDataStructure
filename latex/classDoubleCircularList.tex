@@ -33,15 +33,12 @@ void \hyperlink{classDoubleCircularList_a95e0f27bda1158233015ee3ff27b3ade}{set} 
 E \hyperlink{classDoubleCircularList_aa00bc8fd524af1ba208f85d8816dec52}{get} (int)
 \begin{DoxyCompactList}\small\item\em Obtiene un dato el la posicion indicada. En caso que el indice indicado sea incorrecto, osea que sea menor que cero o mayor o igual que el largo de la lista arrojara un error pues el dato esta fuera de los limites de la lista. \end{DoxyCompactList}\item 
 \hyperlink{classIIterator}{I\-Iterator}$<$ E $>$ $\ast$ \hyperlink{classDoubleCircularList_abba1430e956c7660a88f786bfd8d87ad}{get\-Iterator} ()
-\begin{DoxyCompactList}\small\item\em get\-Iterator. Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante la palabra reservada delete. Ademas este puede ser un iterador inverso o normal, eso quiere decir que el iterador puede recorrer la lista al reves o al derecho respectivamente a los iteradores anteriormente citados. El tipo de iterador puede ser señalado con la funcion \hyperlink{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}{Double\-Circular\-List\-::inverse\-Iteration(bool)}\end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante la palabra reservada delete. Ademas este puede ser un iterador inverso o normal, eso quiere decir que el iterador puede recorrer la lista al reves o al derecho respectivamente a los iteradores anteriormente citados. El tipo de iterador puede ser señalado con la funcion \hyperlink{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}{Double\-Circular\-List\-::inverse\-Iteration(bool)}\end{DoxyCompactList}\item 
 void \hyperlink{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}{inverse\-Iteration} (bool)
-\begin{DoxyCompactList}\small\item\em inverse\-Iteration. Decide si el iterador es inverso o normal. \end{DoxyCompactList}\item 
-\hypertarget{classDoubleCircularList_a56330353baf42afa3c49e2ade77c9e07}{void \hyperlink{classDoubleCircularList_a56330353baf42afa3c49e2ade77c9e07}{print} () const }\label{classDoubleCircularList_a56330353baf42afa3c49e2ade77c9e07}
-
-\begin{DoxyCompactList}\small\item\em print. Imprime la lista en consola, es recomendable no imprimirla si la lista es muy grande. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Decide si el iterador es inverso o normal. \end{DoxyCompactList}\item 
 \hypertarget{classDoubleCircularList_a26dba8b85983742cfbf38886245fe2a4}{virtual \hyperlink{classDoubleCircularList_a26dba8b85983742cfbf38886245fe2a4}{$\sim$\-Double\-Circular\-List} ()}\label{classDoubleCircularList_a26dba8b85983742cfbf38886245fe2a4}
 
-\begin{DoxyCompactList}\small\item\em $\sim$\-Double\-Circular\-List. Es el destructor de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Es el destructor de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
@@ -64,7 +61,7 @@ Agregar un elemento al final de la lista.
 
 
 \begin{DoxyParams}{Parámetros}
-{\em E} & el elemento a agregar \\
+{\em data} & el elemento a agregar \\
 \hline
 \end{DoxyParams}
 
@@ -85,7 +82,7 @@ Agrega el elemento en el indice indicado. Si el indice es incorrecto no se agreg
 
 
 \begin{DoxyParams}{Parámetros}
-{\em dato} & el elemento a agregar \\
+{\em data} & el elemento a agregar \\
 \hline
 {\em index} & el indice que indica el lugar donde se agragegara \\
 \hline
@@ -110,7 +107,7 @@ Agrega un elemento al principio de la lista.
 
 
 \begin{DoxyParams}{Parámetros}
-{\em E} & el elemento a agregar \\
+{\em data} & el elemento a agregar \\
 \hline
 \end{DoxyParams}
 
@@ -154,7 +151,7 @@ Implementa \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleCircularList_abba1430e956c7660a88f786bfd8d87ad}
 
 
-get\-Iterator. Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante la palabra reservada delete. Ademas este puede ser un iterador inverso o normal, eso quiere decir que el iterador puede recorrer la lista al reves o al derecho respectivamente a los iteradores anteriormente citados. El tipo de iterador puede ser señalado con la funcion \hyperlink{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}{Double\-Circular\-List\-::inverse\-Iteration(bool)}
+Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante la palabra reservada delete. Ademas este puede ser un iterador inverso o normal, eso quiere decir que el iterador puede recorrer la lista al reves o al derecho respectivamente a los iteradores anteriormente citados. El tipo de iterador puede ser señalado con la funcion \hyperlink{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}{Double\-Circular\-List\-::inverse\-Iteration(bool)}
 
 \begin{DoxyReturn}{Devuelve}
 I\-Iterator$<$\-E$>$ un puntero del iterador indicado 
@@ -172,11 +169,11 @@ Implementa \hyperlink{classIList_a997815664cc6b20eb5dfa9968251d2cd}{I\-List$<$ E
 )}}\label{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}
 
 
-inverse\-Iteration. Decide si el iterador es inverso o normal. 
+Decide si el iterador es inverso o normal. 
 
 
 \begin{DoxyParams}{Parámetros}
-{\em bool} & si es true el iterador sera inverso, false es un iterador normal \\
+{\em si} & es true el iterador sera inverso, false es un iterador normal \\
 \hline
 \end{DoxyParams}
 \hypertarget{classDoubleCircularList_ae7ed8b6714720cb7daafa639f232ecc3}{\index{Double\-Circular\-List@{Double\-Circular\-List}!remove@{remove}}

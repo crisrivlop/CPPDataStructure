@@ -1,25 +1,39 @@
 \hypertarget{classNode}{\section{Referencia de la plantilla de la Clase Node$<$ E $>$}
 \label{classNode}\index{Node$<$ E $>$@{Node$<$ E $>$}}
 }
+
+
+Es la parte elemental de una lista simple.  
+
+
+
+
+{\ttfamily \#include $<$Node.\-h$>$}
+
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
 \hyperlink{classNode_a74d41f93c30d8c3036d24894f0e4314e}{Node} (E)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor del Nodo, el next se setea como un puntero nulo para evitar punteros colgados. \end{DoxyCompactList}\item 
 \hyperlink{classNode_adc1b4c81c3fb6d0580f138650629a41e}{Node} (E data, \hyperlink{classNode}{Node}$<$ E $>$ $\ast$next)
-\item 
+\begin{DoxyCompactList}\small\item\em Constructor del Nodo. \end{DoxyCompactList}\item 
 void \hyperlink{classNode_ae13418a552fa36eddbaa5dfb767aa664}{set\-Data} (E)
-\item 
+\begin{DoxyCompactList}\small\item\em Setea el dato contenido en el nodo. \end{DoxyCompactList}\item 
 E \hyperlink{classNode_a02a4e5126542aaa1a2150932cfa2b8ce}{get\-Data} () const 
-\item 
+\begin{DoxyCompactList}\small\item\em Obtiene el dato contenido en el nodo. \end{DoxyCompactList}\item 
 void \hyperlink{classNode_a2ce12b4f2605972720e1c56fe80014a0}{set\-Next} (\hyperlink{classNode}{Node}$<$ E $>$ $\ast$)
-\item 
+\begin{DoxyCompactList}\small\item\em Setea el puntero del nodo siguiente. \end{DoxyCompactList}\item 
 \hyperlink{classNode}{Node}$<$ E $>$ $\ast$ \hyperlink{classNode_aeb063e5172867e988550ab7d6c280db7}{get\-Next} () const 
-\item 
-\hypertarget{classNode_ad4b6df1a3a5deeff634936cd82d22c59}{void {\bfseries print} () const }\label{classNode_ad4b6df1a3a5deeff634936cd82d22c59}
+\begin{DoxyCompactList}\small\item\em Obtiene el nodo siguiente. \end{DoxyCompactList}\item 
+\hypertarget{classNode_af907944256d9fca41c6a1c783a3a6536}{virtual \hyperlink{classNode_af907944256d9fca41c6a1c783a3a6536}{$\sim$\-Node} ()}\label{classNode_af907944256d9fca41c6a1c783a3a6536}
 
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Liberador de memoria. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class E$>$class Node$<$ E $>$}
+
+Es la parte elemental de una lista simple. 
 
 \subsection{Documentación del constructor y destructor}
 \hypertarget{classNode_a74d41f93c30d8c3036d24894f0e4314e}{\index{Node@{Node}!Node@{Node}}
@@ -30,10 +44,12 @@ void \hyperlink{classNode_a2ce12b4f2605972720e1c56fe80014a0}{set\-Next} (\hyperl
 \end{DoxyParamCaption}
 )}}\label{classNode_a74d41f93c30d8c3036d24894f0e4314e}
 
+
+Constructor del Nodo, el next se setea como un puntero nulo para evitar punteros colgados. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em E} & \\
-\hline
-{\em data} & \\
+{\em data} & el dato que contrendra el nodo \\
 \hline
 \end{DoxyParams}
 \hypertarget{classNode_adc1b4c81c3fb6d0580f138650629a41e}{\index{Node@{Node}!Node@{Node}}
@@ -45,10 +61,14 @@ void \hyperlink{classNode_a2ce12b4f2605972720e1c56fe80014a0}{set\-Next} (\hyperl
 \end{DoxyParamCaption}
 )}}\label{classNode_adc1b4c81c3fb6d0580f138650629a41e}
 
+
+Constructor del Nodo. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em data} & \\
+{\em data} & el dato que contendra el dato \\
 \hline
-{\em next} & \\
+{\em next} & el puntero al nodo siguiente \\
 \hline
 \end{DoxyParams}
 
@@ -61,10 +81,12 @@ void \hyperlink{classNode_a2ce12b4f2605972720e1c56fe80014a0}{set\-Next} (\hyperl
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classNode_a02a4e5126542aaa1a2150932cfa2b8ce}
-\begin{DoxyReturn}{Devuelve}
-E
 
-E Node$<$\-E$>$ 
+
+Obtiene el dato contenido en el nodo. 
+
+\begin{DoxyReturn}{Devuelve}
+E el dato contenido 
 \end{DoxyReturn}
 \hypertarget{classNode_aeb063e5172867e988550ab7d6c280db7}{\index{Node@{Node}!get\-Next@{get\-Next}}
 \index{get\-Next@{get\-Next}!Node@{Node}}
@@ -73,10 +95,12 @@ E Node$<$\-E$>$
 {}
 \end{DoxyParamCaption}
 ) const}}\label{classNode_aeb063e5172867e988550ab7d6c280db7}
-\begin{DoxyReturn}{Devuelve}
-Node$<$\-E$>$
 
-Node$<$\-E$>$ $\ast$\-Node$<$\-E$>$ 
+
+Obtiene el nodo siguiente. 
+
+\begin{DoxyReturn}{Devuelve}
+Double\-Node$<$\-E$>$ el nodo siguiente 
 \end{DoxyReturn}
 \hypertarget{classNode_ae13418a552fa36eddbaa5dfb767aa664}{\index{Node@{Node}!set\-Data@{set\-Data}}
 \index{set\-Data@{set\-Data}!Node@{Node}}
@@ -86,10 +110,12 @@ Node$<$\-E$>$ $\ast$\-Node$<$\-E$>$
 \end{DoxyParamCaption}
 )}}\label{classNode_ae13418a552fa36eddbaa5dfb767aa664}
 
+
+Setea el dato contenido en el nodo. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em E} & \\
-\hline
-{\em data} & \\
+{\em data} & el dato nuevo \\
 \hline
 \end{DoxyParams}
 \hypertarget{classNode_a2ce12b4f2605972720e1c56fe80014a0}{\index{Node@{Node}!set\-Next@{set\-Next}}
@@ -100,8 +126,12 @@ Node$<$\-E$>$ $\ast$\-Node$<$\-E$>$
 \end{DoxyParamCaption}
 )}}\label{classNode_a2ce12b4f2605972720e1c56fe80014a0}
 
+
+Setea el puntero del nodo siguiente. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em @param} & next \\
+{\em next} & el nuevo nodo que representa el nodo siguiente \\
 \hline
 \end{DoxyParams}
 

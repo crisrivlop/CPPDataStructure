@@ -3,30 +3,47 @@
 }
 
 
+Esta clase es una estructura de datos especificamente una lista enlazada simple que puede contener cualquier tipo de dato solamente definiciendolo mediante el template de esta clase. se puede agregar y borrar el dato.  
+
+
+
+
+{\ttfamily \#include $<$List.\-h$>$}
+
+
+
 Herencias \hyperlink{classIList}{I\-List$<$ E $>$}.
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classList_a40dfa61150de7310d69001c697598b04}{addi} (E)
-\item 
-void \hyperlink{classList_a2a130b7bc38cd968136f1f847e42d0cc}{add} (E)
-\item 
-bool \hyperlink{classList_a530267346ebec244900c162de6f467e1}{add} (E, int)
-\item 
-bool \hyperlink{classList_a46cec78299d3e23469276adf46adf9c1}{remove} (int)
-\item 
-void \hyperlink{classList_ac8b31be96806bd56f655436629ac2e7a}{set} (int, E)
-\item 
-E \hyperlink{classList_ab081a52d7a62aa6c5550ff9762f9427f}{get} (int)
-\item 
-\hyperlink{classSimpleIterator}{Simple\-Iterator}$<$ E $>$ $\ast$ \hyperlink{classList_accb5fe71cb60ba7bf0ccab362b1f87cb}{get\-Iterator} ()
-\item 
-\hypertarget{classList_ad2201bc77b15291f215523ecc96705dc}{void \hyperlink{classList_ad2201bc77b15291f215523ecc96705dc}{print} () const }\label{classList_ad2201bc77b15291f215523ecc96705dc}
+\hypertarget{classList_ae47afd06bd8c39fe7a12d4489998e7c5}{\hyperlink{classList_ae47afd06bd8c39fe7a12d4489998e7c5}{List} ()}\label{classList_ae47afd06bd8c39fe7a12d4489998e7c5}
 
-\begin{DoxyCompactList}\small\item\em print \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Es el constructor de la lista. \end{DoxyCompactList}\item 
+void \hyperlink{classList_a40dfa61150de7310d69001c697598b04}{addi} (E)
+\begin{DoxyCompactList}\small\item\em Agrega un elemento al principio de la lista. \end{DoxyCompactList}\item 
+void \hyperlink{classList_a2a130b7bc38cd968136f1f847e42d0cc}{add} (E)
+\begin{DoxyCompactList}\small\item\em Agregar un elemento al final de la lista. \end{DoxyCompactList}\item 
+bool \hyperlink{classList_a530267346ebec244900c162de6f467e1}{add} (E, int)
+\begin{DoxyCompactList}\small\item\em Agrega el elemento en el indice indicado. Si el indice es incorrecto no se agrega el elemento. \end{DoxyCompactList}\item 
+bool \hyperlink{classList_a46cec78299d3e23469276adf46adf9c1}{remove} (int)
+\begin{DoxyCompactList}\small\item\em Remueve el dato en la posicion indicada por el parametro, en caso que el indice indicado sea incorrecto, osea que sea menor que cero o mayor o igual que el largo de la lista no alterara la lista. \end{DoxyCompactList}\item 
+void \hyperlink{classList_ac8b31be96806bd56f655436629ac2e7a}{set} (int, E)
+\begin{DoxyCompactList}\small\item\em Setea el valor del dato que se encuentre en el indice citado con un nuevo valor. \end{DoxyCompactList}\item 
+E \hyperlink{classList_ab081a52d7a62aa6c5550ff9762f9427f}{get} (int)
+\begin{DoxyCompactList}\small\item\em Obtiene un dato el la posicion indicada. En caso que el indice indicado sea incorrecto, osea que sea menor que cero o mayor o igual que el largo de la lista arrojara un error pues el dato esta fuera de los limites de la lista. \end{DoxyCompactList}\item 
+\hyperlink{classSimpleIterator}{Simple\-Iterator}$<$ E $>$ $\ast$ \hyperlink{classList_accb5fe71cb60ba7bf0ccab362b1f87cb}{get\-Iterator} ()
+\begin{DoxyCompactList}\small\item\em Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante la palabra reservada delete. \end{DoxyCompactList}\item 
+\hypertarget{classList_a0af4c4d8a3d0710e58b12db35f9b0a3d}{virtual \hyperlink{classList_a0af4c4d8a3d0710e58b12db35f9b0a3d}{$\sim$\-List} ()}\label{classList_a0af4c4d8a3d0710e58b12db35f9b0a3d}
+
+\begin{DoxyCompactList}\small\item\em Es el destructor de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class E$>$class List$<$ E $>$}
+
+Esta clase es una estructura de datos especificamente una lista enlazada simple que puede contener cualquier tipo de dato solamente definiciendolo mediante el template de esta clase. se puede agregar y borrar el dato. 
 
 \subsection{Documentación de las funciones miembro}
 \hypertarget{classList_a2a130b7bc38cd968136f1f847e42d0cc}{\index{List@{List}!add@{add}}
@@ -37,10 +54,12 @@ E \hyperlink{classList_ab081a52d7a62aa6c5550ff9762f9427f}{get} (int)
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a2a130b7bc38cd968136f1f847e42d0cc}
 
+
+Agregar un elemento al final de la lista. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em E} & \\
-\hline
-{\em data} & \\
+{\em data} & el elemento a agregar \\
 \hline
 \end{DoxyParams}
 
@@ -56,24 +75,18 @@ Implementa \hyperlink{classIList_a27500caa3d9da05aa6437d5ff56b09e2}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a530267346ebec244900c162de6f467e1}
 
-\begin{DoxyParams}{Parámetros}
-{\em E} & \\
-\hline
-{\em int} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Devuelve}
-bool
-\end{DoxyReturn}
+
+Agrega el elemento en el indice indicado. Si el indice es incorrecto no se agrega el elemento. 
+
 
 \begin{DoxyParams}{Parámetros}
-{\em data} & \\
+{\em dato} & el elemento a agregar \\
 \hline
-{\em index} & \\
+{\em index} & el indice que indica el lugar donde se agregara \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-bool List$<$\-E$>$ 
+si el elemento se agrega retorna true, en caso contrario retorna false 
 \end{DoxyReturn}
 
 
@@ -87,10 +100,12 @@ Implementa \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a40dfa61150de7310d69001c697598b04}
 
+
+Agrega un elemento al principio de la lista. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em E} & \\
-\hline
-{\em data} & \\
+{\em data} & el elemento a agregar \\
 \hline
 \end{DoxyParams}
 
@@ -105,21 +120,22 @@ Implementa \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_ab081a52d7a62aa6c5550ff9762f9427f}
 
-\begin{DoxyParams}{Parámetros}
-{\em int} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Devuelve}
-E
-\end{DoxyReturn}
+
+Obtiene un dato el la posicion indicada. En caso que el indice indicado sea incorrecto, osea que sea menor que cero o mayor o igual que el largo de la lista arrojara un error pues el dato esta fuera de los limites de la lista. 
+
 
 \begin{DoxyParams}{Parámetros}
-{\em index} & \\
+{\em index} & el indice indicado \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-E List$<$\-E$>$ 
+E el dato buscado por el indice indicado 
 \end{DoxyReturn}
+
+\begin{DoxyExceptions}{Excepciones}
+{\em indexoutbounds} & fuera de rango \\
+\hline
+\end{DoxyExceptions}
 
 
 Implementa \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E $>$}.
@@ -131,10 +147,12 @@ Implementa \hyperlink{classIList_a60570f7ee0e7474d01b2f364bad996a0}{I\-List$<$ E
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_accb5fe71cb60ba7bf0ccab362b1f87cb}
-\begin{DoxyReturn}{Devuelve}
-Simple\-Iterator$<$\-E$>$
 
-Simple\-Iterator$<$\-E$>$ $\ast$\-List$<$\-E$>$ 
+
+Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias. pero es responsabilidad del programador eliminar mediante la palabra reservada delete. 
+
+\begin{DoxyReturn}{Devuelve}
+I\-Iterator$<$\-E$>$ un puntero de0l iterador indicado 
 \end{DoxyReturn}
 
 
@@ -148,20 +166,16 @@ Implementa \hyperlink{classIList_a997815664cc6b20eb5dfa9968251d2cd}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_a46cec78299d3e23469276adf46adf9c1}
 
-\begin{DoxyParams}{Parámetros}
-{\em int} & \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Devuelve}
-bool
-\end{DoxyReturn}
+
+Remueve el dato en la posicion indicada por el parametro, en caso que el indice indicado sea incorrecto, osea que sea menor que cero o mayor o igual que el largo de la lista no alterara la lista. 
+
 
 \begin{DoxyParams}{Parámetros}
-{\em index} & \\
+{\em index} & la posicion indicada del objeto a borrar \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-bool List$<$\-E$>$ 
+true si borra algo, false si el indice indicado es incorrecto 
 \end{DoxyReturn}
 
 
@@ -176,14 +190,14 @@ Implementa \hyperlink{classIList_a9bf7d737252dfbd4c9a5d7be36ea4231}{I\-List$<$ E
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classList_ac8b31be96806bd56f655436629ac2e7a}
 
+
+Setea el valor del dato que se encuentre en el indice citado con un nuevo valor. 
+
+
 \begin{DoxyParams}{Parámetros}
-{\em int} & \\
+{\em int} & el indice en el que se encuetra el dato \\
 \hline
-{\em E} & \\
-\hline
-{\em index} & \\
-\hline
-{\em data} & \\
+{\em E} & el dato por el que se cambiara \\
 \hline
 \end{DoxyParams}
 

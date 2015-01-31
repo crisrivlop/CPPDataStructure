@@ -68,12 +68,6 @@ public:
      */
     DoubleNode<E>* getPrevious()const;
 
-
-    /**
-     * @brief Imprime en consola el dato del nodo
-     *
-     */
-    void print() const;
     /**
      * @brief el destructor de este nodo
      *
@@ -117,8 +111,6 @@ template <class E> void DoubleNode<E>::setPrevious(DoubleNode *previous){this->p
 
 template <class E> DoubleNode<E>* DoubleNode<E>::getPrevious()const{return previous;}
 
-
-template <class E> void DoubleNode<E>::print() const {std::cout << data;}
 
 
 template <class E> DoubleNode<E>::~DoubleNode(){}

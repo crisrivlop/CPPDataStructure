@@ -112,18 +112,35 @@ $(document).ready(function(){initNavTree('classIIterator.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Es una interfaz para los iteradores hijos de este.  
+ <a href="classIIterator.html#details">Más...</a></p>
+
+<p><code>#include &lt;<a class="el" href="IIterator_8h_source.html">IIterator.h</a>&gt;</code></p>
+
 <p>Heredado por <a class="el" href="classDoubleIterator.html">DoubleIterator&lt; E &gt;</a>, <a class="el" href="classInverseIterator.html">InverseIterator&lt; E &gt;</a> y <a class="el" href="classSimpleIterator.html">SimpleIterator&lt; E &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
 <tr class="memitem:ab1b13434e4fac20c74262dee51d1e870"><td class="memItemLeft" align="right" valign="top">virtual E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIIterator.html#ab1b13434e4fac20c74262dee51d1e870">getNext</a> ()=0</td></tr>
+<tr class="memdesc:ab1b13434e4fac20c74262dee51d1e870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el dato actual y actualiza al nodo siguiente.  <a href="#ab1b13434e4fac20c74262dee51d1e870">Más...</a><br/></td></tr>
 <tr class="separator:ab1b13434e4fac20c74262dee51d1e870"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50f55ce1381378aad2c93f16c9b60822"><td class="memItemLeft" align="right" valign="top">virtual E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822">getCurrent</a> () const =0</td></tr>
+<tr class="memdesc:a50f55ce1381378aad2c93f16c9b60822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el dato actual.  <a href="#a50f55ce1381378aad2c93f16c9b60822">Más...</a><br/></td></tr>
 <tr class="separator:a50f55ce1381378aad2c93f16c9b60822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a73f0fb41a66fe98e5e636378759196"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196">hasNext</a> () const =0</td></tr>
+<tr class="memdesc:a8a73f0fb41a66fe98e5e636378759196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifica si tiene siguiente.  <a href="#a8a73f0fb41a66fe98e5e636378759196">Más...</a><br/></td></tr>
 <tr class="separator:a8a73f0fb41a66fe98e5e636378759196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e00fa31d4f8d29232f4b1dfc27026b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46e00fa31d4f8d29232f4b1dfc27026b"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b">~IIterator</a> ()</td></tr>
+<tr class="memdesc:a46e00fa31d4f8d29232f4b1dfc27026b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberador de memoria. <br/></td></tr>
+<tr class="separator:a46e00fa31d4f8d29232f4b1dfc27026b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentación de las funciones miembro</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><h3>template&lt;class E&gt;<br/>
+class IIterator&lt; E &gt;</h3>
+
+<p>Es una interfaz para los iteradores hijos de este. </p>
+</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
 <a class="anchor" id="a50f55ce1381378aad2c93f16c9b60822"></a>
 <div class="memitem">
 <div class="memproto">
@@ -146,9 +163,17 @@ template&lt;class E&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Devuelve</dt><dd>E </dd></dl>
 
-<p>Implementado en <a class="el" href="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2">SimpleIterator&lt; E &gt;</a>, <a class="el" href="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be">DoubleIterator&lt; E &gt;</a> y <a class="el" href="classInverseIterator.html#afdbb5c310621c773da10dfb5bc3b1a4c">InverseIterator&lt; E &gt;</a>.</p>
+<p>Obtiene el dato actual. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>E el dato actual </dd></dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">donthavenext</td><td>si el dato actual es nulo </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementado en <a class="el" href="classInverseIterator.html#afdbb5c310621c773da10dfb5bc3b1a4c">InverseIterator&lt; E &gt;</a>, <a class="el" href="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2">SimpleIterator&lt; E &gt;</a> y <a class="el" href="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be">DoubleIterator&lt; E &gt;</a>.</p>
 
 </div>
 </div>
@@ -174,7 +199,15 @@ template&lt;class E&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Devuelve</dt><dd>E </dd></dl>
+
+<p>Obtiene el dato actual y actualiza al nodo siguiente. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>E el dato actual </dd></dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">donthavenext</td><td>si el dato actual es nulo </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implementado en <a class="el" href="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5">SimpleIterator&lt; E &gt;</a>, <a class="el" href="classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198">DoubleIterator&lt; E &gt;</a> y <a class="el" href="classInverseIterator.html#a4c1d8ceb8264f7f8186b6244a0a62940">InverseIterator&lt; E &gt;</a>.</p>
 
@@ -202,7 +235,15 @@ template&lt;class E&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Devuelve</dt><dd>bool </dd></dl>
+
+<p>Verifica si tiene siguiente. </p>
+<dl class="section return"><dt>Devuelve</dt><dd>true si tiene siguiente, false si no lo tiene </dd></dl>
+<dl class="exception"><dt>Excepciones</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">donthavenext</td><td>si el dato actual es nulo </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implementado en <a class="el" href="classSimpleIterator.html#ab946b3d707e32d4d53f15af201ea2113">SimpleIterator&lt; E &gt;</a>, <a class="el" href="classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed">DoubleIterator&lt; E &gt;</a> y <a class="el" href="classInverseIterator.html#a86973781dfa84df67be2843fc4545692">InverseIterator&lt; E &gt;</a>.</p>
 
@@ -217,7 +258,7 @@ template&lt;class E&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classIIterator.html">IIterator</a></li>
-    <li class="footer">Generado el Martes, 16 de Diciembre de 2014 15:16:11 para CPPDataStructure por
+    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:49 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

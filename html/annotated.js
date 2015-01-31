@@ -1,8 +1,12 @@
 var annotated =
 [
+    [ "BArray", "classBArray.html", "classBArray" ],
+    [ "BinaryNode", "classBinaryNode.html", "classBinaryNode" ],
+    [ "BinaryTree", "classBinaryTree.html", "classBinaryTree" ],
     [ "BNode", "classBNode.html", "classBNode" ],
     [ "BTree", "classBTree.html", "classBTree" ],
     [ "CircularList", "classCircularList.html", "classCircularList" ],
+    [ "CPPDataStructure", "classCPPDataStructure.html", "classCPPDataStructure" ],
     [ "DoubleCircularList", "classDoubleCircularList.html", "classDoubleCircularList" ],
     [ "DoubleIterator", "classDoubleIterator.html", "classDoubleIterator" ],
     [ "DoubleList", "classDoubleList.html", "classDoubleList" ],

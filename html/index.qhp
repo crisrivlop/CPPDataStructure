@@ -9,6 +9,36 @@
         <section title="Project CPPDataStructure" ref="md_README.html" />
         <section title="Clases">
           <section title="Lista de clases" ref="annotated.html">
+            <section title="BArray" ref="classBArray.html">
+              <section title="BArray" ref="classBArray.html#a93c786886ce92be7cf5917bbe6be7956" />
+              <section title="~BArray" ref="classBArray.html#a06042b7d093d10621aa80cf4af3ea117" />
+              <section title="add" ref="classBArray.html#ae86ec71c94702d00f70f2e1c026bdce8" />
+              <section title="getCurrentLenght" ref="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd" />
+              <section title="getMaximunLenght" ref="classBArray.html#a744bcd9f9edb779366a116c2b2b96ba7" />
+              <section title="getValue" ref="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb" />
+              <section title="isFull" ref="classBArray.html#a2235e8c213fc88b3c6702eaa8c63852c" />
+              <section title="remove" ref="classBArray.html#a7c406b4fb7af4b2c124cdc17c31d1a0e" />
+            </section>
+            <section title="BinaryNode" ref="classBinaryNode.html">
+              <section title="BinaryNode" ref="classBinaryNode.html#a770d00114c87b6e4b8ebb50c9bd24272" />
+              <section title="BinaryNode" ref="classBinaryNode.html#a5b208d4006198d37d5ec0824af740e9f" />
+              <section title="~BinaryNode" ref="classBinaryNode.html#a5f14ccd899c22516a360cf84cd75d6fa" />
+              <section title="getData" ref="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a" />
+              <section title="getLeft" ref="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766" />
+              <section title="getRight" ref="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d" />
+              <section title="resetChilds" ref="classBinaryNode.html#aa9c499024d66d462aa9f7d9df0fb7c60" />
+              <section title="setChilds" ref="classBinaryNode.html#a2f042cb3740f988f889ec140658c448e" />
+              <section title="setData" ref="classBinaryNode.html#ad4d399a6fe4841baabfeef875e2c5bd3" />
+              <section title="setLeft" ref="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5" />
+              <section title="setRight" ref="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2" />
+            </section>
+            <section title="BinaryTree" ref="classBinaryTree.html">
+              <section title="BinaryTree" ref="classBinaryTree.html#ae3d78b752a8a3c48ba2f6d3e51eefc6f" />
+              <section title="~BinaryTree" ref="classBinaryTree.html#a484cf26b3a984cef9978de0c0d638874" />
+              <section title="add" ref="classBinaryTree.html#a68affc88c790c15456f29e5d33f29198" />
+              <section title="remove" ref="classBinaryTree.html#aa4093a8ea3e85b9064e6264a0b40c342" />
+              <section title="search" ref="classBinaryTree.html#acfd3b1f3d4944c900c35ce53bfd0d428" />
+            </section>
             <section title="BNode" ref="classBNode.html">
               <section title="BNode" ref="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9" />
               <section title="BNode" ref="classBNode.html#a75ca826e991a8e57cb67748ab03aea77" />
@@ -44,9 +74,11 @@
               <section title="addi" ref="classCircularList.html#a6de0a0af406c738b95b0a6d898b69f8e" />
               <section title="get" ref="classCircularList.html#ad6783339c7ff05841fc62f74f809644d" />
               <section title="getIterator" ref="classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e" />
-              <section title="print" ref="classCircularList.html#ad49a3216e39d960d995fb93b87f18856" />
               <section title="remove" ref="classCircularList.html#a4a6acfd818a0ae9055957ec80258c60a" />
               <section title="set" ref="classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3" />
+            </section>
+            <section title="CPPDataStructure" ref="classCPPDataStructure.html">
+              <section title="CPPDataStructure" ref="classCPPDataStructure.html#a1a4803778196b9af1ef68f53817e470a" />
             </section>
             <section title="DoubleCircularList" ref="classDoubleCircularList.html">
               <section title="DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
@@ -57,12 +89,12 @@
               <section title="get" ref="classDoubleCircularList.html#aa00bc8fd524af1ba208f85d8816dec52" />
               <section title="getIterator" ref="classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad" />
               <section title="inverseIteration" ref="classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b" />
-              <section title="print" ref="classDoubleCircularList.html#a56330353baf42afa3c49e2ade77c9e07" />
               <section title="remove" ref="classDoubleCircularList.html#ae7ed8b6714720cb7daafa639f232ecc3" />
               <section title="set" ref="classDoubleCircularList.html#a95e0f27bda1158233015ee3ff27b3ade" />
             </section>
             <section title="DoubleIterator" ref="classDoubleIterator.html">
               <section title="DoubleIterator" ref="classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc" />
+              <section title="~DoubleIterator" ref="classDoubleIterator.html#ad41393065f15afdeb33f42ef3b01ba9b" />
               <section title="getCurrent" ref="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be" />
               <section title="getNext" ref="classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198" />
               <section title="hasNext" ref="classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed" />
@@ -77,7 +109,6 @@
               <section title="get" ref="classDoubleList.html#a230a8c9c574abe9c72f8daae35127d9c" />
               <section title="getIterator" ref="classDoubleList.html#aa14e383a97e054016a6c5178165b20df" />
               <section title="inverseIteration" ref="classDoubleList.html#a94d1ad5299452ea46839ba350ca501d1" />
-              <section title="print" ref="classDoubleList.html#ad3bf004a9bb2110da93fed1f1224d60e" />
               <section title="remove" ref="classDoubleList.html#a844c2c4c3b8260bd58ab94307359fb62" />
               <section title="set" ref="classDoubleList.html#a3c95ac3c3190b347c4a343776264bf67" />
             </section>
@@ -88,7 +119,6 @@
               <section title="getData" ref="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699" />
               <section title="getNext" ref="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f" />
               <section title="getPrevious" ref="classDoubleNode.html#a86c75b7ed7e944f9748363fe23b2518e" />
-              <section title="print" ref="classDoubleNode.html#adec48b22d9e59955ac35bf0be8bd9fc5" />
               <section title="setData" ref="classDoubleNode.html#a21f86a81b7d4e4db966e07ce06da4f3a" />
               <section title="setNext" ref="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93" />
               <section title="setPrevious" ref="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d" />
@@ -108,7 +138,6 @@
               <section title="getIterator" ref="classIList.html#a997815664cc6b20eb5dfa9968251d2cd" />
               <section title="getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
               <section title="isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
-              <section title="print" ref="classIList.html#a866f15c0f36c1792acc3d09a7f9ebcc2" />
               <section title="remove" ref="classIList.html#a9bf7d737252dfbd4c9a5d7be36ea4231" />
               <section title="set" ref="classIList.html#a119ed658d2804aec0b9fef9325c03073" />
               <section title="lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
@@ -129,7 +158,6 @@
               <section title="addi" ref="classList.html#a40dfa61150de7310d69001c697598b04" />
               <section title="get" ref="classList.html#ab081a52d7a62aa6c5550ff9762f9427f" />
               <section title="getIterator" ref="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb" />
-              <section title="print" ref="classList.html#ad2201bc77b15291f215523ecc96705dc" />
               <section title="remove" ref="classList.html#a46cec78299d3e23469276adf46adf9c1" />
               <section title="set" ref="classList.html#ac8b31be96806bd56f655436629ac2e7a" />
             </section>
@@ -139,7 +167,6 @@
               <section title="~Node" ref="classNode.html#af907944256d9fca41c6a1c783a3a6536" />
               <section title="getData" ref="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce" />
               <section title="getNext" ref="classNode.html#aeb063e5172867e988550ab7d6c280db7" />
-              <section title="print" ref="classNode.html#ad4b6df1a3a5deeff634936cd82d22c59" />
               <section title="setData" ref="classNode.html#ae13418a552fa36eddbaa5dfb767aa664" />
               <section title="setNext" ref="classNode.html#a2ce12b4f2605972720e1c56fe80014a0" />
             </section>
@@ -148,7 +175,7 @@
               <section title="~Queue" ref="classQueue.html#a49fe82adb8dc2fb62ab53876a6933d0f" />
               <section title="dequeue" ref="classQueue.html#ac2b0f94e80e6df3002d284e38bdc117b" />
               <section title="enqueue" ref="classQueue.html#ad751a5ab9f313291a85455542b12a184" />
-              <section title="isEmpty" ref="classQueue.html#ab652261bbb405ecc84a80ff5d7139de7" />
+              <section title="isEmpty" ref="classQueue.html#a4ea980b5773a6afbc3b2ed89bad8e7c9" />
             </section>
             <section title="SimpleIterator" ref="classSimpleIterator.html">
               <section title="~SimpleIterator" ref="classSimpleIterator.html#a02203109d263581340152408ebb120a2" />
@@ -172,9 +199,13 @@
           </section>
           <section title="Índice de clases" ref="classes.html" />
           <section title="Jerarquía de la clase" ref="hierarchy.html">
+            <section title="BArray&lt; E &gt;" ref="classBArray.html" />
+            <section title="BinaryNode&lt; E &gt;" ref="classBinaryNode.html" />
+            <section title="BinaryTree&lt; E &gt;" ref="classBinaryTree.html" />
             <section title="BNode&lt; VALUE &gt;" ref="classBNode.html" />
             <section title="BNode&lt; K &gt;" ref="classBNode.html" />
             <section title="BTree&lt; K &gt;" ref="classBTree.html" />
+            <section title="CPPDataStructure" ref="classCPPDataStructure.html" />
             <section title="DoubleNode&lt; E &gt;" ref="classDoubleNode.html" />
             <section title="IIterator&lt; E &gt;" ref="classIIterator.html">
               <section title="DoubleIterator&lt; E &gt;" ref="classDoubleIterator.html" />
@@ -217,15 +248,46 @@
               <section title="SimpleIterator.h" ref="SimpleIterator_8h_source.html" />
             </section>
             <section title="tree" ref="dir_70093cb3a9d1f8840af4e997fde867c3.html">
+              <section title="BArray.h" ref="BArray_8h_source.html" />
+              <section title="BinaryNode.h" ref="BinaryNode_8h_source.html" />
+              <section title="BinaryTree.h" ref="BinaryTree_8h_source.html" />
               <section title="BNode.h" ref="BNode_8h_source.html" />
               <section title="BTree.h" ref="BTree_8h_source.html" />
             </section>
+            <section title="CPPDataStructure.h" ref="CPPDataStructure_8h_source.html" />
           </section>
         </section>
       </section>
     </toc>
     <keywords>
       <keyword name="Project CPPDataStructure" id="Project CPPDataStructure" ref="md_README.html" />
+      <keyword name="BArray" id="BArray" ref="classBArray.html" />
+      <keyword name="BArray" id="BArray::BArray" ref="classBArray.html#a93c786886ce92be7cf5917bbe6be7956" />
+      <keyword name="getCurrentLenght" id="BArray::getCurrentLenght" ref="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd" />
+      <keyword name="getMaximunLenght" id="BArray::getMaximunLenght" ref="classBArray.html#a744bcd9f9edb779366a116c2b2b96ba7" />
+      <keyword name="isFull" id="BArray::isFull" ref="classBArray.html#a2235e8c213fc88b3c6702eaa8c63852c" />
+      <keyword name="add" id="BArray::add" ref="classBArray.html#ae86ec71c94702d00f70f2e1c026bdce8" />
+      <keyword name="remove" id="BArray::remove" ref="classBArray.html#a7c406b4fb7af4b2c124cdc17c31d1a0e" />
+      <keyword name="getValue" id="BArray::getValue" ref="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb" />
+      <keyword name="~BArray" id="BArray::~BArray" ref="classBArray.html#a06042b7d093d10621aa80cf4af3ea117" />
+      <keyword name="BinaryNode" id="BinaryNode" ref="classBinaryNode.html" />
+      <keyword name="BinaryNode" id="BinaryNode::BinaryNode" ref="classBinaryNode.html#a770d00114c87b6e4b8ebb50c9bd24272" />
+      <keyword name="BinaryNode" id="BinaryNode::BinaryNode" ref="classBinaryNode.html#a5b208d4006198d37d5ec0824af740e9f" />
+      <keyword name="setData" id="BinaryNode::setData" ref="classBinaryNode.html#ad4d399a6fe4841baabfeef875e2c5bd3" />
+      <keyword name="setLeft" id="BinaryNode::setLeft" ref="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5" />
+      <keyword name="setRight" id="BinaryNode::setRight" ref="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2" />
+      <keyword name="setChilds" id="BinaryNode::setChilds" ref="classBinaryNode.html#a2f042cb3740f988f889ec140658c448e" />
+      <keyword name="getData" id="BinaryNode::getData" ref="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a" />
+      <keyword name="getLeft" id="BinaryNode::getLeft" ref="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766" />
+      <keyword name="getRight" id="BinaryNode::getRight" ref="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d" />
+      <keyword name="resetChilds" id="BinaryNode::resetChilds" ref="classBinaryNode.html#aa9c499024d66d462aa9f7d9df0fb7c60" />
+      <keyword name="~BinaryNode" id="BinaryNode::~BinaryNode" ref="classBinaryNode.html#a5f14ccd899c22516a360cf84cd75d6fa" />
+      <keyword name="BinaryTree" id="BinaryTree" ref="classBinaryTree.html" />
+      <keyword name="BinaryTree" id="BinaryTree::BinaryTree" ref="classBinaryTree.html#ae3d78b752a8a3c48ba2f6d3e51eefc6f" />
+      <keyword name="add" id="BinaryTree::add" ref="classBinaryTree.html#a68affc88c790c15456f29e5d33f29198" />
+      <keyword name="search" id="BinaryTree::search" ref="classBinaryTree.html#acfd3b1f3d4944c900c35ce53bfd0d428" />
+      <keyword name="remove" id="BinaryTree::remove" ref="classBinaryTree.html#aa4093a8ea3e85b9064e6264a0b40c342" />
+      <keyword name="~BinaryTree" id="BinaryTree::~BinaryTree" ref="classBinaryTree.html#a484cf26b3a984cef9978de0c0d638874" />
       <keyword name="BNode" id="BNode" ref="classBNode.html" />
       <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9" />
       <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#a75ca826e991a8e57cb67748ab03aea77" />
@@ -259,12 +321,12 @@
       <keyword name="set" id="CircularList::set" ref="classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3" />
       <keyword name="get" id="CircularList::get" ref="classCircularList.html#ad6783339c7ff05841fc62f74f809644d" />
       <keyword name="getIterator" id="CircularList::getIterator" ref="classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e" />
-      <keyword name="print" id="CircularList::print" ref="classCircularList.html#ad49a3216e39d960d995fb93b87f18856" />
       <keyword name="~CircularList" id="CircularList::~CircularList" ref="classCircularList.html#aa65c9665b7d36a5e609752cad0a35dbb" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="CPPDataStructure" id="CPPDataStructure" ref="classCPPDataStructure.html" />
       <keyword name="DoubleCircularList" id="DoubleCircularList" ref="classDoubleCircularList.html" />
       <keyword name="DoubleCircularList" id="DoubleCircularList::DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
       <keyword name="addi" id="DoubleCircularList::addi" ref="classDoubleCircularList.html#aec3cb982a2b9def7eb254ef206101e28" />
@@ -275,7 +337,6 @@
       <keyword name="get" id="DoubleCircularList::get" ref="classDoubleCircularList.html#aa00bc8fd524af1ba208f85d8816dec52" />
       <keyword name="getIterator" id="DoubleCircularList::getIterator" ref="classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad" />
       <keyword name="inverseIteration" id="DoubleCircularList::inverseIteration" ref="classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b" />
-      <keyword name="print" id="DoubleCircularList::print" ref="classDoubleCircularList.html#a56330353baf42afa3c49e2ade77c9e07" />
       <keyword name="~DoubleCircularList" id="DoubleCircularList::~DoubleCircularList" ref="classDoubleCircularList.html#a26dba8b85983742cfbf38886245fe2a4" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
@@ -285,9 +346,11 @@
       <keyword name="getNext" id="DoubleIterator::getNext" ref="classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198" />
       <keyword name="getCurrent" id="DoubleIterator::getCurrent" ref="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be" />
       <keyword name="hasNext" id="DoubleIterator::hasNext" ref="classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed" />
+      <keyword name="~IIterator" id="IIterator::~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
       <keyword name="DoubleIterator" id="DoubleIterator::DoubleIterator" ref="classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc" />
       <keyword name="DoubleList" id="DoubleIterator::DoubleList" ref="classDoubleIterator.html#ad435a9844a002995926acf522128f7a8" />
       <keyword name="DoubleList" id="DoubleList" ref="classDoubleList.html" />
+      <keyword name="DoubleList" id="DoubleList::DoubleList" ref="classDoubleList.html#ab54db9c718c7188f9413ef2b9982dd43" />
       <keyword name="addi" id="DoubleList::addi" ref="classDoubleList.html#a9924458cf1416df8243b4f857b027da7" />
       <keyword name="add" id="DoubleList::add" ref="classDoubleList.html#adb96e6908d3d564722225b848350aa82" />
       <keyword name="add" id="DoubleList::add" ref="classDoubleList.html#a84e3bb8be7d67b43dd3b63d5a47f80ed" />
@@ -296,7 +359,7 @@
       <keyword name="get" id="DoubleList::get" ref="classDoubleList.html#a230a8c9c574abe9c72f8daae35127d9c" />
       <keyword name="getIterator" id="DoubleList::getIterator" ref="classDoubleList.html#aa14e383a97e054016a6c5178165b20df" />
       <keyword name="inverseIteration" id="DoubleList::inverseIteration" ref="classDoubleList.html#a94d1ad5299452ea46839ba350ca501d1" />
-      <keyword name="print" id="DoubleList::print" ref="classDoubleList.html#ad3bf004a9bb2110da93fed1f1224d60e" />
+      <keyword name="~DoubleList" id="DoubleList::~DoubleList" ref="classDoubleList.html#a11ce233388fea7a5722a7d57cea400a3" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
@@ -310,11 +373,12 @@
       <keyword name="getNext" id="DoubleNode::getNext" ref="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f" />
       <keyword name="setPrevious" id="DoubleNode::setPrevious" ref="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d" />
       <keyword name="getPrevious" id="DoubleNode::getPrevious" ref="classDoubleNode.html#a86c75b7ed7e944f9748363fe23b2518e" />
-      <keyword name="print" id="DoubleNode::print" ref="classDoubleNode.html#adec48b22d9e59955ac35bf0be8bd9fc5" />
+      <keyword name="~DoubleNode" id="DoubleNode::~DoubleNode" ref="classDoubleNode.html#abd78f421a570cd0fb0cecfedb979d799" />
       <keyword name="IIterator" id="IIterator" ref="classIIterator.html" />
       <keyword name="getNext" id="IIterator::getNext" ref="classIIterator.html#ab1b13434e4fac20c74262dee51d1e870" />
       <keyword name="getCurrent" id="IIterator::getCurrent" ref="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822" />
       <keyword name="hasNext" id="IIterator::hasNext" ref="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196" />
+      <keyword name="~IIterator" id="IIterator::~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
       <keyword name="IList" id="IList" ref="classIList.html" />
       <keyword name="addi" id="IList::addi" ref="classIList.html#af202dc9e748ee32238d80e57dfbcae20" />
       <keyword name="add" id="IList::add" ref="classIList.html#a27500caa3d9da05aa6437d5ff56b09e2" />
@@ -325,16 +389,18 @@
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="getIterator" id="IList::getIterator" ref="classIList.html#a997815664cc6b20eb5dfa9968251d2cd" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
-      <keyword name="print" id="IList::print" ref="classIList.html#a866f15c0f36c1792acc3d09a7f9ebcc2" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
       <keyword name="InverseIterator" id="InverseIterator" ref="classInverseIterator.html" />
       <keyword name="getNext" id="InverseIterator::getNext" ref="classInverseIterator.html#a4c1d8ceb8264f7f8186b6244a0a62940" />
       <keyword name="hasNext" id="InverseIterator::hasNext" ref="classInverseIterator.html#a86973781dfa84df67be2843fc4545692" />
       <keyword name="getCurrent" id="InverseIterator::getCurrent" ref="classInverseIterator.html#afdbb5c310621c773da10dfb5bc3b1a4c" />
+      <keyword name="~InverseIterator" id="InverseIterator::~InverseIterator" ref="classInverseIterator.html#ae3b6736187c1dbc82ead0277d31e5898" />
+      <keyword name="~IIterator" id="IIterator::~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
       <keyword name="InverseIterator" id="InverseIterator::InverseIterator" ref="classInverseIterator.html#a31703976cbdca73a1035f47509e8229d" />
       <keyword name="DoubleList" id="InverseIterator::DoubleList" ref="classInverseIterator.html#ad435a9844a002995926acf522128f7a8" />
       <keyword name="List" id="List" ref="classList.html" />
+      <keyword name="List" id="List::List" ref="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5" />
       <keyword name="addi" id="List::addi" ref="classList.html#a40dfa61150de7310d69001c697598b04" />
       <keyword name="add" id="List::add" ref="classList.html#a2a130b7bc38cd968136f1f847e42d0cc" />
       <keyword name="add" id="List::add" ref="classList.html#a530267346ebec244900c162de6f467e1" />
@@ -342,7 +408,7 @@
       <keyword name="set" id="List::set" ref="classList.html#ac8b31be96806bd56f655436629ac2e7a" />
       <keyword name="get" id="List::get" ref="classList.html#ab081a52d7a62aa6c5550ff9762f9427f" />
       <keyword name="getIterator" id="List::getIterator" ref="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb" />
-      <keyword name="print" id="List::print" ref="classList.html#ad2201bc77b15291f215523ecc96705dc" />
+      <keyword name="~List" id="List::~List" ref="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
@@ -354,16 +420,19 @@
       <keyword name="getData" id="Node::getData" ref="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce" />
       <keyword name="setNext" id="Node::setNext" ref="classNode.html#a2ce12b4f2605972720e1c56fe80014a0" />
       <keyword name="getNext" id="Node::getNext" ref="classNode.html#aeb063e5172867e988550ab7d6c280db7" />
-      <keyword name="print" id="Node::print" ref="classNode.html#ad4b6df1a3a5deeff634936cd82d22c59" />
+      <keyword name="~Node" id="Node::~Node" ref="classNode.html#af907944256d9fca41c6a1c783a3a6536" />
       <keyword name="Queue" id="Queue" ref="classQueue.html" />
       <keyword name="Queue" id="Queue::Queue" ref="classQueue.html#ab09891e54b51dc677ee6efb350687ae4" />
       <keyword name="enqueue" id="Queue::enqueue" ref="classQueue.html#ad751a5ab9f313291a85455542b12a184" />
       <keyword name="dequeue" id="Queue::dequeue" ref="classQueue.html#ac2b0f94e80e6df3002d284e38bdc117b" />
-      <keyword name="isEmpty" id="Queue::isEmpty" ref="classQueue.html#ab652261bbb405ecc84a80ff5d7139de7" />
+      <keyword name="isEmpty" id="Queue::isEmpty" ref="classQueue.html#a4ea980b5773a6afbc3b2ed89bad8e7c9" />
+      <keyword name="~Queue" id="Queue::~Queue" ref="classQueue.html#a49fe82adb8dc2fb62ab53876a6933d0f" />
       <keyword name="SimpleIterator" id="SimpleIterator" ref="classSimpleIterator.html" />
       <keyword name="getNext" id="SimpleIterator::getNext" ref="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5" />
       <keyword name="getCurrent" id="SimpleIterator::getCurrent" ref="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2" />
       <keyword name="hasNext" id="SimpleIterator::hasNext" ref="classSimpleIterator.html#ab946b3d707e32d4d53f15af201ea2113" />
+      <keyword name="~SimpleIterator" id="SimpleIterator::~SimpleIterator" ref="classSimpleIterator.html#a02203109d263581340152408ebb120a2" />
+      <keyword name="~IIterator" id="IIterator::~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
       <keyword name="head" id="SimpleIterator::head" ref="classSimpleIterator.html#a0403100ab86dba958115cea4147508a7" />
       <keyword name="tail" id="SimpleIterator::tail" ref="classSimpleIterator.html#a9bfb7d6c12bc1e8031b5c0869026415a" />
       <keyword name="current" id="SimpleIterator::current" ref="classSimpleIterator.html#a7777fefe265a5067ec9319d8c1a3e278" />
@@ -419,6 +488,7 @@
       <file>search/search.js</file>
       <file>Queue_8h_source.html</file>
       <file>Stack_8h_source.html</file>
+      <file>CPPDataStructure_8h_source.html</file>
       <file>CircularList_8h_source.html</file>
       <file>DoubleCircularList_8h_source.html</file>
       <file>DoubleIterator_8h_source.html</file>
@@ -430,15 +500,26 @@
       <file>List_8h_source.html</file>
       <file>Node_8h_source.html</file>
       <file>SimpleIterator_8h_source.html</file>
+      <file>BArray_8h_source.html</file>
+      <file>BinaryNode_8h_source.html</file>
+      <file>BinaryTree_8h_source.html</file>
       <file>BNode_8h_source.html</file>
       <file>BTree_8h_source.html</file>
       <file>md_README.html</file>
+      <file>classBArray.html</file>
+      <file>classBArray-members.html</file>
+      <file>classBinaryNode.html</file>
+      <file>classBinaryNode-members.html</file>
+      <file>classBinaryTree.html</file>
+      <file>classBinaryTree-members.html</file>
       <file>classBNode.html</file>
       <file>classBNode-members.html</file>
       <file>classBTree.html</file>
       <file>classBTree-members.html</file>
       <file>classCircularList.html</file>
       <file>classCircularList-members.html</file>
+      <file>classCPPDataStructure.html</file>
+      <file>classCPPDataStructure-members.html</file>
       <file>classDoubleCircularList.html</file>
       <file>classDoubleCircularList-members.html</file>
       <file>classDoubleIterator.html</file>
@@ -486,6 +567,7 @@
       <file>functions.html</file>
       <file>functions.html</file>
       <file>functions.html</file>
+      <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>

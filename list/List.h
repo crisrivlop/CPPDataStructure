@@ -1,7 +1,7 @@
 #include <iostream>
 #include <list>
 #include "IList.h"
-#define Null 0
+#include "SimpleIterator.h"
 
 #ifndef LIST_HPP
 #define LIST_HPP
@@ -97,12 +97,6 @@ public:
     //virtual IComparator getComparator() = 0;
     /**
      * @brief
-     * Imprime la lista en consola, es recomendable no imprimirla si la lista es muy grande.
-     *
-     */
-    void print() const;
-    /**
-     * @brief
      * Es el destructor de la lista.
      */
     virtual ~List();
@@ -111,8 +105,8 @@ public:
 
 
 template <class E> List<E>::List() {
-    tail = Null;
-    head = Null;
+    tail = null;
+    head = null;
     this->lenght = 0;
 }
 
@@ -129,7 +123,7 @@ template <class E> Node<E>* List<E>::getNode(int index){
 
 
 template <class E> void List<E>::addi(E data){
-    if(head == Null){
+    if(head == null){
         head = new Node<E>(data);
         tail = head;
     }
@@ -144,7 +138,7 @@ template <class E> void List<E>::addi(E data){
 
 
 template <class E> void List<E>::add(E data){
-    if (head == Null){
+    if (head == null){
         head = new Node<E>(data);
         tail = head;
     }
@@ -200,7 +194,7 @@ template <class E> bool List<E>::remove(int index){
         else if (this->lenght-1 == index){
             Node<E> *deleteNode = tail;
             tail = getNode(index-1);
-            tail->setNext(Null);
+            tail->setNext(null);
             delete deleteNode;
         }
         else{
@@ -248,25 +242,6 @@ template <class E> E List<E>:: get(int index){
 template <class E> SimpleIterator<E>* List<E>:: getIterator(){
     SimpleIterator<E> *iterador = new SimpleIterator<E>(head, tail);
     return iterador;
-}
-
-
-
-template <class E> void List<E>::print() const{
-    if (this->lenght > 0){
-        Node<E> *actualNode = head;
-        std::cout << "[";
-        for(int actualIndex = 0; actualIndex < this->lenght-1; actualIndex++){
-            actualNode->print();
-            std::cout << ",";
-            actualNode = actualNode->getNext();
-        }
-        actualNode->print();
-        std::cout << "]" << std::endl;
-    }
-    else{
-        std::cout << "[]" << std::endl;
-    }
 }
 
 

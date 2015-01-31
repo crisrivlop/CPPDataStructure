@@ -1,5 +1,7 @@
 #include "IIterator.h"
-#include <iostream>
+
+#define null 0
+
 #ifndef ILIST_H
 #define ILIST_H
 
@@ -98,15 +100,9 @@ public:
     bool isEmpty() const;
 
     /**
-     * @brief
-     * Imprime la lista en consola, es recomendable no imprimirla si la lista es muy grande.
-     *
-     */
-    virtual void print() const = 0;
-    /**
      * @brief Liberador de memoria
      */
-    virtual ~IList(){std::cout << "hello" << std::endl;}
+    virtual ~IList(){}
 };
 
 

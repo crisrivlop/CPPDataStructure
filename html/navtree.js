@@ -20,7 +20,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"BNode_8h_source.html"
+"BArray_8h_source.html"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';

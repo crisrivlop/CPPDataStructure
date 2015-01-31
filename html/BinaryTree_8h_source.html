@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>CPPDataStructure: Fichero Fuente tree/BinaryTree.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CPPDataStructure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('BinaryTree_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">BinaryTree.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;iostream&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;BinaryNode.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef BINARYTREE_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BINARYTREE_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classBinaryTree.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBinaryTree.html">BinaryTree</a>{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *root;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> addedNode;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> deletedNode;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *add(E data, <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *extractGreatestOfLowest(<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *extractLowestOfGreatest(<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *<span class="keyword">remove</span>(E data, <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="classBinaryTree.html">BinaryTree</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> add(E data);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    E search(E data)<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">remove</span>(E data);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classBinaryTree.html">BinaryTree</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;};</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *<a class="code" href="classBinaryTree.html">BinaryTree&lt;E&gt;::add</a>(E data, <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot){</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">if</span> (!pRoot){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        pRoot = <span class="keyword">new</span> <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a>(data);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        addedNode = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pRoot-&gt;<a class="code" href="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a">getData</a>() &lt; data){</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        pRoot-&gt;<a class="code" href="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2">setRight</a>(add(data,pRoot-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>()));</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (data &lt; pRoot-&gt;getData()){</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        pRoot-&gt;<a class="code" href="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5">setLeft</a>(add(data,pRoot-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>()));</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *<a class="code" href="classBinaryTree.html">BinaryTree&lt;E&gt;::extractGreatestOfLowest</a>(<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;{</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *current = pRoot-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>();</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordflow">if</span> (current-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>()){</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">do</span>{pRoot = current;current = current-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>();}</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keywordflow">while</span> (current-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>());</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        pRoot-&gt;<a class="code" href="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2">setRight</a>(current-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordflow">else</span> pRoot-&gt;<a class="code" href="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5">setLeft</a>(current-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>());</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    pRoot = current;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *<a class="code" href="classBinaryTree.html">BinaryTree&lt;E&gt;::extractLowestOfGreatest</a>(<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot)</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;{</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *current = pRoot-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>();</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (current-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>()){</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="keywordflow">do</span>{pRoot = current;current = current-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>();}</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">while</span> (current-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>());</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        pRoot-&gt;<a class="code" href="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5">setLeft</a>(current-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>());</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">else</span> pRoot-&gt;<a class="code" href="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2">setRight</a>(current-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>());</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    pRoot = current;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    pRoot-&gt;<a class="code" href="classBinaryNode.html#aa9c499024d66d462aa9f7d9df0fb7c60">resetChilds</a>();</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00141"></a><span class="lineno"><a class="line" href="classBinaryTree.html#ae3d78b752a8a3c48ba2f6d3e51eefc6f">  141</a></span>&#160;<a class="code" href="classBinaryTree.html#ae3d78b752a8a3c48ba2f6d3e51eefc6f">BinaryTree&lt;E&gt;::BinaryTree</a>()</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;{</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    root = Null;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    addedNode = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;}</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a68affc88c790c15456f29e5d33f29198">  148</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classBinaryTree.html">BinaryTree&lt;E&gt;::add</a>(E data)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    addedNode = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    root = add(data,root);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordflow">return</span> addedNode;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;}</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classBinaryTree.html#acfd3b1f3d4944c900c35ce53bfd0d428">  156</a></span>&#160;E <a class="code" href="classBinaryTree.html#acfd3b1f3d4944c900c35ce53bfd0d428">BinaryTree&lt;E&gt;::search</a>(E data)<span class="keyword">const</span>{</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *current = root;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">while</span> (current){</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">if</span> (data &lt; current-&gt;getData())current = current-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(data &gt; current-&gt;<a class="code" href="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a">getData</a>())current = current-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>();</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">return</span> current-&gt;<a class="code" href="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a">getData</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">throw</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classBinaryTree.html#aa4093a8ea3e85b9064e6264a0b40c342">  167</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classBinaryTree.html">BinaryTree&lt;E&gt;::remove</a>(E data)</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    deletedNode = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    root = <span class="keyword">remove</span>(data,root);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="keywordflow">return</span> deletedNode;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;}</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *<a class="code" href="classBinaryTree.html">BinaryTree&lt;E&gt;::remove</a>(E data, <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *pRoot)</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> (!pRoot)<span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (data &gt; pRoot-&gt;<a class="code" href="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a">getData</a>()){</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        pRoot-&gt;<a class="code" href="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2">setRight</a>(this-&gt;<span class="keyword">remove</span>(data,pRoot-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>()));</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (data &lt; pRoot-&gt;getData()){</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        pRoot-&gt;<a class="code" href="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5">setLeft</a>(this-&gt;<span class="keyword">remove</span>(data,pRoot-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>()));</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    deletedNode = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="classBinaryNode.html">BinaryNode&lt;E&gt;</a> *current = Null;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="keywordflow">if</span> (pRoot-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>())current = this-&gt;extractGreatestOfLowest(pRoot);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pRoot-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>())current = this-&gt;extractLowestOfGreatest(pRoot);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (current)current-&gt;<a class="code" href="classBinaryNode.html#a2f042cb3740f988f889ec140658c448e">setChilds</a>(pRoot-&gt;<a class="code" href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">getRight</a>(),pRoot-&gt;<a class="code" href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">getLeft</a>());</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    pRoot-&gt;<a class="code" href="classBinaryNode.html#aa9c499024d66d462aa9f7d9df0fb7c60">resetChilds</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keyword">delete</span> pRoot;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordflow">return</span> current;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;}</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00197"></a><span class="lineno"><a class="line" href="classBinaryTree.html#a484cf26b3a984cef9978de0c0d638874">  197</a></span>&#160;<a class="code" href="classBinaryTree.html#a484cf26b3a984cef9978de0c0d638874">BinaryTree&lt;E&gt;::~BinaryTree</a>(){</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    <span class="keyword">delete</span> root;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    root = Null;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif // BINARYTREE_H</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="ttc" id="classBinaryNode_html_af2163a11c5541f985f44012a7b9e639a"><div class="ttname"><a href="classBinaryNode.html#af2163a11c5541f985f44012a7b9e639a">BinaryNode::getData</a></div><div class="ttdeci">E getData()</div><div class="ttdoc">Obtiene el dato que contiene el nodo. </div><div class="ttdef"><b>Definition:</b> BinaryNode.h:132</div></div>
+<div class="ttc" id="classBinaryNode_html_aa9c499024d66d462aa9f7d9df0fb7c60"><div class="ttname"><a href="classBinaryNode.html#aa9c499024d66d462aa9f7d9df0fb7c60">BinaryNode::resetChilds</a></div><div class="ttdeci">void resetChilds()</div><div class="ttdoc">resetChilds los punteros a los hijos del nodo que llame este metodo seran nulos </div><div class="ttdef"><b>Definition:</b> BinaryNode.h:147</div></div>
+<div class="ttc" id="classBinaryNode_html"><div class="ttname"><a href="classBinaryNode.html">BinaryNode</a></div><div class="ttdoc">Esta clase es el elemento sustancial para los arboles binarios, contiene datos y punteros a la derech...</div><div class="ttdef"><b>Definition:</b> BinaryNode.h:12</div></div>
+<div class="ttc" id="classBinaryTree_html_acfd3b1f3d4944c900c35ce53bfd0d428"><div class="ttname"><a href="classBinaryTree.html#acfd3b1f3d4944c900c35ce53bfd0d428">BinaryTree::search</a></div><div class="ttdeci">E search(E data) const </div><div class="ttdoc">Busca un dato en el arbol. Si el dato no se encuentra en el arbol arroja un error, en este caso el mismo arbol. </div><div class="ttdef"><b>Definition:</b> BinaryTree.h:156</div></div>
+<div class="ttc" id="classBinaryNode_html_a2f042cb3740f988f889ec140658c448e"><div class="ttname"><a href="classBinaryNode.html#a2f042cb3740f988f889ec140658c448e">BinaryNode::setChilds</a></div><div class="ttdeci">void setChilds(BinaryNode&lt; E &gt; *right, BinaryNode&lt; E &gt; *left)</div><div class="ttdoc">setChilds, setea los hijos del nodo en cuestion, este metodo simplemente sobrescribe los punteros no ...</div><div class="ttdef"><b>Definition:</b> BinaryNode.h:125</div></div>
+<div class="ttc" id="classBinaryNode_html_a4278dd3984a688ad0f72fdd3567aad5d"><div class="ttname"><a href="classBinaryNode.html#a4278dd3984a688ad0f72fdd3567aad5d">BinaryNode::getRight</a></div><div class="ttdeci">BinaryNode&lt; E &gt; * getRight()</div><div class="ttdoc">Obtiene el nodo de la derecha. </div><div class="ttdef"><b>Definition:</b> BinaryNode.h:142</div></div>
+<div class="ttc" id="classBinaryNode_html_ab9b188aa3673f1b7c05e64664f00d766"><div class="ttname"><a href="classBinaryNode.html#ab9b188aa3673f1b7c05e64664f00d766">BinaryNode::getLeft</a></div><div class="ttdeci">BinaryNode&lt; E &gt; * getLeft()</div><div class="ttdoc">Obtiene el nodo de la izquierda. </div><div class="ttdef"><b>Definition:</b> BinaryNode.h:137</div></div>
+<div class="ttc" id="classBinaryTree_html_ae3d78b752a8a3c48ba2f6d3e51eefc6f"><div class="ttname"><a href="classBinaryTree.html#ae3d78b752a8a3c48ba2f6d3e51eefc6f">BinaryTree::BinaryTree</a></div><div class="ttdeci">BinaryTree()</div><div class="ttdoc">Inicializa un arbol binario. </div><div class="ttdef"><b>Definition:</b> BinaryTree.h:141</div></div>
+<div class="ttc" id="classBinaryNode_html_a0ac78ba2fb207003c18951977b7345c5"><div class="ttname"><a href="classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5">BinaryNode::setLeft</a></div><div class="ttdeci">void setLeft(BinaryNode&lt; E &gt; *left)</div><div class="ttdoc">Setea el nodo de la izquierda. </div><div class="ttdef"><b>Definition:</b> BinaryNode.h:114</div></div>
+<div class="ttc" id="classBinaryTree_html_a484cf26b3a984cef9978de0c0d638874"><div class="ttname"><a href="classBinaryTree.html#a484cf26b3a984cef9978de0c0d638874">BinaryTree::~BinaryTree</a></div><div class="ttdeci">virtual ~BinaryTree()</div><div class="ttdoc">Libera la memoria ocupada por el arbol borrando la raiz del arbol. La raiz libera la memoria de los n...</div><div class="ttdef"><b>Definition:</b> BinaryTree.h:197</div></div>
+<div class="ttc" id="classBinaryTree_html"><div class="ttname"><a href="classBinaryTree.html">BinaryTree</a></div><div class="ttdoc">Clase Arbol Binario. Esta clase representa a la estructura de datos arbol binario, valga la rendondancia. Esta estructura de datos puede insertar, eliminar y buscar los datos relacionados con esta la misma. Usa platillas para almacenar diversos datos. Usa los operadores de comparacion como &lt;, &gt;, ==, &gt;=, &lt;= y !=. </div><div class="ttdef"><b>Definition:</b> BinaryTree.h:18</div></div>
+<div class="ttc" id="classBinaryNode_html_a59e5b3d0213b13e4e35ded03bbda7da2"><div class="ttname"><a href="classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2">BinaryNode::setRight</a></div><div class="ttdeci">void setRight(BinaryNode&lt; E &gt; *right)</div><div class="ttdoc">Setea el nodo de la derecha. </div><div class="ttdef"><b>Definition:</b> BinaryNode.h:119</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_70093cb3a9d1f8840af4e997fde867c3.html">tree</a></li><li class="navelem"><b>BinaryTree.h</b></li>
+    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:48 para CPPDataStructure por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

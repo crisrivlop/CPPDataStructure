@@ -52,11 +52,6 @@ public:
     Node<E>* getNext()const;
 
     /**
-     * @brief Imprime en consola el dato del nodo
-     *
-     */
-    void print() const;
-    /**
      * @brief
      * Liberador de memoria.
      */
@@ -81,8 +76,6 @@ template <class E> E Node<E>::getData()const {return data;}
 template <class E> void Node<E>::setNext(Node<E> *next){this->next = next;}
 
 template <class E> Node<E>* Node<E>::getNext()const {return this->next;}
-
-template <class E> void Node<E>::print() const{std::cout << data;}
 
 template <class E> Node<E>::~Node(){}
 

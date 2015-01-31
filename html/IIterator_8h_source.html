@@ -117,23 +117,23 @@ $(document).ready(function(){initNavTree('IIterator_8h_source.html','');});
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> E <a class="code" href="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822">getCurrent</a>() <span class="keyword">const</span> =0;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196">hasNext</a>() <span class="keyword">const</span> =0;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classIIterator.html">IIterator</a>(){}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif // IITERATOR_H</span></div>
-<div class="ttc" id="classIIterator_html"><div class="ttname"><a href="classIIterator.html">IIterator</a></div><div class="ttdef"><b>Definition:</b> IIterator.h:10</div></div>
-<div class="ttc" id="classIIterator_html_a8a73f0fb41a66fe98e5e636378759196"><div class="ttname"><a href="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196">IIterator::hasNext</a></div><div class="ttdeci">virtual bool hasNext() const =0</div></div>
-<div class="ttc" id="classIIterator_html_ab1b13434e4fac20c74262dee51d1e870"><div class="ttname"><a href="classIIterator.html#ab1b13434e4fac20c74262dee51d1e870">IIterator::getNext</a></div><div class="ttdeci">virtual E getNext()=0</div></div>
-<div class="ttc" id="classIIterator_html_a50f55ce1381378aad2c93f16c9b60822"><div class="ttname"><a href="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822">IIterator::getCurrent</a></div><div class="ttdeci">virtual E getCurrent() const =0</div></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196">hasNext</a>() <span class="keyword">const</span> =0;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b">   37</a></span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b">~IIterator</a>(){}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif // IITERATOR_H</span></div>
+<div class="ttc" id="classIIterator_html"><div class="ttname"><a href="classIIterator.html">IIterator</a></div><div class="ttdoc">Es una interfaz para los iteradores hijos de este. </div><div class="ttdef"><b>Definition:</b> IIterator.h:10</div></div>
+<div class="ttc" id="classIIterator_html_a46e00fa31d4f8d29232f4b1dfc27026b"><div class="ttname"><a href="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b">IIterator::~IIterator</a></div><div class="ttdeci">virtual ~IIterator()</div><div class="ttdoc">Liberador de memoria. </div><div class="ttdef"><b>Definition:</b> IIterator.h:37</div></div>
+<div class="ttc" id="classIIterator_html_a8a73f0fb41a66fe98e5e636378759196"><div class="ttname"><a href="classIIterator.html#a8a73f0fb41a66fe98e5e636378759196">IIterator::hasNext</a></div><div class="ttdeci">virtual bool hasNext() const =0</div><div class="ttdoc">Verifica si tiene siguiente. </div></div>
+<div class="ttc" id="classIIterator_html_ab1b13434e4fac20c74262dee51d1e870"><div class="ttname"><a href="classIIterator.html#ab1b13434e4fac20c74262dee51d1e870">IIterator::getNext</a></div><div class="ttdeci">virtual E getNext()=0</div><div class="ttdoc">Obtiene el dato actual y actualiza al nodo siguiente. </div></div>
+<div class="ttc" id="classIIterator_html_a50f55ce1381378aad2c93f16c9b60822"><div class="ttname"><a href="classIIterator.html#a50f55ce1381378aad2c93f16c9b60822">IIterator::getCurrent</a></div><div class="ttdeci">virtual E getCurrent() const =0</div><div class="ttdoc">Obtiene el dato actual. </div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48c61abad44e2f181b0a6a33afb59c17.html">list</a></li><li class="navelem"><b>IIterator.h</b></li>
-    <li class="footer">Generado el Martes, 16 de Diciembre de 2014 15:16:11 para CPPDataStructure por
+    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:48 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

@@ -1,6 +1,7 @@
 var classDoubleIterator =
 [
     [ "DoubleIterator", "classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc", null ],
+    [ "~DoubleIterator", "classDoubleIterator.html#ad41393065f15afdeb33f42ef3b01ba9b", null ],
     [ "getCurrent", "classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be", null ],
     [ "getNext", "classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198", null ],
     [ "hasNext", "classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed", null ],

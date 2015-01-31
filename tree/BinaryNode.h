@@ -49,6 +49,14 @@ public:
      * @param right el nuevo nodo de la derecha.
      */
     void setRight(BinaryNode<E> *right);
+
+    /**
+     * @brief setChilds, setea los hijos del nodo en cuestion, este metodo simplemente
+     * sobrescribe los punteros no los elimina.
+     * @param right el nodo que representa la derecha del nodo en cuestion
+     * @param left el nodo que representa la izquierda del nodo en cuestion
+     */
+    void setChilds(BinaryNode<E> *right,BinaryNode<E> *left);
     /**
      * @brief Obtiene el dato que contiene el nodo.
      *
@@ -67,6 +75,12 @@ public:
      * @return BinaryNode<E> el nodo de la derecha
      */
     BinaryNode<E> *getRight();
+
+    /**
+     * @brief resetChilds los punteros a los hijos del nodo que llame este metodo seran nulos
+     */
+    void resetChilds();
+
     /**
      * @brief Liberador de memoria, libera la memoria que ocupa y la memoria que ocupan sus hijos.
      * si se desea borrar solo este nodo se debe setear los punteros de los hijos a Null o sea que
@@ -106,6 +120,14 @@ void BinaryNode<E>::setRight(BinaryNode<E> *right){
     this->right = right;
 }
 
+
+template <class E>
+void BinaryNode<E>::setChilds(BinaryNode<E> *right, BinaryNode<E> *left)
+{
+    this->right = right;
+    this->left = left;
+}
+
 template <class E>
 E BinaryNode<E>::getData(){
     return data;
@@ -120,12 +142,22 @@ template <class E>
 BinaryNode<E> *BinaryNode<E>::getRight(){
     return right;
 }
+
+template <class E>
+void BinaryNode<E>::resetChilds()
+{
+    right = Null;
+    left = Null;
+
+}
+
+
+
 template <class E>
 BinaryNode<E>::~BinaryNode(){
     delete left;
     delete right;
-    left = Null;
-    right=Null;
+    resetChilds();
 }
 
 

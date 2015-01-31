@@ -70,7 +70,7 @@ template <class E> E Queue<E>::dequeue(){
     return out;
 }
 
-template <class E> Queue<E>::isEmpty(){
+template <class E> bool Queue<E>::isEmpty(){
     return !head;
 }
 
