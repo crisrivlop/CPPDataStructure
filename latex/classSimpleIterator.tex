@@ -17,6 +17,8 @@ Herencias \hyperlink{classIIterator}{I\-Iterator$<$ E $>$}.
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
 \item 
+\hyperlink{classSimpleIterator_a643cab8769a566826092a5db6ace3267}{Simple\-Iterator} (\hyperlink{classNode}{Node}$<$ E $>$ $\ast$, \hyperlink{classNode}{Node}$<$ E $>$ $\ast$)
+\begin{DoxyCompactList}\small\item\em Metodo constructor. \end{DoxyCompactList}\item 
 E \hyperlink{classSimpleIterator_ab01032dba9ff4f1a1c47af3082b717d5}{get\-Next} ()
 \begin{DoxyCompactList}\small\item\em Obtiene el dato actual y actualiza al nodo siguiente. \end{DoxyCompactList}\item 
 E \hyperlink{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}{get\-Current} () const 
@@ -52,6 +54,28 @@ bool \hyperlink{classSimpleIterator_ab946b3d707e32d4d53f15af201ea2113}{has\-Next
 \subsubsection*{template$<$class E$>$class Simple\-Iterator$<$ E $>$}
 
 Esta clase es un iterador de las listas simples, ademas la actualizacion de la lista N\-O actualiza el iterador, por lo que el iterador es momentaneo. Es similar a una fotografia de una lista que no ha sido alterada si la lista se altera usando un iterador puede que el iterador falle. Por lo que es recomendable que la lista no se actualice mientras se usa un iterador. 
+
+\subsection{Documentación del constructor y destructor}
+\hypertarget{classSimpleIterator_a643cab8769a566826092a5db6ace3267}{\index{Simple\-Iterator@{Simple\-Iterator}!Simple\-Iterator@{Simple\-Iterator}}
+\index{Simple\-Iterator@{Simple\-Iterator}!SimpleIterator@{Simple\-Iterator}}
+\subsubsection[{Simple\-Iterator}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf Simple\-Iterator}$<$ E $>$\-::{\bf Simple\-Iterator} (
+\begin{DoxyParamCaption}
+\item[{{\bf Node}$<$ E $>$ $\ast$}]{phead, }
+\item[{{\bf Node}$<$ E $>$ $\ast$}]{ptail}
+\end{DoxyParamCaption}
+)}}\label{classSimpleIterator_a643cab8769a566826092a5db6ace3267}
+
+
+Metodo constructor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em head} & es la cabeza por donde se iniciara la iteracion \\
+\hline
+{\em tail} & es la cola el ultimo elemento de la iteracion \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Documentación de las funciones miembro}
 \hypertarget{classSimpleIterator_ac9460c98985a20f781f351c85b8a3ba2}{\index{Simple\-Iterator@{Simple\-Iterator}!get\-Current@{get\-Current}}

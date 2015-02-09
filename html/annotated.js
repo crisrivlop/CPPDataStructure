@@ -10,13 +10,16 @@ var annotated =
     [ "DoubleCircularList", "classDoubleCircularList.html", "classDoubleCircularList" ],
     [ "DoubleIterator", "classDoubleIterator.html", "classDoubleIterator" ],
     [ "DoubleList", "classDoubleList.html", "classDoubleList" ],
+    [ "DoubleListAdapter", "classDoubleListAdapter.html", "classDoubleListAdapter" ],
     [ "DoubleNode", "classDoubleNode.html", "classDoubleNode" ],
     [ "IIterator", "classIIterator.html", "classIIterator" ],
     [ "IList", "classIList.html", "classIList" ],
     [ "InverseIterator", "classInverseIterator.html", "classInverseIterator" ],
+    [ "IOrdinateList", "classIOrdinateList.html", "classIOrdinateList" ],
     [ "List", "classList.html", "classList" ],
     [ "Node", "classNode.html", "classNode" ],
     [ "Queue", "classQueue.html", "classQueue" ],
     [ "SimpleIterator", "classSimpleIterator.html", "classSimpleIterator" ],
+    [ "SimpleListAdapter", "classSimpleListAdapter.html", "classSimpleListAdapter" ],
     [ "Stack", "classStack.html", "classStack" ]
 ];

@@ -17,14 +17,14 @@ class InverseIterator:public IIterator<E>{
     template <class T> friend class DoubleList;
 
     DoubleNode<E> *head,*tail,*current; /**< TODO */
-protected:
+public:
     /**
      * @brief Metodo constructor
      * @param head es la cabeza el ultimo elemento de la iteracion
      * @param tail es la cola por donde se iniciara la iteracion
      */
     InverseIterator(DoubleNode<E>*,DoubleNode<E>*);
-public:
+
     /**
      * @brief Obtiene el dato actual y actualiza al nodo siguiente.
      * @return E el dato actual

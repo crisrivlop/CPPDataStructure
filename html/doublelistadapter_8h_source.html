@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>CPPDataStructure: Fichero Fuente ordinateList/doublelistadapter.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">CPPDataStructure
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="pages.html"><span>Páginas&#160;relacionadas</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('doublelistadapter_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Páginas</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">doublelistadapter.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;iordinatelist.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;list/DoubleNode.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;list/DoubleIterator.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;list/InverseIterator.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef DOUBLELISTADAPTER_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define DOUBLELISTADAPTER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classDoubleListAdapter.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDoubleListAdapter.html">DoubleListAdapter</a>:<span class="keyword">public</span> <a class="code" href="classIOrdinateList.html">IOrdinateList</a>&lt;E&gt;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">bool</span> _inverseIteration;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *_head,*_tail;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> addi(E pData) = 0;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> addf(E pData) = 0;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> addFirstData(E pData) = 0;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> removei() = 0;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> removef() = 0;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> add(E pData);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">remove</span>(<span class="keywordtype">int</span> pIndex);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">//binary search</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> search(E pData);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    E <span class="keyword">get</span>(<span class="keywordtype">int</span> pIndex);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    E&amp; getReference(<span class="keywordtype">int</span> pIndex);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="classIIterator.html">IIterator&lt;E&gt;</a> getIterator() = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> setInversedIteration(<span class="keywordtype">bool</span> pIteration);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">bool</span> <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::add</a>(E pData){</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (_head == Null)<span class="keywordflow">return</span> addFirstData(pData);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pData &lt; _head-&gt;getData())<span class="keywordflow">return</span> addi(pData);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pData &gt; _tail-&gt;getData())<span class="keywordflow">return</span> addf(pData);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *currentNode = _head;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">while</span> (pData &lt; currentNode-&gt;getData())currentNode = currentNode-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>();</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">if</span> (pData != currentNode-&gt;<a class="code" href="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699">getData</a>()){</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *nextNode = currentNode-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *insertionNode = <span class="keyword">new</span> <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a>(pData,currentNode,nextNode);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            currentNode-&gt;<a class="code" href="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93">setNext</a>(insertionNode);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            nextNode-&gt;<a class="code" href="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d">setPrevious</a>(insertionNode);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            this-&gt;_lenght++;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">bool</span> <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::remove</a>(<span class="keywordtype">int</span> pIndex){</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (pIndex &lt; 0 || pIndex &gt;= this-&gt;_lenght)<span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pIndex == 0)<span class="keywordflow">return</span> removei();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (pIndex == this-&gt;_lenght-1)<span class="keywordflow">return</span> removef();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *currentNode = _head;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0;x &lt; pIndex-1;x++)currentNode = currentNode-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *toDelete = currentNode-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        currentNode-&gt;<a class="code" href="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93">setNext</a>(toDelete-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>());</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        toDelete-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>()-&gt;setPrevious(currentNode);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        this-&gt;_lenght--;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keyword">delete</span> toDelete;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">int</span> <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::search</a>(E pData)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; E <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::get</a>(<span class="keywordtype">int</span> pIndex){</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">if</span> (pIndex &lt; 0 || pIndex &gt;= this-&gt;_lenght)<span class="keywordflow">throw</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *currentNode = _head;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0;x &lt; pIndex;x++)currentNode = currentNode-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>();</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> currentNode-&gt;<a class="code" href="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699">getData</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; E&amp; <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::getReference</a>(<span class="keywordtype">int</span> pIndex){</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">if</span> (pIndex &lt; 0 || pIndex &gt;= this-&gt;_lenght)<span class="keywordflow">throw</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classDoubleNode.html">DoubleNode&lt;E&gt;</a> *currentNode = _head;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0;x &lt; pIndex;x++)currentNode = currentNode-&gt;<a class="code" href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">getNext</a>();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> currentNode-&gt;getReferenceData();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <a class="code" href="classIIterator.html">IIterator&lt;E&gt;</a> <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::getIterator</a>()</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;{</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classIIterator.html">IIterator&lt;E&gt;</a> *iterator;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">if</span>(_inverseIteration)iterator = <span class="keyword">new</span> <a class="code" href="classInverseIterator.html">InverseIterator&lt;E&gt;</a>(_head, _tail);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">else</span> iterator = <span class="keyword">new</span> <a class="code" href="classDoubleIterator.html">DoubleIterator&lt;E&gt;</a>(_head,_tail);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> iterator;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">void</span> <a class="code" href="classDoubleListAdapter.html">DoubleListAdapter&lt;E&gt;::setInversedIteration</a>(<span class="keywordtype">bool</span> pIteration)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;{</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    _inverseIteration = pIteration;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif // DOUBLELISTADAPTER_H</span></div>
+<div class="ttc" id="classIIterator_html"><div class="ttname"><a href="classIIterator.html">IIterator</a></div><div class="ttdoc">Es una interfaz para los iteradores hijos de este. </div><div class="ttdef"><b>Definition:</b> IIterator.h:10</div></div>
+<div class="ttc" id="classInverseIterator_html"><div class="ttname"><a href="classInverseIterator.html">InverseIterator</a></div><div class="ttdoc">Esta clase es un iterador de las listas doblemente enlazadas, ademas la actualizacion de la lista NO ...</div><div class="ttdef"><b>Definition:</b> InverseIterator.h:15</div></div>
+<div class="ttc" id="classDoubleNode_html_aba52422e27040e524ba629445e9d8b93"><div class="ttname"><a href="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93">DoubleNode::setNext</a></div><div class="ttdeci">void setNext(DoubleNode&lt; E &gt; *)</div><div class="ttdoc">Setea el puntero del nodo siguiente. </div><div class="ttdef"><b>Definition:</b> DoubleNode.h:108</div></div>
+<div class="ttc" id="classDoubleNode_html_aa76c202fdfd533984d9e9ae1892d194d"><div class="ttname"><a href="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d">DoubleNode::setPrevious</a></div><div class="ttdeci">void setPrevious(DoubleNode&lt; E &gt; *)</div><div class="ttdoc">Setea el puntero del nodo anterior. </div><div class="ttdef"><b>Definition:</b> DoubleNode.h:114</div></div>
+<div class="ttc" id="classDoubleNode_html"><div class="ttname"><a href="classDoubleNode.html">DoubleNode</a></div><div class="ttdoc">Es la parte elemental de una lista que sea doublemente enlazada. </div><div class="ttdef"><b>Definition:</b> DoubleNode.h:11</div></div>
+<div class="ttc" id="classDoubleIterator_html"><div class="ttname"><a href="classDoubleIterator.html">DoubleIterator</a></div><div class="ttdoc">Esta clase es un iterador de las listas doblemente enlazadas, ademas la actualizacion de la lista NO ...</div><div class="ttdef"><b>Definition:</b> DoubleIterator.h:16</div></div>
+<div class="ttc" id="classIOrdinateList_html"><div class="ttname"><a href="classIOrdinateList.html">IOrdinateList</a></div><div class="ttdef"><b>Definition:</b> iordinatelist.h:7</div></div>
+<div class="ttc" id="classDoubleNode_html_af5af4a30419b7a7c746361c1476e119f"><div class="ttname"><a href="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f">DoubleNode::getNext</a></div><div class="ttdeci">DoubleNode&lt; E &gt; * getNext() const </div><div class="ttdoc">Obtiene el nodo siguiente. </div><div class="ttdef"><b>Definition:</b> DoubleNode.h:111</div></div>
+<div class="ttc" id="classDoubleNode_html_a59310f31d21f431febc4d329e1f10699"><div class="ttname"><a href="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699">DoubleNode::getData</a></div><div class="ttdeci">E getData() const </div><div class="ttdoc">Obtiene el dato contenido en el nodo. </div><div class="ttdef"><b>Definition:</b> DoubleNode.h:103</div></div>
+<div class="ttc" id="classDoubleListAdapter_html"><div class="ttname"><a href="classDoubleListAdapter.html">DoubleListAdapter</a></div><div class="ttdef"><b>Definition:</b> doublelistadapter.h:9</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_1cc0826b584eccff34b45d914aeb7b15.html">ordinateList</a></li><li class="navelem"><b>doublelistadapter.h</b></li>
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
+  </ul>
+</div>
+</body>
+</html>

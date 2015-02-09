@@ -121,49 +121,48 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a75ca826e991a8e57cb67748ab03aea77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a75ca826e991a8e57cb67748ab03aea77">BNode</a> (int pSize)</td></tr>
 <tr class="memdesc:a75ca826e991a8e57cb67748ab03aea77"><td class="mdescLeft">&#160;</td><td class="mdescRight">El construtor de <a class="el" href="classBNode.html">BNode</a>, inicializa la cantidad de datos que contendra.  <a href="#a75ca826e991a8e57cb67748ab03aea77">Más...</a><br/></td></tr>
 <tr class="separator:a75ca826e991a8e57cb67748ab03aea77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f40c8dc96ba1c920703b40a85bef380"><td class="memItemLeft" align="right" valign="top">VALUE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">getValues</a> () const </td></tr>
-<tr class="memdesc:a1f40c8dc96ba1c920703b40a85bef380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo.  <a href="#a1f40c8dc96ba1c920703b40a85bef380">Más...</a><br/></td></tr>
-<tr class="separator:a1f40c8dc96ba1c920703b40a85bef380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86a9053ba20c97c81a4a0f5cf370316d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">getChilds</a> () const </td></tr>
-<tr class="memdesc:a86a9053ba20c97c81a4a0f5cf370316d"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce significa que nodo es hoja  <a href="#a86a9053ba20c97c81a4a0f5cf370316d">Más...</a><br/></td></tr>
-<tr class="separator:a86a9053ba20c97c81a4a0f5cf370316d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa98b14c2075af9acbd7c3a76ba8f7078"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa98b14c2075af9acbd7c3a76ba8f7078"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BNode</b> (const <a class="el" href="classBNode.html">BNode</a> &amp;)</td></tr>
+<tr class="separator:aa98b14c2075af9acbd7c3a76ba8f7078"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aa76bfa386186a44a1a136aaf22da9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBArray.html">BArray</a>&lt; VALUE &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">getValues</a> () const </td></tr>
+<tr class="memdesc:a4aa76bfa386186a44a1a136aaf22da9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo.  <a href="#a4aa76bfa386186a44a1a136aaf22da9c">Más...</a><br/></td></tr>
+<tr class="separator:a4aa76bfa386186a44a1a136aaf22da9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d0402efc62f6876d6ec2db7e4d75f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63d0402efc62f6876d6ec2db7e4d75f8"></a>
+VALUE&#160;</td><td class="memItemRight" valign="bottom"><b>getValue</b> (int pIndex) const </td></tr>
+<tr class="separator:a63d0402efc62f6876d6ec2db7e4d75f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8bf944d82b64503fd9fb6c290f7511b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBArray.html">BArray</a>&lt; <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b">getChilds</a> () const </td></tr>
+<tr class="memdesc:ab8bf944d82b64503fd9fb6c290f7511b"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce significa que nodo es hoja  <a href="#ab8bf944d82b64503fd9fb6c290f7511b">Más...</a><br/></td></tr>
+<tr class="separator:ab8bf944d82b64503fd9fb6c290f7511b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abde3468d7b1d49d1f858ce40eee6836c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">getChild</a> (int pIndex) const </td></tr>
+<tr class="memdesc:abde3468d7b1d49d1f858ce40eee6836c"><td class="mdescLeft">&#160;</td><td class="mdescRight">getChild  <a href="#abde3468d7b1d49d1f858ce40eee6836c">Más...</a><br/></td></tr>
+<tr class="separator:abde3468d7b1d49d1f858ce40eee6836c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef1d184c4aeb9d85705b8917ed8e21ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a> (VALUE pValue)</td></tr>
 <tr class="memdesc:aef1d184c4aeb9d85705b8917ed8e21ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor  <a href="#aef1d184c4aeb9d85705b8917ed8e21ae">Más...</a><br/></td></tr>
 <tr class="separator:aef1d184c4aeb9d85705b8917ed8e21ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace75c9ba9b3479cafda7fc4d62801601"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601">setLeftChild</a> (<a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *pChild, VALUE pIndex)</td></tr>
-<tr class="memdesc:ace75c9ba9b3479cafda7fc4d62801601"><td class="mdescLeft">&#160;</td><td class="mdescRight">agregar un nodo hijo a la izquierda de la clave indicada por parametro pIndex  <a href="#ace75c9ba9b3479cafda7fc4d62801601">Más...</a><br/></td></tr>
-<tr class="separator:ace75c9ba9b3479cafda7fc4d62801601"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9533a736b61bb9bf42f0e87b1e3275a3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3">setRightChild</a> (<a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *pChild, VALUE pIndex)</td></tr>
-<tr class="memdesc:a9533a736b61bb9bf42f0e87b1e3275a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">agregar un nodo hijo a la derecha de la clave indicada por parametro pIndex  <a href="#a9533a736b61bb9bf42f0e87b1e3275a3">Más...</a><br/></td></tr>
-<tr class="separator:a9533a736b61bb9bf42f0e87b1e3275a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac10d387a2400fcc956719b2c1816b54c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">isExploding</a> () const </td></tr>
-<tr class="memdesc:ac10d387a2400fcc956719b2c1816b54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite impuesto en el constructor.  <a href="#ac10d387a2400fcc956719b2c1816b54c">Más...</a><br/></td></tr>
-<tr class="separator:ac10d387a2400fcc956719b2c1816b54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64a90eaeefe69e066fd2abceb3a8a86e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64a90eaeefe69e066fd2abceb3a8a86e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isLeaf</b> () const </td></tr>
+<tr class="memitem:a99214c44d2dcffbc289354d58e1aebbc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99214c44d2dcffbc289354d58e1aebbc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addChild</b> (<a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *pChild)</td></tr>
+<tr class="separator:a99214c44d2dcffbc289354d58e1aebbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df6391831a91e15dbfaa406c48e9e43"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43">oneToExploding</a> () const </td></tr>
+<tr class="memdesc:a6df6391831a91e15dbfaa406c48e9e43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite impuesto en el constructor.  <a href="#a6df6391831a91e15dbfaa406c48e9e43">Más...</a><br/></td></tr>
+<tr class="separator:a6df6391831a91e15dbfaa406c48e9e43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad39a00cd1027aaad73c0685e280154"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ad39a00cd1027aaad73c0685e280154"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isFull</b> () const </td></tr>
+<tr class="separator:a8ad39a00cd1027aaad73c0685e280154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa88f967e8ec0998fb5ee95daf95fb5af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">explode</a> ()</td></tr>
+<tr class="memdesc:aa88f967e8ec0998fb5ee95daf95fb5af"><td class="mdescLeft">&#160;</td><td class="mdescRight">explode, genera los hijos del nodos y los agrega a la lista de hijos  <a href="#aa88f967e8ec0998fb5ee95daf95fb5af">Más...</a><br/></td></tr>
+<tr class="separator:aa88f967e8ec0998fb5ee95daf95fb5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef7927774633486b47a96f938ea32da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acef7927774633486b47a96f938ea32da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>adoptExploitedNode</b> (<a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *, int)</td></tr>
+<tr class="separator:acef7927774633486b47a96f938ea32da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64a90eaeefe69e066fd2abceb3a8a86e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">isLeaf</a> () const </td></tr>
+<tr class="memdesc:a64a90eaeefe69e066fd2abceb3a8a86e"><td class="mdescLeft">&#160;</td><td class="mdescRight">isLeaf  <a href="#a64a90eaeefe69e066fd2abceb3a8a86e">Más...</a><br/></td></tr>
 <tr class="separator:a64a90eaeefe69e066fd2abceb3a8a86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4cfbe2867e900577efc3836fd207b008"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4cfbe2867e900577efc3836fd207b008"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">print</a> () const </td></tr>
-<tr class="memdesc:a4cfbe2867e900577efc3836fd207b008"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime el dato sin realizar cambios en el nodo. <br/></td></tr>
-<tr class="separator:a4cfbe2867e900577efc3836fd207b008"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03d3802d7b1d173e051378692a6b8687"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a03d3802d7b1d173e051378692a6b8687">getLenghtToExplode</a> () const </td></tr>
-<tr class="memdesc:a03d3802d7b1d173e051378692a6b8687"><td class="mdescLeft">&#160;</td><td class="mdescRight">getLenghtToExplode obtiene el largo al cual explota el nodo  <a href="#a03d3802d7b1d173e051378692a6b8687">Más...</a><br/></td></tr>
-<tr class="separator:a03d3802d7b1d173e051378692a6b8687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d3bd370d42465e8c2aa014645cac8d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1">getLenghtOfChilds</a> () const </td></tr>
-<tr class="memdesc:a7d3bd370d42465e8c2aa014645cac8d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">getLenghtOfChilds Obtiene la cantidad de hijos que tiene el nodo  <a href="#a7d3bd370d42465e8c2aa014645cac8d1">Más...</a><br/></td></tr>
-<tr class="separator:a7d3bd370d42465e8c2aa014645cac8d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af2d0b3078416d0cd7459addf63876f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">getCurrentLenghtData</a> () const </td></tr>
-<tr class="memdesc:a8af2d0b3078416d0cd7459addf63876f"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentLenghtData la cantidad de datos que contiene  <a href="#a8af2d0b3078416d0cd7459addf63876f">Más...</a><br/></td></tr>
-<tr class="separator:a8af2d0b3078416d0cd7459addf63876f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a6d30b4dbe5e81fcbee26f365a2cca"><td class="memItemLeft" align="right" valign="top">VALUE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca">getMaximumValue</a> () const </td></tr>
-<tr class="memdesc:a05a6d30b4dbe5e81fcbee26f365a2cca"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtiene el valor maximo de las claves que contiene el nodo  <a href="#a05a6d30b4dbe5e81fcbee26f365a2cca">Más...</a><br/></td></tr>
-<tr class="separator:a05a6d30b4dbe5e81fcbee26f365a2cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81e066860a4d57a419dc594e8fc3914"><td class="memItemLeft" align="right" valign="top">VALUE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#ab81e066860a4d57a419dc594e8fc3914">getMinimumValue</a> () const </td></tr>
-<tr class="memdesc:ab81e066860a4d57a419dc594e8fc3914"><td class="mdescLeft">&#160;</td><td class="mdescRight">obtiene el valor minimo de las claves que contiene el nodo  <a href="#ab81e066860a4d57a419dc594e8fc3914">Más...</a><br/></td></tr>
-<tr class="separator:ab81e066860a4d57a419dc594e8fc3914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f086008f07ee778fc3b7b05ebdf8e34"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f086008f07ee778fc3b7b05ebdf8e34"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()</td></tr>
+<tr class="separator:a7f086008f07ee778fc3b7b05ebdf8e34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac92421575ed510386d4e4ec1ab8ab1a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac92421575ed510386d4e4ec1ab8ab1a4"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">~BNode</a> ()</td></tr>
-<tr class="memdesc:ac92421575ed510386d4e4ec1ab8ab1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor, libera la memoria que ocupa este nodo <br/></td></tr>
+<tr class="memdesc:ac92421575ed510386d4e4ec1ab8ab1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">~BNode Liberador de memoria <br/></td></tr>
 <tr class="separator:ac92421575ed510386d4e4ec1ab8ab1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
@@ -258,18 +257,65 @@ template&lt;typename VALUE&gt; </div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Devuelve</dt><dd>true, si el valor se inserto correctamente </dd></dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true, si el valor se inserto correctamente y la lista no este llena </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a86a9053ba20c97c81a4a0f5cf370316d"></a>
+<a class="anchor" id="aa88f967e8ec0998fb5ee95daf95fb5af"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename VALUE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getChilds </td>
+          <td class="memname">void <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::explode </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>explode, genera los hijos del nodos y los agrega a la lista de hijos </p>
+<dl class="section return"><dt>Devuelve</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abde3468d7b1d49d1f858ce40eee6836c"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VALUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getChild </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>getChild </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIndex</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8bf944d82b64503fd9fb6c290f7511b"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VALUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBArray.html">BArray</a>&lt; <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; * &gt; * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getChilds </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -282,114 +328,14 @@ template&lt;typename VALUE &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a8af2d0b3078416d0cd7459addf63876f"></a>
+<a class="anchor" id="a4aa76bfa386186a44a1a136aaf22da9c"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename VALUE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getCurrentLenghtData </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>getCurrentLenghtData la cantidad de datos que contiene </p>
-<dl class="section return"><dt>Devuelve</dt><dd></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a7d3bd370d42465e8c2aa014645cac8d1"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getLenghtOfChilds </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>getLenghtOfChilds Obtiene la cantidad de hijos que tiene el nodo </p>
-<dl class="section return"><dt>Devuelve</dt><dd>la cantidad de hijos de este nodo </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a03d3802d7b1d173e051378692a6b8687"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getLenghtToExplode </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>getLenghtToExplode obtiene el largo al cual explota el nodo </p>
-<dl class="section return"><dt>Devuelve</dt><dd>obtiene el largo de explosion del nodo </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a05a6d30b4dbe5e81fcbee26f365a2cca"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">VALUE * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getMaximumValue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>obtiene el valor maximo de las claves que contiene el nodo </p>
-<dl class="section return"><dt>Devuelve</dt><dd>el valor maximo que contiene el nodo </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ab81e066860a4d57a419dc594e8fc3914"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">VALUE * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getMinimumValue </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>obtiene el valor minimo de las claves que contiene el nodo </p>
-<dl class="section return"><dt>Devuelve</dt><dd>el valor minimo que contiene el nodo </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a1f40c8dc96ba1c920703b40a85bef380"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">VALUE * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getValues </td>
+          <td class="memname"><a class="el" href="classBArray.html">BArray</a>&lt; VALUE &gt; * <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::getValues </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -402,14 +348,34 @@ template&lt;typename VALUE &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ac10d387a2400fcc956719b2c1816b54c"></a>
+<a class="anchor" id="a64a90eaeefe69e066fd2abceb3a8a86e"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename VALUE &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::isExploding </td>
+          <td class="memname">bool <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::isLeaf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>isLeaf </p>
+<dl class="section return"><dt>Devuelve</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6df6391831a91e15dbfaa406c48e9e43"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename VALUE &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::oneToExploding </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -422,82 +388,6 @@ template&lt;typename VALUE &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="ace75c9ba9b3479cafda7fc4d62801601"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::setLeftChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *&#160;</td>
-          <td class="paramname"><em>pChild</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VALUE&#160;</td>
-          <td class="paramname"><em>pIndex</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>agregar un nodo hijo a la izquierda de la clave indicada por parametro pIndex </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pChild</td><td>el nodo a agregar como nodo hijo </td></tr>
-    <tr><td class="paramname">pIndex</td><td>el indice del valor al cual se le quiere dar un hijo izquierdo </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Devuelve</dt><dd>true, si el nodo hijo ha sido insertado, false en el otro caso. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9533a736b61bb9bf42f0e87b1e3275a3"></a>
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename VALUE&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt;::setRightChild </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classBNode.html">BNode</a>&lt; VALUE &gt; *&#160;</td>
-          <td class="paramname"><em>pChild</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VALUE&#160;</td>
-          <td class="paramname"><em>pIndex</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>agregar un nodo hijo a la derecha de la clave indicada por parametro pIndex </p>
-<dl class="params"><dt>Parámetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pChild</td><td>el nodo a agregar como nodo hijo </td></tr>
-    <tr><td class="paramname">pIndex</td><td>el indice del valor al cual se le quiere dar un hijo izquierdo </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Devuelve</dt><dd>true, si el nodo hijo ha sido insertado, false en el otro caso. </dd></dl>
-
-</div>
-</div>
 <hr/>La documentación para esta clase fue generada a partir del siguiente fichero:<ul>
 <li>tree/<a class="el" href="BNode_8h_source.html">BNode.h</a></li>
 </ul>
@@ -507,7 +397,7 @@ template&lt;typename VALUE&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classBNode.html">BNode</a></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:49 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

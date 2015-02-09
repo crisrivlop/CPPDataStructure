@@ -12,37 +12,41 @@
 \item 
 \hyperlink{classBNode_a75ca826e991a8e57cb67748ab03aea77}{B\-Node} (int p\-Size)
 \begin{DoxyCompactList}\small\item\em El construtor de \hyperlink{classBNode}{B\-Node}, inicializa la cantidad de datos que contendra. \end{DoxyCompactList}\item 
-V\-A\-L\-U\-E $\ast$ \hyperlink{classBNode_a1f40c8dc96ba1c920703b40a85bef380}{get\-Values} () const 
-\begin{DoxyCompactList}\small\item\em Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. \end{DoxyCompactList}\item 
-\hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$ \hyperlink{classBNode_a86a9053ba20c97c81a4a0f5cf370316d}{get\-Childs} () const 
-\begin{DoxyCompactList}\small\item\em obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce significa que nodo es hoja \end{DoxyCompactList}\item 
-bool \hyperlink{classBNode_aef1d184c4aeb9d85705b8917ed8e21ae}{add\-Value} (V\-A\-L\-U\-E p\-Value)
-\begin{DoxyCompactList}\small\item\em agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor \end{DoxyCompactList}\item 
-bool \hyperlink{classBNode_ace75c9ba9b3479cafda7fc4d62801601}{set\-Left\-Child} (\hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$p\-Child, V\-A\-L\-U\-E p\-Index)
-\begin{DoxyCompactList}\small\item\em agregar un nodo hijo a la izquierda de la clave indicada por parametro p\-Index \end{DoxyCompactList}\item 
-bool \hyperlink{classBNode_a9533a736b61bb9bf42f0e87b1e3275a3}{set\-Right\-Child} (\hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$p\-Child, V\-A\-L\-U\-E p\-Index)
-\begin{DoxyCompactList}\small\item\em agregar un nodo hijo a la derecha de la clave indicada por parametro p\-Index \end{DoxyCompactList}\item 
-bool \hyperlink{classBNode_ac10d387a2400fcc956719b2c1816b54c}{is\-Exploding} () const 
-\begin{DoxyCompactList}\small\item\em Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite impuesto en el constructor. \end{DoxyCompactList}\item 
-\hypertarget{classBNode_a64a90eaeefe69e066fd2abceb3a8a86e}{bool {\bfseries is\-Leaf} () const }\label{classBNode_a64a90eaeefe69e066fd2abceb3a8a86e}
+\hypertarget{classBNode_aa98b14c2075af9acbd7c3a76ba8f7078}{{\bfseries B\-Node} (const \hyperlink{classBNode}{B\-Node} \&)}\label{classBNode_aa98b14c2075af9acbd7c3a76ba8f7078}
 
 \item 
-\hypertarget{classBNode_a4cfbe2867e900577efc3836fd207b008}{void \hyperlink{classBNode_a4cfbe2867e900577efc3836fd207b008}{print} () const }\label{classBNode_a4cfbe2867e900577efc3836fd207b008}
+\hyperlink{classBArray}{B\-Array}$<$ V\-A\-L\-U\-E $>$ $\ast$ \hyperlink{classBNode_a4aa76bfa386186a44a1a136aaf22da9c}{get\-Values} () const 
+\begin{DoxyCompactList}\small\item\em Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. \end{DoxyCompactList}\item 
+\hypertarget{classBNode_a63d0402efc62f6876d6ec2db7e4d75f8}{V\-A\-L\-U\-E {\bfseries get\-Value} (int p\-Index) const }\label{classBNode_a63d0402efc62f6876d6ec2db7e4d75f8}
 
-\begin{DoxyCompactList}\small\item\em Imprime el dato sin realizar cambios en el nodo. \end{DoxyCompactList}\item 
-int \hyperlink{classBNode_a03d3802d7b1d173e051378692a6b8687}{get\-Lenght\-To\-Explode} () const 
-\begin{DoxyCompactList}\small\item\em get\-Lenght\-To\-Explode obtiene el largo al cual explota el nodo \end{DoxyCompactList}\item 
-int \hyperlink{classBNode_a7d3bd370d42465e8c2aa014645cac8d1}{get\-Lenght\-Of\-Childs} () const 
-\begin{DoxyCompactList}\small\item\em get\-Lenght\-Of\-Childs Obtiene la cantidad de hijos que tiene el nodo \end{DoxyCompactList}\item 
-int \hyperlink{classBNode_a8af2d0b3078416d0cd7459addf63876f}{get\-Current\-Lenght\-Data} () const 
-\begin{DoxyCompactList}\small\item\em get\-Current\-Lenght\-Data la cantidad de datos que contiene \end{DoxyCompactList}\item 
-V\-A\-L\-U\-E $\ast$ \hyperlink{classBNode_a05a6d30b4dbe5e81fcbee26f365a2cca}{get\-Maximum\-Value} () const 
-\begin{DoxyCompactList}\small\item\em obtiene el valor maximo de las claves que contiene el nodo \end{DoxyCompactList}\item 
-V\-A\-L\-U\-E $\ast$ \hyperlink{classBNode_ab81e066860a4d57a419dc594e8fc3914}{get\-Minimum\-Value} () const 
-\begin{DoxyCompactList}\small\item\em obtiene el valor minimo de las claves que contiene el nodo \end{DoxyCompactList}\item 
+\item 
+\hyperlink{classBArray}{B\-Array}$<$ \hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$ $>$ $\ast$ \hyperlink{classBNode_ab8bf944d82b64503fd9fb6c290f7511b}{get\-Childs} () const 
+\begin{DoxyCompactList}\small\item\em obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce significa que nodo es hoja \end{DoxyCompactList}\item 
+\hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$ \hyperlink{classBNode_abde3468d7b1d49d1f858ce40eee6836c}{get\-Child} (int p\-Index) const 
+\begin{DoxyCompactList}\small\item\em get\-Child \end{DoxyCompactList}\item 
+bool \hyperlink{classBNode_aef1d184c4aeb9d85705b8917ed8e21ae}{add\-Value} (V\-A\-L\-U\-E p\-Value)
+\begin{DoxyCompactList}\small\item\em agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor \end{DoxyCompactList}\item 
+\hypertarget{classBNode_a99214c44d2dcffbc289354d58e1aebbc}{bool {\bfseries add\-Child} (\hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$p\-Child)}\label{classBNode_a99214c44d2dcffbc289354d58e1aebbc}
+
+\item 
+bool \hyperlink{classBNode_a6df6391831a91e15dbfaa406c48e9e43}{one\-To\-Exploding} () const 
+\begin{DoxyCompactList}\small\item\em Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite impuesto en el constructor. \end{DoxyCompactList}\item 
+\hypertarget{classBNode_a8ad39a00cd1027aaad73c0685e280154}{bool {\bfseries is\-Full} () const }\label{classBNode_a8ad39a00cd1027aaad73c0685e280154}
+
+\item 
+void \hyperlink{classBNode_aa88f967e8ec0998fb5ee95daf95fb5af}{explode} ()
+\begin{DoxyCompactList}\small\item\em explode, genera los hijos del nodos y los agrega a la lista de hijos \end{DoxyCompactList}\item 
+\hypertarget{classBNode_acef7927774633486b47a96f938ea32da}{void {\bfseries adopt\-Exploited\-Node} (\hyperlink{classBNode}{B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$, int)}\label{classBNode_acef7927774633486b47a96f938ea32da}
+
+\item 
+bool \hyperlink{classBNode_a64a90eaeefe69e066fd2abceb3a8a86e}{is\-Leaf} () const 
+\begin{DoxyCompactList}\small\item\em is\-Leaf \end{DoxyCompactList}\item 
+\hypertarget{classBNode_a7f086008f07ee778fc3b7b05ebdf8e34}{void {\bfseries print} ()}\label{classBNode_a7f086008f07ee778fc3b7b05ebdf8e34}
+
+\item 
 \hypertarget{classBNode_ac92421575ed510386d4e4ec1ab8ab1a4}{virtual \hyperlink{classBNode_ac92421575ed510386d4e4ec1ab8ab1a4}{$\sim$\-B\-Node} ()}\label{classBNode_ac92421575ed510386d4e4ec1ab8ab1a4}
 
-\begin{DoxyCompactList}\small\item\em destructor, libera la memoria que ocupa este nodo \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em $\sim$\-B\-Node Liberador de memoria \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
@@ -102,15 +106,48 @@ agrega en orden el valor en el array, en caso que la lista este llena no inserta
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Devuelve}
-true, si el valor se inserto correctamente 
+true, si el valor se inserto correctamente y la lista no este llena 
 \end{DoxyReturn}
-\hypertarget{classBNode_a86a9053ba20c97c81a4a0f5cf370316d}{\index{B\-Node@{B\-Node}!get\-Childs@{get\-Childs}}
-\index{get\-Childs@{get\-Childs}!BNode@{B\-Node}}
-\subsubsection[{get\-Childs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Childs (
+\hypertarget{classBNode_aa88f967e8ec0998fb5ee95daf95fb5af}{\index{B\-Node@{B\-Node}!explode@{explode}}
+\index{explode@{explode}!BNode@{B\-Node}}
+\subsubsection[{explode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ void {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::explode (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classBNode_a86a9053ba20c97c81a4a0f5cf370316d}
+)}}\label{classBNode_aa88f967e8ec0998fb5ee95daf95fb5af}
+
+
+explode, genera los hijos del nodos y los agrega a la lista de hijos 
+
+\begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
+\hypertarget{classBNode_abde3468d7b1d49d1f858ce40eee6836c}{\index{B\-Node@{B\-Node}!get\-Child@{get\-Child}}
+\index{get\-Child@{get\-Child}!BNode@{B\-Node}}
+\subsubsection[{get\-Child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Child (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-Index}
+\end{DoxyParamCaption}
+) const}}\label{classBNode_abde3468d7b1d49d1f858ce40eee6836c}
+
+
+get\-Child 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p\-Index} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
+\hypertarget{classBNode_ab8bf944d82b64503fd9fb6c290f7511b}{\index{B\-Node@{B\-Node}!get\-Childs@{get\-Childs}}
+\index{get\-Childs@{get\-Childs}!BNode@{B\-Node}}
+\subsubsection[{get\-Childs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ {\bf B\-Array}$<$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$ $>$ $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Childs (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBNode_ab8bf944d82b64503fd9fb6c290f7511b}
 
 
 obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce significa que nodo es hoja 
@@ -118,83 +155,13 @@ obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un pu
 \begin{DoxyReturn}{Devuelve}
 B\-Node$<$\-V\-A\-L\-U\-E$>$ el puntero al array de nodos siguientes. 
 \end{DoxyReturn}
-\hypertarget{classBNode_a8af2d0b3078416d0cd7459addf63876f}{\index{B\-Node@{B\-Node}!get\-Current\-Lenght\-Data@{get\-Current\-Lenght\-Data}}
-\index{get\-Current\-Lenght\-Data@{get\-Current\-Lenght\-Data}!BNode@{B\-Node}}
-\subsubsection[{get\-Current\-Lenght\-Data}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ int {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Current\-Lenght\-Data (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{classBNode_a8af2d0b3078416d0cd7459addf63876f}
-
-
-get\-Current\-Lenght\-Data la cantidad de datos que contiene 
-
-\begin{DoxyReturn}{Devuelve}
-
-\end{DoxyReturn}
-\hypertarget{classBNode_a7d3bd370d42465e8c2aa014645cac8d1}{\index{B\-Node@{B\-Node}!get\-Lenght\-Of\-Childs@{get\-Lenght\-Of\-Childs}}
-\index{get\-Lenght\-Of\-Childs@{get\-Lenght\-Of\-Childs}!BNode@{B\-Node}}
-\subsubsection[{get\-Lenght\-Of\-Childs}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ int {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Lenght\-Of\-Childs (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{classBNode_a7d3bd370d42465e8c2aa014645cac8d1}
-
-
-get\-Lenght\-Of\-Childs Obtiene la cantidad de hijos que tiene el nodo 
-
-\begin{DoxyReturn}{Devuelve}
-la cantidad de hijos de este nodo 
-\end{DoxyReturn}
-\hypertarget{classBNode_a03d3802d7b1d173e051378692a6b8687}{\index{B\-Node@{B\-Node}!get\-Lenght\-To\-Explode@{get\-Lenght\-To\-Explode}}
-\index{get\-Lenght\-To\-Explode@{get\-Lenght\-To\-Explode}!BNode@{B\-Node}}
-\subsubsection[{get\-Lenght\-To\-Explode}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ int {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Lenght\-To\-Explode (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{classBNode_a03d3802d7b1d173e051378692a6b8687}
-
-
-get\-Lenght\-To\-Explode obtiene el largo al cual explota el nodo 
-
-\begin{DoxyReturn}{Devuelve}
-obtiene el largo de explosion del nodo 
-\end{DoxyReturn}
-\hypertarget{classBNode_a05a6d30b4dbe5e81fcbee26f365a2cca}{\index{B\-Node@{B\-Node}!get\-Maximum\-Value@{get\-Maximum\-Value}}
-\index{get\-Maximum\-Value@{get\-Maximum\-Value}!BNode@{B\-Node}}
-\subsubsection[{get\-Maximum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ V\-A\-L\-U\-E $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Maximum\-Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{classBNode_a05a6d30b4dbe5e81fcbee26f365a2cca}
-
-
-obtiene el valor maximo de las claves que contiene el nodo 
-
-\begin{DoxyReturn}{Devuelve}
-el valor maximo que contiene el nodo 
-\end{DoxyReturn}
-\hypertarget{classBNode_ab81e066860a4d57a419dc594e8fc3914}{\index{B\-Node@{B\-Node}!get\-Minimum\-Value@{get\-Minimum\-Value}}
-\index{get\-Minimum\-Value@{get\-Minimum\-Value}!BNode@{B\-Node}}
-\subsubsection[{get\-Minimum\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ V\-A\-L\-U\-E $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Minimum\-Value (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-) const}}\label{classBNode_ab81e066860a4d57a419dc594e8fc3914}
-
-
-obtiene el valor minimo de las claves que contiene el nodo 
-
-\begin{DoxyReturn}{Devuelve}
-el valor minimo que contiene el nodo 
-\end{DoxyReturn}
-\hypertarget{classBNode_a1f40c8dc96ba1c920703b40a85bef380}{\index{B\-Node@{B\-Node}!get\-Values@{get\-Values}}
+\hypertarget{classBNode_a4aa76bfa386186a44a1a136aaf22da9c}{\index{B\-Node@{B\-Node}!get\-Values@{get\-Values}}
 \index{get\-Values@{get\-Values}!BNode@{B\-Node}}
-\subsubsection[{get\-Values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ V\-A\-L\-U\-E $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Values (
+\subsubsection[{get\-Values}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ {\bf B\-Array}$<$ V\-A\-L\-U\-E $>$ $\ast$ {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::get\-Values (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classBNode_a1f40c8dc96ba1c920703b40a85bef380}
+) const}}\label{classBNode_a4aa76bfa386186a44a1a136aaf22da9c}
 
 
 Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. 
@@ -202,63 +169,33 @@ Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo.
 \begin{DoxyReturn}{Devuelve}
 V\-A\-L\-U\-E el arreglo de valores del nodo. 
 \end{DoxyReturn}
-\hypertarget{classBNode_ac10d387a2400fcc956719b2c1816b54c}{\index{B\-Node@{B\-Node}!is\-Exploding@{is\-Exploding}}
-\index{is\-Exploding@{is\-Exploding}!BNode@{B\-Node}}
-\subsubsection[{is\-Exploding}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ bool {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::is\-Exploding (
+\hypertarget{classBNode_a64a90eaeefe69e066fd2abceb3a8a86e}{\index{B\-Node@{B\-Node}!is\-Leaf@{is\-Leaf}}
+\index{is\-Leaf@{is\-Leaf}!BNode@{B\-Node}}
+\subsubsection[{is\-Leaf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ bool {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::is\-Leaf (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-) const}}\label{classBNode_ac10d387a2400fcc956719b2c1816b54c}
+) const}}\label{classBNode_a64a90eaeefe69e066fd2abceb3a8a86e}
+
+
+is\-Leaf 
+
+\begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
+\hypertarget{classBNode_a6df6391831a91e15dbfaa406c48e9e43}{\index{B\-Node@{B\-Node}!one\-To\-Exploding@{one\-To\-Exploding}}
+\index{one\-To\-Exploding@{one\-To\-Exploding}!BNode@{B\-Node}}
+\subsubsection[{one\-To\-Exploding}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E $>$ bool {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::one\-To\-Exploding (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classBNode_a6df6391831a91e15dbfaa406c48e9e43}
 
 
 Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite impuesto en el constructor. 
 
 \begin{DoxyReturn}{Devuelve}
 true si el nodo esta explotando, false si no. 
-\end{DoxyReturn}
-\hypertarget{classBNode_ace75c9ba9b3479cafda7fc4d62801601}{\index{B\-Node@{B\-Node}!set\-Left\-Child@{set\-Left\-Child}}
-\index{set\-Left\-Child@{set\-Left\-Child}!BNode@{B\-Node}}
-\subsubsection[{set\-Left\-Child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E$>$ bool {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::set\-Left\-Child (
-\begin{DoxyParamCaption}
-\item[{{\bf B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$}]{p\-Child, }
-\item[{V\-A\-L\-U\-E}]{p\-Index}
-\end{DoxyParamCaption}
-)}}\label{classBNode_ace75c9ba9b3479cafda7fc4d62801601}
-
-
-agregar un nodo hijo a la izquierda de la clave indicada por parametro p\-Index 
-
-
-\begin{DoxyParams}{Parámetros}
-{\em p\-Child} & el nodo a agregar como nodo hijo \\
-\hline
-{\em p\-Index} & el indice del valor al cual se le quiere dar un hijo izquierdo \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Devuelve}
-true, si el nodo hijo ha sido insertado, false en el otro caso. 
-\end{DoxyReturn}
-\hypertarget{classBNode_a9533a736b61bb9bf42f0e87b1e3275a3}{\index{B\-Node@{B\-Node}!set\-Right\-Child@{set\-Right\-Child}}
-\index{set\-Right\-Child@{set\-Right\-Child}!BNode@{B\-Node}}
-\subsubsection[{set\-Right\-Child}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename V\-A\-L\-U\-E$>$ bool {\bf B\-Node}$<$ V\-A\-L\-U\-E $>$\-::set\-Right\-Child (
-\begin{DoxyParamCaption}
-\item[{{\bf B\-Node}$<$ V\-A\-L\-U\-E $>$ $\ast$}]{p\-Child, }
-\item[{V\-A\-L\-U\-E}]{p\-Index}
-\end{DoxyParamCaption}
-)}}\label{classBNode_a9533a736b61bb9bf42f0e87b1e3275a3}
-
-
-agregar un nodo hijo a la derecha de la clave indicada por parametro p\-Index 
-
-
-\begin{DoxyParams}{Parámetros}
-{\em p\-Child} & el nodo a agregar como nodo hijo \\
-\hline
-{\em p\-Index} & el indice del valor al cual se le quiere dar un hijo izquierdo \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Devuelve}
-true, si el nodo hijo ha sido insertado, false en el otro caso. 
 \end{DoxyReturn}
 
 

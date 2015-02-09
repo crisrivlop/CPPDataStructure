@@ -12,7 +12,7 @@ Esta clase es una estructura de datos especificamente una lista doblemente enlaz
 
 
 
-Herencias \hyperlink{classIList}{I\-List$<$ E $>$}.
+Herencias \hyperlink{classDoubleListAdapter}{Double\-List\-Adapter$<$ E $>$} y \hyperlink{classIList}{I\-List$<$ E $>$}.
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
@@ -20,7 +20,7 @@ Herencias \hyperlink{classIList}{I\-List$<$ E $>$}.
 \hypertarget{classDoubleCircularList_a533876254e3c837d556542eda9968f8b}{\hyperlink{classDoubleCircularList_a533876254e3c837d556542eda9968f8b}{Double\-Circular\-List} ()}\label{classDoubleCircularList_a533876254e3c837d556542eda9968f8b}
 
 \begin{DoxyCompactList}\small\item\em Es el constructor de la lista circular doble. \end{DoxyCompactList}\item 
-void \hyperlink{classDoubleCircularList_aec3cb982a2b9def7eb254ef206101e28}{addi} (E)
+void \hyperlink{classDoubleCircularList_ade2ef68a86a8deef4cb43d38e031906b}{addi} (E)
 \begin{DoxyCompactList}\small\item\em Agrega un elemento al principio de la lista. \end{DoxyCompactList}\item 
 void \hyperlink{classDoubleCircularList_a7691d38e77ea44d222c465f27e7d05b6}{add} (E)
 \begin{DoxyCompactList}\small\item\em Agregar un elemento al final de la lista. \end{DoxyCompactList}\item 
@@ -39,6 +39,23 @@ void \hyperlink{classDoubleCircularList_a77212c5d6ad148c99a06009a8c44128b}{inver
 \hypertarget{classDoubleCircularList_a26dba8b85983742cfbf38886245fe2a4}{virtual \hyperlink{classDoubleCircularList_a26dba8b85983742cfbf38886245fe2a4}{$\sim$\-Double\-Circular\-List} ()}\label{classDoubleCircularList_a26dba8b85983742cfbf38886245fe2a4}
 
 \begin{DoxyCompactList}\small\item\em Es el destructor de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classDoubleCircularList_aee387acc4f53773302be4aa98bc779dc}{addi} (E p\-Data)
+\begin{DoxyCompactList}\small\item\em Agrega un elemento al principio de la lista. \end{DoxyCompactList}\item 
+\hypertarget{classDoubleCircularList_a4a6ec7a7298470389b88b0c775a9bace}{bool {\bfseries addf} (E p\-Data)}\label{classDoubleCircularList_a4a6ec7a7298470389b88b0c775a9bace}
+
+\item 
+\hypertarget{classDoubleCircularList_aff5a0088509cc88dccfe31389d48f19e}{bool {\bfseries add\-First\-Data} (E p\-Data)}\label{classDoubleCircularList_aff5a0088509cc88dccfe31389d48f19e}
+
+\item 
+\hypertarget{classDoubleCircularList_a1d2c6f1fec95c8d2887c54cb3fc3ff84}{bool {\bfseries removei} ()}\label{classDoubleCircularList_a1d2c6f1fec95c8d2887c54cb3fc3ff84}
+
+\item 
+\hypertarget{classDoubleCircularList_a937da114318f91c6013dd4543636da9d}{bool {\bfseries removef} ()}\label{classDoubleCircularList_a937da114318f91c6013dd4543636da9d}
+
+\end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
@@ -94,13 +111,33 @@ si el elemento se agrega retorna true, en caso contrario retorna false
 
 Implementa \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E $>$}.
 
-\hypertarget{classDoubleCircularList_aec3cb982a2b9def7eb254ef206101e28}{\index{Double\-Circular\-List@{Double\-Circular\-List}!addi@{addi}}
+\hypertarget{classDoubleCircularList_aee387acc4f53773302be4aa98bc779dc}{\index{Double\-Circular\-List@{Double\-Circular\-List}!addi@{addi}}
 \index{addi@{addi}!DoubleCircularList@{Double\-Circular\-List}}
-\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Double\-Circular\-List}$<$ E $>$\-::addi (
+\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Double\-Circular\-List}$<$ E $>$\-::addi (
+\begin{DoxyParamCaption}
+\item[{E}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classDoubleCircularList_aee387acc4f53773302be4aa98bc779dc}
+
+
+Agrega un elemento al principio de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el elemento a agregar \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E $>$}.
+
+\hypertarget{classDoubleCircularList_ade2ef68a86a8deef4cb43d38e031906b}{\index{Double\-Circular\-List@{Double\-Circular\-List}!addi@{addi}}
+\index{addi@{addi}!DoubleCircularList@{Double\-Circular\-List}}
+\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Double\-Circular\-List}$<$ E $>$\-::addi (
 \begin{DoxyParamCaption}
 \item[{E}]{data}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleCircularList_aec3cb982a2b9def7eb254ef206101e28}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleCircularList_ade2ef68a86a8deef4cb43d38e031906b}
 
 
 Agrega un elemento al principio de la lista. 

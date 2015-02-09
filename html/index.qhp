@@ -11,13 +11,21 @@
           <section title="Lista de clases" ref="annotated.html">
             <section title="BArray" ref="classBArray.html">
               <section title="BArray" ref="classBArray.html#a93c786886ce92be7cf5917bbe6be7956" />
+              <section title="BArray" ref="classBArray.html#aa79aa57a0cd0a3bc048e01be7ec1ef74" />
               <section title="~BArray" ref="classBArray.html#a06042b7d093d10621aa80cf4af3ea117" />
-              <section title="add" ref="classBArray.html#ae86ec71c94702d00f70f2e1c026bdce8" />
+              <section title="add" ref="classBArray.html#a8e05e0ba69438392d90c9ec639971d27" />
+              <section title="add" ref="classBArray.html#ad20e82b48673552d493a54e343c165cb" />
+              <section title="addf" ref="classBArray.html#a549423a3f30f2a4f4e4f6cac41ee56d8" />
+              <section title="addi" ref="classBArray.html#adaa70e5af76d77d9d389ae7e762b2df8" />
               <section title="getCurrentLenght" ref="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd" />
               <section title="getMaximunLenght" ref="classBArray.html#a744bcd9f9edb779366a116c2b2b96ba7" />
               <section title="getValue" ref="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb" />
+              <section title="getValueReference" ref="classBArray.html#ab95faafde5cd5847c9cdde2077988415" />
               <section title="isFull" ref="classBArray.html#a2235e8c213fc88b3c6702eaa8c63852c" />
-              <section title="remove" ref="classBArray.html#a7c406b4fb7af4b2c124cdc17c31d1a0e" />
+              <section title="print" ref="classBArray.html#a2773a0b562a8f98ab11f0e1aeaee8793" />
+              <section title="remove" ref="classBArray.html#abc72fc4dd6cca413d42a0cab8471ac44" />
+              <section title="reset" ref="classBArray.html#a1851694345fd6a51557fb699b79f76f6" />
+              <section title="setValue" ref="classBArray.html#a8a035cb596ed2b140d85147579024a8b" />
             </section>
             <section title="BinaryNode" ref="classBinaryNode.html">
               <section title="BinaryNode" ref="classBinaryNode.html#a770d00114c87b6e4b8ebb50c9bd24272" />
@@ -42,20 +50,21 @@
             <section title="BNode" ref="classBNode.html">
               <section title="BNode" ref="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9" />
               <section title="BNode" ref="classBNode.html#a75ca826e991a8e57cb67748ab03aea77" />
+              <section title="BNode" ref="classBNode.html#a84e594705f9bcac0533e4af2f888dc30" />
+              <section title="BNode" ref="classBNode.html#aa98b14c2075af9acbd7c3a76ba8f7078" />
               <section title="~BNode" ref="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4" />
+              <section title="addChild" ref="classBNode.html#a99214c44d2dcffbc289354d58e1aebbc" />
               <section title="addValue" ref="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae" />
-              <section title="getChilds" ref="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d" />
-              <section title="getCurrentLenghtData" ref="classBNode.html#a8af2d0b3078416d0cd7459addf63876f" />
-              <section title="getLenghtOfChilds" ref="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1" />
-              <section title="getLenghtToExplode" ref="classBNode.html#a03d3802d7b1d173e051378692a6b8687" />
-              <section title="getMaximumValue" ref="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca" />
-              <section title="getMinimumValue" ref="classBNode.html#ab81e066860a4d57a419dc594e8fc3914" />
-              <section title="getValues" ref="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380" />
-              <section title="isExploding" ref="classBNode.html#ac10d387a2400fcc956719b2c1816b54c" />
+              <section title="adoptExploitedNode" ref="classBNode.html#acef7927774633486b47a96f938ea32da" />
+              <section title="explode" ref="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af" />
+              <section title="getChild" ref="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c" />
+              <section title="getChilds" ref="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b" />
+              <section title="getValue" ref="classBNode.html#a63d0402efc62f6876d6ec2db7e4d75f8" />
+              <section title="getValues" ref="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c" />
+              <section title="isFull" ref="classBNode.html#a8ad39a00cd1027aaad73c0685e280154" />
               <section title="isLeaf" ref="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e" />
-              <section title="print" ref="classBNode.html#a4cfbe2867e900577efc3836fd207b008" />
-              <section title="setLeftChild" ref="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601" />
-              <section title="setRightChild" ref="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3" />
+              <section title="oneToExploding" ref="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43" />
+              <section title="print" ref="classBNode.html#a7f086008f07ee778fc3b7b05ebdf8e34" />
             </section>
             <section title="BTree" ref="classBTree.html">
               <section title="BTree" ref="classBTree.html#a7b77da63d8a36748b641ec7d7eb1ca7d" />
@@ -64,17 +73,22 @@
               <section title="print" ref="classBTree.html#a98a7b173fd34c602682989ac31ca08e2" />
               <section title="remove" ref="classBTree.html#a7b0b5e717616c2f2349587eae5fe3e13" />
               <section title="search" ref="classBTree.html#a45bcd8774b4bc322479bbd7d4a7ecbc4" />
-              <section title="ostream" ref="classBTree.html#a900712b11e08ae40dad9e80a6d380142" />
             </section>
             <section title="CircularList" ref="classCircularList.html">
               <section title="CircularList" ref="classCircularList.html#aad23571a808ede6fc0432dca645ab2ca" />
               <section title="~CircularList" ref="classCircularList.html#aa65c9665b7d36a5e609752cad0a35dbb" />
+              <section title="CircularList" ref="classCircularList.html#aad23571a808ede6fc0432dca645ab2ca" />
               <section title="add" ref="classCircularList.html#a892b493309f36fb083fdd257388cfa36" />
               <section title="add" ref="classCircularList.html#af184d3ac2e3bba683a44a6cc19392b12" />
-              <section title="addi" ref="classCircularList.html#a6de0a0af406c738b95b0a6d898b69f8e" />
+              <section title="addf" ref="classCircularList.html#ad2832eb48d7d69fa5d759c0c16c4bc5e" />
+              <section title="addFirstData" ref="classCircularList.html#a0a3f318454d748eff1e3b8729aea94bd" />
+              <section title="addi" ref="classCircularList.html#a6f405f4be7946286a958e0b83937b3e2" />
+              <section title="addi" ref="classCircularList.html#a275c75e142e791de9a1a00691af56a73" />
               <section title="get" ref="classCircularList.html#ad6783339c7ff05841fc62f74f809644d" />
               <section title="getIterator" ref="classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e" />
               <section title="remove" ref="classCircularList.html#a4a6acfd818a0ae9055957ec80258c60a" />
+              <section title="removef" ref="classCircularList.html#a1dde06b77306b31eb38fa4b43b6009ab" />
+              <section title="removei" ref="classCircularList.html#a706dd0ab6fb475bec90d9c40cefa92b1" />
               <section title="set" ref="classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3" />
             </section>
             <section title="CPPDataStructure" ref="classCPPDataStructure.html">
@@ -83,13 +97,19 @@
             <section title="DoubleCircularList" ref="classDoubleCircularList.html">
               <section title="DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
               <section title="~DoubleCircularList" ref="classDoubleCircularList.html#a26dba8b85983742cfbf38886245fe2a4" />
+              <section title="DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
               <section title="add" ref="classDoubleCircularList.html#a7691d38e77ea44d222c465f27e7d05b6" />
               <section title="add" ref="classDoubleCircularList.html#a6d76f7045dd9997f55c6c2feb80678da" />
-              <section title="addi" ref="classDoubleCircularList.html#aec3cb982a2b9def7eb254ef206101e28" />
+              <section title="addf" ref="classDoubleCircularList.html#a4a6ec7a7298470389b88b0c775a9bace" />
+              <section title="addFirstData" ref="classDoubleCircularList.html#aff5a0088509cc88dccfe31389d48f19e" />
+              <section title="addi" ref="classDoubleCircularList.html#aee387acc4f53773302be4aa98bc779dc" />
+              <section title="addi" ref="classDoubleCircularList.html#ade2ef68a86a8deef4cb43d38e031906b" />
               <section title="get" ref="classDoubleCircularList.html#aa00bc8fd524af1ba208f85d8816dec52" />
               <section title="getIterator" ref="classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad" />
               <section title="inverseIteration" ref="classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b" />
               <section title="remove" ref="classDoubleCircularList.html#ae7ed8b6714720cb7daafa639f232ecc3" />
+              <section title="removef" ref="classDoubleCircularList.html#a937da114318f91c6013dd4543636da9d" />
+              <section title="removei" ref="classDoubleCircularList.html#a1d2c6f1fec95c8d2887c54cb3fc3ff84" />
               <section title="set" ref="classDoubleCircularList.html#a95e0f27bda1158233015ee3ff27b3ade" />
             </section>
             <section title="DoubleIterator" ref="classDoubleIterator.html">
@@ -103,14 +123,36 @@
             <section title="DoubleList" ref="classDoubleList.html">
               <section title="DoubleList" ref="classDoubleList.html#ab54db9c718c7188f9413ef2b9982dd43" />
               <section title="~DoubleList" ref="classDoubleList.html#a11ce233388fea7a5722a7d57cea400a3" />
+              <section title="DoubleList" ref="classDoubleList.html#ab54db9c718c7188f9413ef2b9982dd43" />
               <section title="add" ref="classDoubleList.html#adb96e6908d3d564722225b848350aa82" />
               <section title="add" ref="classDoubleList.html#a84e3bb8be7d67b43dd3b63d5a47f80ed" />
-              <section title="addi" ref="classDoubleList.html#a9924458cf1416df8243b4f857b027da7" />
+              <section title="addf" ref="classDoubleList.html#a495cbf66dc7f7523e15405b762cc616d" />
+              <section title="addFirstData" ref="classDoubleList.html#a4d72bc061da9183185b9ae1896b2767b" />
+              <section title="addi" ref="classDoubleList.html#a01623cc4b04d94c655de62ae373963b2" />
+              <section title="addi" ref="classDoubleList.html#a621684e61b8d9d41cd107174d9877b1e" />
               <section title="get" ref="classDoubleList.html#a230a8c9c574abe9c72f8daae35127d9c" />
               <section title="getIterator" ref="classDoubleList.html#aa14e383a97e054016a6c5178165b20df" />
               <section title="inverseIteration" ref="classDoubleList.html#a94d1ad5299452ea46839ba350ca501d1" />
               <section title="remove" ref="classDoubleList.html#a844c2c4c3b8260bd58ab94307359fb62" />
+              <section title="removef" ref="classDoubleList.html#a0cd7c06fa533e3f800778920346b8a7b" />
+              <section title="removei" ref="classDoubleList.html#a074473aaac863a9e00ec34c2316a2d9e" />
               <section title="set" ref="classDoubleList.html#a3c95ac3c3190b347c4a343776264bf67" />
+            </section>
+            <section title="DoubleListAdapter" ref="classDoubleListAdapter.html">
+              <section title="add" ref="classDoubleListAdapter.html#a6f5bc523f04b3b223f259a72a1975b11" />
+              <section title="addf" ref="classDoubleListAdapter.html#adf4e6a8a4479d1fa0e692aea0d254c0f" />
+              <section title="addFirstData" ref="classDoubleListAdapter.html#a024ff60d5cb3e11ff5be795f48deaac0" />
+              <section title="addi" ref="classDoubleListAdapter.html#a74a41e06683241f5a7d9b9d0ed38eaf9" />
+              <section title="get" ref="classDoubleListAdapter.html#a70017142377b23a0f6ec22ac4c01aa6c" />
+              <section title="getIterator" ref="classDoubleListAdapter.html#ad2e5fc26e7e75e45e10a0ddf35b4a64d" />
+              <section title="getReference" ref="classDoubleListAdapter.html#ad608ef5f6917c09899b55fc5b20d9b4b" />
+              <section title="remove" ref="classDoubleListAdapter.html#a76d83f0f676236b98aa5e555a43a173b" />
+              <section title="removef" ref="classDoubleListAdapter.html#a1f069987bb3e8abcccf24659474960c3" />
+              <section title="removei" ref="classDoubleListAdapter.html#a710e75ff353e5e94ae1fb9eadc0b582b" />
+              <section title="search" ref="classDoubleListAdapter.html#a849368822d881d40c8a65dc25b45376e" />
+              <section title="setInversedIteration" ref="classDoubleListAdapter.html#a95df61b73f8c9535c8abe227c2207ea9" />
+              <section title="_head" ref="classDoubleListAdapter.html#a1c01340613e7545d5ab74286686053fa" />
+              <section title="_tail" ref="classDoubleListAdapter.html#a68c6a578e4668b8c28895ac271c4c2b9" />
             </section>
             <section title="DoubleNode" ref="classDoubleNode.html">
               <section title="DoubleNode" ref="classDoubleNode.html#a915ac8a626f09ec53db64b7c5b294b2d" />
@@ -119,6 +161,7 @@
               <section title="getData" ref="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699" />
               <section title="getNext" ref="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f" />
               <section title="getPrevious" ref="classDoubleNode.html#a86c75b7ed7e944f9748363fe23b2518e" />
+              <section title="getReferenceData" ref="classDoubleNode.html#ac6b096a9a3a404f73e26b7319372fcbb" />
               <section title="setData" ref="classDoubleNode.html#a21f86a81b7d4e4db966e07ce06da4f3a" />
               <section title="setNext" ref="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93" />
               <section title="setPrevious" ref="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d" />
@@ -150,15 +193,31 @@
               <section title="hasNext" ref="classInverseIterator.html#a86973781dfa84df67be2843fc4545692" />
               <section title="DoubleList" ref="classInverseIterator.html#ad435a9844a002995926acf522128f7a8" />
             </section>
+            <section title="IOrdinateList" ref="classIOrdinateList.html">
+              <section title="add" ref="classIOrdinateList.html#af158c9cda23201b2a17e857ffcdf4cdd" />
+              <section title="get" ref="classIOrdinateList.html#aef65b00ca705d1b106d51bff512b2021" />
+              <section title="getIterator" ref="classIOrdinateList.html#a9c858a44a9188dd92647655d64bdb4b5" />
+              <section title="getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
+              <section title="getReference" ref="classIOrdinateList.html#a126adb3087d227a7bd47288002c6d48e" />
+              <section title="remove" ref="classIOrdinateList.html#a1015be27579a09c4805505ea3e4c4752" />
+              <section title="search" ref="classIOrdinateList.html#a3f91689ab45f159d1056ea02cc0a264f" />
+              <section title="_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
+            </section>
             <section title="List" ref="classList.html">
               <section title="List" ref="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5" />
               <section title="~List" ref="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d" />
+              <section title="List" ref="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5" />
               <section title="add" ref="classList.html#a2a130b7bc38cd968136f1f847e42d0cc" />
               <section title="add" ref="classList.html#a530267346ebec244900c162de6f467e1" />
-              <section title="addi" ref="classList.html#a40dfa61150de7310d69001c697598b04" />
+              <section title="addf" ref="classList.html#a3c920f9c86d2853121c5cd2fb46f8436" />
+              <section title="addFirstData" ref="classList.html#ac38635d10f3faaf49af53c0b66347d0f" />
+              <section title="addi" ref="classList.html#a92ad933f8d3a033b84a517fb6cc4111a" />
+              <section title="addi" ref="classList.html#a4f0fb366c1153a4fd01826e9e6de5afc" />
               <section title="get" ref="classList.html#ab081a52d7a62aa6c5550ff9762f9427f" />
               <section title="getIterator" ref="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb" />
               <section title="remove" ref="classList.html#a46cec78299d3e23469276adf46adf9c1" />
+              <section title="removef" ref="classList.html#a45231b54bf8c98948becddd0923be138" />
+              <section title="removei" ref="classList.html#a1d0a5649ddd83cb781174698f80b2e0f" />
               <section title="set" ref="classList.html#ac8b31be96806bd56f655436629ac2e7a" />
             </section>
             <section title="Node" ref="classNode.html">
@@ -167,6 +226,7 @@
               <section title="~Node" ref="classNode.html#af907944256d9fca41c6a1c783a3a6536" />
               <section title="getData" ref="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce" />
               <section title="getNext" ref="classNode.html#aeb063e5172867e988550ab7d6c280db7" />
+              <section title="getReferenceData" ref="classNode.html#adec417c9f6f7d2cbd0fc7a72508e9c3d" />
               <section title="setData" ref="classNode.html#ae13418a552fa36eddbaa5dfb767aa664" />
               <section title="setNext" ref="classNode.html#a2ce12b4f2605972720e1c56fe80014a0" />
             </section>
@@ -178,6 +238,7 @@
               <section title="isEmpty" ref="classQueue.html#a4ea980b5773a6afbc3b2ed89bad8e7c9" />
             </section>
             <section title="SimpleIterator" ref="classSimpleIterator.html">
+              <section title="SimpleIterator" ref="classSimpleIterator.html#a643cab8769a566826092a5db6ace3267" />
               <section title="~SimpleIterator" ref="classSimpleIterator.html#a02203109d263581340152408ebb120a2" />
               <section title="getCurrent" ref="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2" />
               <section title="getNext" ref="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5" />
@@ -187,6 +248,21 @@
               <section title="current" ref="classSimpleIterator.html#a7777fefe265a5067ec9319d8c1a3e278" />
               <section title="head" ref="classSimpleIterator.html#a0403100ab86dba958115cea4147508a7" />
               <section title="tail" ref="classSimpleIterator.html#a9bfb7d6c12bc1e8031b5c0869026415a" />
+            </section>
+            <section title="SimpleListAdapter" ref="classSimpleListAdapter.html">
+              <section title="add" ref="classSimpleListAdapter.html#a659e4b834a3d5dc46e25665c7809a3d8" />
+              <section title="addf" ref="classSimpleListAdapter.html#a89d3c954a3782181f871b30c7a726379" />
+              <section title="addFirstData" ref="classSimpleListAdapter.html#a269a73b10beb87dddb3330af47334522" />
+              <section title="addi" ref="classSimpleListAdapter.html#abfd8b7cecf59921fb985f2121e246c99" />
+              <section title="get" ref="classSimpleListAdapter.html#a0dd35a961e4c7311cb82c11782340667" />
+              <section title="getIterator" ref="classSimpleListAdapter.html#a07ae6a3e7211ca92ffdb60bbc742763e" />
+              <section title="getReference" ref="classSimpleListAdapter.html#aa548a9578aa7288205982062834e00e9" />
+              <section title="remove" ref="classSimpleListAdapter.html#a459ccf5fdce99a9b6dade7d187fb2e8d" />
+              <section title="removef" ref="classSimpleListAdapter.html#a9008dff51a5a156c0929b972e59e8f1d" />
+              <section title="removei" ref="classSimpleListAdapter.html#a9bebc8a42330e453f6e608e54de36adf" />
+              <section title="search" ref="classSimpleListAdapter.html#a87e630769601af784a67ac90146e730b" />
+              <section title="_head" ref="classSimpleListAdapter.html#af8279a43660863dbf56cc31d27c331df" />
+              <section title="_tail" ref="classSimpleListAdapter.html#aee311f35611a7a15c68ee78ea5b7394c" />
             </section>
             <section title="Stack" ref="classStack.html">
               <section title="Stack" ref="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5" />
@@ -200,6 +276,10 @@
           <section title="Índice de clases" ref="classes.html" />
           <section title="Jerarquía de la clase" ref="hierarchy.html">
             <section title="BArray&lt; E &gt;" ref="classBArray.html" />
+            <section title="BArray&lt; BNode&lt; K &gt; * &gt;" ref="classBArray.html" />
+            <section title="BArray&lt; BNode&lt; VALUE &gt; * &gt;" ref="classBArray.html" />
+            <section title="BArray&lt; K &gt;" ref="classBArray.html" />
+            <section title="BArray&lt; VALUE &gt;" ref="classBArray.html" />
             <section title="BinaryNode&lt; E &gt;" ref="classBinaryNode.html" />
             <section title="BinaryTree&lt; E &gt;" ref="classBinaryTree.html" />
             <section title="BNode&lt; VALUE &gt;" ref="classBNode.html" />
@@ -217,6 +297,16 @@
               <section title="DoubleCircularList&lt; E &gt;" ref="classDoubleCircularList.html" />
               <section title="DoubleList&lt; E &gt;" ref="classDoubleList.html" />
               <section title="List&lt; E &gt;" ref="classList.html" />
+            </section>
+            <section title="IOrdinateList&lt; E &gt;" ref="classIOrdinateList.html">
+              <section title="DoubleListAdapter&lt; E &gt;" ref="classDoubleListAdapter.html">
+                <section title="DoubleCircularList&lt; E &gt;" ref="classDoubleCircularList.html" />
+                <section title="DoubleList&lt; E &gt;" ref="classDoubleList.html" />
+              </section>
+              <section title="SimpleListAdapter&lt; E &gt;" ref="classSimpleListAdapter.html">
+                <section title="CircularList&lt; E &gt;" ref="classCircularList.html" />
+                <section title="List&lt; E &gt;" ref="classList.html" />
+              </section>
             </section>
             <section title="Node&lt; E &gt;" ref="classNode.html" />
             <section title="Queue&lt; E &gt;" ref="classQueue.html" />
@@ -247,6 +337,15 @@
               <section title="Node.h" ref="Node_8h_source.html" />
               <section title="SimpleIterator.h" ref="SimpleIterator_8h_source.html" />
             </section>
+            <section title="ordinateList" ref="dir_1cc0826b584eccff34b45d914aeb7b15.html">
+              <section title="circularlist.h" ref="circularlist_8h_source.html" />
+              <section title="doublecircularlist.h" ref="doublecircularlist_8h_source.html" />
+              <section title="doublelist.h" ref="doublelist_8h_source.html" />
+              <section title="doublelistadapter.h" ref="doublelistadapter_8h_source.html" />
+              <section title="iordinatelist.h" ref="iordinatelist_8h_source.html" />
+              <section title="list.h" ref="list_8h_source.html" />
+              <section title="simplelistadapter.h" ref="simplelistadapter_8h_source.html" />
+            </section>
             <section title="tree" ref="dir_70093cb3a9d1f8840af4e997fde867c3.html">
               <section title="BArray.h" ref="BArray_8h_source.html" />
               <section title="BinaryNode.h" ref="BinaryNode_8h_source.html" />
@@ -263,12 +362,20 @@
       <keyword name="Project CPPDataStructure" id="Project CPPDataStructure" ref="md_README.html" />
       <keyword name="BArray" id="BArray" ref="classBArray.html" />
       <keyword name="BArray" id="BArray::BArray" ref="classBArray.html#a93c786886ce92be7cf5917bbe6be7956" />
+      <keyword name="BArray" id="BArray::BArray" ref="classBArray.html#aa79aa57a0cd0a3bc048e01be7ec1ef74" />
       <keyword name="getCurrentLenght" id="BArray::getCurrentLenght" ref="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd" />
       <keyword name="getMaximunLenght" id="BArray::getMaximunLenght" ref="classBArray.html#a744bcd9f9edb779366a116c2b2b96ba7" />
       <keyword name="isFull" id="BArray::isFull" ref="classBArray.html#a2235e8c213fc88b3c6702eaa8c63852c" />
-      <keyword name="add" id="BArray::add" ref="classBArray.html#ae86ec71c94702d00f70f2e1c026bdce8" />
-      <keyword name="remove" id="BArray::remove" ref="classBArray.html#a7c406b4fb7af4b2c124cdc17c31d1a0e" />
+      <keyword name="add" id="BArray::add" ref="classBArray.html#a8e05e0ba69438392d90c9ec639971d27" />
+      <keyword name="addi" id="BArray::addi" ref="classBArray.html#adaa70e5af76d77d9d389ae7e762b2df8" />
+      <keyword name="addf" id="BArray::addf" ref="classBArray.html#a549423a3f30f2a4f4e4f6cac41ee56d8" />
+      <keyword name="add" id="BArray::add" ref="classBArray.html#ad20e82b48673552d493a54e343c165cb" />
+      <keyword name="remove" id="BArray::remove" ref="classBArray.html#abc72fc4dd6cca413d42a0cab8471ac44" />
       <keyword name="getValue" id="BArray::getValue" ref="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb" />
+      <keyword name="getValueReference" id="BArray::getValueReference" ref="classBArray.html#ab95faafde5cd5847c9cdde2077988415" />
+      <keyword name="setValue" id="BArray::setValue" ref="classBArray.html#a8a035cb596ed2b140d85147579024a8b" />
+      <keyword name="reset" id="BArray::reset" ref="classBArray.html#a1851694345fd6a51557fb699b79f76f6" />
+      <keyword name="print" id="BArray::print" ref="classBArray.html#a2773a0b562a8f98ab11f0e1aeaee8793" />
       <keyword name="~BArray" id="BArray::~BArray" ref="classBArray.html#a06042b7d093d10621aa80cf4af3ea117" />
       <keyword name="BinaryNode" id="BinaryNode" ref="classBinaryNode.html" />
       <keyword name="BinaryNode" id="BinaryNode::BinaryNode" ref="classBinaryNode.html#a770d00114c87b6e4b8ebb50c9bd24272" />
@@ -291,30 +398,29 @@
       <keyword name="BNode" id="BNode" ref="classBNode.html" />
       <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9" />
       <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#a75ca826e991a8e57cb67748ab03aea77" />
-      <keyword name="getValues" id="BNode::getValues" ref="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380" />
-      <keyword name="getChilds" id="BNode::getChilds" ref="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d" />
+      <keyword name="BNode" id="BNode::BNode" ref="classBNode.html#aa98b14c2075af9acbd7c3a76ba8f7078" />
+      <keyword name="getValues" id="BNode::getValues" ref="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c" />
+      <keyword name="getValue" id="BNode::getValue" ref="classBNode.html#a63d0402efc62f6876d6ec2db7e4d75f8" />
+      <keyword name="getChilds" id="BNode::getChilds" ref="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b" />
+      <keyword name="getChild" id="BNode::getChild" ref="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c" />
       <keyword name="addValue" id="BNode::addValue" ref="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae" />
-      <keyword name="setLeftChild" id="BNode::setLeftChild" ref="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601" />
-      <keyword name="setRightChild" id="BNode::setRightChild" ref="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3" />
-      <keyword name="isExploding" id="BNode::isExploding" ref="classBNode.html#ac10d387a2400fcc956719b2c1816b54c" />
+      <keyword name="addChild" id="BNode::addChild" ref="classBNode.html#a99214c44d2dcffbc289354d58e1aebbc" />
+      <keyword name="oneToExploding" id="BNode::oneToExploding" ref="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43" />
+      <keyword name="isFull" id="BNode::isFull" ref="classBNode.html#a8ad39a00cd1027aaad73c0685e280154" />
+      <keyword name="explode" id="BNode::explode" ref="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af" />
+      <keyword name="adoptExploitedNode" id="BNode::adoptExploitedNode" ref="classBNode.html#acef7927774633486b47a96f938ea32da" />
       <keyword name="isLeaf" id="BNode::isLeaf" ref="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e" />
-      <keyword name="print" id="BNode::print" ref="classBNode.html#a4cfbe2867e900577efc3836fd207b008" />
-      <keyword name="getLenghtToExplode" id="BNode::getLenghtToExplode" ref="classBNode.html#a03d3802d7b1d173e051378692a6b8687" />
-      <keyword name="getLenghtOfChilds" id="BNode::getLenghtOfChilds" ref="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1" />
-      <keyword name="getCurrentLenghtData" id="BNode::getCurrentLenghtData" ref="classBNode.html#a8af2d0b3078416d0cd7459addf63876f" />
-      <keyword name="getMaximumValue" id="BNode::getMaximumValue" ref="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca" />
-      <keyword name="getMinimumValue" id="BNode::getMinimumValue" ref="classBNode.html#ab81e066860a4d57a419dc594e8fc3914" />
+      <keyword name="print" id="BNode::print" ref="classBNode.html#a7f086008f07ee778fc3b7b05ebdf8e34" />
       <keyword name="~BNode" id="BNode::~BNode" ref="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4" />
       <keyword name="BTree" id="BTree" ref="classBTree.html" />
       <keyword name="BTree" id="BTree::BTree" ref="classBTree.html#a7b77da63d8a36748b641ec7d7eb1ca7d" />
       <keyword name="insert" id="BTree::insert" ref="classBTree.html#aa23d18780a9491c5734bf2cb40330905" />
       <keyword name="remove" id="BTree::remove" ref="classBTree.html#a7b0b5e717616c2f2349587eae5fe3e13" />
-      <keyword name="print" id="BTree::print" ref="classBTree.html#a98a7b173fd34c602682989ac31ca08e2" />
       <keyword name="search" id="BTree::search" ref="classBTree.html#a45bcd8774b4bc322479bbd7d4a7ecbc4" />
-      <keyword name="ostream" id="BTree::ostream" ref="classBTree.html#a900712b11e08ae40dad9e80a6d380142" />
+      <keyword name="print" id="BTree::print" ref="classBTree.html#a98a7b173fd34c602682989ac31ca08e2" />
       <keyword name="CircularList" id="CircularList" ref="classCircularList.html" />
       <keyword name="CircularList" id="CircularList::CircularList" ref="classCircularList.html#aad23571a808ede6fc0432dca645ab2ca" />
-      <keyword name="addi" id="CircularList::addi" ref="classCircularList.html#a6de0a0af406c738b95b0a6d898b69f8e" />
+      <keyword name="addi" id="CircularList::addi" ref="classCircularList.html#a275c75e142e791de9a1a00691af56a73" />
       <keyword name="add" id="CircularList::add" ref="classCircularList.html#a892b493309f36fb083fdd257388cfa36" />
       <keyword name="add" id="CircularList::add" ref="classCircularList.html#af184d3ac2e3bba683a44a6cc19392b12" />
       <keyword name="remove" id="CircularList::remove" ref="classCircularList.html#a4a6acfd818a0ae9055957ec80258c60a" />
@@ -322,14 +428,28 @@
       <keyword name="get" id="CircularList::get" ref="classCircularList.html#ad6783339c7ff05841fc62f74f809644d" />
       <keyword name="getIterator" id="CircularList::getIterator" ref="classCircularList.html#a43e6cf1632001b3f409c6ce531529c6e" />
       <keyword name="~CircularList" id="CircularList::~CircularList" ref="classCircularList.html#aa65c9665b7d36a5e609752cad0a35dbb" />
+      <keyword name="add" id="SimpleListAdapter::add" ref="classSimpleListAdapter.html#a659e4b834a3d5dc46e25665c7809a3d8" />
+      <keyword name="remove" id="SimpleListAdapter::remove" ref="classSimpleListAdapter.html#a459ccf5fdce99a9b6dade7d187fb2e8d" />
+      <keyword name="search" id="SimpleListAdapter::search" ref="classSimpleListAdapter.html#a87e630769601af784a67ac90146e730b" />
+      <keyword name="get" id="SimpleListAdapter::get" ref="classSimpleListAdapter.html#a0dd35a961e4c7311cb82c11782340667" />
+      <keyword name="getReference" id="SimpleListAdapter::getReference" ref="classSimpleListAdapter.html#aa548a9578aa7288205982062834e00e9" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="addi" id="CircularList::addi" ref="classCircularList.html#a6f405f4be7946286a958e0b83937b3e2" />
+      <keyword name="addf" id="CircularList::addf" ref="classCircularList.html#ad2832eb48d7d69fa5d759c0c16c4bc5e" />
+      <keyword name="addFirstData" id="CircularList::addFirstData" ref="classCircularList.html#a0a3f318454d748eff1e3b8729aea94bd" />
+      <keyword name="removei" id="CircularList::removei" ref="classCircularList.html#a706dd0ab6fb475bec90d9c40cefa92b1" />
+      <keyword name="removef" id="CircularList::removef" ref="classCircularList.html#a1dde06b77306b31eb38fa4b43b6009ab" />
+      <keyword name="_head" id="SimpleListAdapter::_head" ref="classSimpleListAdapter.html#af8279a43660863dbf56cc31d27c331df" />
+      <keyword name="_tail" id="SimpleListAdapter::_tail" ref="classSimpleListAdapter.html#aee311f35611a7a15c68ee78ea5b7394c" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
       <keyword name="CPPDataStructure" id="CPPDataStructure" ref="classCPPDataStructure.html" />
       <keyword name="DoubleCircularList" id="DoubleCircularList" ref="classDoubleCircularList.html" />
       <keyword name="DoubleCircularList" id="DoubleCircularList::DoubleCircularList" ref="classDoubleCircularList.html#a533876254e3c837d556542eda9968f8b" />
-      <keyword name="addi" id="DoubleCircularList::addi" ref="classDoubleCircularList.html#aec3cb982a2b9def7eb254ef206101e28" />
+      <keyword name="addi" id="DoubleCircularList::addi" ref="classDoubleCircularList.html#ade2ef68a86a8deef4cb43d38e031906b" />
       <keyword name="add" id="DoubleCircularList::add" ref="classDoubleCircularList.html#a7691d38e77ea44d222c465f27e7d05b6" />
       <keyword name="add" id="DoubleCircularList::add" ref="classDoubleCircularList.html#a6d76f7045dd9997f55c6c2feb80678da" />
       <keyword name="remove" id="DoubleCircularList::remove" ref="classDoubleCircularList.html#ae7ed8b6714720cb7daafa639f232ecc3" />
@@ -338,20 +458,35 @@
       <keyword name="getIterator" id="DoubleCircularList::getIterator" ref="classDoubleCircularList.html#abba1430e956c7660a88f786bfd8d87ad" />
       <keyword name="inverseIteration" id="DoubleCircularList::inverseIteration" ref="classDoubleCircularList.html#a77212c5d6ad148c99a06009a8c44128b" />
       <keyword name="~DoubleCircularList" id="DoubleCircularList::~DoubleCircularList" ref="classDoubleCircularList.html#a26dba8b85983742cfbf38886245fe2a4" />
+      <keyword name="add" id="DoubleListAdapter::add" ref="classDoubleListAdapter.html#a6f5bc523f04b3b223f259a72a1975b11" />
+      <keyword name="remove" id="DoubleListAdapter::remove" ref="classDoubleListAdapter.html#a76d83f0f676236b98aa5e555a43a173b" />
+      <keyword name="search" id="DoubleListAdapter::search" ref="classDoubleListAdapter.html#a849368822d881d40c8a65dc25b45376e" />
+      <keyword name="get" id="DoubleListAdapter::get" ref="classDoubleListAdapter.html#a70017142377b23a0f6ec22ac4c01aa6c" />
+      <keyword name="getReference" id="DoubleListAdapter::getReference" ref="classDoubleListAdapter.html#ad608ef5f6917c09899b55fc5b20d9b4b" />
+      <keyword name="setInversedIteration" id="DoubleListAdapter::setInversedIteration" ref="classDoubleListAdapter.html#a95df61b73f8c9535c8abe227c2207ea9" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="addi" id="DoubleCircularList::addi" ref="classDoubleCircularList.html#aee387acc4f53773302be4aa98bc779dc" />
+      <keyword name="addf" id="DoubleCircularList::addf" ref="classDoubleCircularList.html#a4a6ec7a7298470389b88b0c775a9bace" />
+      <keyword name="addFirstData" id="DoubleCircularList::addFirstData" ref="classDoubleCircularList.html#aff5a0088509cc88dccfe31389d48f19e" />
+      <keyword name="removei" id="DoubleCircularList::removei" ref="classDoubleCircularList.html#a1d2c6f1fec95c8d2887c54cb3fc3ff84" />
+      <keyword name="removef" id="DoubleCircularList::removef" ref="classDoubleCircularList.html#a937da114318f91c6013dd4543636da9d" />
+      <keyword name="_head" id="DoubleListAdapter::_head" ref="classDoubleListAdapter.html#a1c01340613e7545d5ab74286686053fa" />
+      <keyword name="_tail" id="DoubleListAdapter::_tail" ref="classDoubleListAdapter.html#a68c6a578e4668b8c28895ac271c4c2b9" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
       <keyword name="DoubleIterator" id="DoubleIterator" ref="classDoubleIterator.html" />
+      <keyword name="DoubleIterator" id="DoubleIterator::DoubleIterator" ref="classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc" />
       <keyword name="getNext" id="DoubleIterator::getNext" ref="classDoubleIterator.html#aaaa1b361a61339bfee3bf86f3f67b198" />
       <keyword name="getCurrent" id="DoubleIterator::getCurrent" ref="classDoubleIterator.html#a756bb08f5352e270e08b72339c32e2be" />
       <keyword name="hasNext" id="DoubleIterator::hasNext" ref="classDoubleIterator.html#adb5ef4c66649e0a4ce18e38cd85904ed" />
       <keyword name="~IIterator" id="IIterator::~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
-      <keyword name="DoubleIterator" id="DoubleIterator::DoubleIterator" ref="classDoubleIterator.html#a5b45a91dc363462fddcb4965e226e2fc" />
       <keyword name="DoubleList" id="DoubleIterator::DoubleList" ref="classDoubleIterator.html#ad435a9844a002995926acf522128f7a8" />
       <keyword name="DoubleList" id="DoubleList" ref="classDoubleList.html" />
       <keyword name="DoubleList" id="DoubleList::DoubleList" ref="classDoubleList.html#ab54db9c718c7188f9413ef2b9982dd43" />
-      <keyword name="addi" id="DoubleList::addi" ref="classDoubleList.html#a9924458cf1416df8243b4f857b027da7" />
+      <keyword name="addi" id="DoubleList::addi" ref="classDoubleList.html#a621684e61b8d9d41cd107174d9877b1e" />
       <keyword name="add" id="DoubleList::add" ref="classDoubleList.html#adb96e6908d3d564722225b848350aa82" />
       <keyword name="add" id="DoubleList::add" ref="classDoubleList.html#a84e3bb8be7d67b43dd3b63d5a47f80ed" />
       <keyword name="remove" id="DoubleList::remove" ref="classDoubleList.html#a844c2c4c3b8260bd58ab94307359fb62" />
@@ -360,15 +495,48 @@
       <keyword name="getIterator" id="DoubleList::getIterator" ref="classDoubleList.html#aa14e383a97e054016a6c5178165b20df" />
       <keyword name="inverseIteration" id="DoubleList::inverseIteration" ref="classDoubleList.html#a94d1ad5299452ea46839ba350ca501d1" />
       <keyword name="~DoubleList" id="DoubleList::~DoubleList" ref="classDoubleList.html#a11ce233388fea7a5722a7d57cea400a3" />
+      <keyword name="add" id="DoubleListAdapter::add" ref="classDoubleListAdapter.html#a6f5bc523f04b3b223f259a72a1975b11" />
+      <keyword name="remove" id="DoubleListAdapter::remove" ref="classDoubleListAdapter.html#a76d83f0f676236b98aa5e555a43a173b" />
+      <keyword name="search" id="DoubleListAdapter::search" ref="classDoubleListAdapter.html#a849368822d881d40c8a65dc25b45376e" />
+      <keyword name="get" id="DoubleListAdapter::get" ref="classDoubleListAdapter.html#a70017142377b23a0f6ec22ac4c01aa6c" />
+      <keyword name="getReference" id="DoubleListAdapter::getReference" ref="classDoubleListAdapter.html#ad608ef5f6917c09899b55fc5b20d9b4b" />
+      <keyword name="setInversedIteration" id="DoubleListAdapter::setInversedIteration" ref="classDoubleListAdapter.html#a95df61b73f8c9535c8abe227c2207ea9" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="addi" id="DoubleList::addi" ref="classDoubleList.html#a01623cc4b04d94c655de62ae373963b2" />
+      <keyword name="addf" id="DoubleList::addf" ref="classDoubleList.html#a495cbf66dc7f7523e15405b762cc616d" />
+      <keyword name="addFirstData" id="DoubleList::addFirstData" ref="classDoubleList.html#a4d72bc061da9183185b9ae1896b2767b" />
+      <keyword name="removei" id="DoubleList::removei" ref="classDoubleList.html#a074473aaac863a9e00ec34c2316a2d9e" />
+      <keyword name="removef" id="DoubleList::removef" ref="classDoubleList.html#a0cd7c06fa533e3f800778920346b8a7b" />
+      <keyword name="_head" id="DoubleListAdapter::_head" ref="classDoubleListAdapter.html#a1c01340613e7545d5ab74286686053fa" />
+      <keyword name="_tail" id="DoubleListAdapter::_tail" ref="classDoubleListAdapter.html#a68c6a578e4668b8c28895ac271c4c2b9" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
+      <keyword name="DoubleListAdapter" id="DoubleListAdapter" ref="classDoubleListAdapter.html" />
+      <keyword name="add" id="DoubleListAdapter::add" ref="classDoubleListAdapter.html#a6f5bc523f04b3b223f259a72a1975b11" />
+      <keyword name="remove" id="DoubleListAdapter::remove" ref="classDoubleListAdapter.html#a76d83f0f676236b98aa5e555a43a173b" />
+      <keyword name="search" id="DoubleListAdapter::search" ref="classDoubleListAdapter.html#a849368822d881d40c8a65dc25b45376e" />
+      <keyword name="get" id="DoubleListAdapter::get" ref="classDoubleListAdapter.html#a70017142377b23a0f6ec22ac4c01aa6c" />
+      <keyword name="getReference" id="DoubleListAdapter::getReference" ref="classDoubleListAdapter.html#ad608ef5f6917c09899b55fc5b20d9b4b" />
+      <keyword name="getIterator" id="DoubleListAdapter::getIterator" ref="classDoubleListAdapter.html#ad2e5fc26e7e75e45e10a0ddf35b4a64d" />
+      <keyword name="setInversedIteration" id="DoubleListAdapter::setInversedIteration" ref="classDoubleListAdapter.html#a95df61b73f8c9535c8abe227c2207ea9" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
+      <keyword name="addi" id="DoubleListAdapter::addi" ref="classDoubleListAdapter.html#a74a41e06683241f5a7d9b9d0ed38eaf9" />
+      <keyword name="addf" id="DoubleListAdapter::addf" ref="classDoubleListAdapter.html#adf4e6a8a4479d1fa0e692aea0d254c0f" />
+      <keyword name="addFirstData" id="DoubleListAdapter::addFirstData" ref="classDoubleListAdapter.html#a024ff60d5cb3e11ff5be795f48deaac0" />
+      <keyword name="removei" id="DoubleListAdapter::removei" ref="classDoubleListAdapter.html#a710e75ff353e5e94ae1fb9eadc0b582b" />
+      <keyword name="removef" id="DoubleListAdapter::removef" ref="classDoubleListAdapter.html#a1f069987bb3e8abcccf24659474960c3" />
+      <keyword name="_head" id="DoubleListAdapter::_head" ref="classDoubleListAdapter.html#a1c01340613e7545d5ab74286686053fa" />
+      <keyword name="_tail" id="DoubleListAdapter::_tail" ref="classDoubleListAdapter.html#a68c6a578e4668b8c28895ac271c4c2b9" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="DoubleNode" id="DoubleNode" ref="classDoubleNode.html" />
       <keyword name="DoubleNode" id="DoubleNode::DoubleNode" ref="classDoubleNode.html#a915ac8a626f09ec53db64b7c5b294b2d" />
       <keyword name="DoubleNode" id="DoubleNode::DoubleNode" ref="classDoubleNode.html#a53d29dbf397d39b420f64ab943b62cee" />
       <keyword name="setData" id="DoubleNode::setData" ref="classDoubleNode.html#a21f86a81b7d4e4db966e07ce06da4f3a" />
       <keyword name="getData" id="DoubleNode::getData" ref="classDoubleNode.html#a59310f31d21f431febc4d329e1f10699" />
+      <keyword name="getReferenceData" id="DoubleNode::getReferenceData" ref="classDoubleNode.html#ac6b096a9a3a404f73e26b7319372fcbb" />
       <keyword name="setNext" id="DoubleNode::setNext" ref="classDoubleNode.html#aba52422e27040e524ba629445e9d8b93" />
       <keyword name="getNext" id="DoubleNode::getNext" ref="classDoubleNode.html#af5af4a30419b7a7c746361c1476e119f" />
       <keyword name="setPrevious" id="DoubleNode::setPrevious" ref="classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d" />
@@ -392,16 +560,25 @@
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
       <keyword name="InverseIterator" id="InverseIterator" ref="classInverseIterator.html" />
+      <keyword name="InverseIterator" id="InverseIterator::InverseIterator" ref="classInverseIterator.html#a31703976cbdca73a1035f47509e8229d" />
       <keyword name="getNext" id="InverseIterator::getNext" ref="classInverseIterator.html#a4c1d8ceb8264f7f8186b6244a0a62940" />
       <keyword name="hasNext" id="InverseIterator::hasNext" ref="classInverseIterator.html#a86973781dfa84df67be2843fc4545692" />
       <keyword name="getCurrent" id="InverseIterator::getCurrent" ref="classInverseIterator.html#afdbb5c310621c773da10dfb5bc3b1a4c" />
       <keyword name="~InverseIterator" id="InverseIterator::~InverseIterator" ref="classInverseIterator.html#ae3b6736187c1dbc82ead0277d31e5898" />
       <keyword name="~IIterator" id="IIterator::~IIterator" ref="classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b" />
-      <keyword name="InverseIterator" id="InverseIterator::InverseIterator" ref="classInverseIterator.html#a31703976cbdca73a1035f47509e8229d" />
       <keyword name="DoubleList" id="InverseIterator::DoubleList" ref="classInverseIterator.html#ad435a9844a002995926acf522128f7a8" />
+      <keyword name="IOrdinateList" id="IOrdinateList" ref="classIOrdinateList.html" />
+      <keyword name="add" id="IOrdinateList::add" ref="classIOrdinateList.html#af158c9cda23201b2a17e857ffcdf4cdd" />
+      <keyword name="remove" id="IOrdinateList::remove" ref="classIOrdinateList.html#a1015be27579a09c4805505ea3e4c4752" />
+      <keyword name="search" id="IOrdinateList::search" ref="classIOrdinateList.html#a3f91689ab45f159d1056ea02cc0a264f" />
+      <keyword name="get" id="IOrdinateList::get" ref="classIOrdinateList.html#aef65b00ca705d1b106d51bff512b2021" />
+      <keyword name="getReference" id="IOrdinateList::getReference" ref="classIOrdinateList.html#a126adb3087d227a7bd47288002c6d48e" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
+      <keyword name="getIterator" id="IOrdinateList::getIterator" ref="classIOrdinateList.html#a9c858a44a9188dd92647655d64bdb4b5" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="List" id="List" ref="classList.html" />
       <keyword name="List" id="List::List" ref="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5" />
-      <keyword name="addi" id="List::addi" ref="classList.html#a40dfa61150de7310d69001c697598b04" />
+      <keyword name="addi" id="List::addi" ref="classList.html#a4f0fb366c1153a4fd01826e9e6de5afc" />
       <keyword name="add" id="List::add" ref="classList.html#a2a130b7bc38cd968136f1f847e42d0cc" />
       <keyword name="add" id="List::add" ref="classList.html#a530267346ebec244900c162de6f467e1" />
       <keyword name="remove" id="List::remove" ref="classList.html#a46cec78299d3e23469276adf46adf9c1" />
@@ -409,15 +586,30 @@
       <keyword name="get" id="List::get" ref="classList.html#ab081a52d7a62aa6c5550ff9762f9427f" />
       <keyword name="getIterator" id="List::getIterator" ref="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb" />
       <keyword name="~List" id="List::~List" ref="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d" />
+      <keyword name="add" id="SimpleListAdapter::add" ref="classSimpleListAdapter.html#a659e4b834a3d5dc46e25665c7809a3d8" />
+      <keyword name="remove" id="SimpleListAdapter::remove" ref="classSimpleListAdapter.html#a459ccf5fdce99a9b6dade7d187fb2e8d" />
+      <keyword name="search" id="SimpleListAdapter::search" ref="classSimpleListAdapter.html#a87e630769601af784a67ac90146e730b" />
+      <keyword name="get" id="SimpleListAdapter::get" ref="classSimpleListAdapter.html#a0dd35a961e4c7311cb82c11782340667" />
+      <keyword name="getReference" id="SimpleListAdapter::getReference" ref="classSimpleListAdapter.html#aa548a9578aa7288205982062834e00e9" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
       <keyword name="getLenght" id="IList::getLenght" ref="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5" />
       <keyword name="isEmpty" id="IList::isEmpty" ref="classIList.html#ad21f4969c574c87a4715d45496d81d5c" />
       <keyword name="~IList" id="IList::~IList" ref="classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8" />
+      <keyword name="addi" id="List::addi" ref="classList.html#a92ad933f8d3a033b84a517fb6cc4111a" />
+      <keyword name="addf" id="List::addf" ref="classList.html#a3c920f9c86d2853121c5cd2fb46f8436" />
+      <keyword name="addFirstData" id="List::addFirstData" ref="classList.html#ac38635d10f3faaf49af53c0b66347d0f" />
+      <keyword name="removei" id="List::removei" ref="classList.html#a1d0a5649ddd83cb781174698f80b2e0f" />
+      <keyword name="removef" id="List::removef" ref="classList.html#a45231b54bf8c98948becddd0923be138" />
+      <keyword name="_head" id="SimpleListAdapter::_head" ref="classSimpleListAdapter.html#af8279a43660863dbf56cc31d27c331df" />
+      <keyword name="_tail" id="SimpleListAdapter::_tail" ref="classSimpleListAdapter.html#aee311f35611a7a15c68ee78ea5b7394c" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="lenght" id="IList::lenght" ref="classIList.html#a64ce981ba1104bbb482068983cb5a3bc" />
       <keyword name="Node" id="Node" ref="classNode.html" />
       <keyword name="Node" id="Node::Node" ref="classNode.html#a74d41f93c30d8c3036d24894f0e4314e" />
       <keyword name="Node" id="Node::Node" ref="classNode.html#adc1b4c81c3fb6d0580f138650629a41e" />
       <keyword name="setData" id="Node::setData" ref="classNode.html#ae13418a552fa36eddbaa5dfb767aa664" />
       <keyword name="getData" id="Node::getData" ref="classNode.html#a02a4e5126542aaa1a2150932cfa2b8ce" />
+      <keyword name="getReferenceData" id="Node::getReferenceData" ref="classNode.html#adec417c9f6f7d2cbd0fc7a72508e9c3d" />
       <keyword name="setNext" id="Node::setNext" ref="classNode.html#a2ce12b4f2605972720e1c56fe80014a0" />
       <keyword name="getNext" id="Node::getNext" ref="classNode.html#aeb063e5172867e988550ab7d6c280db7" />
       <keyword name="~Node" id="Node::~Node" ref="classNode.html#af907944256d9fca41c6a1c783a3a6536" />
@@ -428,6 +620,7 @@
       <keyword name="isEmpty" id="Queue::isEmpty" ref="classQueue.html#a4ea980b5773a6afbc3b2ed89bad8e7c9" />
       <keyword name="~Queue" id="Queue::~Queue" ref="classQueue.html#a49fe82adb8dc2fb62ab53876a6933d0f" />
       <keyword name="SimpleIterator" id="SimpleIterator" ref="classSimpleIterator.html" />
+      <keyword name="SimpleIterator" id="SimpleIterator::SimpleIterator" ref="classSimpleIterator.html#a643cab8769a566826092a5db6ace3267" />
       <keyword name="getNext" id="SimpleIterator::getNext" ref="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5" />
       <keyword name="getCurrent" id="SimpleIterator::getCurrent" ref="classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2" />
       <keyword name="hasNext" id="SimpleIterator::hasNext" ref="classSimpleIterator.html#ab946b3d707e32d4d53f15af201ea2113" />
@@ -438,6 +631,22 @@
       <keyword name="current" id="SimpleIterator::current" ref="classSimpleIterator.html#a7777fefe265a5067ec9319d8c1a3e278" />
       <keyword name="List" id="SimpleIterator::List" ref="classSimpleIterator.html#a8740adf5dfdafdc64940ab42ed663bd2" />
       <keyword name="CircularList" id="SimpleIterator::CircularList" ref="classSimpleIterator.html#ade98163865dd2cf1343ae0a4dbba6b29" />
+      <keyword name="SimpleListAdapter" id="SimpleListAdapter" ref="classSimpleListAdapter.html" />
+      <keyword name="add" id="SimpleListAdapter::add" ref="classSimpleListAdapter.html#a659e4b834a3d5dc46e25665c7809a3d8" />
+      <keyword name="remove" id="SimpleListAdapter::remove" ref="classSimpleListAdapter.html#a459ccf5fdce99a9b6dade7d187fb2e8d" />
+      <keyword name="search" id="SimpleListAdapter::search" ref="classSimpleListAdapter.html#a87e630769601af784a67ac90146e730b" />
+      <keyword name="get" id="SimpleListAdapter::get" ref="classSimpleListAdapter.html#a0dd35a961e4c7311cb82c11782340667" />
+      <keyword name="getReference" id="SimpleListAdapter::getReference" ref="classSimpleListAdapter.html#aa548a9578aa7288205982062834e00e9" />
+      <keyword name="getIterator" id="SimpleListAdapter::getIterator" ref="classSimpleListAdapter.html#a07ae6a3e7211ca92ffdb60bbc742763e" />
+      <keyword name="getLenght" id="IOrdinateList::getLenght" ref="classIOrdinateList.html#acc0d473f2b9b464cc82b5e6cdb887b2a" />
+      <keyword name="addi" id="SimpleListAdapter::addi" ref="classSimpleListAdapter.html#abfd8b7cecf59921fb985f2121e246c99" />
+      <keyword name="addf" id="SimpleListAdapter::addf" ref="classSimpleListAdapter.html#a89d3c954a3782181f871b30c7a726379" />
+      <keyword name="addFirstData" id="SimpleListAdapter::addFirstData" ref="classSimpleListAdapter.html#a269a73b10beb87dddb3330af47334522" />
+      <keyword name="removei" id="SimpleListAdapter::removei" ref="classSimpleListAdapter.html#a9bebc8a42330e453f6e608e54de36adf" />
+      <keyword name="removef" id="SimpleListAdapter::removef" ref="classSimpleListAdapter.html#a9008dff51a5a156c0929b972e59e8f1d" />
+      <keyword name="_head" id="SimpleListAdapter::_head" ref="classSimpleListAdapter.html#af8279a43660863dbf56cc31d27c331df" />
+      <keyword name="_tail" id="SimpleListAdapter::_tail" ref="classSimpleListAdapter.html#aee311f35611a7a15c68ee78ea5b7394c" />
+      <keyword name="_lenght" id="IOrdinateList::_lenght" ref="classIOrdinateList.html#a28c0ecc93c212cf1fb6fa63a7227eb4a" />
       <keyword name="Stack" id="Stack" ref="classStack.html" />
       <keyword name="Stack" id="Stack::Stack" ref="classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5" />
       <keyword name="push" id="Stack::push" ref="classStack.html#af71e3e142fba5bb861b66b4882289b31" />
@@ -500,6 +709,13 @@
       <file>List_8h_source.html</file>
       <file>Node_8h_source.html</file>
       <file>SimpleIterator_8h_source.html</file>
+      <file>circularlist_8h_source.html</file>
+      <file>doublecircularlist_8h_source.html</file>
+      <file>doublelist_8h_source.html</file>
+      <file>doublelistadapter_8h_source.html</file>
+      <file>iordinatelist_8h_source.html</file>
+      <file>list_8h_source.html</file>
+      <file>simplelistadapter_8h_source.html</file>
       <file>BArray_8h_source.html</file>
       <file>BinaryNode_8h_source.html</file>
       <file>BinaryTree_8h_source.html</file>
@@ -526,6 +742,8 @@
       <file>classDoubleIterator-members.html</file>
       <file>classDoubleList.html</file>
       <file>classDoubleList-members.html</file>
+      <file>classDoubleListAdapter.html</file>
+      <file>classDoubleListAdapter-members.html</file>
       <file>classDoubleNode.html</file>
       <file>classDoubleNode-members.html</file>
       <file>classIIterator.html</file>
@@ -534,6 +752,8 @@
       <file>classIList-members.html</file>
       <file>classInverseIterator.html</file>
       <file>classInverseIterator-members.html</file>
+      <file>classIOrdinateList.html</file>
+      <file>classIOrdinateList-members.html</file>
       <file>classList.html</file>
       <file>classList-members.html</file>
       <file>classNode.html</file>
@@ -542,10 +762,13 @@
       <file>classQueue-members.html</file>
       <file>classSimpleIterator.html</file>
       <file>classSimpleIterator-members.html</file>
+      <file>classSimpleListAdapter.html</file>
+      <file>classSimpleListAdapter-members.html</file>
       <file>classStack.html</file>
       <file>classStack-members.html</file>
       <file>dir_4841d09be2dbef066dd403feeca5ac76.html</file>
       <file>dir_48c61abad44e2f181b0a6a33afb59c17.html</file>
+      <file>dir_1cc0826b584eccff34b45d914aeb7b15.html</file>
       <file>dir_70093cb3a9d1f8840af4e997fde867c3.html</file>
       <file>index.html</file>
       <file>pages.html</file>
@@ -567,6 +790,8 @@
       <file>functions.html</file>
       <file>functions.html</file>
       <file>functions.html</file>
+      <file>functions.html</file>
+      <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>
       <file>functions_func.html</file>

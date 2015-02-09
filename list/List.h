@@ -249,7 +249,7 @@ template <class E> SimpleIterator<E>* List<E>:: getIterator(){
 template <class E> List<E>::~List(){
     Node<E> *actualNode = head;
     std::cout << "Deleting List...\n";
-    while(this->lenght !=0){
+    while(head){
         actualNode = head;
         head = head->getNext();
         delete actualNode;

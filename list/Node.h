@@ -38,6 +38,9 @@ public:
      * @return E el dato contenido
      */
     E getData() const;
+
+    E& getReferenceData();
+
     /**
      * @brief Setea el puntero del nodo siguiente
      *
@@ -72,6 +75,7 @@ template <class E> Node<E>::Node(E data,Node<E> *next){
 template <class E> void Node<E>::setData(E data){this->data = data;}
 
 template <class E> E Node<E>::getData()const {return data;}
+template <class E> E& Node<E>::getReferenceData(){return data;}
 
 template <class E> void Node<E>::setNext(Node<E> *next){this->next = next;}
 

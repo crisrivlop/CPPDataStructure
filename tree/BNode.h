@@ -11,8 +11,8 @@ template <typename VALUE>
  * contiene una lista de datos ordenados.
  */
 class BNode{
-    BArray<VALUE> _keys;
-    BArray< BNode<VALUE> > *_childs;
+    BArray<VALUE> *_keys;
+    BArray< BNode<VALUE>* > *_childs;
 public:
     /**
      * El construtor de BNode es elegante, pues agrega el valor inicial al arreglo de datos,
@@ -32,12 +32,19 @@ public:
      */
     BNode(int pSize);
 
+    BNode();
+
+    BNode(const BNode&);
+
     /**
      * @brief Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo.
      *
      * @return VALUE el arreglo de valores del nodo.
      */
-    BArray<VALUE>& getValues() const;
+    BArray<VALUE>* getValues() const;
+
+    VALUE getValue(int pIndex) const;
+
 
     /**
      * @brief obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo
@@ -45,7 +52,7 @@ public:
      *
      * @return BNode<VALUE> el puntero al array de nodos siguientes.
      */
-    BArray< BNode<VALUE> >* getChilds() const;
+    BArray< BNode<VALUE>* >* getChilds() const;
 
     /**
      * @brief getChild
@@ -62,21 +69,28 @@ public:
      */
     bool addValue(VALUE pValue);
 
+
+    bool addChild(BNode<VALUE>* pChild);
+
     /**
      * @brief Retorna si el nodo tiene un estado de explosion.
      * retorna si la cantidad de datos es igual al limite impuesto en el constructor.
      *
      * @return true si el nodo esta explotando, false si no.
      */
-    bool isExploding() const;
+    bool oneToExploding() const;
+
+    bool isFull() const;
 
 
     /**
-     * @brief explode, genera los hijos del nodos los inserta y ademas retorna la raiz del sub arbol
-     * generado con sus dos hijos
+     * @brief explode, genera los hijos del nodos y los agrega a la lista de hijos
      * @return
      */
-    BNode<VALUE>& explode();
+    void explode();
+
+    void adoptExploitedNode(BNode<VALUE>*,int);
+
 
     /**
      * @brief isLeaf
@@ -84,6 +98,7 @@ public:
      */
     bool isLeaf() const;
 
+    void print();
     /**
      * @brief ~BNode
      * Liberador de memoria
@@ -91,47 +106,147 @@ public:
     virtual ~BNode();
 };
 
-template <typename VALUE> BNode<VALUE>::BNode(int pSize,VALUE pInitialValue):
-    _keys(pSize),_childs(pSize+1)
+template <typename VALUE> BNode<VALUE>::BNode(int pSize,VALUE pInitialValue)
 {
-    if (pSize < 3)throw this;
-    _keys.add(pInitialValue);
+    if (pSize <= 3)throw this;
+    _keys= new BArray<VALUE>(pSize);
+    _keys->add(pInitialValue);
+    _childs = Null;
 }
 
-template <typename VALUE> BNode<VALUE>::BNode(int pSize): _keys(pSize),_childs(pSize+1)
+template <typename VALUE> BNode<VALUE>::BNode(int pSize)
 {
-    if (pSize < 3)throw pSize;
+    if (pSize <= 3)throw pSize;
+    _keys= new BArray<VALUE>(pSize);
+    _childs = Null;
 }
 
-template <typename VALUE> BArray<VALUE>& BNode<VALUE>::getValues() const{
+template <typename VALUE> BNode<VALUE>::BNode()
+{
+    _keys= new BArray<VALUE>(0);
+    _childs = Null;
+}
+
+template <typename VALUE> BNode<VALUE>::BNode(const BNode &copy){
+    _keys= new BArray<VALUE>(copy._keys);
+    _childs = new BArray< BNode<VALUE>* >(copy._childs);
+    cout << "copy called" << endl;
+}
+
+template <typename VALUE> BArray<VALUE>* BNode<VALUE>::getValues() const{
     return _keys;
 }
 
-template <typename VALUE> BArray< BNode<VALUE> >* BNode<VALUE>::getChilds() const{
+template <typename VALUE> VALUE BNode<VALUE>::getValue(int pIndex) const{
+    VALUE toReturn = _keys->getValue(pIndex);
+    return toReturn;
+}
+
+template <typename VALUE> BArray< BNode<VALUE>* >* BNode<VALUE>::getChilds() const{
     return _childs;
 }
 
 template <typename VALUE> BNode<VALUE>* BNode<VALUE>::getChild(int pIndex) const{
-    if (0 <= pIndex && pIndex < _childs.getCurrentLenght()) throw this;
-    return &_childs.getValue(pIndex);
+
+    if (!_childs || 0 > pIndex || pIndex >= _childs->getCurrentLenght()) throw this;
+
+    return _childs->getValue(pIndex);
 }
 
-
-template <typename VALUE> bool BNode<VALUE>::isExploding() const
+template <typename VALUE> bool BNode<VALUE>::addValue(VALUE pValue)
 {
-    return _keys.isFull();
+    return _keys->add(pValue);
 }
 
-template <typename VALUE> BNode<VALUE>& BNode<VALUE>::explode()
+template <typename VALUE> bool BNode<VALUE>::addChild(BNode<VALUE> *pChild)
+{
+    return _childs->add(pChild);
+}
+
+
+template <typename VALUE> bool BNode<VALUE>::oneToExploding() const
+{
+    return _keys->getMaximunLenght() - _keys->getCurrentLenght() <= 1;
+}
+
+template <typename VALUE> bool BNode<VALUE>::isFull() const
+{
+    return _keys->isFull();
+}
+
+template <typename VALUE> void BNode<VALUE>::explode()
 {
     //crear el hijo izquierdo
     //crear el hijo derecho
-    //crear el nodo central y retornar la referencia
+    //el nodo actual es el nodo padre de los nodos
+    BNode<VALUE> *left= new BNode<VALUE>(_keys->getMaximunLenght());
+    BNode<VALUE> *right= new BNode<VALUE>(_keys->getMaximunLenght());
+    int x = 0;
+    for(; x < (_keys->getCurrentLenght())/2;x++)left->addValue(_keys->getValue(x));
+    VALUE nodeKey = _keys->getValue(x++);
+    for(; x < _keys->getCurrentLenght();x++)right->addValue(_keys->getValue(x));
+    _keys->reset();
+    _keys->add(nodeKey);
+    if (_childs){
+        left->_childs = new BArray< BNode<VALUE>* >(_keys->getMaximunLenght()+2);
+        right->_childs = new BArray< BNode<VALUE>* >(_keys->getMaximunLenght()+2);
+        cout << "la cantidad de hijos que tiene son: " << _childs->getCurrentLenght() << endl;
+        cout << "los imprimire"<< endl;
+        cout << "[" << endl;
+        for (int m = 0 ; m < _childs->getCurrentLenght(); m++){
+            _childs->getValue(m)->print();
+        }
+        cout << "]" << endl;
+        x=0;
+        for(; x < left->getValues()->getCurrentLenght()+1;x++){
+            left->_childs->add(x,_childs->getValue(x));
+            //left->_childs->getValue(x)->print();
+        }
+
+        cout << "la cantidad de hijos que tiene left son: " << left->_childs->getCurrentLenght() << endl;
+        cout << "los imprimire"<< endl;
+        cout << "[" << endl;
+        for (int m = 0 ; m < left->_childs->getCurrentLenght(); m++){
+            left->_childs->getValue(m)->print();
+        }
+        cout << "]" << endl;
+
+        int y = 0;
+        for(; x < _childs->getCurrentLenght();x++){
+            right->_childs->add(y++,_childs->getValue(x));
+        }
+
+        delete _childs;
+    }
+    _childs = new BArray< BNode<VALUE>* >(_keys->getMaximunLenght()+2);
+    _childs->add(left);
+    _childs->add(right);
+}
+
+template <typename VALUE> void BNode<VALUE>::adoptExploitedNode(BNode<VALUE> *pExploitedNode,int pIndexOfExploited)
+{
+    _keys->add(pExploitedNode->getValue(0));
+    int x;
+    for (x = 0; x < _keys->getCurrentLenght(); x++)if (_keys->getValue(x) == pExploitedNode->getValue(0))break;
+    _childs->remove(pIndexOfExploited);
+    _childs->add(x,pExploitedNode->getChild(1));
+    _childs->add(x, pExploitedNode->getChild(0));
 }
 
 template <typename VALUE> bool BNode<VALUE>::isLeaf() const
 {
-    return _childs.getCurrentLenght() == 0;
+    return !_childs;
+}
+
+
+template <typename VALUE> void BNode<VALUE>::print(){
+    _keys->print();
+}
+
+template <typename VALUE> BNode<VALUE>::~BNode()
+{
+    delete _childs;
+    delete _keys;
 }
 #endif // BNODE_H
 

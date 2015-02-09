@@ -122,6 +122,9 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a93c786886ce92be7cf5917bbe6be7956"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a93c786886ce92be7cf5917bbe6be7956">BArray</a> (int maxlenght)</td></tr>
 <tr class="memdesc:a93c786886ce92be7cf5917bbe6be7956"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classBArray.html" title="Clase BArray, esta clase da soporte al arbol b volviendolo menos complejo, mas facil de leer y sin as...">BArray</a>, Es el constructor de la clase, inicializa el largo de la lista. La lista se inicializa.  <a href="#a93c786886ce92be7cf5917bbe6be7956">Más...</a><br/></td></tr>
 <tr class="separator:a93c786886ce92be7cf5917bbe6be7956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa79aa57a0cd0a3bc048e01be7ec1ef74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa79aa57a0cd0a3bc048e01be7ec1ef74"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>BArray</b> (const <a class="el" href="classBArray.html">BArray</a> &amp;)</td></tr>
+<tr class="separator:aa79aa57a0cd0a3bc048e01be7ec1ef74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb72f5d604c4efd007f05c6b6f9746cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a> () const </td></tr>
 <tr class="memdesc:acb72f5d604c4efd007f05c6b6f9746cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">getCurrentLenght  <a href="#acb72f5d604c4efd007f05c6b6f9746cd">Más...</a><br/></td></tr>
 <tr class="separator:acb72f5d604c4efd007f05c6b6f9746cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,22 +134,43 @@ Métodos públicos</h2></td></tr>
 <tr class="memitem:a2235e8c213fc88b3c6702eaa8c63852c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a2235e8c213fc88b3c6702eaa8c63852c">isFull</a> () const </td></tr>
 <tr class="memdesc:a2235e8c213fc88b3c6702eaa8c63852c"><td class="mdescLeft">&#160;</td><td class="mdescRight">isFull  <a href="#a2235e8c213fc88b3c6702eaa8c63852c">Más...</a><br/></td></tr>
 <tr class="separator:a2235e8c213fc88b3c6702eaa8c63852c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae86ec71c94702d00f70f2e1c026bdce8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#ae86ec71c94702d00f70f2e1c026bdce8">add</a> (E pValue)</td></tr>
-<tr class="memdesc:ae86ec71c94702d00f70f2e1c026bdce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">add  <a href="#ae86ec71c94702d00f70f2e1c026bdce8">Más...</a><br/></td></tr>
-<tr class="separator:ae86ec71c94702d00f70f2e1c026bdce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c406b4fb7af4b2c124cdc17c31d1a0e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a7c406b4fb7af4b2c124cdc17c31d1a0e">remove</a> (int pIndex)</td></tr>
-<tr class="memdesc:a7c406b4fb7af4b2c124cdc17c31d1a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove  <a href="#a7c406b4fb7af4b2c124cdc17c31d1a0e">Más...</a><br/></td></tr>
-<tr class="separator:a7c406b4fb7af4b2c124cdc17c31d1a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e05e0ba69438392d90c9ec639971d27"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a8e05e0ba69438392d90c9ec639971d27">add</a> (E pValue)</td></tr>
+<tr class="memdesc:a8e05e0ba69438392d90c9ec639971d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">verificar si la lista esta llena si no lo esta, si esta llena retornar false, agrega en orden el valor deseado y luego realizar el corrimiento de datos de izquierda a derecha aumenta el largo en uno si se inserta el dato retornar true  <a href="#a8e05e0ba69438392d90c9ec639971d27">Más...</a><br/></td></tr>
+<tr class="separator:a8e05e0ba69438392d90c9ec639971d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaa70e5af76d77d9d389ae7e762b2df8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#adaa70e5af76d77d9d389ae7e762b2df8">addi</a> (E pValue)</td></tr>
+<tr class="memdesc:adaa70e5af76d77d9d389ae7e762b2df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">addi agregar al inicio  <a href="#adaa70e5af76d77d9d389ae7e762b2df8">Más...</a><br/></td></tr>
+<tr class="separator:adaa70e5af76d77d9d389ae7e762b2df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a549423a3f30f2a4f4e4f6cac41ee56d8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a549423a3f30f2a4f4e4f6cac41ee56d8">addf</a> (E pValue)</td></tr>
+<tr class="memdesc:a549423a3f30f2a4f4e4f6cac41ee56d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">addf agrega al final  <a href="#a549423a3f30f2a4f4e4f6cac41ee56d8">Más...</a><br/></td></tr>
+<tr class="separator:a549423a3f30f2a4f4e4f6cac41ee56d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20e82b48673552d493a54e343c165cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#ad20e82b48673552d493a54e343c165cb">add</a> (int pIndex, E pValue)</td></tr>
+<tr class="memdesc:ad20e82b48673552d493a54e343c165cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">add  <a href="#ad20e82b48673552d493a54e343c165cb">Más...</a><br/></td></tr>
+<tr class="separator:ad20e82b48673552d493a54e343c165cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc72fc4dd6cca413d42a0cab8471ac44"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#abc72fc4dd6cca413d42a0cab8471ac44">remove</a> (int pIndex)</td></tr>
+<tr class="memdesc:abc72fc4dd6cca413d42a0cab8471ac44"><td class="mdescLeft">&#160;</td><td class="mdescRight">remove  <a href="#abc72fc4dd6cca413d42a0cab8471ac44">Más...</a><br/></td></tr>
+<tr class="separator:abc72fc4dd6cca413d42a0cab8471ac44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ae6755086524e16eb0a6ae4490472bb"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb">getValue</a> (int pIndex)</td></tr>
 <tr class="memdesc:a9ae6755086524e16eb0a6ae4490472bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">getValue  <a href="#a9ae6755086524e16eb0a6ae4490472bb">Más...</a><br/></td></tr>
 <tr class="separator:a9ae6755086524e16eb0a6ae4490472bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab95faafde5cd5847c9cdde2077988415"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab95faafde5cd5847c9cdde2077988415"></a>
+E &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getValueReference</b> (int pIndex)</td></tr>
+<tr class="separator:ab95faafde5cd5847c9cdde2077988415"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a035cb596ed2b140d85147579024a8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a035cb596ed2b140d85147579024a8b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>setValue</b> (E pData, int pIndex)</td></tr>
+<tr class="separator:a8a035cb596ed2b140d85147579024a8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1851694345fd6a51557fb699b79f76f6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1851694345fd6a51557fb699b79f76f6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>reset</b> ()</td></tr>
+<tr class="separator:a1851694345fd6a51557fb699b79f76f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2773a0b562a8f98ab11f0e1aeaee8793"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2773a0b562a8f98ab11f0e1aeaee8793"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> ()</td></tr>
+<tr class="separator:a2773a0b562a8f98ab11f0e1aeaee8793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06042b7d093d10621aa80cf4af3ea117"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06042b7d093d10621aa80cf4af3ea117"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBArray.html#a06042b7d093d10621aa80cf4af3ea117">~BArray</a> ()</td></tr>
 <tr class="memdesc:a06042b7d093d10621aa80cf4af3ea117"><td class="mdescLeft">&#160;</td><td class="mdescRight">~BArray <br/></td></tr>
 <tr class="separator:a06042b7d093d10621aa80cf4af3ea117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
-<div class="textblock"><h3>template&lt;class E&gt;<br/>
+<div class="textblock"><h3>template&lt;typename E&gt;<br/>
 class BArray&lt; E &gt;</h3>
 
 <p>Clase <a class="el" href="classBArray.html" title="Clase BArray, esta clase da soporte al arbol b volviendolo menos complejo, mas facil de leer y sin as...">BArray</a>, esta clase da soporte al arbol b volviendolo menos complejo, mas facil de leer y sin asignarle al arbol b tareas como agregar los datos en orden en el array. </p>
@@ -155,7 +179,7 @@ class BArray&lt; E &gt;</h3>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::<a class="el" href="classBArray.html">BArray</a> </td>
@@ -178,14 +202,14 @@ template&lt;class E &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Documentación de las funciones miembro</h2>
-<a class="anchor" id="ae86ec71c94702d00f70f2e1c026bdce8"></a>
+<a class="anchor" id="a8e05e0ba69438392d90c9ec639971d27"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::add </td>
+          <td class="memname">bool <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::add </td>
           <td>(</td>
           <td class="paramtype">E&#160;</td>
           <td class="paramname"><em>pValue</em></td><td>)</td>
@@ -194,7 +218,98 @@ template&lt;class E &gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>verificar si la lista esta llena si no lo esta, si esta llena retornar false, agrega en orden el valor deseado y luego realizar el corrimiento de datos de izquierda a derecha aumenta el largo en uno si se inserta el dato retornar true </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pValue</td><td>es el valor a insertar </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el dato se inserta, false si la lista esta llena por consiguiente no se inserta el dato </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad20e82b48673552d493a54e343c165cb"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename E&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::add </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">E&#160;</td>
+          <td class="paramname"><em>pValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
 <p>add </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pIndex</td><td></td></tr>
+    <tr><td class="paramname">pValue</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Devuelve</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a549423a3f30f2a4f4e4f6cac41ee56d8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename E&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::addf </td>
+          <td>(</td>
+          <td class="paramtype">E&#160;</td>
+          <td class="paramname"><em>pValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addf agrega al final </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pValue</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="adaa70e5af76d77d9d389ae7e762b2df8"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename E&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::addi </td>
+          <td>(</td>
+          <td class="paramtype">E&#160;</td>
+          <td class="paramname"><em>pValue</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>addi agregar al inicio </p>
 <dl class="params"><dt>Parámetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">pValue</td><td></td></tr>
@@ -208,7 +323,7 @@ template&lt;class E &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::getCurrentLenght </td>
@@ -228,7 +343,7 @@ template&lt;class E &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">int <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::getMaximunLenght </td>
@@ -248,7 +363,7 @@ template&lt;class E &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">E <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::getValue </td>
@@ -275,7 +390,7 @@ template&lt;class E &gt; </div>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E &gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">bool <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::isFull </td>
@@ -291,14 +406,14 @@ template&lt;class E &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a7c406b4fb7af4b2c124cdc17c31d1a0e"></a>
+<a class="anchor" id="abc72fc4dd6cca413d42a0cab8471ac44"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class E &gt; </div>
+template&lt;typename E &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::remove </td>
+          <td class="memname">bool <a class="el" href="classBArray.html">BArray</a>&lt; E &gt;::remove </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>pIndex</em></td><td>)</td>
@@ -314,6 +429,7 @@ template&lt;class E &gt; </div>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Devuelve</dt><dd>true si el indice era correcto </dd></dl>
 
 </div>
 </div>
@@ -326,7 +442,7 @@ template&lt;class E &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classBArray.html">BArray</a></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:49 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

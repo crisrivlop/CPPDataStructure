@@ -252,7 +252,7 @@ template <class E> IIterator<E>* CircularList<E>::getIterator(){
 template <class E> CircularList<E>::~CircularList(){
     Node<E> *actualNode = head;
     std::cout << "Deleting CircularList...\n";
-    while(this->lenght != 0){
+    while(head){
         actualNode = head;
         head = head->getNext();
         delete actualNode;

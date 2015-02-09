@@ -105,145 +105,149 @@ $(document).ready(function(){initNavTree('BTree_8h_source.html','');});
 <div class="title">BTree.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef BTREE_H</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BTREE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;BNode.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef BTREE_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BTREE_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;BNode.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt;</div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classBTree.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBTree.html">BTree</a>{</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>ostream;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> * _root;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> _lenghtKeys;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">bool</span> _explotion;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* searchNode(K pData) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* insert(K pData, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* explode(K pData, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pChild);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> print(<a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot, <span class="keywordtype">bool</span> nextLevel);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classBTree.html">BTree</a>(<span class="keywordtype">int</span> pLenghtKeys);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> insert(K pData);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">remove</span>(K pData);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> * _root;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keywordtype">int</span> _lenghtKeys;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">bool</span> _explotion;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* searchNode(K pData) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* insert(K pData, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* explode(K pData, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pChild);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> print(<a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot, <span class="keywordtype">string</span> taber);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classBTree.html">BTree</a>(<span class="keywordtype">int</span> pLenghtKeys);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> insert(K pData);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">remove</span>(K pData);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    K search(K pData) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> print();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    K search(K pData) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classBTree.html">BTree</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classBTree.html">BTree</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBTree.html">BTree&lt;K&gt;::BTree</a>(<span class="keywordtype">int</span> pLeghtKeys):_lenghtKeys(pLeghtKeys), _explotion(false){</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    _root = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>(pLeghtKeys);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBTree.html">BTree&lt;K&gt;::BTree</a>(<span class="keywordtype">int</span> pLenghtKeys):_lenghtKeys(pLenghtKeys)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    _root = Null;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <span class="keywordtype">void</span> <a class="code" href="classBTree.html">BTree&lt;K&gt;::insert</a>(K pData){</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    _explotion = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    _root = insert(pData,_root);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">if</span>(_explotion){</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *tmpRoot = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>(_lenghtKeys);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        _root = explode(pData,tmpRoot,_root);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* <a class="code" href="classBTree.html">BTree&lt;K&gt;::insert</a>(K pData,<a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *pRoot){</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span> (pRoot-&gt;isLeaf()){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">if</span> (pRoot-&gt;<a class="code" href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">isExploding</a>())_explotion = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        pRoot-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(pData);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> pRoot;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *element;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">if</span> (pData &lt; pRoot-&gt;getValues()[0]){</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            element = insert(pData,&amp;pRoot-&gt;<a class="code" href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">getChilds</a>()[0]);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            K *value = pRoot-&gt;<a class="code" href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">getValues</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordtype">int</span> index;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <span class="keywordflow">for</span>(index = 0; (index &lt; pRoot-&gt;<a class="code" href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">getCurrentLenghtData</a>()) &amp;&amp; value[index] &lt; pData;index++){}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            element = insert(pData,&amp;pRoot-&gt;<a class="code" href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">getChilds</a>()[index+1]);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span> (_explotion){</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;explosion time&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            pRoot = explode(pData,pRoot,element);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> pRoot;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* <a class="code" href="classBTree.html">BTree&lt;K&gt;::explode</a>(K pData,<a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *pRoot, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *pChild){</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    K *currentValues,initialNodeValue;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *left,*right;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    currentValues = pChild-&gt;<a class="code" href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">getValues</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> x=0;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    left = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>(_lenghtKeys);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">for</span> (; x &lt; pChild-&gt;<a class="code" href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">getCurrentLenghtData</a>()/2;x++)left-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(currentValues[x]);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    initialNodeValue = currentValues[x++];</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    right = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>(_lenghtKeys);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">for</span>(;x &lt; pChild-&gt;<a class="code" href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">getCurrentLenghtData</a>();x++)right-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(currentValues[x]);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;left: &quot;</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    left-&gt;<a class="code" href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">print</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    cout &lt;&lt; endl &lt;&lt; <span class="stringliteral">&quot;right: &quot;</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    right-&gt;<a class="code" href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">print</a>();</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    cout &lt;&lt; endl;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    pRoot-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(initialNodeValue);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    pRoot-&gt;<a class="code" href="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601">setLeftChild</a>(left,initialNodeValue);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    pRoot-&gt;<a class="code" href="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3">setRightChild</a>(right,initialNodeValue);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (!pRoot-&gt;<a class="code" href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">isExploding</a>())_explotion = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (!pChild-&gt;isLeaf()){</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="comment">// agregar hijos</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> pRoot;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <span class="keywordtype">void</span> <a class="code" href="classBTree.html">BTree&lt;K&gt;::print</a>(){</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;==========================&quot;</span>&lt;&lt; endl;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    print(_root, <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    cout &lt;&lt; endl &lt;&lt;<span class="stringliteral">&quot;==========================&quot;</span>&lt;&lt; endl;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <span class="keywordtype">void</span> <a class="code" href="classBTree.html">BTree&lt;K&gt;::print</a>(<a class="code" href="classBNode.html">BNode&lt;K&gt;</a>* pRoot,<span class="keywordtype">bool</span> nextLevel){</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (pRoot){</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        pRoot-&gt;<a class="code" href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">print</a>();</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">if</span> (nextLevel){cout &lt;&lt; endl;}</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> x = 0; x &lt; pRoot-&gt;<a class="code" href="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1">getLenghtOfChilds</a>();x++){</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            print(&amp;pRoot-&gt;<a class="code" href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">getChilds</a>()[x], <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">else</span>{</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;--&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; ostream&amp; operator&lt;&lt;(ostream &amp;o,BTree&lt;K&gt; &amp;pTree){</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="comment">//o &lt;&lt; pTree._root;</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">return</span> o;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBTree.html">BTree&lt;K&gt;::~BTree</a>(){</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">delete</span> _root;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;im deleting&quot;</span>&lt;&lt;endl;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif // BTREE_H</span></div>
-<div class="ttc" id="classBNode_html_a86a9053ba20c97c81a4a0f5cf370316d"><div class="ttname"><a href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">BNode::getChilds</a></div><div class="ttdeci">BNode&lt; VALUE &gt; * getChilds() const </div><div class="ttdoc">obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce si...</div><div class="ttdef"><b>Definition:</b> BNode.h:161</div></div>
-<div class="ttc" id="classBNode_html_a8af2d0b3078416d0cd7459addf63876f"><div class="ttname"><a href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">BNode::getCurrentLenghtData</a></div><div class="ttdeci">int getCurrentLenghtData() const </div><div class="ttdoc">getCurrentLenghtData la cantidad de datos que contiene </div><div class="ttdef"><b>Definition:</b> BNode.h:247</div></div>
-<div class="ttc" id="classBNode_html_ace75c9ba9b3479cafda7fc4d62801601"><div class="ttname"><a href="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601">BNode::setLeftChild</a></div><div class="ttdeci">bool setLeftChild(BNode&lt; VALUE &gt; *pChild, VALUE pIndex)</div><div class="ttdoc">agregar un nodo hijo a la izquierda de la clave indicada por parametro pIndex </div><div class="ttdef"><b>Definition:</b> BNode.h:183</div></div>
-<div class="ttc" id="classBNode_html_ac10d387a2400fcc956719b2c1816b54c"><div class="ttname"><a href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">BNode::isExploding</a></div><div class="ttdeci">bool isExploding() const </div><div class="ttdoc">Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite i...</div><div class="ttdef"><b>Definition:</b> BNode.h:221</div></div>
-<div class="ttc" id="classBNode_html_a9533a736b61bb9bf42f0e87b1e3275a3"><div class="ttname"><a href="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3">BNode::setRightChild</a></div><div class="ttdeci">bool setRightChild(BNode&lt; VALUE &gt; *pChild, VALUE pIndex)</div><div class="ttdoc">agregar un nodo hijo a la derecha de la clave indicada por parametro pIndex </div><div class="ttdef"><b>Definition:</b> BNode.h:202</div></div>
-<div class="ttc" id="classBNode_html_a1f40c8dc96ba1c920703b40a85bef380"><div class="ttname"><a href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">BNode::getValues</a></div><div class="ttdeci">VALUE * getValues() const </div><div class="ttdoc">Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. </div><div class="ttdef"><b>Definition:</b> BNode.h:157</div></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">if</span> (_root){</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        _root = insert(pData,_root);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        _root = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;K&gt;</a>(_lenghtKeys,pData);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *<a class="code" href="classBTree.html">BTree&lt;K&gt;::insert</a>(K pData, <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *pRoot){</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//BTree&lt;K&gt; *returnedData = Null;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (pRoot-&gt;<a class="code" href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">isLeaf</a>()){</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(pRoot-&gt;<a class="code" href="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43">oneToExploding</a>()){</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            pRoot-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(pData);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            _explotion = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            pRoot-&gt;<a class="code" href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">explode</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        pRoot-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(pData);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">else</span>{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">int</span> x = 0;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">if</span> (pData &lt; pRoot-&gt;getValue(x)){</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *tmp = insert(pData, pRoot-&gt;<a class="code" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">getChild</a>(x));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">if</span> (_explotion){</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                pRoot-&gt;adoptExploitedNode(tmp,0);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="keyword">delete</span> tmp;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">for</span> (x=0; x &lt; pRoot-&gt;<a class="code" href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">getValues</a>()-&gt;<a class="code" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a>() &amp;&amp; pData &gt; pRoot-&gt;getValue(x); x++);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *tmp = insert(pData, pRoot-&gt;<a class="code" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">getChild</a>(x));</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span> (_explotion){</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;llave de insercion: &quot;</span> &lt;&lt; pData &lt;&lt; endl;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            pRoot-&gt;adoptExploitedNode(tmp,x);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            cout &lt;&lt; <span class="stringliteral">&quot;aun no hay problemas&quot;</span>&lt;&lt; endl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">delete</span> tmp;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span> (pRoot-&gt;isFull())pRoot-&gt;<a class="code" href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">explode</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">else</span> _explotion = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> pRoot;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <span class="keywordtype">void</span> <a class="code" href="classBTree.html">BTree&lt;K&gt;::print</a>(<a class="code" href="classBNode.html">BNode&lt;K&gt;</a> *pRoot, <span class="keywordtype">string</span> taber)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;{</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">if</span> (pRoot){</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        taber = <span class="stringliteral">&quot;-&quot;</span> + taber;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        pRoot-&gt;print();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span> (!pRoot-&gt;<a class="code" href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">isLeaf</a>()){</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="classBArray.html">BArray&lt; BNode&lt;K&gt;</a>* &gt; *array = pRoot-&gt;<a class="code" href="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b">getChilds</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x=0; x &lt; array-&gt;<a class="code" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a>(); x++){</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                cout &lt;&lt; taber  &lt;&lt; x &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                <span class="keywordflow">if</span> (array-&gt;<a class="code" href="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb">getValue</a>(x))print(array-&gt;<a class="code" href="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb">getValue</a>(x), taber + <span class="stringliteral">&quot;-&quot;</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                <span class="keywordflow">else</span> cout &lt;&lt; <span class="stringliteral">&quot;*&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">else</span> cout &lt;&lt; taber &lt;&lt; <span class="stringliteral">&quot;null&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <span class="keywordtype">void</span> <a class="code" href="classBTree.html">BTree&lt;K&gt;::print</a>(){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="comment">    cout &lt;&lt; &quot;root: &quot;;</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="comment">    _root-&gt;print();</span></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="comment">    if (!_root-&gt;isLeaf()){</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">        BArray&lt; BNode&lt;K&gt;* &gt; *array = _root-&gt;getChilds();</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="comment">        cout &lt;&lt; &quot;cantidad de hijos: &quot; &lt;&lt; array-&gt;getCurrentLenght() &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="comment">        cout &lt;&lt; &quot;cantidad maxima de hijos: &quot; &lt;&lt; array-&gt;getMaximunLenght() &lt;&lt; endl;</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="comment">        for (int x=0; x &lt; array-&gt;getCurrentLenght(); x++){</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="comment">            cout &lt;&lt; &quot;child number &quot; &lt;&lt; x &lt;&lt; &quot;: &quot;;</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">            array-&gt;getValue(x)-&gt;print();</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">        }</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">    }</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    print(_root,<span class="stringliteral">&quot;-&quot;</span>);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K&gt; <a class="code" href="classBTree.html">BTree&lt;K&gt;::~BTree</a>(){</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">delete</span> _root;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="preprocessor">#endif // BTREE_H</span></div>
+<div class="ttc" id="classBNode_html_a4aa76bfa386186a44a1a136aaf22da9c"><div class="ttname"><a href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">BNode::getValues</a></div><div class="ttdeci">BArray&lt; VALUE &gt; * getValues() const </div><div class="ttdoc">Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. </div><div class="ttdef"><b>Definition:</b> BNode.h:136</div></div>
+<div class="ttc" id="classBArray_html"><div class="ttname"><a href="classBArray.html">BArray</a></div><div class="ttdoc">Clase BArray, esta clase da soporte al arbol b volviendolo menos complejo, mas facil de leer y sin as...</div><div class="ttdef"><b>Definition:</b> BArray.h:17</div></div>
+<div class="ttc" id="classBNode_html_ab8bf944d82b64503fd9fb6c290f7511b"><div class="ttname"><a href="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b">BNode::getChilds</a></div><div class="ttdeci">BArray&lt; BNode&lt; VALUE &gt; * &gt; * getChilds() const </div><div class="ttdoc">obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce si...</div><div class="ttdef"><b>Definition:</b> BNode.h:145</div></div>
+<div class="ttc" id="classBNode_html_abde3468d7b1d49d1f858ce40eee6836c"><div class="ttname"><a href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">BNode::getChild</a></div><div class="ttdeci">BNode&lt; VALUE &gt; * getChild(int pIndex) const </div><div class="ttdoc">getChild </div><div class="ttdef"><b>Definition:</b> BNode.h:149</div></div>
+<div class="ttc" id="classBNode_html_a64a90eaeefe69e066fd2abceb3a8a86e"><div class="ttname"><a href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">BNode::isLeaf</a></div><div class="ttdeci">bool isLeaf() const </div><div class="ttdoc">isLeaf </div><div class="ttdef"><b>Definition:</b> BNode.h:236</div></div>
+<div class="ttc" id="classBNode_html_a6df6391831a91e15dbfaa406c48e9e43"><div class="ttname"><a href="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43">BNode::oneToExploding</a></div><div class="ttdeci">bool oneToExploding() const </div><div class="ttdoc">Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite i...</div><div class="ttdef"><b>Definition:</b> BNode.h:167</div></div>
+<div class="ttc" id="classBNode_html_aa88f967e8ec0998fb5ee95daf95fb5af"><div class="ttname"><a href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">BNode::explode</a></div><div class="ttdeci">void explode()</div><div class="ttdoc">explode, genera los hijos del nodos y los agrega a la lista de hijos </div><div class="ttdef"><b>Definition:</b> BNode.h:177</div></div>
 <div class="ttc" id="classBTree_html"><div class="ttname"><a href="classBTree.html">BTree</a></div><div class="ttdef"><b>Definition:</b> BTree.h:9</div></div>
-<div class="ttc" id="classBNode_html_a7d3bd370d42465e8c2aa014645cac8d1"><div class="ttname"><a href="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1">BNode::getLenghtOfChilds</a></div><div class="ttdeci">int getLenghtOfChilds() const </div><div class="ttdoc">getLenghtOfChilds Obtiene la cantidad de hijos que tiene el nodo </div><div class="ttdef"><b>Definition:</b> BNode.h:255</div></div>
-<div class="ttc" id="classBNode_html_aef1d184c4aeb9d85705b8917ed8e21ae"><div class="ttname"><a href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">BNode::addValue</a></div><div class="ttdeci">bool addValue(VALUE pValue)</div><div class="ttdoc">agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor ...</div><div class="ttdef"><b>Definition:</b> BNode.h:165</div></div>
-<div class="ttc" id="classBNode_html_a4cfbe2867e900577efc3836fd207b008"><div class="ttname"><a href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">BNode::print</a></div><div class="ttdeci">void print() const </div><div class="ttdoc">Imprime el dato sin realizar cambios en el nodo. </div><div class="ttdef"><b>Definition:</b> BNode.h:229</div></div>
+<div class="ttc" id="classBNode_html_aef1d184c4aeb9d85705b8917ed8e21ae"><div class="ttname"><a href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">BNode::addValue</a></div><div class="ttdeci">bool addValue(VALUE pValue)</div><div class="ttdoc">agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor ...</div><div class="ttdef"><b>Definition:</b> BNode.h:156</div></div>
 <div class="ttc" id="classBNode_html"><div class="ttname"><a href="classBNode.html">BNode&lt; K &gt;</a></div></div>
+<div class="ttc" id="classBArray_html_a9ae6755086524e16eb0a6ae4490472bb"><div class="ttname"><a href="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb">BArray::getValue</a></div><div class="ttdeci">E getValue(int pIndex)</div><div class="ttdoc">getValue </div><div class="ttdef"><b>Definition:</b> BArray.h:203</div></div>
+<div class="ttc" id="classBArray_html_acb72f5d604c4efd007f05c6b6f9746cd"><div class="ttname"><a href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">BArray::getCurrentLenght</a></div><div class="ttdeci">int getCurrentLenght() const </div><div class="ttdoc">getCurrentLenght </div><div class="ttdef"><b>Definition:</b> BArray.h:129</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_70093cb3a9d1f8840af4e997fde867c3.html">tree</a></li><li class="navelem"><b>BTree.h</b></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:48 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

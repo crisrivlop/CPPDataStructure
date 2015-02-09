@@ -123,6 +123,9 @@ $(document).ready(function(){initNavTree('classSimpleIterator.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
+<tr class="memitem:a643cab8769a566826092a5db6ace3267"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleIterator.html#a643cab8769a566826092a5db6ace3267">SimpleIterator</a> (<a class="el" href="classNode.html">Node</a>&lt; E &gt; *, <a class="el" href="classNode.html">Node</a>&lt; E &gt; *)</td></tr>
+<tr class="memdesc:a643cab8769a566826092a5db6ace3267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metodo constructor.  <a href="#a643cab8769a566826092a5db6ace3267">Más...</a><br/></td></tr>
+<tr class="separator:a643cab8769a566826092a5db6ace3267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01032dba9ff4f1a1c47af3082b717d5"><td class="memItemLeft" align="right" valign="top">E&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5">getNext</a> ()</td></tr>
 <tr class="memdesc:ab01032dba9ff4f1a1c47af3082b717d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el dato actual y actualiza al nodo siguiente.  <a href="#ab01032dba9ff4f1a1c47af3082b717d5">Más...</a><br/></td></tr>
 <tr class="separator:ab01032dba9ff4f1a1c47af3082b717d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,7 +172,45 @@ template&lt;class M &gt; </td></tr>
 class SimpleIterator&lt; E &gt;</h3>
 
 <p>Esta clase es un iterador de las listas simples, ademas la actualizacion de la lista NO actualiza el iterador, por lo que el iterador es momentaneo. Es similar a una fotografia de una lista que no ha sido alterada si la lista se altera usando un iterador puede que el iterador falle. Por lo que es recomendable que la lista no se actualice mientras se usa un iterador. </p>
-</div><h2 class="groupheader">Documentación de las funciones miembro</h2>
+</div><h2 class="groupheader">Documentación del constructor y destructor</h2>
+<a class="anchor" id="a643cab8769a566826092a5db6ace3267"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSimpleIterator.html">SimpleIterator</a>&lt; E &gt;::<a class="el" href="classSimpleIterator.html">SimpleIterator</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a>&lt; E &gt; *&#160;</td>
+          <td class="paramname"><em>phead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classNode.html">Node</a>&lt; E &gt; *&#160;</td>
+          <td class="paramname"><em>ptail</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Metodo constructor. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>es la cabeza por donde se iniciara la iteracion </td></tr>
+    <tr><td class="paramname">tail</td><td>es la cola el ultimo elemento de la iteracion </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de las funciones miembro</h2>
 <a class="anchor" id="ac9460c98985a20f781f351c85b8a3ba2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -311,7 +352,7 @@ template&lt;class E&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classSimpleIterator.html">SimpleIterator</a></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:49 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

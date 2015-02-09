@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['_7ebarray',['~BArray',['../classBArray.html#a06042b7d093d10621aa80cf4af3ea117',1,'BArray']]],
-  ['_7ebinarynode',['~BinaryNode',['../classBinaryNode.html#a5f14ccd899c22516a360cf84cd75d6fa',1,'BinaryNode']]],
-  ['_7ebinarytree',['~BinaryTree',['../classBinaryTree.html#a484cf26b3a984cef9978de0c0d638874',1,'BinaryTree']]],
-  ['_7ebnode',['~BNode',['../classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4',1,'BNode']]],
-  ['_7ecircularlist',['~CircularList',['../classCircularList.html#aa65c9665b7d36a5e609752cad0a35dbb',1,'CircularList']]],
-  ['_7edoublecircularlist',['~DoubleCircularList',['../classDoubleCircularList.html#a26dba8b85983742cfbf38886245fe2a4',1,'DoubleCircularList']]],
-  ['_7edoublelist',['~DoubleList',['../classDoubleList.html#a11ce233388fea7a5722a7d57cea400a3',1,'DoubleList']]],
-  ['_7edoublenode',['~DoubleNode',['../classDoubleNode.html#abd78f421a570cd0fb0cecfedb979d799',1,'DoubleNode']]],
-  ['_7eiiterator',['~IIterator',['../classIIterator.html#a46e00fa31d4f8d29232f4b1dfc27026b',1,'IIterator']]],
-  ['_7eilist',['~IList',['../classIList.html#a6ff12f7e891ea75a5554b70ed3fa0de8',1,'IList']]],
-  ['_7einverseiterator',['~InverseIterator',['../classInverseIterator.html#ae3b6736187c1dbc82ead0277d31e5898',1,'InverseIterator']]],
-  ['_7elist',['~List',['../classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d',1,'List']]],
-  ['_7enode',['~Node',['../classNode.html#af907944256d9fca41c6a1c783a3a6536',1,'Node']]],
-  ['_7equeue',['~Queue',['../classQueue.html#a49fe82adb8dc2fb62ab53876a6933d0f',1,'Queue']]],
-  ['_7esimpleiterator',['~SimpleIterator',['../classSimpleIterator.html#a02203109d263581340152408ebb120a2',1,'SimpleIterator']]],
-  ['_7estack',['~Stack',['../classStack.html#ad08e4c32f07b8d967913f8b1a45f8620',1,'Stack']]]
+  ['search',['search',['../classBinaryTree.html#acfd3b1f3d4944c900c35ce53bfd0d428',1,'BinaryTree']]],
+  ['set',['set',['../classCircularList.html#aa54489e11ad76bf929f92b1dce97a3a3',1,'CircularList::set()'],['../classDoubleCircularList.html#a95e0f27bda1158233015ee3ff27b3ade',1,'DoubleCircularList::set()'],['../classDoubleList.html#a3c95ac3c3190b347c4a343776264bf67',1,'DoubleList::set()'],['../classIList.html#a119ed658d2804aec0b9fef9325c03073',1,'IList::set()'],['../classList.html#ac8b31be96806bd56f655436629ac2e7a',1,'List::set()']]],
+  ['setchilds',['setChilds',['../classBinaryNode.html#a2f042cb3740f988f889ec140658c448e',1,'BinaryNode']]],
+  ['setdata',['setData',['../classDoubleNode.html#a21f86a81b7d4e4db966e07ce06da4f3a',1,'DoubleNode::setData()'],['../classNode.html#ae13418a552fa36eddbaa5dfb767aa664',1,'Node::setData()'],['../classBinaryNode.html#ad4d399a6fe4841baabfeef875e2c5bd3',1,'BinaryNode::setData()']]],
+  ['setleft',['setLeft',['../classBinaryNode.html#a0ac78ba2fb207003c18951977b7345c5',1,'BinaryNode']]],
+  ['setnext',['setNext',['../classDoubleNode.html#aba52422e27040e524ba629445e9d8b93',1,'DoubleNode::setNext()'],['../classNode.html#a2ce12b4f2605972720e1c56fe80014a0',1,'Node::setNext()']]],
+  ['setprevious',['setPrevious',['../classDoubleNode.html#aa76c202fdfd533984d9e9ae1892d194d',1,'DoubleNode']]],
+  ['setright',['setRight',['../classBinaryNode.html#a59e5b3d0213b13e4e35ded03bbda7da2',1,'BinaryNode']]],
+  ['simpleiterator',['SimpleIterator',['../classSimpleIterator.html#a643cab8769a566826092a5db6ace3267',1,'SimpleIterator']]],
+  ['stack',['Stack',['../classStack.html#a561be1726ac9649a9ee3f80a4ca8e4b5',1,'Stack']]]
 ];

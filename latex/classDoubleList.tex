@@ -12,7 +12,7 @@ Esta clase es una estructura de datos especificamente una lista doblemente enlaz
 
 
 
-Herencias \hyperlink{classIList}{I\-List$<$ E $>$}.
+Herencias \hyperlink{classDoubleListAdapter}{Double\-List\-Adapter$<$ E $>$} y \hyperlink{classIList}{I\-List$<$ E $>$}.
 
 \subsection*{Métodos públicos}
 \begin{DoxyCompactItemize}
@@ -20,7 +20,7 @@ Herencias \hyperlink{classIList}{I\-List$<$ E $>$}.
 \hypertarget{classDoubleList_ab54db9c718c7188f9413ef2b9982dd43}{\hyperlink{classDoubleList_ab54db9c718c7188f9413ef2b9982dd43}{Double\-List} ()}\label{classDoubleList_ab54db9c718c7188f9413ef2b9982dd43}
 
 \begin{DoxyCompactList}\small\item\em Es el constructor de la lista doble. \end{DoxyCompactList}\item 
-void \hyperlink{classDoubleList_a9924458cf1416df8243b4f857b027da7}{addi} (E)
+void \hyperlink{classDoubleList_a621684e61b8d9d41cd107174d9877b1e}{addi} (E)
 \begin{DoxyCompactList}\small\item\em Agrega un elemento al principio de la lista. \end{DoxyCompactList}\item 
 void \hyperlink{classDoubleList_adb96e6908d3d564722225b848350aa82}{add} (E)
 \begin{DoxyCompactList}\small\item\em Agregar un elemento al final de la lista. \end{DoxyCompactList}\item 
@@ -39,6 +39,23 @@ void \hyperlink{classDoubleList_a94d1ad5299452ea46839ba350ca501d1}{inverse\-Iter
 \hypertarget{classDoubleList_a11ce233388fea7a5722a7d57cea400a3}{virtual \hyperlink{classDoubleList_a11ce233388fea7a5722a7d57cea400a3}{$\sim$\-Double\-List} ()}\label{classDoubleList_a11ce233388fea7a5722a7d57cea400a3}
 
 \begin{DoxyCompactList}\small\item\em Es el destructor de la lista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Métodos protegidos}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classDoubleList_a01623cc4b04d94c655de62ae373963b2}{addi} (E p\-Data)
+\begin{DoxyCompactList}\small\item\em Agrega un elemento al principio de la lista. \end{DoxyCompactList}\item 
+\hypertarget{classDoubleList_a495cbf66dc7f7523e15405b762cc616d}{bool {\bfseries addf} (E p\-Data)}\label{classDoubleList_a495cbf66dc7f7523e15405b762cc616d}
+
+\item 
+\hypertarget{classDoubleList_a4d72bc061da9183185b9ae1896b2767b}{bool {\bfseries add\-First\-Data} (E p\-Data)}\label{classDoubleList_a4d72bc061da9183185b9ae1896b2767b}
+
+\item 
+\hypertarget{classDoubleList_a074473aaac863a9e00ec34c2316a2d9e}{bool {\bfseries removei} ()}\label{classDoubleList_a074473aaac863a9e00ec34c2316a2d9e}
+
+\item 
+\hypertarget{classDoubleList_a0cd7c06fa533e3f800778920346b8a7b}{bool {\bfseries removef} ()}\label{classDoubleList_a0cd7c06fa533e3f800778920346b8a7b}
+
+\end{DoxyCompactItemize}
 \subsection*{Otros miembros heredados}
 
 
@@ -94,13 +111,33 @@ si el elemento se agrega retorna true, en caso contrario retorna false
 
 Implementa \hyperlink{classIList_a70140dbc9de2b9f6e5ffd2212d5ea8b0}{I\-List$<$ E $>$}.
 
-\hypertarget{classDoubleList_a9924458cf1416df8243b4f857b027da7}{\index{Double\-List@{Double\-List}!addi@{addi}}
+\hypertarget{classDoubleList_a01623cc4b04d94c655de62ae373963b2}{\index{Double\-List@{Double\-List}!addi@{addi}}
 \index{addi@{addi}!DoubleList@{Double\-List}}
-\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf Double\-List}$<$ E $>$\-::addi (
+\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Double\-List}$<$ E $>$\-::addi (
+\begin{DoxyParamCaption}
+\item[{E}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{classDoubleList_a01623cc4b04d94c655de62ae373963b2}
+
+
+Agrega un elemento al principio de la lista. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em data} & el elemento a agregar \\
+\hline
+\end{DoxyParams}
+
+
+Implementa \hyperlink{classIList_af202dc9e748ee32238d80e57dfbcae20}{I\-List$<$ E $>$}.
+
+\hypertarget{classDoubleList_a621684e61b8d9d41cd107174d9877b1e}{\index{Double\-List@{Double\-List}!addi@{addi}}
+\index{addi@{addi}!DoubleList@{Double\-List}}
+\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf Double\-List}$<$ E $>$\-::addi (
 \begin{DoxyParamCaption}
 \item[{E}]{data}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a9924458cf1416df8243b4f857b027da7}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classDoubleList_a621684e61b8d9d41cd107174d9877b1e}
 
 
 Agrega un elemento al principio de la lista. 

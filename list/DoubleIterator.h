@@ -17,14 +17,14 @@ class DoubleIterator:public IIterator<E>{
     template <class T> friend class DoubleList;
 
     DoubleNode<E> *head,*tail,*current;
-protected:
+public:
     /**
      * @brief Metodo constructor
      * @param head es la cabeza por donde se iniciara la iteracion
      * @param tail es la cola el ultimo elemento de la iteracion
      */
     DoubleIterator(DoubleNode<E>*,DoubleNode<E>*);
-public:
+
     /**
      * @brief Obtiene el dato actual y actualiza al nodo siguiente.
      * @return E el dato actual

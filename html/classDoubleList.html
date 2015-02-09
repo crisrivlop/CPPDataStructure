@@ -106,6 +106,7 @@ $(document).ready(function(){initNavTree('classDoubleList.html','');});
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Métodos públicos</a> &#124;
+<a href="#pro-methods">Métodos protegidos</a> &#124;
 <a href="classDoubleList-members.html">Lista de todos los miembros</a>  </div>
   <div class="headertitle">
 <div class="title">Referencia de la plantilla de la Clase DoubleList&lt; E &gt;</div>  </div>
@@ -117,7 +118,7 @@ $(document).ready(function(){initNavTree('classDoubleList.html','');});
 
 <p><code>#include &lt;<a class="el" href="DoubleList_8h_source.html">DoubleList.h</a>&gt;</code></p>
 
-<p>Herencias <a class="el" href="classIList.html">IList&lt; E &gt;</a>.</p>
+<p>Herencias <a class="el" href="classDoubleListAdapter.html">DoubleListAdapter&lt; E &gt;</a> y <a class="el" href="classIList.html">IList&lt; E &gt;</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Métodos públicos</h2></td></tr>
@@ -125,9 +126,9 @@ Métodos públicos</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleList.html#ab54db9c718c7188f9413ef2b9982dd43">DoubleList</a> ()</td></tr>
 <tr class="memdesc:ab54db9c718c7188f9413ef2b9982dd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Es el constructor de la lista doble. <br/></td></tr>
 <tr class="separator:ab54db9c718c7188f9413ef2b9982dd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9924458cf1416df8243b4f857b027da7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleList.html#a9924458cf1416df8243b4f857b027da7">addi</a> (E)</td></tr>
-<tr class="memdesc:a9924458cf1416df8243b4f857b027da7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega un elemento al principio de la lista.  <a href="#a9924458cf1416df8243b4f857b027da7">Más...</a><br/></td></tr>
-<tr class="separator:a9924458cf1416df8243b4f857b027da7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a621684e61b8d9d41cd107174d9877b1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleList.html#a621684e61b8d9d41cd107174d9877b1e">addi</a> (E)</td></tr>
+<tr class="memdesc:a621684e61b8d9d41cd107174d9877b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega un elemento al principio de la lista.  <a href="#a621684e61b8d9d41cd107174d9877b1e">Más...</a><br/></td></tr>
+<tr class="separator:a621684e61b8d9d41cd107174d9877b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb96e6908d3d564722225b848350aa82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleList.html#adb96e6908d3d564722225b848350aa82">add</a> (E)</td></tr>
 <tr class="memdesc:adb96e6908d3d564722225b848350aa82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agregar un elemento al final de la lista.  <a href="#adb96e6908d3d564722225b848350aa82">Más...</a><br/></td></tr>
 <tr class="separator:adb96e6908d3d564722225b848350aa82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,6 +154,29 @@ Métodos públicos</h2></td></tr>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleList.html#a11ce233388fea7a5722a7d57cea400a3">~DoubleList</a> ()</td></tr>
 <tr class="memdesc:a11ce233388fea7a5722a7d57cea400a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Es el destructor de la lista. <br/></td></tr>
 <tr class="separator:a11ce233388fea7a5722a7d57cea400a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classDoubleListAdapter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classDoubleListAdapter')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="classDoubleListAdapter.html">DoubleListAdapter&lt; E &gt;</a></td></tr>
+<tr class="memitem:a6f5bc523f04b3b223f259a72a1975b11 inherit pub_methods_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f5bc523f04b3b223f259a72a1975b11"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>add</b> (E pData)</td></tr>
+<tr class="separator:a6f5bc523f04b3b223f259a72a1975b11 inherit pub_methods_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d83f0f676236b98aa5e555a43a173b inherit pub_methods_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76d83f0f676236b98aa5e555a43a173b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (int pIndex)</td></tr>
+<tr class="separator:a76d83f0f676236b98aa5e555a43a173b inherit pub_methods_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849368822d881d40c8a65dc25b45376e inherit pub_methods_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a849368822d881d40c8a65dc25b45376e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>search</b> (E pData)</td></tr>
+<tr class="separator:a849368822d881d40c8a65dc25b45376e inherit pub_methods_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70017142377b23a0f6ec22ac4c01aa6c inherit pub_methods_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70017142377b23a0f6ec22ac4c01aa6c"></a>
+E&#160;</td><td class="memItemRight" valign="bottom"><b>get</b> (int pIndex)</td></tr>
+<tr class="separator:a70017142377b23a0f6ec22ac4c01aa6c inherit pub_methods_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad608ef5f6917c09899b55fc5b20d9b4b inherit pub_methods_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad608ef5f6917c09899b55fc5b20d9b4b"></a>
+E &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getReference</b> (int pIndex)</td></tr>
+<tr class="separator:ad608ef5f6917c09899b55fc5b20d9b4b inherit pub_methods_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95df61b73f8c9535c8abe227c2207ea9 inherit pub_methods_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95df61b73f8c9535c8abe227c2207ea9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setInversedIteration</b> (bool pIteration)</td></tr>
+<tr class="separator:a95df61b73f8c9535c8abe227c2207ea9 inherit pub_methods_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classIOrdinateList"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIOrdinateList')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="classIOrdinateList.html">IOrdinateList&lt; E &gt;</a></td></tr>
+<tr class="memitem:acc0d473f2b9b464cc82b5e6cdb887b2a inherit pub_methods_classIOrdinateList"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc0d473f2b9b464cc82b5e6cdb887b2a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>getLenght</b> ()</td></tr>
+<tr class="separator:acc0d473f2b9b464cc82b5e6cdb887b2a inherit pub_methods_classIOrdinateList"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classIList"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classIList')"><img src="closed.png" alt="-"/>&#160;Métodos públicos heredados desde <a class="el" href="classIList.html">IList&lt; E &gt;</a></td></tr>
 <tr class="memitem:a6d43df225c304c3a0abdb4c7d81274b5 inherit pub_methods_classIList"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIList.html#a6d43df225c304c3a0abdb4c7d81274b5">getLenght</a> () const </td></tr>
 <tr class="memdesc:a6d43df225c304c3a0abdb4c7d81274b5 inherit pub_methods_classIList"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtiene el largo de la lista.  <a href="#a6d43df225c304c3a0abdb4c7d81274b5">Más...</a><br/></td></tr>
@@ -165,8 +189,37 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memdesc:a6ff12f7e891ea75a5554b70ed3fa0de8 inherit pub_methods_classIList"><td class="mdescLeft">&#160;</td><td class="mdescRight">Liberador de memoria. <br/></td></tr>
 <tr class="separator:a6ff12f7e891ea75a5554b70ed3fa0de8 inherit pub_methods_classIList"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Métodos protegidos</h2></td></tr>
+<tr class="memitem:a01623cc4b04d94c655de62ae373963b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleList.html#a01623cc4b04d94c655de62ae373963b2">addi</a> (E pData)</td></tr>
+<tr class="memdesc:a01623cc4b04d94c655de62ae373963b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Agrega un elemento al principio de la lista.  <a href="#a01623cc4b04d94c655de62ae373963b2">Más...</a><br/></td></tr>
+<tr class="separator:a01623cc4b04d94c655de62ae373963b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495cbf66dc7f7523e15405b762cc616d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a495cbf66dc7f7523e15405b762cc616d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addf</b> (E pData)</td></tr>
+<tr class="separator:a495cbf66dc7f7523e15405b762cc616d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d72bc061da9183185b9ae1896b2767b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d72bc061da9183185b9ae1896b2767b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>addFirstData</b> (E pData)</td></tr>
+<tr class="separator:a4d72bc061da9183185b9ae1896b2767b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a074473aaac863a9e00ec34c2316a2d9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a074473aaac863a9e00ec34c2316a2d9e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removei</b> ()</td></tr>
+<tr class="separator:a074473aaac863a9e00ec34c2316a2d9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cd7c06fa533e3f800778920346b8a7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cd7c06fa533e3f800778920346b8a7b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>removef</b> ()</td></tr>
+<tr class="separator:a0cd7c06fa533e3f800778920346b8a7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Otros miembros heredados</h2></td></tr>
+<tr class="inherit_header pro_attribs_classDoubleListAdapter"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classDoubleListAdapter')"><img src="closed.png" alt="-"/>&#160;Atributos protegidos heredados desde <a class="el" href="classDoubleListAdapter.html">DoubleListAdapter&lt; E &gt;</a></td></tr>
+<tr class="memitem:a1c01340613e7545d5ab74286686053fa inherit pro_attribs_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c01340613e7545d5ab74286686053fa"></a>
+<a class="el" href="classDoubleNode.html">DoubleNode</a>&lt; E &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_head</b></td></tr>
+<tr class="separator:a1c01340613e7545d5ab74286686053fa inherit pro_attribs_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c6a578e4668b8c28895ac271c4c2b9 inherit pro_attribs_classDoubleListAdapter"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68c6a578e4668b8c28895ac271c4c2b9"></a>
+<a class="el" href="classDoubleNode.html">DoubleNode</a>&lt; E &gt; *&#160;</td><td class="memItemRight" valign="bottom"><b>_tail</b></td></tr>
+<tr class="separator:a68c6a578e4668b8c28895ac271c4c2b9 inherit pro_attribs_classDoubleListAdapter"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classIOrdinateList"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classIOrdinateList')"><img src="closed.png" alt="-"/>&#160;Atributos protegidos heredados desde <a class="el" href="classIOrdinateList.html">IOrdinateList&lt; E &gt;</a></td></tr>
+<tr class="memitem:a28c0ecc93c212cf1fb6fa63a7227eb4a inherit pro_attribs_classIOrdinateList"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28c0ecc93c212cf1fb6fa63a7227eb4a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>_lenght</b></td></tr>
+<tr class="separator:a28c0ecc93c212cf1fb6fa63a7227eb4a inherit pro_attribs_classIOrdinateList"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classIList"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classIList')"><img src="closed.png" alt="-"/>&#160;Atributos protegidos heredados desde <a class="el" href="classIList.html">IList&lt; E &gt;</a></td></tr>
 <tr class="memitem:a64ce981ba1104bbb482068983cb5a3bc inherit pro_attribs_classIList"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classIList.html#a64ce981ba1104bbb482068983cb5a3bc">lenght</a></td></tr>
 <tr class="separator:a64ce981ba1104bbb482068983cb5a3bc inherit pro_attribs_classIList"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -261,7 +314,7 @@ template&lt;class E &gt; </div>
 
 </div>
 </div>
-<a class="anchor" id="a9924458cf1416df8243b4f857b027da7"></a>
+<a class="anchor" id="a01623cc4b04d94c655de62ae373963b2"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -271,7 +324,43 @@ template&lt;class E &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classDoubleList.html">DoubleList</a>&lt; E &gt;::addi </td>
+          <td class="memname">bool <a class="el" href="classDoubleList.html">DoubleList</a>&lt; E &gt;::addi </td>
+          <td>(</td>
+          <td class="paramtype">E&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Agrega un elemento al principio de la lista. </p>
+<dl class="params"><dt>Parámetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>el elemento a agregar </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implementa <a class="el" href="classIList.html#af202dc9e748ee32238d80e57dfbcae20">IList&lt; E &gt;</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a621684e61b8d9d41cd107174d9877b1e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class E &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDoubleList.html">DoubleList</a>&lt; E &gt;::addi </td>
           <td>(</td>
           <td class="paramtype">E&#160;</td>
           <td class="paramname"><em>data</em></td><td>)</td>
@@ -489,7 +578,7 @@ template&lt;class E &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classDoubleList.html">DoubleList</a></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:49 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

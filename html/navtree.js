@@ -20,7 +20,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"BArray_8h_source.html"
+"BArray_8h_source.html",
+"classSimpleListAdapter.html#a9bebc8a42330e453f6e608e54de36adf"
 ];
 
 var SYNCONMSG = 'click en deshabilitar sincronización';

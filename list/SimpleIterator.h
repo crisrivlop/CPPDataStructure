@@ -19,15 +19,17 @@ class SimpleIterator : public IIterator<E>{
     friend class List;
     template <class M>
     friend class CircularList;
+protected:
+    Node<E> *head, *tail, *current; /**< TODO */
+public:
+
     /**
      * @brief Metodo constructor
      * @param head es la cabeza por donde se iniciara la iteracion
      * @param tail es la cola el ultimo elemento de la iteracion
      */
     SimpleIterator(Node<E>*,Node<E>*);
-protected:
-    Node<E> *head, *tail, *current; /**< TODO */
-public:
+
 
     /**
      * @brief Obtiene el dato actual y actualiza al nodo siguiente.

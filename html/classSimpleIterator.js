@@ -1,5 +1,6 @@
 var classSimpleIterator =
 [
+    [ "SimpleIterator", "classSimpleIterator.html#a643cab8769a566826092a5db6ace3267", null ],
     [ "~SimpleIterator", "classSimpleIterator.html#a02203109d263581340152408ebb120a2", null ],
     [ "getCurrent", "classSimpleIterator.html#ac9460c98985a20f781f351c85b8a3ba2", null ],
     [ "getNext", "classSimpleIterator.html#ab01032dba9ff4f1a1c47af3082b717d5", null ],

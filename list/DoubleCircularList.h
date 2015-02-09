@@ -314,7 +314,7 @@ template <class E> void DoubleCircularList<E>::inverseIteration(bool inverse){
 template <class E> DoubleCircularList<E>::~DoubleCircularList(){
     DoubleNode<E> *actualNode = head;
     std::cout << "Deleting DoubleCircularList...\n";
-    while(this->lenght != 0){
+    while(head){
         actualNode = head;
         head = head->getNext();
         delete actualNode;

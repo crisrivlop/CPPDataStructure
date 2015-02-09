@@ -106,212 +106,220 @@ $(document).ready(function(){initNavTree('BNode_8h_source.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef BNODE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BNODE_H</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classBNode.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBNode.html">BNode</a>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    VALUE *_keys;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *_childs;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">int</span> _lenghtToExplode;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">int</span> _lenghtData;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">int</span> _lenghtChild;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classBNode.html">BNode</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classBNode.html">BNode</a>(<span class="keywordtype">int</span> pSize,VALUE pInitialValue);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classBNode.html">BNode</a>(<span class="keywordtype">int</span> pSize);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    VALUE* getValues() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* getChilds() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> addValue(VALUE pValue);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> setLeftChild(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *pChild, VALUE pIndex);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">bool</span> setRightChild(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *pChild, VALUE pIndex);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> isExploding() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;BArray.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#ifndef BNODE_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define BNODE_H</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classBNode.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBNode.html">BNode</a>{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a> *_keys;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt; *_childs;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classBNode.html">BNode</a>(<span class="keywordtype">int</span> pSize,VALUE pInitialValue);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classBNode.html">BNode</a>(<span class="keywordtype">int</span> pSize);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classBNode.html">BNode</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classBNode.html">BNode</a>(<span class="keyword">const</span> <a class="code" href="classBNode.html">BNode</a>&amp;);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a>* getValues() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    VALUE getValue(<span class="keywordtype">int</span> pIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt;* getChilds() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* getChild(<span class="keywordtype">int</span> pIndex) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> addValue(VALUE pValue);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> addChild(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* pChild);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> oneToExploding() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> isFull() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> isLeaf() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> print()<span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> explode();</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">int</span> getLenghtToExplode()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">int</span> getLenghtOfChilds()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">int</span> getCurrentLenghtData()<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    VALUE* getMaximumValue() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    VALUE* getMinimumValue() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classBNode.html">BNode</a>();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9">  128</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>(<span class="keywordtype">int</span> pSize,VALUE pInitialValue):</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        _lenghtData(1), _lenghtToExplode(pSize), _lenghtChild(0)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;{</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span> (pSize &lt; 3){cout &lt;&lt; <span class="stringliteral">&quot;error: se introdujo un largo incorrecto&quot;</span> &lt;&lt; endl;<span class="keywordflow">throw</span> pSize;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    _keys = <span class="keyword">new</span> VALUE[_lenghtToExplode];</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    _keys[0] = pInitialValue;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    _childs = 0;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;}</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
-<div class="line"><a name="l00137"></a><span class="lineno"><a class="line" href="classBNode.html#a75ca826e991a8e57cb67748ab03aea77">  137</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>(<span class="keywordtype">int</span> pSize):</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        _lenghtToExplode(pSize)</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;{</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    _lenghtChild= 0;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    _lenghtData = 0;</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">if</span> (pSize &lt; 3){</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">throw</span> pSize;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            std::cerr &lt;&lt; <span class="stringliteral">&quot;el largo ingresado no es valido&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    }</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    _keys = <span class="keyword">new</span> VALUE[_lenghtToExplode];</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    _childs = 0;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>(): _lenghtToExplode(0){</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    _lenghtChild= 0;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    _lenghtData = 0;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    _keys = 0;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    _childs = 0;</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;}</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">  157</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; VALUE* <a class="code" href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">BNode&lt;VALUE&gt;::getValues</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> _keys;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> adoptExploitedNode(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>*,<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> isLeaf() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">void</span> print();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="classBNode.html">BNode</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classBNode.html#af01747c25c2d2fd3d13e48856b488bc9">  109</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>(<span class="keywordtype">int</span> pSize,VALUE pInitialValue)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;{</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (pSize &lt;= 3)<span class="keywordflow">throw</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    _keys= <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a>(pSize);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    _keys-&gt;<a class="code" href="classBArray.html#a8e05e0ba69438392d90c9ec639971d27">add</a>(pInitialValue);</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    _childs = Null;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classBNode.html#a75ca826e991a8e57cb67748ab03aea77">  117</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>(<span class="keywordtype">int</span> pSize)</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (pSize &lt;= 3)<span class="keywordflow">throw</span> pSize;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    _keys= <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a>(pSize);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    _childs = Null;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>()</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    _keys= <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a>(0);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    _childs = Null;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::BNode</a>(<span class="keyword">const</span> <a class="code" href="classBNode.html">BNode</a> &amp;copy){</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    _keys= <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a>(copy._keys);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    _childs = <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt;(copy._childs);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;copy called&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;}</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="line" href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">  136</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBArray.html">BArray&lt;VALUE&gt;</a>* <a class="code" href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">BNode&lt;VALUE&gt;::getValues</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordflow">return</span> _keys;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; VALUE <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::getValue</a>(<span class="keywordtype">int</span> pIndex)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    VALUE toReturn = _keys-&gt;getValue(pIndex);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordflow">return</span> toReturn;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;}</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;</div>
+<div class="line"><a name="l00145"></a><span class="lineno"><a class="line" href="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b">  145</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt;* <a class="code" href="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b">BNode&lt;VALUE&gt;::getChilds</a>()<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">return</span> _childs;</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;}</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno"><a class="line" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">  149</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* <a class="code" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">BNode&lt;VALUE&gt;::getChild</a>(<span class="keywordtype">int</span> pIndex)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordflow">if</span> (!_childs || 0 &gt; pIndex || pIndex &gt;= _childs-&gt;getCurrentLenght()) <span class="keywordflow">throw</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordflow">return</span> _childs-&gt;getValue(pIndex);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;}</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">  156</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">BNode&lt;VALUE&gt;::addValue</a>(VALUE pValue)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;{</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">return</span> _keys-&gt;add(pValue);</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;}</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno"><a class="line" href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">  161</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* <a class="code" href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">BNode&lt;VALUE&gt;::getChilds</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">return</span> _childs;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;}</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
-<div class="line"><a name="l00165"></a><span class="lineno"><a class="line" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">  165</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt;  <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">BNode&lt;VALUE&gt;::addValue</a>(VALUE pValue){</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <span class="keywordflow">if</span> (_lenghtData &lt; _lenghtToExplode){</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="keywordtype">int</span> x;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">for</span> (x = 0; x &lt; _lenghtData &amp;&amp; pValue &gt;= _keys[x]; x++){}</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <span class="keywordflow">if</span> (_keys[x] == pValue)<span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        VALUE data;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        VALUE tmp = pValue;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        _lenghtData++;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">for</span>(;x &lt;_lenghtData; x++){</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            data = _keys[x];</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            _keys[x] = tmp;</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            tmp = data;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    }</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;}</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601">  183</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601">BNode&lt;VALUE&gt;::setLeftChild</a>(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* pChild,VALUE pIndex){</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (_lenghtChild == 0){</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        _childs = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>[_lenghtToExplode+1];</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        _childs-&gt;_lenghtToExplode = _lenghtToExplode;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; _lenghtToExplode+1; x++){</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            (_childs[x])._keys = <span class="keyword">new</span> VALUE[_lenghtToExplode];</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordtype">int</span> x = 0;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">for</span> (;x &lt; _lenghtData; x++){</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span>(pIndex == _keys[x]){</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            _lenghtChild++;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            _childs[x] = *pChild;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
-<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3">  202</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3">BNode&lt;VALUE&gt;::setRightChild</a>(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>* pChild,VALUE pIndex){</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordflow">if</span> (_lenghtChild == 0){</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        _childs = <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>[_lenghtToExplode+1];</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        _childs-&gt;_lenghtToExplode = _lenghtToExplode;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; _lenghtToExplode+1; x++){</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            (_childs[x])._keys = <span class="keyword">new</span> VALUE[_lenghtToExplode];</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        }</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">int</span> x = 0;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordflow">for</span> (;x &lt; _lenghtData; x++){</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span>(pIndex == _keys[x]){</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            _lenghtChild++;</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            _childs[x+1] = *pChild;</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    }</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;}</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;</div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">  221</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">BNode&lt;VALUE&gt;::isExploding</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keywordflow">return</span> _lenghtData &gt;= _lenghtToExplode-1;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::isLeaf</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    <span class="keywordflow">return</span> _lenghtChild == 0;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
-<div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">  229</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">void</span> <a class="code" href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">BNode&lt;VALUE&gt;::print</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span>;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> x = 0; x &lt; _lenghtData-1; x++){</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        cout &lt;&lt; _keys[x] &lt;&lt; <span class="stringliteral">&quot;,&quot;</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    }</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    cout &lt;&lt; _keys[_lenghtData-1] &lt;&lt; <span class="stringliteral">&quot;]&quot;</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno"><a class="line" href="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca">  237</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; VALUE* <a class="code" href="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca">BNode&lt;VALUE&gt;::getMaximumValue</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">if</span>(_lenghtData &gt; 0)<span class="keywordflow">return</span> _keys[_lenghtData-1];</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;}</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::addChild</a>(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *pChild)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;{</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> _childs-&gt;add(pChild);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno"><a class="line" href="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43">  167</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43">BNode&lt;VALUE&gt;::oneToExploding</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    <span class="keywordflow">return</span> _keys-&gt;getMaximunLenght() - _keys-&gt;getCurrentLenght() &lt;= 1;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;}</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::isFull</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> _keys-&gt;isFull();</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">  177</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">void</span> <a class="code" href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">BNode&lt;VALUE&gt;::explode</a>()</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">//crear el hijo izquierdo</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="comment">//crear el hijo derecho</span></div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">//el nodo actual es el nodo padre de los nodos</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *left= <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>(_keys-&gt;getMaximunLenght());</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *right= <span class="keyword">new</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a>(_keys-&gt;getMaximunLenght());</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordtype">int</span> x = 0;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">for</span>(; x &lt; (_keys-&gt;getCurrentLenght())/2;x++)left-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(_keys-&gt;getValue(x));</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    VALUE nodeKey = _keys-&gt;getValue(x++);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">for</span>(; x &lt; _keys-&gt;getCurrentLenght();x++)right-&gt;<a class="code" href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">addValue</a>(_keys-&gt;getValue(x));</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    _keys-&gt;reset();</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    _keys-&gt;add(nodeKey);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">if</span> (_childs){</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        left-&gt;_childs = <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt;(_keys-&gt;getMaximunLenght()+2);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        right-&gt;_childs = <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt;(_keys-&gt;getMaximunLenght()+2);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;la cantidad de hijos que tiene son: &quot;</span> &lt;&lt; _childs-&gt;<a class="code" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;los imprimire&quot;</span>&lt;&lt; endl;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0 ; m &lt; _childs-&gt;getCurrentLenght(); m++){</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            _childs-&gt;getValue(m)-&gt;print();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;        x=0;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        <span class="keywordflow">for</span>(; x &lt; left-&gt;<a class="code" href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">getValues</a>()-&gt;<a class="code" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a>()+1;x++){</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            left-&gt;_childs-&gt;<a class="code" href="classBArray.html#a8e05e0ba69438392d90c9ec639971d27">add</a>(x,_childs-&gt;getValue(x));</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <span class="comment">//left-&gt;_childs-&gt;getValue(x)-&gt;print();</span></div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;la cantidad de hijos que tiene left son: &quot;</span> &lt;&lt; left-&gt;_childs-&gt;<a class="code" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a>() &lt;&lt; endl;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;los imprimire&quot;</span>&lt;&lt; endl;</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;[&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> m = 0 ; m &lt; left-&gt;_childs-&gt;<a class="code" href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">getCurrentLenght</a>(); m++){</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            left-&gt;_childs-&gt;<a class="code" href="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb">getValue</a>(m)-&gt;print();</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;]&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordtype">int</span> y = 0;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">for</span>(; x &lt; _childs-&gt;getCurrentLenght();x++){</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            right-&gt;_childs-&gt;<a class="code" href="classBArray.html#a8e05e0ba69438392d90c9ec639971d27">add</a>(y++,_childs-&gt;getValue(x));</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keyword">delete</span> _childs;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    _childs = <span class="keyword">new</span> <a class="code" href="classBArray.html">BArray&lt; BNode&lt;VALUE&gt;</a>* &gt;(_keys-&gt;getMaximunLenght()+2);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    _childs-&gt;<a class="code" href="classBArray.html#a8e05e0ba69438392d90c9ec639971d27">add</a>(left);</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    _childs-&gt;add(right);</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">void</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::adoptExploitedNode</a>(<a class="code" href="classBNode.html">BNode&lt;VALUE&gt;</a> *pExploitedNode,<span class="keywordtype">int</span> pIndexOfExploited)</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    _keys-&gt;add(pExploitedNode-&gt;getValue(0));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">int</span> x;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordflow">for</span> (x = 0; x &lt; _keys-&gt;getCurrentLenght(); x++)<span class="keywordflow">if</span> (_keys-&gt;getValue(x) == pExploitedNode-&gt;getValue(0))<span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    _childs-&gt;remove(pIndexOfExploited);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    _childs-&gt;add(x,pExploitedNode-&gt;<a class="code" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">getChild</a>(1));</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    _childs-&gt;add(x, pExploitedNode-&gt;<a class="code" href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">getChild</a>(0));</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno"><a class="line" href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">  236</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">bool</span> <a class="code" href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">BNode&lt;VALUE&gt;::isLeaf</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="keyword"></span>{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <span class="keywordflow">return</span> !_childs;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;}</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno"><a class="line" href="classBNode.html#ab81e066860a4d57a419dc594e8fc3914">  242</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; VALUE* <a class="code" href="classBNode.html#ab81e066860a4d57a419dc594e8fc3914">BNode&lt;VALUE&gt;::getMinimumValue</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    <span class="keywordflow">if</span>(_lenghtData &gt; 0)<span class="keywordflow">return</span> _keys[0];</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;}</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno"><a class="line" href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">  247</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">int</span> <a class="code" href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">BNode&lt;VALUE&gt;::getCurrentLenghtData</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keywordflow">return</span> _lenghtData;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;}</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
-<div class="line"><a name="l00251"></a><span class="lineno"><a class="line" href="classBNode.html#a03d3802d7b1d173e051378692a6b8687">  251</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">int</span> <a class="code" href="classBNode.html#a03d3802d7b1d173e051378692a6b8687">BNode&lt;VALUE&gt;::getLenghtToExplode</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> _lenghtToExplode;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;}</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno"><a class="line" href="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1">  255</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">int</span> <a class="code" href="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1">BNode&lt;VALUE&gt;::getLenghtOfChilds</a>()<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordflow">return</span> _lenghtChild;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;}</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;</div>
-<div class="line"><a name="l00259"></a><span class="lineno"><a class="line" href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">  259</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">BNode&lt;VALUE&gt;::~BNode</a>(){</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keyword">delete</span>  [] _keys;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">if</span> (_childs)<span class="keyword">delete</span>  [] _childs;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    cout &lt;&lt; <span class="stringliteral">&quot;borrando un nodo x&quot;</span> &lt;&lt; endl;</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;}</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif // BNODE_H</span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="ttc" id="classBNode_html_a86a9053ba20c97c81a4a0f5cf370316d"><div class="ttname"><a href="classBNode.html#a86a9053ba20c97c81a4a0f5cf370316d">BNode::getChilds</a></div><div class="ttdeci">BNode&lt; VALUE &gt; * getChilds() const </div><div class="ttdoc">obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce si...</div><div class="ttdef"><b>Definition:</b> BNode.h:161</div></div>
-<div class="ttc" id="classBNode_html_ac92421575ed510386d4e4ec1ab8ab1a4"><div class="ttname"><a href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">BNode::~BNode</a></div><div class="ttdeci">virtual ~BNode()</div><div class="ttdoc">destructor, libera la memoria que ocupa este nodo </div><div class="ttdef"><b>Definition:</b> BNode.h:259</div></div>
-<div class="ttc" id="classBNode_html_a8af2d0b3078416d0cd7459addf63876f"><div class="ttname"><a href="classBNode.html#a8af2d0b3078416d0cd7459addf63876f">BNode::getCurrentLenghtData</a></div><div class="ttdeci">int getCurrentLenghtData() const </div><div class="ttdoc">getCurrentLenghtData la cantidad de datos que contiene </div><div class="ttdef"><b>Definition:</b> BNode.h:247</div></div>
-<div class="ttc" id="classBNode_html_ace75c9ba9b3479cafda7fc4d62801601"><div class="ttname"><a href="classBNode.html#ace75c9ba9b3479cafda7fc4d62801601">BNode::setLeftChild</a></div><div class="ttdeci">bool setLeftChild(BNode&lt; VALUE &gt; *pChild, VALUE pIndex)</div><div class="ttdoc">agregar un nodo hijo a la izquierda de la clave indicada por parametro pIndex </div><div class="ttdef"><b>Definition:</b> BNode.h:183</div></div>
-<div class="ttc" id="classBNode_html_ac10d387a2400fcc956719b2c1816b54c"><div class="ttname"><a href="classBNode.html#ac10d387a2400fcc956719b2c1816b54c">BNode::isExploding</a></div><div class="ttdeci">bool isExploding() const </div><div class="ttdoc">Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite i...</div><div class="ttdef"><b>Definition:</b> BNode.h:221</div></div>
-<div class="ttc" id="classBNode_html_a9533a736b61bb9bf42f0e87b1e3275a3"><div class="ttname"><a href="classBNode.html#a9533a736b61bb9bf42f0e87b1e3275a3">BNode::setRightChild</a></div><div class="ttdeci">bool setRightChild(BNode&lt; VALUE &gt; *pChild, VALUE pIndex)</div><div class="ttdoc">agregar un nodo hijo a la derecha de la clave indicada por parametro pIndex </div><div class="ttdef"><b>Definition:</b> BNode.h:202</div></div>
-<div class="ttc" id="classBNode_html_a1f40c8dc96ba1c920703b40a85bef380"><div class="ttname"><a href="classBNode.html#a1f40c8dc96ba1c920703b40a85bef380">BNode::getValues</a></div><div class="ttdeci">VALUE * getValues() const </div><div class="ttdoc">Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. </div><div class="ttdef"><b>Definition:</b> BNode.h:157</div></div>
-<div class="ttc" id="classBNode_html_a7d3bd370d42465e8c2aa014645cac8d1"><div class="ttname"><a href="classBNode.html#a7d3bd370d42465e8c2aa014645cac8d1">BNode::getLenghtOfChilds</a></div><div class="ttdeci">int getLenghtOfChilds() const </div><div class="ttdoc">getLenghtOfChilds Obtiene la cantidad de hijos que tiene el nodo </div><div class="ttdef"><b>Definition:</b> BNode.h:255</div></div>
-<div class="ttc" id="classBNode_html_a03d3802d7b1d173e051378692a6b8687"><div class="ttname"><a href="classBNode.html#a03d3802d7b1d173e051378692a6b8687">BNode::getLenghtToExplode</a></div><div class="ttdeci">int getLenghtToExplode() const </div><div class="ttdoc">getLenghtToExplode obtiene el largo al cual explota el nodo </div><div class="ttdef"><b>Definition:</b> BNode.h:251</div></div>
-<div class="ttc" id="classBNode_html_ab81e066860a4d57a419dc594e8fc3914"><div class="ttname"><a href="classBNode.html#ab81e066860a4d57a419dc594e8fc3914">BNode::getMinimumValue</a></div><div class="ttdeci">VALUE * getMinimumValue() const </div><div class="ttdoc">obtiene el valor minimo de las claves que contiene el nodo </div><div class="ttdef"><b>Definition:</b> BNode.h:242</div></div>
-<div class="ttc" id="classBNode_html_aef1d184c4aeb9d85705b8917ed8e21ae"><div class="ttname"><a href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">BNode::addValue</a></div><div class="ttdeci">bool addValue(VALUE pValue)</div><div class="ttdoc">agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor ...</div><div class="ttdef"><b>Definition:</b> BNode.h:165</div></div>
-<div class="ttc" id="classBNode_html_a4cfbe2867e900577efc3836fd207b008"><div class="ttname"><a href="classBNode.html#a4cfbe2867e900577efc3836fd207b008">BNode::print</a></div><div class="ttdeci">void print() const </div><div class="ttdoc">Imprime el dato sin realizar cambios en el nodo. </div><div class="ttdef"><b>Definition:</b> BNode.h:229</div></div>
-<div class="ttc" id="classBNode_html"><div class="ttname"><a href="classBNode.html">BNode</a></div><div class="ttdef"><b>Definition:</b> BNode.h:12</div></div>
-<div class="ttc" id="classBNode_html_a05a6d30b4dbe5e81fcbee26f365a2cca"><div class="ttname"><a href="classBNode.html#a05a6d30b4dbe5e81fcbee26f365a2cca">BNode::getMaximumValue</a></div><div class="ttdeci">VALUE * getMaximumValue() const </div><div class="ttdoc">obtiene el valor maximo de las claves que contiene el nodo </div><div class="ttdef"><b>Definition:</b> BNode.h:237</div></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <span class="keywordtype">void</span> <a class="code" href="classBNode.html">BNode&lt;VALUE&gt;::print</a>(){</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    _keys-&gt;print();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;}</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno"><a class="line" href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">  246</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> VALUE&gt; <a class="code" href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">BNode&lt;VALUE&gt;::~BNode</a>()</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;{</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    <span class="keyword">delete</span> _childs;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    <span class="keyword">delete</span> _keys;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<span class="preprocessor">#endif // BNODE_H</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="ttc" id="classBNode_html_a4aa76bfa386186a44a1a136aaf22da9c"><div class="ttname"><a href="classBNode.html#a4aa76bfa386186a44a1a136aaf22da9c">BNode::getValues</a></div><div class="ttdeci">BArray&lt; VALUE &gt; * getValues() const </div><div class="ttdoc">Obtiene el puntero hacia los valores contenidos sin realizar cambios en el nodo. </div><div class="ttdef"><b>Definition:</b> BNode.h:136</div></div>
+<div class="ttc" id="classBNode_html_ac92421575ed510386d4e4ec1ab8ab1a4"><div class="ttname"><a href="classBNode.html#ac92421575ed510386d4e4ec1ab8ab1a4">BNode::~BNode</a></div><div class="ttdeci">virtual ~BNode()</div><div class="ttdoc">~BNode Liberador de memoria </div><div class="ttdef"><b>Definition:</b> BNode.h:246</div></div>
+<div class="ttc" id="classBArray_html"><div class="ttname"><a href="classBArray.html">BArray&lt; VALUE &gt;</a></div></div>
+<div class="ttc" id="classBNode_html_ab8bf944d82b64503fd9fb6c290f7511b"><div class="ttname"><a href="classBNode.html#ab8bf944d82b64503fd9fb6c290f7511b">BNode::getChilds</a></div><div class="ttdeci">BArray&lt; BNode&lt; VALUE &gt; * &gt; * getChilds() const </div><div class="ttdoc">obtiene el puntero del arreglo de los nodos hijos de este nodo. si retorna un puntero nulo entonce si...</div><div class="ttdef"><b>Definition:</b> BNode.h:145</div></div>
+<div class="ttc" id="classBNode_html_abde3468d7b1d49d1f858ce40eee6836c"><div class="ttname"><a href="classBNode.html#abde3468d7b1d49d1f858ce40eee6836c">BNode::getChild</a></div><div class="ttdeci">BNode&lt; VALUE &gt; * getChild(int pIndex) const </div><div class="ttdoc">getChild </div><div class="ttdef"><b>Definition:</b> BNode.h:149</div></div>
+<div class="ttc" id="classBNode_html_a64a90eaeefe69e066fd2abceb3a8a86e"><div class="ttname"><a href="classBNode.html#a64a90eaeefe69e066fd2abceb3a8a86e">BNode::isLeaf</a></div><div class="ttdeci">bool isLeaf() const </div><div class="ttdoc">isLeaf </div><div class="ttdef"><b>Definition:</b> BNode.h:236</div></div>
+<div class="ttc" id="classBNode_html_a6df6391831a91e15dbfaa406c48e9e43"><div class="ttname"><a href="classBNode.html#a6df6391831a91e15dbfaa406c48e9e43">BNode::oneToExploding</a></div><div class="ttdeci">bool oneToExploding() const </div><div class="ttdoc">Retorna si el nodo tiene un estado de explosion. retorna si la cantidad de datos es igual al limite i...</div><div class="ttdef"><b>Definition:</b> BNode.h:167</div></div>
+<div class="ttc" id="classBNode_html_aa88f967e8ec0998fb5ee95daf95fb5af"><div class="ttname"><a href="classBNode.html#aa88f967e8ec0998fb5ee95daf95fb5af">BNode::explode</a></div><div class="ttdeci">void explode()</div><div class="ttdoc">explode, genera los hijos del nodos y los agrega a la lista de hijos </div><div class="ttdef"><b>Definition:</b> BNode.h:177</div></div>
+<div class="ttc" id="classBNode_html_aef1d184c4aeb9d85705b8917ed8e21ae"><div class="ttname"><a href="classBNode.html#aef1d184c4aeb9d85705b8917ed8e21ae">BNode::addValue</a></div><div class="ttdeci">bool addValue(VALUE pValue)</div><div class="ttdoc">agrega en orden el valor en el array, en caso que la lista este llena no insertara el valor ...</div><div class="ttdef"><b>Definition:</b> BNode.h:156</div></div>
+<div class="ttc" id="classBNode_html"><div class="ttname"><a href="classBNode.html">BNode</a></div><div class="ttdef"><b>Definition:</b> BNode.h:13</div></div>
+<div class="ttc" id="classBArray_html_a9ae6755086524e16eb0a6ae4490472bb"><div class="ttname"><a href="classBArray.html#a9ae6755086524e16eb0a6ae4490472bb">BArray::getValue</a></div><div class="ttdeci">E getValue(int pIndex)</div><div class="ttdoc">getValue </div><div class="ttdef"><b>Definition:</b> BArray.h:203</div></div>
+<div class="ttc" id="classBArray_html_a8e05e0ba69438392d90c9ec639971d27"><div class="ttname"><a href="classBArray.html#a8e05e0ba69438392d90c9ec639971d27">BArray::add</a></div><div class="ttdeci">bool add(E pValue)</div><div class="ttdoc">verificar si la lista esta llena si no lo esta, si esta llena retornar false, agrega en orden el valo...</div><div class="ttdef"><b>Definition:</b> BArray.h:138</div></div>
+<div class="ttc" id="classBArray_html_acb72f5d604c4efd007f05c6b6f9746cd"><div class="ttname"><a href="classBArray.html#acb72f5d604c4efd007f05c6b6f9746cd">BArray::getCurrentLenght</a></div><div class="ttdeci">int getCurrentLenght() const </div><div class="ttdoc">getCurrentLenght </div><div class="ttdef"><b>Definition:</b> BArray.h:129</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_70093cb3a9d1f8840af4e997fde867c3.html">tree</a></li><li class="navelem"><b>BNode.h</b></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:48 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

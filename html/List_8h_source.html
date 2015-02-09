@@ -120,7 +120,7 @@ $(document).ready(function(){initNavTree('List_8h_source.html','');});
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *tail; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5">List</a>();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classList.html#a40dfa61150de7310d69001c697598b04">addi</a>(E);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classList.html#a4f0fb366c1153a4fd01826e9e6de5afc">addi</a>(E);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classList.html#a2a130b7bc38cd968136f1f847e42d0cc">add</a>(E);</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classList.html#a2a130b7bc38cd968136f1f847e42d0cc">add</a>(E,<span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">bool</span> <span class="keyword">remove</span>(int);</div>
@@ -152,7 +152,7 @@ $(document).ready(function(){initNavTree('List_8h_source.html','');});
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
-<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classList.html#a40dfa61150de7310d69001c697598b04">  125</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">void</span> <a class="code" href="classList.html#a40dfa61150de7310d69001c697598b04">List&lt;E&gt;::addi</a>(E data){</div>
+<div class="line"><a name="l00125"></a><span class="lineno"><a class="line" href="classList.html#a4f0fb366c1153a4fd01826e9e6de5afc">  125</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <span class="keywordtype">void</span> <a class="code" href="classList.html#a4f0fb366c1153a4fd01826e9e6de5afc">List&lt;E&gt;::addi</a>(E data){</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(head == null){</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        head = <span class="keyword">new</span> <a class="code" href="classNode.html">Node&lt;E&gt;</a>(data);</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        tail = head;</div>
@@ -279,7 +279,7 @@ $(document).ready(function(){initNavTree('List_8h_source.html','');});
 <div class="line"><a name="l00249"></a><span class="lineno"><a class="line" href="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d">  249</a></span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> E&gt; <a class="code" href="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d">List&lt;E&gt;::~List</a>(){</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <a class="code" href="classNode.html">Node&lt;E&gt;</a> *actualNode = head;</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;Deleting List...\n&quot;</span>;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">while</span>(this-&gt;lenght !=0){</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">while</span>(head){</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        actualNode = head;</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        head = head-&gt;<a class="code" href="classNode.html#aeb063e5172867e988550ab7d6c280db7">getNext</a>();</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keyword">delete</span> actualNode;</div>
@@ -289,9 +289,9 @@ $(document).ready(function(){initNavTree('List_8h_source.html','');});
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;}</div>
 <div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor">#endif // LIST_HPP</span></div>
-<div class="ttc" id="classNode_html_a2ce12b4f2605972720e1c56fe80014a0"><div class="ttname"><a href="classNode.html#a2ce12b4f2605972720e1c56fe80014a0">Node::setNext</a></div><div class="ttdeci">void setNext(Node&lt; E &gt; *)</div><div class="ttdoc">Setea el puntero del nodo siguiente. </div><div class="ttdef"><b>Definition:</b> Node.h:76</div></div>
+<div class="ttc" id="classNode_html_a2ce12b4f2605972720e1c56fe80014a0"><div class="ttname"><a href="classNode.html#a2ce12b4f2605972720e1c56fe80014a0">Node::setNext</a></div><div class="ttdeci">void setNext(Node&lt; E &gt; *)</div><div class="ttdoc">Setea el puntero del nodo siguiente. </div><div class="ttdef"><b>Definition:</b> Node.h:80</div></div>
 <div class="ttc" id="classList_html_a0af4c4d8a3d0710e58b12db35f9b0a3d"><div class="ttname"><a href="classList.html#a0af4c4d8a3d0710e58b12db35f9b0a3d">List::~List</a></div><div class="ttdeci">virtual ~List()</div><div class="ttdoc">Es el destructor de la lista. </div><div class="ttdef"><b>Definition:</b> List.h:249</div></div>
-<div class="ttc" id="classNode_html_aeb063e5172867e988550ab7d6c280db7"><div class="ttname"><a href="classNode.html#aeb063e5172867e988550ab7d6c280db7">Node::getNext</a></div><div class="ttdeci">Node&lt; E &gt; * getNext() const </div><div class="ttdoc">Obtiene el nodo siguiente. </div><div class="ttdef"><b>Definition:</b> Node.h:78</div></div>
+<div class="ttc" id="classNode_html_aeb063e5172867e988550ab7d6c280db7"><div class="ttname"><a href="classNode.html#aeb063e5172867e988550ab7d6c280db7">Node::getNext</a></div><div class="ttdeci">Node&lt; E &gt; * getNext() const </div><div class="ttdoc">Obtiene el nodo siguiente. </div><div class="ttdef"><b>Definition:</b> Node.h:82</div></div>
 <div class="ttc" id="classNode_html"><div class="ttname"><a href="classNode.html">Node</a></div><div class="ttdoc">Es la parte elemental de una lista simple. </div><div class="ttdef"><b>Definition:</b> Node.h:10</div></div>
 <div class="ttc" id="classSimpleIterator_html"><div class="ttname"><a href="classSimpleIterator.html">SimpleIterator</a></div><div class="ttdoc">Esta clase es un iterador de las listas simples, ademas la actualizacion de la lista NO actualiza el ...</div><div class="ttdef"><b>Definition:</b> SimpleIterator.h:17</div></div>
 <div class="ttc" id="classList_html_ab081a52d7a62aa6c5550ff9762f9427f"><div class="ttname"><a href="classList.html#ab081a52d7a62aa6c5550ff9762f9427f">List::get</a></div><div class="ttdeci">E get(int)</div><div class="ttdoc">Obtiene un dato el la posicion indicada. En caso que el indice indicado sea incorrecto, osea que sea menor que cero o mayor o igual que el largo de la lista arrojara un error pues el dato esta fuera de los limites de la lista. </div><div class="ttdef"><b>Definition:</b> List.h:230</div></div>
@@ -300,8 +300,8 @@ $(document).ready(function(){initNavTree('List_8h_source.html','');});
 <div class="ttc" id="classList_html_ae47afd06bd8c39fe7a12d4489998e7c5"><div class="ttname"><a href="classList.html#ae47afd06bd8c39fe7a12d4489998e7c5">List::List</a></div><div class="ttdeci">List()</div><div class="ttdoc">Es el constructor de la lista. </div><div class="ttdef"><b>Definition:</b> List.h:107</div></div>
 <div class="ttc" id="classList_html"><div class="ttname"><a href="classList.html">List</a></div><div class="ttdoc">Esta clase es una estructura de datos especificamente una lista enlazada simple que puede contener cu...</div><div class="ttdef"><b>Definition:</b> List.h:18</div></div>
 <div class="ttc" id="classList_html_accb5fe71cb60ba7bf0ccab362b1f87cb"><div class="ttname"><a href="classList.html#accb5fe71cb60ba7bf0ccab362b1f87cb">List::getIterator</a></div><div class="ttdeci">SimpleIterator&lt; E &gt; * getIterator()</div><div class="ttdoc">Obtiene una instancia de un nuevo iterador de esta lista, y pueden obtenerse cuantas sean necesarias...</div><div class="ttdef"><b>Definition:</b> List.h:242</div></div>
-<div class="ttc" id="classList_html_a40dfa61150de7310d69001c697598b04"><div class="ttname"><a href="classList.html#a40dfa61150de7310d69001c697598b04">List::addi</a></div><div class="ttdeci">void addi(E)</div><div class="ttdoc">Agrega un elemento al principio de la lista. </div><div class="ttdef"><b>Definition:</b> List.h:125</div></div>
 <div class="ttc" id="classIList_html"><div class="ttname"><a href="classIList.html">IList</a></div><div class="ttdoc">Es la interfaz de las listas. </div><div class="ttdef"><b>Definition:</b> IList.h:13</div></div>
+<div class="ttc" id="classList_html_a4f0fb366c1153a4fd01826e9e6de5afc"><div class="ttname"><a href="classList.html#a4f0fb366c1153a4fd01826e9e6de5afc">List::addi</a></div><div class="ttdeci">void addi(E)</div><div class="ttdoc">Agrega un elemento al principio de la lista. </div><div class="ttdef"><b>Definition:</b> List.h:125</div></div>
 <div class="ttc" id="classList_html_ac8b31be96806bd56f655436629ac2e7a"><div class="ttname"><a href="classList.html#ac8b31be96806bd56f655436629ac2e7a">List::set</a></div><div class="ttdeci">void set(int, E)</div><div class="ttdoc">Setea el valor del dato que se encuentre en el indice citado con un nuevo valor. </div><div class="ttdef"><b>Definition:</b> List.h:218</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -309,7 +309,7 @@ $(document).ready(function(){initNavTree('List_8h_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_48c61abad44e2f181b0a6a33afb59c17.html">list</a></li><li class="navelem"><b>List.h</b></li>
-    <li class="footer">Generado el Jueves, 22 de Enero de 2015 17:16:48 para CPPDataStructure por
+    <li class="footer">Generado el Domingo, 8 de Febrero de 2015 18:27:29 para CPPDataStructure por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.6 </li>
   </ul>

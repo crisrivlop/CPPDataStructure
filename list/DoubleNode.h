@@ -41,6 +41,9 @@ public:
      * @return E el dato contenido
      */
     E getData() const;
+
+    E& getReferenceData();
+
     /**
      * @brief Setea el puntero del nodo siguiente
      *
@@ -98,6 +101,8 @@ template <class E> void DoubleNode<E>::setData(E data){this->data = data;}
 
 
 template <class E> E DoubleNode<E>::getData()const{return data;}
+
+template <class E> E& DoubleNode<E>::getReferenceData(){return data;}
 
 
 template <class E> void DoubleNode<E>::setNext(DoubleNode *next){this->next = next;}

@@ -15,32 +15,53 @@ Clase \hyperlink{classBArray}{B\-Array}, esta clase da soporte al arbol b volvie
 \item 
 \hyperlink{classBArray_a93c786886ce92be7cf5917bbe6be7956}{B\-Array} (int maxlenght)
 \begin{DoxyCompactList}\small\item\em \hyperlink{classBArray}{B\-Array}, Es el constructor de la clase, inicializa el largo de la lista. La lista se inicializa. \end{DoxyCompactList}\item 
+\hypertarget{classBArray_aa79aa57a0cd0a3bc048e01be7ec1ef74}{{\bfseries B\-Array} (const \hyperlink{classBArray}{B\-Array} \&)}\label{classBArray_aa79aa57a0cd0a3bc048e01be7ec1ef74}
+
+\item 
 int \hyperlink{classBArray_acb72f5d604c4efd007f05c6b6f9746cd}{get\-Current\-Lenght} () const 
 \begin{DoxyCompactList}\small\item\em get\-Current\-Lenght \end{DoxyCompactList}\item 
 int \hyperlink{classBArray_a744bcd9f9edb779366a116c2b2b96ba7}{get\-Maximun\-Lenght} () const 
 \begin{DoxyCompactList}\small\item\em get\-Maximun\-Lenght \end{DoxyCompactList}\item 
 bool \hyperlink{classBArray_a2235e8c213fc88b3c6702eaa8c63852c}{is\-Full} () const 
 \begin{DoxyCompactList}\small\item\em is\-Full \end{DoxyCompactList}\item 
-void \hyperlink{classBArray_ae86ec71c94702d00f70f2e1c026bdce8}{add} (E p\-Value)
+bool \hyperlink{classBArray_a8e05e0ba69438392d90c9ec639971d27}{add} (E p\-Value)
+\begin{DoxyCompactList}\small\item\em verificar si la lista esta llena si no lo esta, si esta llena retornar false, agrega en orden el valor deseado y luego realizar el corrimiento de datos de izquierda a derecha aumenta el largo en uno si se inserta el dato retornar true \end{DoxyCompactList}\item 
+bool \hyperlink{classBArray_adaa70e5af76d77d9d389ae7e762b2df8}{addi} (E p\-Value)
+\begin{DoxyCompactList}\small\item\em addi agregar al inicio \end{DoxyCompactList}\item 
+bool \hyperlink{classBArray_a549423a3f30f2a4f4e4f6cac41ee56d8}{addf} (E p\-Value)
+\begin{DoxyCompactList}\small\item\em addf agrega al final \end{DoxyCompactList}\item 
+bool \hyperlink{classBArray_ad20e82b48673552d493a54e343c165cb}{add} (int p\-Index, E p\-Value)
 \begin{DoxyCompactList}\small\item\em add \end{DoxyCompactList}\item 
-void \hyperlink{classBArray_a7c406b4fb7af4b2c124cdc17c31d1a0e}{remove} (int p\-Index)
+bool \hyperlink{classBArray_abc72fc4dd6cca413d42a0cab8471ac44}{remove} (int p\-Index)
 \begin{DoxyCompactList}\small\item\em remove \end{DoxyCompactList}\item 
 E \hyperlink{classBArray_a9ae6755086524e16eb0a6ae4490472bb}{get\-Value} (int p\-Index)
 \begin{DoxyCompactList}\small\item\em get\-Value \end{DoxyCompactList}\item 
+\hypertarget{classBArray_ab95faafde5cd5847c9cdde2077988415}{E \& {\bfseries get\-Value\-Reference} (int p\-Index)}\label{classBArray_ab95faafde5cd5847c9cdde2077988415}
+
+\item 
+\hypertarget{classBArray_a8a035cb596ed2b140d85147579024a8b}{bool {\bfseries set\-Value} (E p\-Data, int p\-Index)}\label{classBArray_a8a035cb596ed2b140d85147579024a8b}
+
+\item 
+\hypertarget{classBArray_a1851694345fd6a51557fb699b79f76f6}{void {\bfseries reset} ()}\label{classBArray_a1851694345fd6a51557fb699b79f76f6}
+
+\item 
+\hypertarget{classBArray_a2773a0b562a8f98ab11f0e1aeaee8793}{void {\bfseries print} ()}\label{classBArray_a2773a0b562a8f98ab11f0e1aeaee8793}
+
+\item 
 \hypertarget{classBArray_a06042b7d093d10621aa80cf4af3ea117}{\hyperlink{classBArray_a06042b7d093d10621aa80cf4af3ea117}{$\sim$\-B\-Array} ()}\label{classBArray_a06042b7d093d10621aa80cf4af3ea117}
 
 \begin{DoxyCompactList}\small\item\em $\sim$\-B\-Array \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Descripción detallada}
-\subsubsection*{template$<$class E$>$class B\-Array$<$ E $>$}
+\subsubsection*{template$<$typename E$>$class B\-Array$<$ E $>$}
 
 Clase \hyperlink{classBArray}{B\-Array}, esta clase da soporte al arbol b volviendolo menos complejo, mas facil de leer y sin asignarle al arbol b tareas como agregar los datos en orden en el array. 
 
 \subsection{Documentación del constructor y destructor}
 \hypertarget{classBArray_a93c786886ce92be7cf5917bbe6be7956}{\index{B\-Array@{B\-Array}!B\-Array@{B\-Array}}
 \index{B\-Array@{B\-Array}!BArray@{B\-Array}}
-\subsubsection[{B\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ {\bf B\-Array}$<$ E $>$\-::{\bf B\-Array} (
+\subsubsection[{B\-Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E $>$ {\bf B\-Array}$<$ E $>$\-::{\bf B\-Array} (
 \begin{DoxyParamCaption}
 \item[{int}]{maxlenght}
 \end{DoxyParamCaption}
@@ -57,16 +78,73 @@ Clase \hyperlink{classBArray}{B\-Array}, esta clase da soporte al arbol b volvie
 
 
 \subsection{Documentación de las funciones miembro}
-\hypertarget{classBArray_ae86ec71c94702d00f70f2e1c026bdce8}{\index{B\-Array@{B\-Array}!add@{add}}
+\hypertarget{classBArray_a8e05e0ba69438392d90c9ec639971d27}{\index{B\-Array@{B\-Array}!add@{add}}
 \index{add@{add}!BArray@{B\-Array}}
-\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf B\-Array}$<$ E $>$\-::add (
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E$>$ bool {\bf B\-Array}$<$ E $>$\-::add (
 \begin{DoxyParamCaption}
 \item[{E}]{p\-Value}
 \end{DoxyParamCaption}
-)}}\label{classBArray_ae86ec71c94702d00f70f2e1c026bdce8}
+)}}\label{classBArray_a8e05e0ba69438392d90c9ec639971d27}
+
+
+verificar si la lista esta llena si no lo esta, si esta llena retornar false, agrega en orden el valor deseado y luego realizar el corrimiento de datos de izquierda a derecha aumenta el largo en uno si se inserta el dato retornar true 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p\-Value} & es el valor a insertar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el dato se inserta, false si la lista esta llena por consiguiente no se inserta el dato 
+\end{DoxyReturn}
+\hypertarget{classBArray_ad20e82b48673552d493a54e343c165cb}{\index{B\-Array@{B\-Array}!add@{add}}
+\index{add@{add}!BArray@{B\-Array}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E$>$ bool {\bf B\-Array}$<$ E $>$\-::add (
+\begin{DoxyParamCaption}
+\item[{int}]{p\-Index, }
+\item[{E}]{p\-Value}
+\end{DoxyParamCaption}
+)}}\label{classBArray_ad20e82b48673552d493a54e343c165cb}
 
 
 add 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p\-Index} & \\
+\hline
+{\em p\-Value} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+
+\end{DoxyReturn}
+\hypertarget{classBArray_a549423a3f30f2a4f4e4f6cac41ee56d8}{\index{B\-Array@{B\-Array}!addf@{addf}}
+\index{addf@{addf}!BArray@{B\-Array}}
+\subsubsection[{addf}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E$>$ bool {\bf B\-Array}$<$ E $>$\-::addf (
+\begin{DoxyParamCaption}
+\item[{E}]{p\-Value}
+\end{DoxyParamCaption}
+)}}\label{classBArray_a549423a3f30f2a4f4e4f6cac41ee56d8}
+
+
+addf agrega al final 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em p\-Value} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{classBArray_adaa70e5af76d77d9d389ae7e762b2df8}{\index{B\-Array@{B\-Array}!addi@{addi}}
+\index{addi@{addi}!BArray@{B\-Array}}
+\subsubsection[{addi}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E$>$ bool {\bf B\-Array}$<$ E $>$\-::addi (
+\begin{DoxyParamCaption}
+\item[{E}]{p\-Value}
+\end{DoxyParamCaption}
+)}}\label{classBArray_adaa70e5af76d77d9d389ae7e762b2df8}
+
+
+addi agregar al inicio 
 
 
 \begin{DoxyParams}{Parámetros}
@@ -75,7 +153,7 @@ add
 \end{DoxyParams}
 \hypertarget{classBArray_acb72f5d604c4efd007f05c6b6f9746cd}{\index{B\-Array@{B\-Array}!get\-Current\-Lenght@{get\-Current\-Lenght}}
 \index{get\-Current\-Lenght@{get\-Current\-Lenght}!BArray@{B\-Array}}
-\subsubsection[{get\-Current\-Lenght}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ int {\bf B\-Array}$<$ E $>$\-::get\-Current\-Lenght (
+\subsubsection[{get\-Current\-Lenght}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E $>$ int {\bf B\-Array}$<$ E $>$\-::get\-Current\-Lenght (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -89,7 +167,7 @@ get\-Current\-Lenght
 \end{DoxyReturn}
 \hypertarget{classBArray_a744bcd9f9edb779366a116c2b2b96ba7}{\index{B\-Array@{B\-Array}!get\-Maximun\-Lenght@{get\-Maximun\-Lenght}}
 \index{get\-Maximun\-Lenght@{get\-Maximun\-Lenght}!BArray@{B\-Array}}
-\subsubsection[{get\-Maximun\-Lenght}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ int {\bf B\-Array}$<$ E $>$\-::get\-Maximun\-Lenght (
+\subsubsection[{get\-Maximun\-Lenght}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E $>$ int {\bf B\-Array}$<$ E $>$\-::get\-Maximun\-Lenght (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -103,7 +181,7 @@ get\-Maximun\-Lenght
 \end{DoxyReturn}
 \hypertarget{classBArray_a9ae6755086524e16eb0a6ae4490472bb}{\index{B\-Array@{B\-Array}!get\-Value@{get\-Value}}
 \index{get\-Value@{get\-Value}!BArray@{B\-Array}}
-\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ E {\bf B\-Array}$<$ E $>$\-::get\-Value (
+\subsubsection[{get\-Value}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E $>$ E {\bf B\-Array}$<$ E $>$\-::get\-Value (
 \begin{DoxyParamCaption}
 \item[{int}]{p\-Index}
 \end{DoxyParamCaption}
@@ -122,7 +200,7 @@ get\-Value
 \end{DoxyReturn}
 \hypertarget{classBArray_a2235e8c213fc88b3c6702eaa8c63852c}{\index{B\-Array@{B\-Array}!is\-Full@{is\-Full}}
 \index{is\-Full@{is\-Full}!BArray@{B\-Array}}
-\subsubsection[{is\-Full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ bool {\bf B\-Array}$<$ E $>$\-::is\-Full (
+\subsubsection[{is\-Full}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E $>$ bool {\bf B\-Array}$<$ E $>$\-::is\-Full (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -134,13 +212,13 @@ is\-Full
 \begin{DoxyReturn}{Devuelve}
 
 \end{DoxyReturn}
-\hypertarget{classBArray_a7c406b4fb7af4b2c124cdc17c31d1a0e}{\index{B\-Array@{B\-Array}!remove@{remove}}
+\hypertarget{classBArray_abc72fc4dd6cca413d42a0cab8471ac44}{\index{B\-Array@{B\-Array}!remove@{remove}}
 \index{remove@{remove}!BArray@{B\-Array}}
-\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class E $>$ void {\bf B\-Array}$<$ E $>$\-::remove (
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename E $>$ bool {\bf B\-Array}$<$ E $>$\-::remove (
 \begin{DoxyParamCaption}
 \item[{int}]{p\-Index}
 \end{DoxyParamCaption}
-)}}\label{classBArray_a7c406b4fb7af4b2c124cdc17c31d1a0e}
+)}}\label{classBArray_abc72fc4dd6cca413d42a0cab8471ac44}
 
 
 remove 
@@ -150,6 +228,9 @@ remove
 {\em p\-Index} & \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true si el indice era correcto 
+\end{DoxyReturn}
 
 
 La documentación para esta clase fue generada a partir del siguiente fichero\-:\begin{DoxyCompactItemize}
