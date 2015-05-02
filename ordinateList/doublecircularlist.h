@@ -16,7 +16,7 @@ public:
 };
 
 template <class E> DoubleCircularList<E>::DoubleCircularList(){
-    this->_lenght(0);
+    this->_lenght = 0;
     this->_head = this->_tail = Null;
 }
 

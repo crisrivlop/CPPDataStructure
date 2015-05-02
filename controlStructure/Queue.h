@@ -60,7 +60,7 @@ template <class E> void Queue<E>::enqueue(E data){
 }
 
 template <class E> E Queue<E>::dequeue(){
-    if(head != Null){
+    if(head == Null){
         std::cerr << "Empty Queue!\n";
     }
     Node<E> *outNode = head;

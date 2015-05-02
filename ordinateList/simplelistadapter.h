@@ -1,6 +1,7 @@
 #include "iordinatelist.h"
 #include "list/Node.h"
 #include "list/SimpleIterator.h"
+#include <iostream>
 #ifndef SIMPLELISTADAPTER_H
 #define SIMPLELISTADAPTER_H
 
@@ -17,11 +18,10 @@ protected:
 public:
     bool add(E pData);
     bool remove(int pIndex);
-    //binary search
-    int search(E pData);
     E get(int pIndex);
     E& getReference(int pIndex);
     IIterator<E>* getIterator();
+    void print();
     virtual ~SimpleListAdapter();
 };
 
@@ -31,8 +31,8 @@ template <class E> bool SimpleListAdapter<E>::add(E pData){
     else if (pData > _tail->getData())return addf(pData);
     else{
         Node<E> *currentNode = _head;
-        while (pData < currentNode->getData())currentNode = currentNode->getNext();
-        if (pData != currentNode->getData()){
+        while (pData > currentNode->getNext()->getData())currentNode = currentNode->getNext();
+        if (pData != currentNode->getNext()->getData()){
             Node<E> *nextNode = currentNode->getNext();
             Node<E> *insertionNode = new Node<E>(pData,nextNode);
             currentNode->setNext(insertionNode);
@@ -93,6 +93,17 @@ template <class E> SimpleListAdapter<E>::~SimpleListAdapter()
         delete actualNode;
         this->_lenght--;
     }
+}
+
+
+template <class E> void SimpleListAdapter<E>::print(){
+    std::cout << "[";
+    Node<E> *current = this->_head;
+    for(int x = 0; x < this->_lenght -1; x++){
+        std::cout << current->getData() <<",";
+        current = current->getNext();
+    }
+    std::cout << current->getData() <<"]" << std::endl;
 }
 
 #endif // SIMPLELISTADAPTER_H

@@ -16,14 +16,15 @@ public:
 };
 
 template <class E> DoubleList<E>::DoubleList(){
-    this->_lenght(0);
+    this->_lenght = 0;
     this->_head = this->_tail = Null;
 }
 
 
 
 template <class E> bool DoubleList<E>::addi(E pData){
-    DoubleNode<E> *insertionData = new DoubleNode<E>(pData, this->_head);
+    DoubleNode<E> *insertionData = new DoubleNode<E>(pData);
+    insertionData->setNext(this->_head);
     this->_head->setPrevious(insertionData);
     this->_head = insertionData;
     this->_lenght++;

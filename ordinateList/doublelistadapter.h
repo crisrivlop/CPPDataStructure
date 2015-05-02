@@ -2,6 +2,7 @@
 #include "list/DoubleNode.h"
 #include "list/DoubleIterator.h"
 #include "list/InverseIterator.h"
+#include "iostream"
 #ifndef DOUBLELISTADAPTER_H
 #define DOUBLELISTADAPTER_H
 
@@ -19,13 +20,12 @@ protected:
 public:
     bool add(E pData);
     bool remove(int pIndex);
-    //binary search
-    int search(E pData);
     E get(int pIndex);
     E& getReference(int pIndex);
     IIterator<E>* getIterator();
     void setInversedIteration(bool pIteration);
     virtual ~DoubleListAdapter();
+    void print();
 };
 
 template <class E> bool DoubleListAdapter<E>::add(E pData){
@@ -34,8 +34,8 @@ template <class E> bool DoubleListAdapter<E>::add(E pData){
     else if (pData > _tail->getData())return addf(pData);
     else{
         DoubleNode<E> *currentNode = _head;
-        while (pData < currentNode->getData())currentNode = currentNode->getNext();
-        if (pData != currentNode->getData()){
+        while (pData > currentNode->getNext()->getData())currentNode = currentNode->getNext();
+        if (pData != currentNode->getNext()->getData()){
             DoubleNode<E> *nextNode = currentNode->getNext();
             DoubleNode<E> *insertionNode = new DoubleNode<E>(pData,currentNode,nextNode);
             currentNode->setNext(insertionNode);
@@ -62,12 +62,6 @@ template <class E> bool DoubleListAdapter<E>::remove(int pIndex){
     }
 
 }
-
-template <class E> int DoubleListAdapter<E>::search(E pData)
-{
-
-}
-
 
 template <class E> E DoubleListAdapter<E>::get(int pIndex){
     if (pIndex < 0 || pIndex >= this->_lenght)throw this;
@@ -112,4 +106,16 @@ template <class E> DoubleListAdapter<E>::~DoubleListAdapter()
         this->_lenght--;
     }
 }
+
+
+template <class E> void DoubleListAdapter<E>::print(){
+    std::cout << "[";
+    DoubleNode<E> *current = this->_head;
+    for(int x = 0; x < this->_lenght -1; x++){
+        std::cout << current->getData() <<",";
+        current = current->getNext();
+    }
+    std::cout << current->getData() <<"]" << std::endl;
+}
+
 #endif // DOUBLELISTADAPTER_H

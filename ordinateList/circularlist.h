@@ -16,6 +16,12 @@ public:
 };
 
 
+template <class E> CircularList<E>::CircularList(){
+    this->_lenght = 0;
+    this->_head = this->_tail = Null;
+}
+
+
 template <class E> bool CircularList<E>::addi(E pData){
     Node<E> *insertionData = new Node<E>(pData, this->_head);
     this->_head = insertionData;

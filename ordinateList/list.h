@@ -16,7 +16,7 @@ public:
 };
 
 template <class E> List<E>::List(){
-    this->_lenght(0);
+    this->_lenght = 0;
     this->_head = this->_tail = Null;
 }
 
