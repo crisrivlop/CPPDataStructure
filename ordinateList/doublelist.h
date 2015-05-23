@@ -17,7 +17,7 @@ public:
 
 template <class E> DoubleList<E>::DoubleList(){
     this->_lenght = 0;
-    this->_head = this->_tail = Null;
+    this->_head = this->_tail = NullPointer;
 }
 
 
@@ -32,7 +32,7 @@ template <class E> bool DoubleList<E>::addi(E pData){
 }
 
 template <class E> bool DoubleList<E>::addf(E pData){
-    DoubleNode<E> *insertionData = new DoubleNode<E>(pData, this->_tail, Null);
+    DoubleNode<E> *insertionData = new DoubleNode<E>(pData, this->_tail, NullPointer);
     this->_tail->setNext(insertionData);
     this->_tail = insertionData;
     this->_lenght++;
@@ -48,8 +48,8 @@ template <class E> bool DoubleList<E>::addFirstData(E pData){
 template <class E> bool DoubleList<E>::removei(){
     DoubleNode<E> *toDelete = this->_head;
     this->_head = toDelete->getNext();
-    if (toDelete->getNext())this->_head->setPrevious(Null);
-    else this->_head = this->_tail = Null;
+    if (toDelete->getNext())this->_head->setPrevious(NullPointer);
+    else this->_head = this->_tail = NullPointer;
     delete toDelete;
     this->_lenght--;
     return true;
@@ -58,7 +58,7 @@ template <class E> bool DoubleList<E>::removei(){
 template <class E> bool DoubleList<E>::removef(){
     DoubleNode<E> *toDelete = this->_tail;
     this->_tail = toDelete->getPrevious();
-    this->_tail->setNext(Null);
+    this->_tail->setNext(NullPointer);
     this->_lenght--;
     delete toDelete;
     return true;

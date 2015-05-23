@@ -264,16 +264,9 @@ template <class E> E DoubleList<E>::get(int index){
 
 template <class E> IIterator<E>* DoubleList<E>::getIterator()
 {
-    IIterator<E> *iterator = 0;
-    if (inverseIterate){
-        InverseIterator<E> *inverseIterator = new InverseIterator<E>(head,tail);
-        iterator = inverseIterator;
-    }
-    else{
-        DoubleIterator<E> *doubleIterator = new DoubleIterator<E>(head,tail);
-        iterator = doubleIterator;
-    }
-
+    IIterator<E> *iterator;
+    if(inverseIterate)iterator = new InverseIterator<E>(head, tail);
+    else iterator = new DoubleIterator<E>(head,tail);
     return iterator;
 }
 template <class E> void DoubleList<E>::inverseIteration(bool inverse){

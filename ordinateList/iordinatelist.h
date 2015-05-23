@@ -1,6 +1,6 @@
 #include "list/IIterator.h"
 #include "iostream"
-#define Null 0
+#define NullPointer 0
 #ifndef IORDINATELIST_H
 #define IORDINATELIST_H
 

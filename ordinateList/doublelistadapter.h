@@ -29,19 +29,29 @@ public:
 };
 
 template <class E> bool DoubleListAdapter<E>::add(E pData){
-    if (_head == Null)return addFirstData(pData);
+    if (_head == NullPointer)return addFirstData(pData);
     else if (pData < _head->getData())return addi(pData);
     else if (pData > _tail->getData())return addf(pData);
     else{
-        DoubleNode<E> *currentNode = _head;
-        while (pData > currentNode->getNext()->getData())currentNode = currentNode->getNext();
-        if (pData != currentNode->getNext()->getData()){
-            DoubleNode<E> *nextNode = currentNode->getNext();
-            DoubleNode<E> *insertionNode = new DoubleNode<E>(pData,currentNode,nextNode);
-            currentNode->setNext(insertionNode);
-            nextNode->setPrevious(insertionNode);
-            this->_lenght++;
-            return true;
+        if (this->_lenght ==1){
+            addf(pData);
+        }
+        else{
+            DoubleNode<E> *currentNode = _head;
+            while (pData > currentNode->getNext()->getData()){
+                if (currentNode && currentNode->getNext() != _tail)
+                    currentNode = currentNode->getNext();
+                else
+                    break;
+            }
+            if (pData != currentNode->getNext()->getData()){
+                DoubleNode<E> *nextNode = currentNode->getNext();
+                DoubleNode<E> *insertionNode = new DoubleNode<E>(pData,currentNode,nextNode);
+                currentNode->setNext(insertionNode);
+                nextNode->setPrevious(insertionNode);
+                this->_lenght++;
+                return true;
+            }
         }
         return false;
     }
