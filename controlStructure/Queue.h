@@ -37,7 +37,7 @@ public:
      * Retorna verdadero si la pila esta vacia, de lo contrario retorna falso.
      * @return bool
      */
-    bool isEmpty();
+    bool isEmpty() const;
     /**
      * @brief
      * Liberador de memoria
@@ -70,7 +70,7 @@ template <class E> E Queue<E>::dequeue(){
     return out;
 }
 
-template <class E> bool Queue<E>::isEmpty(){
+template <class E> bool Queue<E>::isEmpty() const{
     return !head;
 }
 

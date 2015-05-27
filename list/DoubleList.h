@@ -3,8 +3,8 @@
 #include "DoubleIterator.h"
 #include "InverseIterator.h"
 #include "iostream"
-#ifndef DOUBLELIST_H
-#define DOUBLELIST_H
+#ifndef UDOUBLELIST_H
+#define UDOUBLELIST_H
 
 template <class E>
 /**
@@ -15,7 +15,7 @@ template <class E>
  * el dato.
  *
  */
-class DoubleList : public IList<E>
+class UDoubleList : public IList<E>
 {
 
     DoubleNode<E> *head; /**< TODO */
@@ -35,7 +35,7 @@ public:
      * @brief
      * Es el constructor de la lista doble.
      */
-    DoubleList();
+    UDoubleList();
     /**
      * @brief
      * Agrega un elemento al principio de la lista.
@@ -114,10 +114,10 @@ public:
      * @brief
      * Es el destructor de la lista.
      */
-    virtual ~DoubleList();
+    virtual ~UDoubleList();
 };
 
-template <class E> DoubleNode<E>* DoubleList<E>::getNode(int index){
+template <class E> DoubleNode<E>* UDoubleList<E>::getNode(int index){
         DoubleNode<E> *actualNode = head;
         int from = this->lenght/2 -index;
         if (from <=0){
@@ -136,7 +136,7 @@ template <class E> DoubleNode<E>* DoubleList<E>::getNode(int index){
     }
 
 
-template <class E> DoubleList<E>::DoubleList(){
+template <class E> UDoubleList<E>::UDoubleList(){
     tail = null;
     head = null;
     this->lenght = 0;
@@ -144,7 +144,7 @@ template <class E> DoubleList<E>::DoubleList(){
 }
 
 
-template <class E> void DoubleList<E>::addi(E data){
+template <class E> void UDoubleList<E>::addi(E data){
     if(head == null){
         head = new DoubleNode<E>(data);
         tail = head;
@@ -159,7 +159,7 @@ template <class E> void DoubleList<E>::addi(E data){
 }
 
 
-template <class E> void DoubleList<E>::add(E data){
+template <class E> void UDoubleList<E>::add(E data){
     if (tail == null){
         head = new DoubleNode<E>(data);
         tail = head;
@@ -175,7 +175,7 @@ template <class E> void DoubleList<E>::add(E data){
 }
 
 
-template <class E> bool DoubleList<E>::add(E data,int index){
+template <class E> bool UDoubleList<E>::add(E data,int index){
     if (0 <= index && index <= this->lenght){
         if (index == 0){
             addi(data);
@@ -200,7 +200,7 @@ template <class E> bool DoubleList<E>::add(E data,int index){
 
 }
 
-template <class E> bool DoubleList<E>::remove(int index){
+template <class E> bool UDoubleList<E>::remove(int index){
     if (0 <= index && index < this->lenght){
         if(this->lenght == 1){
             delete head;
@@ -241,7 +241,7 @@ template <class E> bool DoubleList<E>::remove(int index){
 
 
 
-template <class E> void DoubleList<E>::set(int index,E data){
+template <class E> void UDoubleList<E>::set(int index,E data){
     if (0 <= index && index < this->lenght){
         getNode(index)->setData(data);
     }
@@ -252,7 +252,7 @@ template <class E> void DoubleList<E>::set(int index,E data){
 }
 
 
-template <class E> E DoubleList<E>::get(int index){
+template <class E> E UDoubleList<E>::get(int index){
     if (0 <= index && index < this->lenght){
         return getNode(index)->getData();
     }
@@ -262,19 +262,19 @@ template <class E> E DoubleList<E>::get(int index){
     }
 }
 
-template <class E> IIterator<E>* DoubleList<E>::getIterator()
+template <class E> IIterator<E>* UDoubleList<E>::getIterator()
 {
     IIterator<E> *iterator;
     if(inverseIterate)iterator = new InverseIterator<E>(head, tail);
     else iterator = new DoubleIterator<E>(head,tail);
     return iterator;
 }
-template <class E> void DoubleList<E>::inverseIteration(bool inverse){
+template <class E> void UDoubleList<E>::inverseIteration(bool inverse){
     inverseIterate = inverse;
 }
 
 
-template <class E> DoubleList<E>::~DoubleList(){
+template <class E> UDoubleList<E>::~UDoubleList(){
     DoubleNode<E> *actualNode = head;
     std::cout << "Deleting DoubleList...\n";
     while(head){
@@ -285,4 +285,4 @@ template <class E> DoubleList<E>::~DoubleList(){
     }
     std::cout << "DoubleList deleted!\n";
 }
-#endif // DOUBLELIST_H
+#endif // UDOUBLELIST_H
